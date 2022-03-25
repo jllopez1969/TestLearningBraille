@@ -1,0 +1,171 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.diana.testlearningbraille"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:5:22-63
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:6:22-78
+13
+14    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:13:5-79
+16-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:13:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:14:5-67
+17-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:14:22-64
+18
+19    <application
+19-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:8:5-49:19
+20        android:allowBackup="true"
+20-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:9:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.3.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\ad7bae491904079428e9176eb58a127d\transformed\core-1.3.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:10:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:11:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:12:9-54
+26        android:supportsRtl="true"
+26-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:13:9-35
+27        android:theme="@style/Theme.TestLearningBraille" >
+27-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:14:9-57
+28        <activity
+28-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:15:9-17:40
+29            android:name="com.diana.testlearningbraille.Lamina_WZ"
+29-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:16:13-38
+30            android:exported="false" />
+30-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:17:13-37
+31        <activity
+31-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:18:9-20:40
+32            android:name="com.diana.testlearningbraille.Lamina_59"
+32-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:19:13-38
+33            android:exported="false" />
+33-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:20:13-37
+34        <activity
+34-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:21:9-23:40
+35            android:name="com.diana.testlearningbraille.Lamina_04"
+35-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:22:13-38
+36            android:exported="false" />
+36-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:23:13-37
+37        <activity
+37-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:24:9-26:40
+38            android:name="com.diana.testlearningbraille.Lamina_SV"
+38-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:25:13-38
+39            android:exported="false" />
+39-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:26:13-37
+40        <activity
+40-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:27:9-29:40
+41            android:name="com.diana.testlearningbraille.Lamina_OR"
+41-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:28:13-38
+42            android:exported="false" />
+42-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:29:13-37
+43        <activity
+43-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:30:9-32:40
+44            android:name="com.diana.testlearningbraille.Lamina_KNN"
+44-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:31:13-39
+45            android:exported="false" />
+45-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:32:13-37
+46        <activity
+46-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:33:9-35:40
+47            android:name="com.diana.testlearningbraille.Lamina_FJ"
+47-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:34:13-38
+48            android:exported="false" />
+48-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:35:13-37
+49        <activity
+49-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:36:9-38:40
+50            android:name="com.diana.testlearningbraille.Lamina_AE"
+50-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:37:13-38
+51            android:exported="false" />
+51-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:38:13-37
+52        <activity
+52-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:39:9-41:40
+53            android:name="com.diana.testlearningbraille.Lamina_Vocales"
+53-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:40:13-43
+54            android:exported="false" />
+54-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:41:13-37
+55        <activity android:name="com.diana.testlearningbraille.MainActivity" >
+55-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:42:9-48:20
+55-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:42:19-47
+56            <intent-filter>
+56-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:43:13-47:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:44:17-69
+57-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:44:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:46:17-77
+59-->C:\Users\JoseLuis\Desktop\Articulos Hapticos\Android Studio Proyects\TestLearningBraille\app\src\main\AndroidManifest.xml:46:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <service
+63-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:17:9-23:19
+64            android:name="com.google.firebase.components.ComponentDiscoveryService"
+64-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:18:13-84
+65            android:directBootAware="true"
+65-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+66            android:exported="false" >
+66-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:19:13-37
+67            <meta-data
+67-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:20:13-22:85
+68                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+68-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:21:17-111
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\JoseLuis\.gradle\caches\transforms-3\07d27e30abdb09d590b4634a09278cce\transformed\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:22:17-82
+70            <!--
+71                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+72                clients to use it as well, by defining this registrar in their own core/common library.
+73            -->
+74            <meta-data
+74-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+75                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+75-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+77        </service>
+78
+79        <provider
+79-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+80            android:name="com.google.firebase.provider.FirebaseInitProvider"
+80-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+81            android:authorities="com.diana.testlearningbraille.firebaseinitprovider"
+81-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+82            android:directBootAware="true"
+82-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+83            android:exported="false"
+83-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+84            android:initOrder="100" />
+84-->[com.google.firebase:firebase-common:19.5.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\e219e89ad9efa7675aec8581e3306fd0\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+85
+86        <activity
+86-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+87            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+87-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+88            android:exported="false"
+88-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+89-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\f959add506d5d15143d47ae57b803338\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+90
+91        <meta-data
+91-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\04996cf3406cf92a2f2c844516c2d5d9\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+92            android:name="com.google.android.gms.version"
+92-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\04996cf3406cf92a2f2c844516c2d5d9\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+93            android:value="@integer/google_play_services_version" />
+93-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\JoseLuis\.gradle\caches\transforms-3\04996cf3406cf92a2f2c844516c2d5d9\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+94    </application>
+95
+96</manifest>

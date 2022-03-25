@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2013 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+
+    <string name="reply_label">Reply</string>
+    <string name="reply_name">Me</string>
+    <string name="Letra_A">Letra A</string>
+    <string name="Letra_E">Letra E</string>
+    <string name="Letra_I">Letra I</string>
+    <string name="Letra_O">Letra O</string>
+    <string name="Letra_U">Letra U</string>
+
+
+    <string name="title_activity_big_text_main">BigTextStyle Main Activity</string>
+    <string name="title_activity_big_picture_main">BigPictureStyle Main Activity</string>
+    <string name="title_activity_inbox_main">InboxStyle Main Activity</string>
+    <string name="title_activity_messaging_main">MessagingStyle Main Activity</string>
+
+    <string name="main_text_activity_big_text_main">
+        This Activity would handle the reminder app\'s functionality.
+        \n\nThe notification type for this example was the Big Text Style!
+    </string>
+    <string name="main_text_activity_big_picture_main">
+        This Activity would handle the social app\'s functionality for an individual post.
+        \n\nThe notification type for this example was the Big Picture Style!
+    </string>
+    <string name="main_text_activity_inbox_main">
+        This Activity would handle the email app\'s functionality for an email(s).
+        \n\nThe notification type for this example was the Inbox Style!
+    </string>
+    <string name="main_text_activity_messaging_main">
+        This Activity would handle the messaging app\'s functionality for a chat(s).
+        \n\nThe notification type for this example was the Messaging Style!
+    </string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_lamina_ae">Lamina_AE</string>
+    <string name="Letra_B" />
+    <string name="Letra_C" />
+    <string name="Letra_D" />
+    <string name="Letra_F" />
+    <string name="Letra_G" />
+    <string name="Letra_H" />
+    <string name="Letra_J" />
+    <string name="Letra_K" />
+    <string name="Letra_L" />
+    <string name="Letra_M" />
+    <string name="Letra_N" />
+    <string name="Letra_Ñ" />
+    <string name="Numero_1" />
+    <string name="Numero_0" />
+    <string name="numero_1" />
+    <string name="Numero_2" />
+    <string name="Numero_3" />
+    <string name="Numero_4" />
+    <string name="Numero_5" />
+    <string name="Numero_6" />
+    <string name="Numero_7" />
+    <string name="Numero_8" />
+    <string name="Numero_9" />
+</resources>
