@@ -36,7 +36,7 @@ public class WriteFileTest {
                 }
 
             } else {
-                Toast.makeText(context, "Fichero ya existente: Cambie el nombre de fichero", 1).show();
+                Toast.makeText(context, "Fichero ya existente: Cambie el nombre de fichero", Toast.LENGTH_SHORT).show();
                 creado = false;
             }
         }

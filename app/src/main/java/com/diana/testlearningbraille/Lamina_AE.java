@@ -37,7 +37,7 @@ public class Lamina_AE extends AppCompatActivity {
              de estados : 21-20- ( creación fichero log *.txt) -
                                  - 0 - 1- 2 - 3 - 4- 5 - 6- 7 - 8- 9 - 0 ------
                                         (Pares = Periodo de Entrenamiento)
-                                        (Impares = Periodo de Test)
+        Falta control de txt.            (Impares = Periodo de Test)
 
      *********************************  **********************************************************/
 

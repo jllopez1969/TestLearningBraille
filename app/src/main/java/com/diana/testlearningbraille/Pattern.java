@@ -297,7 +297,7 @@ public class Pattern {
                         30,30,
                         30,30,
                         30,30,
-
+                        30,30,
 
                 };
                 pattern_result =  pattern21;
