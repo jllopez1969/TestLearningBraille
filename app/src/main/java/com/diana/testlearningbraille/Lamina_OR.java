@@ -732,7 +732,7 @@ public class Lamina_OR extends AppCompatActivity {
 
         button1.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & ( secondLeft>0)) {
                     if (pin.isChecked())
                     {
                         Sound(1);
@@ -758,7 +758,7 @@ public class Lamina_OR extends AppCompatActivity {
         button2.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & ( secondLeft>0)) {
                     if (pin.isChecked()) // Vibraciones Activadas
                     {
                         Sound(2);
@@ -782,7 +782,7 @@ public class Lamina_OR extends AppCompatActivity {
         button3.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & ( secondLeft>0)) {
                     if (pin.isChecked()) {
                         Sound(3);
                         try {
@@ -806,7 +806,7 @@ public class Lamina_OR extends AppCompatActivity {
         button4.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & ( secondLeft>0)) {
                     if (pin.isChecked()) {
                         Sound(4);
                         try {
@@ -834,7 +834,7 @@ public class Lamina_OR extends AppCompatActivity {
 
         button6.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft >0)) {
                     if (pin.isChecked()){
                         Notification("Q", "Orquesta - 5º Sinfonía Beethoven",R.mipmap.png2,Pattern.pattern("Q") );
                     }
@@ -850,8 +850,8 @@ public class Lamina_OR extends AppCompatActivity {
 
         button7.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft >0)) {
+                    if (pin.isChecked()){
                         Notification("R","Vals Saga Strausss", R.mipmap.png3,Pattern.pattern("R") );
                     }
                     Simbol = 'R';
@@ -863,8 +863,8 @@ public class Lamina_OR extends AppCompatActivity {
 
         button8.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft >0)) {
+                    if (pin.isChecked()){
                         Notification("O", "Odisea Espacial - Encuentros en la III Fase", R.mipmap.png5,Pattern.pattern("O") );
                     }
                     Simbol = 'O';
@@ -877,8 +877,8 @@ public class Lamina_OR extends AppCompatActivity {
 
         button9.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft >0)) {
+                    if (pin.isChecked()){
                         Notification("P", "Golpeo Puerta", R.mipmap.png1, Pattern.pattern("P"));
                     }
                     Simbol = 'P';
@@ -898,15 +898,13 @@ public class Lamina_OR extends AppCompatActivity {
         button11.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
-                            if (Status_test == 1) {
-                                if (pin.isChecked()) {
+                        if ((Status_test == 3) & (secondLeft >0)) {
+                            if (pin.isChecked()) {
                                     Notification("R", "Vals Straus", R.mipmap.png4, Pattern.pattern("R"));
                                 }
                                 Simbol = 'R';
                                 flag_sel= true;
                             }
-                        }
                         return false;
                     }});
 
@@ -916,7 +914,7 @@ public class Lamina_OR extends AppCompatActivity {
         button12.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("P", "Golpeo Puerta", R.mipmap.png1, Pattern.pattern("P"));
                             }
@@ -930,7 +928,7 @@ public class Lamina_OR extends AppCompatActivity {
         button13.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("Q", "Orquesta - 5ª Sinfonía Beethoven", R.mipmap.png3, Pattern.pattern("Q"));
                             }
@@ -945,7 +943,7 @@ public class Lamina_OR extends AppCompatActivity {
         button14.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("O", "Odisea Espacial - Encuentros en la III Fase",R.mipmap.png2,Pattern.pattern("O") );
                             }
@@ -966,7 +964,7 @@ public class Lamina_OR extends AppCompatActivity {
         button16.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("P","Golpeo Puerta", R.mipmap.png3,Pattern.pattern("P") );
                             }
@@ -981,7 +979,7 @@ public class Lamina_OR extends AppCompatActivity {
         button17.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("O", "Odisea Espacial - Encuentros en la III Fase", R.mipmap.png4, Pattern.pattern("O"));
                             }
@@ -996,7 +994,7 @@ public class Lamina_OR extends AppCompatActivity {
         button18.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("R", "Vals Saga Strauss", R.mipmap.png1, Pattern.pattern("R"));
                             }
@@ -1012,7 +1010,7 @@ public class Lamina_OR extends AppCompatActivity {
         button19.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft >0)) {
                             if (pin.isChecked()) {
 
                                 Notification("Q", "Vals Saga Strauss", R.mipmap.png5, Pattern.pattern("Q"));
@@ -1034,7 +1032,7 @@ public class Lamina_OR extends AppCompatActivity {
         button21.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("O","Odisea Espacial - Encuentros en la III Fase", R.mipmap.png3,Pattern.pattern("O") );
                             }
@@ -1049,7 +1047,7 @@ public class Lamina_OR extends AppCompatActivity {
         button22.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft >0)) {
                             if (pin.isChecked()) {
 
                                 Notification("Q", "Orquesta - 5º Sinfonía Beethoven", R.mipmap.png1,Pattern.pattern("Q") );
@@ -1065,7 +1063,7 @@ public class Lamina_OR extends AppCompatActivity {
         button23.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft >0)) {
                             if (pin.isChecked()) {
 
                                 Notification("P", "Golpeo Puerta", R.mipmap.png5, Pattern.pattern("P"));
@@ -1082,7 +1080,7 @@ public class Lamina_OR extends AppCompatActivity {
         button24.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("R", "Vals Saga Strauss", R.mipmap.png2, Pattern.pattern("R"));
                             }
@@ -1108,7 +1106,7 @@ public class Lamina_OR extends AppCompatActivity {
         button26.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
 
                                 Notification("O", "Odisea Espacial - Encuentros en la III Fase", R.mipmap.png1, Pattern.pattern("O"));
@@ -1124,7 +1122,7 @@ public class Lamina_OR extends AppCompatActivity {
         button27.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("P", "Golpeo puerta", R.mipmap.png2, Pattern.pattern("P"));
                             }
@@ -1139,7 +1137,7 @@ public class Lamina_OR extends AppCompatActivity {
         button28.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
 
                                 Notification("Q", "Orquesta 5ª Sinfonia Beethoven", R.mipmap.png3, Pattern.pattern("Q"));
@@ -1155,7 +1153,7 @@ public class Lamina_OR extends AppCompatActivity {
         button29.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                             }
                             Notification("R","Vals Saga Strauss",R.mipmap.png4,Pattern.pattern("R") );

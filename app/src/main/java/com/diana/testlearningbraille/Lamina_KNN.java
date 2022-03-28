@@ -769,7 +769,7 @@ public class Lamina_KNN extends AppCompatActivity {
 
         button1.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) {
+                if (((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked())
                     {
                         Sound(1);
@@ -795,7 +795,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button2.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked()) // Vibraciones Activadas
                     {
                         Sound(2);
@@ -819,7 +819,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button3.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked()) {
                         Sound(3);
                         try {
@@ -843,7 +843,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button4.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked()) {
                         Sound(4);
                         try {
@@ -866,7 +866,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button5.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked()) {
                         Sound(5);
                         try {
@@ -892,7 +892,7 @@ public class Lamina_KNN extends AppCompatActivity {
 
         button6.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft>0)) {
                     if (pin.isChecked()){
                         Notification("K", "Llamada Koala",R.mipmap.png2,Pattern.pattern("K") );
                     }
@@ -907,8 +907,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
         button7.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+
+                    if ((Status_test == 1) & (secondLeft>0)) {
+                        if (pin.isChecked())
+                        {
                         Notification("M","Llamada Marmota", R.mipmap.png3,Pattern.pattern("M") );
                     }
                     Simbol = 'M';
@@ -920,8 +922,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
         button8.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+
+                    if ((Status_test == 1) & (secondLeft>0)) {
+                        if (pin.isChecked())
+                        {
                         Notification("Ñ", "Ñ en Morse", R.mipmap.png5,Pattern.pattern("Ñ") );
                     }
                     Simbol = 'Ñ';
@@ -936,8 +940,9 @@ public class Lamina_KNN extends AppCompatActivity {
 
         button9.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                    if ((Status_test == 1) & (secondLeft>0)) {
+                        if (pin.isChecked())
+                        {
                         Notification("L", "Levando Anclas-Anchors Aweigh-(Zimmerman)", R.mipmap.png1, Pattern.pattern("L"));
                     }
                     Simbol = 'L';
@@ -950,8 +955,9 @@ public class Lamina_KNN extends AppCompatActivity {
 
         button10.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                    if ((Status_test == 1) & (secondLeft>0)) {
+                        if (pin.isChecked())
+                        {
                         Notification("N","Tema: New York, New York",R.mipmap.png4,Pattern.pattern("N") );
                     }
                     Simbol = 'N';
@@ -970,14 +976,13 @@ public class Lamina_KNN extends AppCompatActivity {
         button11.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
-                            if (Status_test == 1) {
-                                if (pin.isChecked()) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
+                            if (pin.isChecked())
+                            {
                                     Notification("M", "Llamada Marmota", R.mipmap.png4, Pattern.pattern("M"));
                                 }
                                 Simbol = 'M';
                                 flag_sel= true;
-                            }
                         }
                         return false;
                     }});
@@ -988,7 +993,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button12.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("K", "Llamada Koala", R.mipmap.png1, Pattern.pattern("K"));
                             }
@@ -1002,7 +1007,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button13.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("N", "Tema: New York, New York", R.mipmap.png3, Pattern.pattern("N"));
                             }
@@ -1017,7 +1022,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button14.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Ñ", "Tema: New York, New York",R.mipmap.png2,Pattern.pattern("Ñ") );
                             }
@@ -1033,7 +1038,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button15.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("L", "Levando Anclas-Anchors Aweigh-(Zimmerman)", R.mipmap.png5, Pattern.pattern("L"));
                             }
@@ -1052,7 +1057,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button16.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Ñ","Ñ en Morse", R.mipmap.png3,Pattern.pattern("Ñ") );
                             }
@@ -1067,7 +1072,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button17.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("L", "Levando Anclas-Anchors Aweigh-(Zimmerman)", R.mipmap.png4, Pattern.pattern("L"));
                             }
@@ -1082,7 +1087,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button18.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("M", "Llamada Marmota", R.mipmap.png1, Pattern.pattern("M"));
                             }
@@ -1098,7 +1103,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button19.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("N", "Tema: New York, New York", R.mipmap.png5, Pattern.pattern("N"));
@@ -1114,7 +1119,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button20.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("K", "Llamada Koala", R.mipmap.png2, Pattern.pattern("K"));
                             }
@@ -1133,7 +1138,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button21.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("M","LLamada Marmota", R.mipmap.png3,Pattern.pattern("M") );
                             }
@@ -1148,7 +1153,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button22.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("K", "Llamada Koala", R.mipmap.png1,Pattern.pattern("K") );
@@ -1164,7 +1169,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button23.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("N", "Tema: New York, New York", R.mipmap.png5, Pattern.pattern("N"));
@@ -1179,7 +1184,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button24.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("M", "Llamada Marmota", R.mipmap.png2, Pattern.pattern("M"));
                             }
@@ -1197,7 +1202,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button25.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("D", "Ñ en Morse", R.mipmap.png4, Pattern.pattern("Ñ"));
@@ -1218,7 +1223,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button26.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("L", "Levando Anclas-Anchors Aweigh-(Zimmerman)", R.mipmap.png1, Pattern.pattern("L"));
@@ -1234,7 +1239,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button27.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Ñ", "Ñ en Morse", R.mipmap.png2, Pattern.pattern("Ñ"));
                             }
@@ -1249,7 +1254,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button28.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("K", "Llamada Koala", R.mipmap.png3, Pattern.pattern("K"));
@@ -1265,7 +1270,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button29.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                             }
                             Notification("N","Tema: New York, New York",R.mipmap.png4,Pattern.pattern("N") );
@@ -1281,7 +1286,7 @@ public class Lamina_KNN extends AppCompatActivity {
         button30.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("M", "Llamada de Marmota", R.mipmap.png3, Pattern.pattern("M"));
                             }

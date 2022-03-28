@@ -734,7 +734,7 @@ public class Lamina_WZ extends AppCompatActivity {
 
         button1.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked())
                     {
                         Sound(1);
@@ -760,7 +760,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button2.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked()) // Vibraciones Activadas
                     {
                         Sound(2);
@@ -784,7 +784,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button3.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked()) {
                         Sound(3);
                         try {
@@ -808,7 +808,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button4.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View v) {
-                if ((Status_test == 2)|(Status_test == 4)|(Status_test == 6)|(Status_test == 8)|(Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & (secondLeft>0)) {
                     if (pin.isChecked()) {
                         Sound(4);
                         try {
@@ -836,7 +836,7 @@ public class Lamina_WZ extends AppCompatActivity {
 
         button6.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft>0)) {
                     if (pin.isChecked()){
                         Notification("X", "S.O.S: Auxilio en Morse",R.mipmap.png2,Pattern.pattern("X") );
                     }
@@ -852,9 +852,10 @@ public class Lamina_WZ extends AppCompatActivity {
 
         button7.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
-                        Notification("Y","Tema: El Bueno, El Malo y el Feo", R.mipmap.png3,Pattern.pattern("Y") );
+                if ((Status_test == 1) & (secondLeft>0)) {
+                    if (pin.isChecked())
+                    {
+                       Notification("Y","Tema: El Bueno, El Malo y el Feo", R.mipmap.png3,Pattern.pattern("Y") );
                     }
                     Simbol = 'Y';
                     flag_sel= true;
@@ -865,8 +866,9 @@ public class Lamina_WZ extends AppCompatActivity {
 
         button8.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft>0)) {
+                    if (pin.isChecked())
+                    {
                         Notification("Z", "Himno EE.UU: The Star-Spangled Banner", R.mipmap.png5,Pattern.pattern("Z") );
                     }
                     Simbol = 'Z';
@@ -879,8 +881,9 @@ public class Lamina_WZ extends AppCompatActivity {
 
         button9.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft>0)) {
+                    if (pin.isChecked())
+                    {
                         Notification("A", "", R.mipmap.png1, Pattern.pattern("A"));
                     }
                     Simbol = 'A';
@@ -899,8 +902,9 @@ public class Lamina_WZ extends AppCompatActivity {
         button11.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
-                            if (Status_test == 1) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
+                            if (pin.isChecked())
+                            {
                                 if (pin.isChecked()) {
                                     Notification("W", "Himno EE.UU: The Star-Spangled Banner", R.mipmap.png4, Pattern.pattern("W"));
                                 }
@@ -917,7 +921,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button12.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Z", "Tema: Zorba el Griego", R.mipmap.png1, Pattern.pattern("Z"));
                             }
@@ -931,7 +935,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button13.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("X", "S.O.S: Auxilio en Morse", R.mipmap.png3, Pattern.pattern("X"));
                             }
@@ -946,7 +950,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button14.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Y", "Tema: El Bueno, El Malo y el Feo",R.mipmap.png2,Pattern.pattern("Y") );
                             }
@@ -967,7 +971,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button16.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Z","Tema: Zorba el Griego", R.mipmap.png3,Pattern.pattern("Z") );
                             }
@@ -982,7 +986,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button17.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("W", "Himno EE.UU: The Star-Spangled Banner", R.mipmap.png4, Pattern.pattern("W"));
                             }
@@ -997,7 +1001,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button18.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Y", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png1, Pattern.pattern("Y"));
                             }
@@ -1013,7 +1017,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button19.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("X", "S.O.S: Auxilio Morse", R.mipmap.png5, Pattern.pattern("X"));
@@ -1035,7 +1039,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button21.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Y","Tema: El Bueno, El Malo y el Feo", R.mipmap.png3,Pattern.pattern("Y") );
                             }
@@ -1050,7 +1054,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button22.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("X", "S.O.S: Auxilio Morse", R.mipmap.png1,Pattern.pattern("X") );
@@ -1066,7 +1070,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button23.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("W", "Himno EE.UU: The Star-Spangled Banner", R.mipmap.png5, Pattern.pattern("W"));
@@ -1083,7 +1087,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button24.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("Z", "Tema: Zorba el Griego", R.mipmap.png2, Pattern.pattern("Z"));
                             }
@@ -1109,7 +1113,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button26.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("W", "Himno EE.UU: The Star-Spangled Banner", R.mipmap.png1, Pattern.pattern("W"));
@@ -1125,7 +1129,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button27.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("X", "Auxilio Morse", R.mipmap.png2, Pattern.pattern("X"));
                             }
@@ -1140,7 +1144,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button28.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("E", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png3, Pattern.pattern("E"));
@@ -1156,7 +1160,7 @@ public class Lamina_WZ extends AppCompatActivity {
         button29.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                             }
                             Notification("Z","Tema: Zorba el Griego",R.mipmap.png4,Pattern.pattern("Z") );

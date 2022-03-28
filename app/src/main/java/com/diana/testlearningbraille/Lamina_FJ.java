@@ -652,7 +652,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                        if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             Double_Click('F');
                             Simbol_elec = 'F';
@@ -661,7 +661,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 });
         button61.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                 {
                     Sound(11);
                 }
@@ -675,7 +675,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                        if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             Double_Click('G');
                             Simbol_elec = 'G';
@@ -685,7 +685,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 });
         button62.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                 {
                     Sound(12);
                 }
@@ -699,7 +699,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                        if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             Double_Click('H');
                             Simbol_elec = 'H';
@@ -708,7 +708,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 });
         button63.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                 {
                     Sound(13);
                 }
@@ -722,7 +722,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                        if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             Double_Click('I');
                             Simbol_elec = 'I';
@@ -731,7 +731,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 });
         button64.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                 {
                     Sound(14);
                 }
@@ -745,7 +745,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                        if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             Double_Click('J');
                             Simbol_elec = 'J';
@@ -754,7 +754,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 });
         button65.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
+                if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                 {
                     Sound(15);
                 }
@@ -769,7 +769,7 @@ public class Lamina_FJ extends AppCompatActivity {
 
         button1.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) {
+                if (((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)) & (secondLeft>0 )) {
                     if (pin.isChecked())
                     {
                         Sound(1);
@@ -892,7 +892,7 @@ public class Lamina_FJ extends AppCompatActivity {
 
         button6.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft > 0)) {
                     if (pin.isChecked()){
                         Notification("J", "Pitido Incial - Juegos Colectivos",R.mipmap.png2,Pattern.pattern("J") );
                     }
@@ -908,8 +908,8 @@ public class Lamina_FJ extends AppCompatActivity {
 
         button7.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                if ((Status_test == 1) & (secondLeft > 0)) {
+                    if (pin.isChecked()){
                         Notification("I","Toques de Campana", R.mipmap.png3,Pattern.pattern("I") );
                     }
                     Simbol = 'I';
@@ -921,12 +921,12 @@ public class Lamina_FJ extends AppCompatActivity {
 
         button8.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
-                        Notification("F", "Ritmo de Martinete - Forja", R.mipmap.png5,Pattern.pattern("F") );
+                if ((Status_test == 1) & (secondLeft > 0)) {
+                    if (pin.isChecked()) {
+                        Notification("F", "Ritmo de Martinete - Forja", R.mipmap.png5, Pattern.pattern("F"));
                     }
                     Simbol = 'F';
-                    flag_sel= true;
+                    flag_sel = true;
                 }
                 return false;
             }});
@@ -935,8 +935,9 @@ public class Lamina_FJ extends AppCompatActivity {
 
         button9.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                    if ((Status_test == 1)  & (secondLeft>0)){
+                        if (pin.isChecked())
+                        {
                         Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern("G"));
                     }
                     Simbol = 'G';
@@ -949,8 +950,9 @@ public class Lamina_FJ extends AppCompatActivity {
 
         button10.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if (Status_test == 1) {
-                    if (Status_test == 1) {
+                if ((Status_test == 1)  & (secondLeft>0)){
+                    if (pin.isChecked())
+                    {
                         Notification("H","H en Morse",R.mipmap.png4,Pattern.pattern("H") );
                     }
                     Simbol = 'H';
@@ -969,15 +971,14 @@ public class Lamina_FJ extends AppCompatActivity {
         button11.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
-                            if (Status_test == 1) {
-                                if (pin.isChecked()) {
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
+                        if ((Status_test == 3) & (secondLeft>0)) {
+                            if (pin.isChecked())
+                            {
+                                Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
                                 }
                                 Simbol = 'I';
                                 flag_sel= true;
                             }
-                        }
                         return false;
                     }});
 
@@ -987,7 +988,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button12.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern("G"));
                             }
@@ -1001,7 +1002,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button13.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("J", "Pitido Incial - Juegos Colectivos", R.mipmap.png3, Pattern.pattern("J"));
                             }
@@ -1016,7 +1017,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button14.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("F", "Ritmo de Martinete - Forja",R.mipmap.png2,Pattern.pattern("F") );
                             }
@@ -1032,7 +1033,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button15.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 3) {
+                        if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("H", "H en Morse", R.mipmap.png5, Pattern.pattern("H"));
                             }
@@ -1051,7 +1052,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button16.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) &(secondLeft > 0)) {
                             if (pin.isChecked()) {
                                 Notification("F","Galope de caballo", R.mipmap.png3,Pattern.pattern("F") );
                             }
@@ -1066,7 +1067,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button17.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) &(secondLeft > 0)) {
                             if (pin.isChecked()) {
                                 Notification("J", "Pitido inicial - Juegos Colectivos", R.mipmap.png4, Pattern.pattern("J"));
                             }
@@ -1081,7 +1082,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button18.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) &(secondLeft > 0)) {
                             if (pin.isChecked()) {
                                 Notification("H", "H en Morse", R.mipmap.png1, Pattern.pattern("H"));
                             }
@@ -1097,7 +1098,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button19.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) &(secondLeft > 0)) {
                             if (pin.isChecked()) {
 
                                 Notification("I", "Toques de Campana", R.mipmap.png5, Pattern.pattern("I"));
@@ -1113,7 +1114,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button20.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 5) {
+                        if ((Status_test == 5) &(secondLeft > 0)) {
                             if (pin.isChecked()) {
                                 Notification("G", "Canto de Grillo", R.mipmap.png2, Pattern.pattern("G"));
                             }
@@ -1132,7 +1133,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button21.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("H","H en morse", R.mipmap.png3,Pattern.pattern("H") );
                             }
@@ -1147,7 +1148,8 @@ public class Lamina_FJ extends AppCompatActivity {
         button22.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
+
                             if (pin.isChecked()) {
 
                                 Notification("F", "Ritmo de Martinete - Forja", R.mipmap.png1,Pattern.pattern("F") );
@@ -1163,7 +1165,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button23.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("G", "Canto de Grillo", R.mipmap.png5, Pattern.pattern("G"));
@@ -1180,7 +1182,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button24.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
                                 Notification("J", "Pitido incial - Juegos Colectivos", R.mipmap.png2, Pattern.pattern(""));
                             }
@@ -1198,7 +1200,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button25.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 7) {
+                        if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
                                 Notification("D", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
@@ -1219,7 +1221,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button26.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
 
                                 Notification("I", "Toques de Campana", R.mipmap.png1, Pattern.pattern("I"));
@@ -1235,7 +1237,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button27.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("G", "Canto de Grillo", R.mipmap.png2, Pattern.pattern("G"));
                             }
@@ -1250,7 +1252,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button28.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
 
                                 Notification("F", "Ritmo Martinete - Forja", R.mipmap.png3, Pattern.pattern("F"));
@@ -1266,7 +1268,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button29.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                             }
                             Notification("H","H en Morse",R.mipmap.png4,Pattern.pattern("H") );
@@ -1282,7 +1284,7 @@ public class Lamina_FJ extends AppCompatActivity {
         button30.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        if (Status_test == 9) {
+                        if ((Status_test == 9) & (secondLeft >0)) {
                             if (pin.isChecked()) {
                                 Notification("J", "Pitido inicial - Juegos Colectivos", R.mipmap.png3, Pattern.pattern("J"));
                             }

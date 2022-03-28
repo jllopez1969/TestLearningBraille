@@ -911,7 +911,8 @@ public class Lamina_Vocales extends AppCompatActivity {
         button7.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if (Status_test == 1) {
-                    if (Status_test == 1) {
+                    if (pin.isChecked())
+                    {
                         Notification("U","Ulular Búho", R.mipmap.png3,Pattern.pattern("U") );
                     }
                     Simbol = 'U';
@@ -924,7 +925,8 @@ public class Lamina_Vocales extends AppCompatActivity {
         button8.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if (Status_test == 1) {
-                    if (Status_test == 1) {
+                    if (pin.isChecked())
+                    {
                         Notification("I", "Toques de Camapana", R.mipmap.png5,Pattern.pattern("I") );
                     }
                     Simbol = 'I';
@@ -940,7 +942,8 @@ public class Lamina_Vocales extends AppCompatActivity {
         button9.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if (Status_test == 1) {
-                    if (Status_test == 1) {
+                    if (pin.isChecked())
+                    {
                         Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
                     }
                     Simbol = 'A';
@@ -954,7 +957,8 @@ public class Lamina_Vocales extends AppCompatActivity {
         button10.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if (Status_test == 1) {
-                    if (Status_test == 1) {
+                    if (pin.isChecked())
+                    {
                         Notification("O","Odisea Espacial - Encuentros en la III Fase",R.mipmap.png4,Pattern.pattern("O") );
                     }
                     Simbol = 'O';
@@ -974,13 +978,12 @@ public class Lamina_Vocales extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if (Status_test == 3) {
-                            if (Status_test == 1) {
-                                if (pin.isChecked()) {
+                            if (pin.isChecked())
+                            {
                                     Notification("O", "Odisea Espacial - Encuentros en la III Fase", R.mipmap.png4, Pattern.pattern("O"));
                                 }
                                 Simbol = 'O';
                                 flag_sel= true;
-                            }
                         }
                         return false;
                     }});
