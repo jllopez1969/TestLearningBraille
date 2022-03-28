@@ -99,6 +99,7 @@ public class Lamina_SV extends AppCompatActivity {
 
                     } else {
                         Error++;
+                        flag_ok = false;
                         Sound(21);
                     }
                     //Casos posibles de test

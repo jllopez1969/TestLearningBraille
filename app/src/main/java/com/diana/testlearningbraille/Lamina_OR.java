@@ -98,6 +98,7 @@ public class Lamina_OR extends AppCompatActivity {
 
                     } else {
                         Error++;
+                        flag_ok = false;
                         Sound(21);
                     }
                     //Casos posibles de test

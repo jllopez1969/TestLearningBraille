@@ -101,6 +101,7 @@ public class Lamina_FJ extends AppCompatActivity {
 
                     } else {
                         Error++;
+                        flag_ok = false;
                         Sound(21);
                     }
                     //Casos posibles de test

@@ -214,8 +214,8 @@ public class Pattern {
                           0,300,
                         100,300,
                         100,300,
-                        200,600,
-                        300,1000,
+                        150,500,
+                        200,700,
 
                 };
                 pattern_result = pattern16;
