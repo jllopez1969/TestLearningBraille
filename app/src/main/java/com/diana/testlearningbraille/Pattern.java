@@ -71,16 +71,19 @@ public class Pattern {
                 pattern_result = pattern5;
                 break;
             case "F":
-                // Onomatopeya: Golpeo Martillo en forja.
+                // Onomatopeya:  Sonido del Frailecillo
                 // (Ritmo de martinete tac tac tac ...tac)
 
                 long[] pattern6 = {
                         //sleep//vibrate/Largo
-                          0,200,
-                        300,200,
-                        300,200,
-                        300,200,
-                        800,150
+
+                        30,100,
+                        30,100,
+                        30,100,
+                        50,100,
+                        50,100,
+                        50,500,
+
                 };
                 pattern_result=  pattern6;
             break;

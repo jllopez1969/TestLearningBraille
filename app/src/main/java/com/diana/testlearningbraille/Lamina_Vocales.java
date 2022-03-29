@@ -780,7 +780,7 @@ public class Lamina_Vocales extends AppCompatActivity {
                         Sound(1);
                         try {
                             //Retardo
-                            Thread.sleep(2500);
+                            Thread.sleep(2300);
                         } catch (Exception e) {
 
                         }

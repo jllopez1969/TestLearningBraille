@@ -191,7 +191,7 @@ public class Lamina_FJ extends AppCompatActivity {
 
         switch (code) {
             case 1:
-                mp = MediaPlayer.create(this, R.raw.f_martinerte_forja);
+                mp = MediaPlayer.create(this, R.raw.f_estoesafrica);
                 mp.start();
                 break;
 
