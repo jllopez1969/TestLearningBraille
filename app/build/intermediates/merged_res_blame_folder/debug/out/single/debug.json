@@ -60,6 +60,10 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\r_rayo.mp3"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_j_retorno_del_jedi.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\j_retorno_del_jedi.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_h_heavy_metal.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\h_heavy_metal.mp3"
     },

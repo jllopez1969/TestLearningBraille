@@ -211,7 +211,7 @@ public class Lamina_FJ extends AppCompatActivity {
                 break;
 
             case 5:
-                mp = MediaPlayer.create(this, R.raw.j_pitido_inicial);
+                mp = MediaPlayer.create(this, R.raw.j_retorno_del_jedi);
                 mp.start();
                 break;
 
@@ -780,7 +780,7 @@ public class Lamina_FJ extends AppCompatActivity {
                         } catch (Exception e) {
 
                         }
-                        Notification("F", "Ritmo de Martinete - Forja", R.mipmap.png1, Pattern.pattern("F"));
+                        Notification("F", "Ésto es África - Shakira", R.mipmap.png1, Pattern.pattern("F"));
                     }else
                     {
                         Sound(11);
@@ -876,7 +876,7 @@ public class Lamina_FJ extends AppCompatActivity {
                         } catch (Exception e) {
 
                         }
-                        Notification("J", "Pitido incial - Juegos Colectivos", R.mipmap.png5, Pattern.pattern("J"));
+                        Notification("J", "Retorno del Jedi - Marcha Imperial", R.mipmap.png5, Pattern.pattern("J"));
                     } else {
                         Sound(15);
                     }
@@ -895,7 +895,7 @@ public class Lamina_FJ extends AppCompatActivity {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft > 0)) {
                     if (pin.isChecked()){
-                        Notification("J", "Pitido Incial - Juegos Colectivos",R.mipmap.png2,Pattern.pattern("J") );
+                        Notification("J", "Retorno del Jedi - Marcha Imperial",R.mipmap.png2,Pattern.pattern("J") );
                     }
                     Simbol = 'J';
                     flag_sel= true;
@@ -924,7 +924,7 @@ public class Lamina_FJ extends AppCompatActivity {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft > 0)) {
                     if (pin.isChecked()) {
-                        Notification("F", "Ritmo de Martinete - Forja", R.mipmap.png5, Pattern.pattern("F"));
+                        Notification("F", "Ésto es África - Shakira", R.mipmap.png5, Pattern.pattern("F"));
                     }
                     Simbol = 'F';
                     flag_sel = true;
@@ -1005,7 +1005,7 @@ public class Lamina_FJ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("J", "Pitido Incial - Juegos Colectivos", R.mipmap.png3, Pattern.pattern("J"));
+                                Notification("J", "Retorno del Jedi - Marcha Imperial", R.mipmap.png3, Pattern.pattern("J"));
                             }
                             Simbol = 'J';
                             flag_sel= true;
@@ -1020,7 +1020,7 @@ public class Lamina_FJ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("F", "Ritmo de Martinete - Forja",R.mipmap.png2,Pattern.pattern("F") );
+                                Notification("F", "Ésto es África - Shakira",R.mipmap.png2,Pattern.pattern("F") );
                             }
                             Simbol= 'F';
                             flag_sel= true;
@@ -1153,7 +1153,7 @@ public class Lamina_FJ extends AppCompatActivity {
 
                             if (pin.isChecked()) {
 
-                                Notification("F", "Ritmo de Martinete - Forja", R.mipmap.png1,Pattern.pattern("F") );
+                                Notification("F", "Ésto es África - Shakira", R.mipmap.png1,Pattern.pattern("F") );
                             }
                             Simbol = 'F';
                             flag_sel= true;
@@ -1185,7 +1185,7 @@ public class Lamina_FJ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("J", "Pitido incial - Juegos Colectivos", R.mipmap.png2, Pattern.pattern(""));
+                                Notification("J", "Retorno del Jedi - Marcha Imperial", R.mipmap.png2, Pattern.pattern(""));
                             }
                             Simbol = 'J';
                             flag_sel= true;

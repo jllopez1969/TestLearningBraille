@@ -77,12 +77,12 @@ public class Pattern {
                 long[] pattern6 = {
                         //sleep//vibrate/Largo
 
-                        30,100,
-                        30,100,
-                        30,100,
-                        50,100,
-                        50,100,
-                        50,500,
+                         0,200,
+                        50,200,
+                        50,200,
+                        50,200,
+                        50,200,
+                        50,400,
 
                 };
                 pattern_result=  pattern6;
@@ -127,9 +127,19 @@ public class Pattern {
                 break;
 
             case "J":
-                // Onomatopeya saque de centro: Inicio juego.
+                // Onomatopeya: Retorno del Jedi, Marcha Imperial
                 long[] pattern10 = {
-                        0,1500
+                         0,200,
+                        50,200,
+                        50,200,
+                        50,400,
+                        50,200,
+                        50,400,
+                        50,200,
+                        50,200,
+                        50,400,
+
+
                 };
                 pattern_result = pattern10;
                 break;
