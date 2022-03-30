@@ -24,6 +24,10 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\alphabet_p.mp3"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_seleccion.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\seleccion.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_alphabet_b.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\alphabet_b.mp3"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_lamina_k_nn.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\lamina_k_nn.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_alphabet_h.mp3.flat",
@@ -224,6 +232,14 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\mipmap-hdpi\\png15.png"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_tercer_entrenamiento.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\tercer_entrenamiento.mp3"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_primera_linea_test.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\primera_linea_test.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_y_morse_y.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\y_morse_y.mp3"
     },
@@ -288,12 +304,20 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\v_morse.mp3"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_quinta_linea_test.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\quinta_linea_test.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_alphabet_q.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\alphabet_q.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\drawable_png6.png.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\drawable\\png6.png"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_lamina_s_v.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\lamina_s_v.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_png22.png.flat",
@@ -312,8 +336,16 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\x_sos_auxilio_morse.mp3"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_cuarto_entrenamiento.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\cuarto_entrenamiento.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\drawable_png9.png.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\drawable\\png9.png"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_lamina_f_j.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\lamina_f_j.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_png9.png.flat",
@@ -330,6 +362,10 @@
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_f_estoesafrica.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\f_estoesafrica.mp3"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_cuarta_linea_test.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\cuarta_linea_test.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_png39.png.flat",
@@ -368,12 +404,20 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\m_sonido_marmota.mp3"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_lamina_o_r.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\lamina_o_r.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_nn_sonido_morse.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\nn_sonido_morse.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\drawable_png18.png.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\drawable\\png18.png"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_lamina_a_e.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\lamina_a_e.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\drawable_png33.png.flat",
@@ -386,6 +430,10 @@
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_j_pitido_inicial.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\j_pitido_inicial.mp3"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_lamona_w_z.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\lamona_w_z.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_alphabet_z.mp3.flat",
@@ -464,6 +512,10 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\drawable\\png7.png"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_segunda_linea_test.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\segunda_linea_test.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -524,6 +576,10 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\mipmap-hdpi\\png7.png"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_primer_entrenamiento.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\primer_entrenamiento.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_alphabet_g.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\alphabet_g.mp3"
     },
@@ -570,6 +626,10 @@
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_quinto_entrenamiento.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\quinto_entrenamiento.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_png34.png.flat",
@@ -624,6 +684,10 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_tercera_linea_test.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\tercera_linea_test.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_round_old.png.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\drawable\\ic_launcher_round_old.png"
     },
@@ -658,6 +722,10 @@
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_segundo_entrenamiento.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\segundo_entrenamiento.mp3"
     },
     {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_alphabet_j.mp3.flat",

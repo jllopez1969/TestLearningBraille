@@ -254,6 +254,52 @@ public class Lamina_KNN extends AppCompatActivity {
                 mp = MediaPlayer.create(this, R.raw.loc_final_test);
                 mp.start();
                 break;
+            case 23:
+                mp = MediaPlayer.create(this, R.raw.lamina_k_nn);
+                mp.start();
+                break;
+            case 24:
+                mp = MediaPlayer.create(this, R.raw.primer_entrenamiento);
+                mp.start();
+                break;
+
+            case 25:
+                mp = MediaPlayer.create(this, R.raw.primera_linea_test);
+                mp.start();
+                break;
+            case 26:
+                mp = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
+                mp.start();
+                break;
+            case 27:
+                mp = MediaPlayer.create(this, R.raw.segunda_linea_test);
+                mp.start();
+                break;
+            case 28:
+                mp = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
+                mp.start();
+                break;
+            case 29:
+                mp = MediaPlayer.create(this, R.raw.tercera_linea_test);
+                mp.start();
+                break;
+            case 30:
+                mp = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
+                mp.start();
+                break;
+            case 31:
+                mp = MediaPlayer.create(this, R.raw.cuarta_linea_test);
+                mp.start();
+                break;
+            case 32:
+                mp = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
+                mp.start();
+                break;
+            case 33:
+                mp = MediaPlayer.create(this, R.raw.quinta_linea_test);
+                mp.start();
+                break;
+
         }
 
 
@@ -493,6 +539,7 @@ public class Lamina_KNN extends AppCompatActivity {
         // PUESTA EN MARCHA TEMPORIZADOR - Sólo una vez en toda la ejecución
 
         timer.schedule(task, 1000, 1000);
+        Sound(23);
 
         // Inicio de test - Comienzo
         // Y, Transiciones de estado de test
@@ -542,6 +589,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Create_file.setVisibility(View.VISIBLE);
                                     Status_test = 20;
                                     secondLeft = 0;
+                                    Sound(24);
                                     break;
 
                                 case 0:
@@ -549,6 +597,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Activ_test = true;
                                     textView2.setText("Entrenamiento nº1");
                                     secondLeft = Time_slot;
+                                    Sound(25);
                                     break;
                                 case 1:
                                     On = true;
@@ -562,13 +611,14 @@ public class Lamina_KNN extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 1;
-
+                                    Sound(26);
                                     break;
 
                                 case 2:
                                     On = true;
                                     textView2.setText("Entrenamiento nº2");
                                     secondLeft = Time_slot;
+                                    Sound(27);
                                     break;
 
                                 case 3:
@@ -583,11 +633,13 @@ public class Lamina_KNN extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 2;
+                                    Sound(28);
                                     break;
                                 case 4:
                                     On = true;
                                     textView2.setText("Entrenamiento nº3");
                                     secondLeft = Time_slot;
+                                    Sound(29);
                                     break;
                                 case 5:
                                     On = true;
@@ -601,11 +653,13 @@ public class Lamina_KNN extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 3;
+                                    Sound(29);
                                     break;
                                 case 6:
                                     On = true;
                                     textView2.setText("Entrenamiento nº4");
                                     secondLeft = Time_slot;
+                                    Sound(30);
                                     break;
                                 case 7:
                                     On = true;
@@ -619,12 +673,14 @@ public class Lamina_KNN extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 4;
+                                    Sound(31);
                                     break;
                                 case 8:
                                     On = true;
                                     textView2.setText("Entrenamiento nº5");
                                     flag_sel = false;
                                     secondLeft = Time_slot;
+                                    Sound(32);
                                     break;
 
                                 case 9:
@@ -638,6 +694,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Error = 0;
                                     secondLeft = Time_slot;
                                     test_line = 5;
+                                    Sound(33);
                                     break;
 
                             }
