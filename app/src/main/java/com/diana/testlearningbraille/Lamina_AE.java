@@ -400,6 +400,7 @@ public class Lamina_AE extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lamina_ae);
 
+
        // Control test
 
 
