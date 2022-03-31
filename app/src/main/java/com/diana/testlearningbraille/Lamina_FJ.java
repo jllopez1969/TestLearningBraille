@@ -714,8 +714,10 @@ public class Lamina_FJ extends AppCompatActivity {
 
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
-                            Double_Click('F');
-                            Simbol_elec = 'F';
+                            if (secondLeft>0) {
+                                Double_Click('F');
+                                Simbol_elec = 'F';
+                            }
                         }
                     }
                 });
@@ -737,8 +739,10 @@ public class Lamina_FJ extends AppCompatActivity {
 
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
-                            Double_Click('G');
-                            Simbol_elec = 'G';
+                            if (secondLeft>0) {
+                                Double_Click('G');
+                                Simbol_elec = 'G';
+                            }
 
                         }
                     }
@@ -784,8 +788,10 @@ public class Lamina_FJ extends AppCompatActivity {
 
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
-                            Double_Click('I');
-                            Simbol_elec = 'I';
+                            if (secondLeft>0) {
+                                Double_Click('I');
+                                Simbol_elec = 'I';
+                            }
                         }
                     }
                 });
@@ -807,8 +813,10 @@ public class Lamina_FJ extends AppCompatActivity {
 
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
-                            Double_Click('J');
-                            Simbol_elec = 'J';
+                            if (secondLeft>0) {
+                                Double_Click('J');
+                                Simbol_elec = 'J';
+                            }
                         }
                     }
                 });

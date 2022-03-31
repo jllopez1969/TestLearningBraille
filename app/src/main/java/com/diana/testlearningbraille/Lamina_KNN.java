@@ -712,8 +712,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('A');
-                            Simbol_elec = 'A';
+                          if (secondLeft>0) {
+                              Double_Click('A');
+                              Simbol_elec = 'A';
+                          }
                         }
                     }
                 });
@@ -735,8 +737,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('B');
-                            Simbol_elec = 'B';
+                            if (secondLeft>0) {
+                                Double_Click('B');
+                                Simbol_elec = 'B';
+                            }
 
                         }
                     }
@@ -759,8 +763,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('C');
-                            Simbol_elec = 'C';
+                            if (secondLeft>0) {
+                                Double_Click('C');
+                                Simbol_elec = 'C';
+                            }
                         }
                     }
                 });
@@ -782,8 +788,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('D');
-                            Simbol_elec = 'D';
+                            if (secondLeft>0) {
+                                Double_Click('D');
+                                Simbol_elec = 'D';
+                            }
                         }
                     }
                 });
@@ -805,8 +813,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('E');
-                            Simbol_elec = 'E';
+                            if (secondLeft>0) {
+                                Double_Click('E');
+                                Simbol_elec = 'E';
+                            }
                         }
                     }
                 });

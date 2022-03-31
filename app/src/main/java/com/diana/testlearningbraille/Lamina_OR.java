@@ -697,8 +697,10 @@ public class Lamina_OR extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('O');
-                            Simbol_elec = 'O';
+                            if (secondLeft>0) {
+                                Double_Click('O');
+                                Simbol_elec = 'O';
+                            }
                         }
                     }
                 });
@@ -720,8 +722,10 @@ public class Lamina_OR extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('P');
-                            Simbol_elec = 'P';
+                            if (secondLeft>0) {
+                                Double_Click('P');
+                                Simbol_elec = 'P';
+                            }
 
                         }
                     }
@@ -744,8 +748,10 @@ public class Lamina_OR extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('Q');
-                            Simbol_elec = 'Q';
+                            if (secondLeft>0) {
+                                Double_Click('Q');
+                                Simbol_elec = 'Q';
+                            }
                         }
                     }
                 });
@@ -767,8 +773,10 @@ public class Lamina_OR extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('R');
-                            Simbol_elec = 'R';
+                            if (secondLeft>0) {
+                                Double_Click('R');
+                                Simbol_elec = 'R';
+                            }
                         }
                     }
                 });

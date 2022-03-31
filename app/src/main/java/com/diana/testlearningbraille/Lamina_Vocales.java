@@ -254,7 +254,7 @@ public class Lamina_Vocales extends AppCompatActivity {
                 break;
 
             case 23:
-                mp = MediaPlayer.create(this, R.raw.lamina_a_e);
+                mp = MediaPlayer.create(this, R.raw.lamina_vocales);
                 mp.start();
                 break;
             case 24:
@@ -716,8 +716,10 @@ public class Lamina_Vocales extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('A');
-                            Simbol_elec = 'A';
+                            if (secondLeft>0) {
+                                Double_Click('A');
+                                Simbol_elec = 'A';
+                            }
                         }
                     }
                 });
@@ -739,8 +741,10 @@ public class Lamina_Vocales extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('E');
-                            Simbol_elec = 'E';
+                            if (secondLeft>0) {
+                                Double_Click('E');
+                                Simbol_elec = 'E';
+                            }
 
                         }
                     }
@@ -763,8 +767,10 @@ public class Lamina_Vocales extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('I');
-                            Simbol_elec = 'I';
+                            if (secondLeft>0) {
+                                Double_Click('I');
+                                Simbol_elec = 'I';
+                            }
                         }
                     }
                 });
@@ -786,8 +792,10 @@ public class Lamina_Vocales extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('O');
-                            Simbol_elec = 'O';
+                            if (secondLeft>0) {
+                                Double_Click('O');
+                                Simbol_elec = 'O';
+                            }
                         }
                     }
                 });
@@ -809,8 +817,10 @@ public class Lamina_Vocales extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('U');
-                            Simbol_elec = 'U';
+                            if (secondLeft>0) {
+                                Double_Click('U');
+                                Simbol_elec = 'U';
+                            }
                         }
                     }
                 });

@@ -528,6 +528,10 @@
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\alphabet_y.mp3"
     },
     {
+        "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_lamina_vocales.mp3.flat",
+        "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\lamina_vocales.mp3"
+    },
+    {
         "merged": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\build\\intermediates\\merged_res\\debug\\raw_loc_final_test.mp3.flat",
         "source": "C:\\Users\\JoseLuis\\Desktop\\Articulos Hapticos\\Android Studio Proyects\\TestLearningBraille\\app\\src\\main\\res\\raw\\loc_final_test.mp3"
     },

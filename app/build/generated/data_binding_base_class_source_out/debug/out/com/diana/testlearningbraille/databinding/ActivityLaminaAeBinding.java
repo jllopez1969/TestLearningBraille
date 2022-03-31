@@ -27,6 +27,9 @@ public final class ActivityLaminaAeBinding implements ViewBinding {
   public final ImageButton IniciarTest;
 
   @NonNull
+  public final ImageButton IniciarTestOff;
+
+  @NonNull
   public final EditText editTextTextPersonName;
 
   @NonNull
@@ -198,36 +201,37 @@ public final class ActivityLaminaAeBinding implements ViewBinding {
   public final TextView textView15;
 
   private ActivityLaminaAeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton IniciarTest, @NonNull EditText editTextTextPersonName,
-      @NonNull ImageButton imageButton1, @NonNull ImageButton imageButton10,
-      @NonNull ImageButton imageButton11, @NonNull ImageButton imageButton12,
-      @NonNull ImageButton imageButton13, @NonNull ImageButton imageButton14,
-      @NonNull ImageButton imageButton15, @NonNull ImageButton imageButton16,
-      @NonNull ImageButton imageButton17, @NonNull ImageButton imageButton18,
-      @NonNull ImageButton imageButton19, @NonNull ImageButton imageButton2,
-      @NonNull ImageButton imageButton20, @NonNull ImageButton imageButton21,
-      @NonNull ImageButton imageButton22, @NonNull ImageButton imageButton23,
-      @NonNull ImageButton imageButton24, @NonNull ImageButton imageButton25,
-      @NonNull ImageButton imageButton26, @NonNull ImageButton imageButton27,
-      @NonNull ImageButton imageButton28, @NonNull ImageButton imageButton29,
-      @NonNull ImageButton imageButton3, @NonNull ImageButton imageButton30,
-      @NonNull ImageButton imageButton4, @NonNull ImageButton imageButton40,
-      @NonNull ImageButton imageButton41, @NonNull ImageButton imageButton42,
-      @NonNull ImageButton imageButton43, @NonNull ImageButton imageButton45,
-      @NonNull ImageButton imageButton46, @NonNull ImageButton imageButton47,
-      @NonNull ImageButton imageButton48, @NonNull ImageButton imageButton49,
-      @NonNull ImageButton imageButton5, @NonNull ImageButton imageButton50,
-      @NonNull ImageButton imageButton52, @NonNull ImageButton imageButton53,
-      @NonNull ImageButton imageButton6, @NonNull ImageButton imageButton61,
-      @NonNull ImageButton imageButton62, @NonNull ImageButton imageButton63,
-      @NonNull ImageButton imageButton64, @NonNull ImageButton imageButton65,
-      @NonNull ImageButton imageButton7, @NonNull ImageButton imageButton8,
-      @NonNull ImageButton imageButton9, @NonNull ImageView imageView, @NonNull Switch switch1,
-      @NonNull TextView textView, @NonNull TextView textView10, @NonNull TextView textView11,
-      @NonNull TextView textView12, @NonNull TextView textView13, @NonNull TextView textView14,
-      @NonNull TextView textView15) {
+      @NonNull ImageButton IniciarTest, @NonNull ImageButton IniciarTestOff,
+      @NonNull EditText editTextTextPersonName, @NonNull ImageButton imageButton1,
+      @NonNull ImageButton imageButton10, @NonNull ImageButton imageButton11,
+      @NonNull ImageButton imageButton12, @NonNull ImageButton imageButton13,
+      @NonNull ImageButton imageButton14, @NonNull ImageButton imageButton15,
+      @NonNull ImageButton imageButton16, @NonNull ImageButton imageButton17,
+      @NonNull ImageButton imageButton18, @NonNull ImageButton imageButton19,
+      @NonNull ImageButton imageButton2, @NonNull ImageButton imageButton20,
+      @NonNull ImageButton imageButton21, @NonNull ImageButton imageButton22,
+      @NonNull ImageButton imageButton23, @NonNull ImageButton imageButton24,
+      @NonNull ImageButton imageButton25, @NonNull ImageButton imageButton26,
+      @NonNull ImageButton imageButton27, @NonNull ImageButton imageButton28,
+      @NonNull ImageButton imageButton29, @NonNull ImageButton imageButton3,
+      @NonNull ImageButton imageButton30, @NonNull ImageButton imageButton4,
+      @NonNull ImageButton imageButton40, @NonNull ImageButton imageButton41,
+      @NonNull ImageButton imageButton42, @NonNull ImageButton imageButton43,
+      @NonNull ImageButton imageButton45, @NonNull ImageButton imageButton46,
+      @NonNull ImageButton imageButton47, @NonNull ImageButton imageButton48,
+      @NonNull ImageButton imageButton49, @NonNull ImageButton imageButton5,
+      @NonNull ImageButton imageButton50, @NonNull ImageButton imageButton52,
+      @NonNull ImageButton imageButton53, @NonNull ImageButton imageButton6,
+      @NonNull ImageButton imageButton61, @NonNull ImageButton imageButton62,
+      @NonNull ImageButton imageButton63, @NonNull ImageButton imageButton64,
+      @NonNull ImageButton imageButton65, @NonNull ImageButton imageButton7,
+      @NonNull ImageButton imageButton8, @NonNull ImageButton imageButton9,
+      @NonNull ImageView imageView, @NonNull Switch switch1, @NonNull TextView textView,
+      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView12,
+      @NonNull TextView textView13, @NonNull TextView textView14, @NonNull TextView textView15) {
     this.rootView = rootView;
     this.IniciarTest = IniciarTest;
+    this.IniciarTestOff = IniciarTestOff;
     this.editTextTextPersonName = editTextTextPersonName;
     this.imageButton1 = imageButton1;
     this.imageButton10 = imageButton10;
@@ -317,6 +321,12 @@ public final class ActivityLaminaAeBinding implements ViewBinding {
       id = R.id.Iniciar_Test;
       ImageButton IniciarTest = ViewBindings.findChildViewById(rootView, id);
       if (IniciarTest == null) {
+        break missingId;
+      }
+
+      id = R.id.Iniciar_Test_off;
+      ImageButton IniciarTestOff = ViewBindings.findChildViewById(rootView, id);
+      if (IniciarTestOff == null) {
         break missingId;
       }
 
@@ -662,7 +672,7 @@ public final class ActivityLaminaAeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLaminaAeBinding((ConstraintLayout) rootView, IniciarTest,
+      return new ActivityLaminaAeBinding((ConstraintLayout) rootView, IniciarTest, IniciarTestOff,
           editTextTextPersonName, imageButton1, imageButton10, imageButton11, imageButton12,
           imageButton13, imageButton14, imageButton15, imageButton16, imageButton17, imageButton18,
           imageButton19, imageButton2, imageButton20, imageButton21, imageButton22, imageButton23,

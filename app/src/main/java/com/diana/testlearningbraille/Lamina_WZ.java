@@ -238,7 +238,7 @@ public class Lamina_WZ extends AppCompatActivity {
                 mp.start();
                 break;
             case 23:
-                mp = MediaPlayer.create(this, R.raw.lamina_a_e);
+                mp = MediaPlayer.create(this, R.raw.lamona_w_z);
                 mp.start();
                 break;
             case 24:
@@ -700,8 +700,10 @@ public class Lamina_WZ extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('W');
-                            Simbol_elec = 'W';
+                            if (secondLeft>0) {
+                                Double_Click('W');
+                                Simbol_elec = 'W';
+                            }
                         }
                     }
                 });
@@ -723,8 +725,10 @@ public class Lamina_WZ extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('X');
-                            Simbol_elec = 'X';
+                            if (secondLeft>0) {
+                                Double_Click('X');
+                                Simbol_elec = 'X';
+                            }
 
                         }
                     }
@@ -747,8 +751,10 @@ public class Lamina_WZ extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('Y');
-                            Simbol_elec = 'Y';
+                            if (secondLeft>0) {
+                                Double_Click('Y');
+                                Simbol_elec = 'Y';
+                            }
                         }
                     }
                 });
@@ -770,8 +776,10 @@ public class Lamina_WZ extends AppCompatActivity {
 
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
-                            Double_Click('Z');
-                            Simbol_elec = 'Z';
+                            if (secondLeft>0) {
+                                Double_Click('Z');
+                                Simbol_elec = 'Z';
+                            }
                         }
                     }
                 });
