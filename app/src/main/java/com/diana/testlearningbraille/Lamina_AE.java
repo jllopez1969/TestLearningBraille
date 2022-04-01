@@ -527,6 +527,8 @@ public class Lamina_AE extends AppCompatActivity {
         // Declariación de  Variable gráfica de Inicio Test
 
         ImageButton Iniciar_test = findViewById(R.id.Iniciar_Test);
+
+        //Declaración de variable gráfica de Interrupcióon de Test
         ImageButton Iniciar_test_off= findViewById(R.id.Iniciar_Test_off);
 
 

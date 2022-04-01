@@ -426,6 +426,15 @@
         android:translationY="100dp"
         app:srcCompat="@android:drawable/ic_lock_power_off"
         />
+    <ImageButton
+        android:id="@+id/Iniciar_Test_off"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@android:drawable/list_selector_background"
+        android:translationX="175dp"
+        android:translationY="100dp"
+        app:srcCompat="@android:drawable/ic_notification_overlay"
+        />
 
     <TextView
         android:id="@+id/textView12"

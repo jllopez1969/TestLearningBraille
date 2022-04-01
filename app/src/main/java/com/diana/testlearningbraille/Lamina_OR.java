@@ -494,13 +494,13 @@ public class Lamina_OR extends AppCompatActivity {
 
         Switch pin = findViewById(R.id.switch1);
 
-        // Selección de símbolo
-
 
 
         // Declariación de  Variable gráfica de Inicio Test
-
         ImageButton Iniciar_test = findViewById(R.id.Iniciar_Test);
+
+        //Declaración de variable gráfica de Interrupcióon de Test
+        ImageButton Iniciar_test_off= findViewById(R.id.Iniciar_Test_off);
 
 
         // Habilitación de la opción de vibración
@@ -562,6 +562,20 @@ public class Lamina_OR extends AppCompatActivity {
 
                     }});
 
+        Iniciar_test_off.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
+
+                        //Interrupción test - Botón emergencia
+                        Iniciar_test.setVisibility(View.VISIBLE);
+                        Iniciar_test.setEnabled(true);
+                        Iniciar_test_off.setVisibility((View.INVISIBLE));
+                        Iniciar_test_off.setEnabled(false);
+                        secondLeft=0;
+
+
+                    }});
+
         Iniciar_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -582,6 +596,9 @@ public class Lamina_OR extends AppCompatActivity {
                                     Activ_test = true;
                                     textView2.setText("Entrenamiento nº1");
                                     secondLeft = Time_slot;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(24);
                                     break;
                                 case 1:
@@ -596,6 +613,9 @@ public class Lamina_OR extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 1;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(25);
                                     break;
 
@@ -603,6 +623,9 @@ public class Lamina_OR extends AppCompatActivity {
                                     On = true;
                                     textView2.setText("Entrenamiento nº2");
                                     secondLeft = Time_slot;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(26);
                                     break;
 
@@ -618,12 +641,18 @@ public class Lamina_OR extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 2;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(27);
                                     break;
                                 case 4:
                                     On = true;
                                     textView2.setText("Entrenamiento nº3");
                                     secondLeft = Time_slot;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(28);
                                     break;
                                 case 5:
@@ -638,12 +667,18 @@ public class Lamina_OR extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 3;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(29);
                                     break;
                                 case 6:
                                     On = true;
                                     textView2.setText("Entrenamiento nº4");
                                     secondLeft = Time_slot;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(30);
                                     break;
                                 case 7:
@@ -658,6 +693,9 @@ public class Lamina_OR extends AppCompatActivity {
                                     }
                                     secondLeft = Time_slot;
                                     test_line = 4;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(31);
                                     break;
                                 case 8:
@@ -665,6 +703,9 @@ public class Lamina_OR extends AppCompatActivity {
                                     textView2.setText("Entrenamiento nº5");
                                     flag_sel = false;
                                     secondLeft = Time_slot;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(32);
                                     break;
 
@@ -679,6 +720,9 @@ public class Lamina_OR extends AppCompatActivity {
                                     Error = 0;
                                     secondLeft = Time_slot;
                                     test_line = 5;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
                                     Sound(33);
                                     break;
 
