@@ -932,7 +932,7 @@ public class Lamina_WZ extends AppCompatActivity {
                         } catch (Exception e) {
 
                         }
-                        Notification("Z", "Tema: Zorba el Griego", R.mipmap.png4, Pattern.pattern("Z"));
+                        Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
                     } else {
                         Sound(14);
                     }

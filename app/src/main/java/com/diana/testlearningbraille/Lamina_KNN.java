@@ -300,6 +300,12 @@ public class Lamina_KNN extends AppCompatActivity {
                 mp.start();
                 break;
 
+            case 34:
+                mp = MediaPlayer.create(this, R.raw.idprueba);
+                mp.start();
+                break;
+
+
         }
 
 
@@ -606,7 +612,8 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Create_file.setVisibility(View.VISIBLE);
                                     Status_test = 20;
                                     secondLeft = 0;
-                                    Sound(24);
+
+                                    Sound(34);
                                     break;
 
                                 case 0:
@@ -617,7 +624,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Iniciar_test.setEnabled(false);
                                     Iniciar_test_off.setVisibility(View.VISIBLE);
                                     Iniciar_test_off.setEnabled(true);
-                                    Sound(25);
+                                    Sound(24);
                                     break;
                                 case 1:
                                     On = true;
@@ -634,7 +641,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Iniciar_test.setEnabled(false);
                                     Iniciar_test_off.setVisibility(View.VISIBLE);
                                     Iniciar_test_off.setEnabled(true);
-                                    Sound(26);
+                                    Sound(25);
                                     break;
 
                                 case 2:
@@ -644,7 +651,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Iniciar_test.setEnabled(false);
                                     Iniciar_test_off.setVisibility(View.VISIBLE);
                                     Iniciar_test_off.setEnabled(true);
-                                    Sound(27);
+                                    Sound(26);
                                     break;
 
                                 case 3:
@@ -662,7 +669,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Iniciar_test.setEnabled(false);
                                     Iniciar_test_off.setVisibility(View.VISIBLE);
                                     Iniciar_test_off.setEnabled(true);
-                                    Sound(28);
+                                    Sound(27);
                                     break;
                                 case 4:
                                     On = true;
@@ -671,7 +678,7 @@ public class Lamina_KNN extends AppCompatActivity {
                                     Iniciar_test.setEnabled(false);
                                     Iniciar_test_off.setVisibility(View.VISIBLE);
                                     Iniciar_test_off.setEnabled(true);
-                                    Sound(29);
+                                    Sound(28);
                                     break;
                                 case 5:
                                     On = true;

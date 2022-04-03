@@ -589,6 +589,7 @@ public class Lamina_OR extends AppCompatActivity {
                                     Create_file.setVisibility(View.VISIBLE);
                                     Status_test = 20;
                                     secondLeft = 0;
+                                    Sound(34);
                                     break;
 
                                 case 0:
