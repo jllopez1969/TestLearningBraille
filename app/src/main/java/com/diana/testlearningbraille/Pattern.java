@@ -434,7 +434,7 @@ public class Pattern {
 
             case "3":
 
-                // Onomatopeya: Bonnie and clyde - Tema película
+                // Onomatopeya: Bonnie and Clyde melodía " Los Mustangs"
 
                 long[] pattern30 = {
 
@@ -464,7 +464,7 @@ public class Pattern {
 
                 long[] pattern32 = {
 
-                        // Onomatopeya:  "Big Band" - Greg Miller
+                        // Onomatopeya:  "Jail Rock" Elvis Presley
 
                         0, 200,
                         50, 800,
@@ -475,7 +475,7 @@ public class Pattern {
                 break;
 
             case "6":
-                // Onomatopeya:  Rock de carcel Elvis Presley
+                // Onomatopeya:  
 
                 long[] pattern33 = {
 
@@ -489,14 +489,20 @@ public class Pattern {
 
             case "7":
 
-                // Onomatopeya:  "Imagine" - Jhon Lennon
+                // Onomatopeya:  "Let It Be" The Beatles
 
                 long[] pattern34 = {
 
-                        0, 200,
-                        50, 800,
+                         0, 400,
                         50, 200,
+                        50, 200,
+                        50, 400,
+                        50, 200,
+                        50, 200,
+                        50, 400,
+                        50, 400,
                         50, 800,
+
                 };
                 pattern_result = pattern34;
                 break;
@@ -508,8 +514,9 @@ public class Pattern {
                 long[] pattern35 = {
 
 
-                        0, 200,
-                        50, 800,
+                         0, 200,
+                        50, 200,
+                        50, 200,
                         50, 200,
                         50, 800,
                 };
@@ -523,10 +530,18 @@ public class Pattern {
                 long[] pattern36 = {
 
 
-                        0, 200,
-                        50, 800,
+                         0, 200,
                         50, 200,
-                        50, 800,
+                        50, 200,
+                        50, 400,
+                        50, 400,
+                        50, 200,
+                        50, 200,
+                        50, 400,
+                        50, 200,
+                        50, 200,
+
+
                 };
                 pattern_result = pattern36;
                 break;
