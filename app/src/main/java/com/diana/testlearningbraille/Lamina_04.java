@@ -187,12 +187,12 @@ public class Lamina_04 extends AppCompatActivity {
 
         switch (code) {
             case 1:
-                mp = MediaPlayer.create(this, R.raw.a_pantera_rosa);
+                mp = MediaPlayer.create(this, R.raw.numero_cero);
                 mp.start();
                 break;
 
             case 2:
-                mp = MediaPlayer.create(this, R.raw.b_sirena_barco);
+                mp = MediaPlayer.create(this, R.raw.);
                 mp.start();
                 break;
 

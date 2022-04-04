@@ -393,7 +393,7 @@ public class Pattern {
                 pattern_result = pattern26;
                 break;
             case "Z":
-                // Onomatopa: Z en Morse
+                // Onomatopa: Z en Morse (-- -- . .)
 
                 long[] pattern27 = {
 
@@ -420,21 +420,22 @@ public class Pattern {
                 break;
 
             case "2":
-                // Onomatopeya: "Money Money" - Liza Minnelli, Joel Grey
+                // Onomatopeya: "Gotas de lluvia sobre mi cabeza" FRANCK POURCEL
 
                 long[] pattern29 = {
 
-                        0, 200,
-                        50, 800,
+                          0,200,
                         50, 200,
-                        50, 800,
+                        50, 100,
+                        50, 100,
+                        50, 200
                 };
                 pattern_result = pattern29;
                 break;
 
             case "3":
 
-                // Onomatopeya: Bonnie and Clyde melodía " Los Mustangs"
+                // Onomatopeya:“ Sound of Silens” Simon & Garfunken
 
                 long[] pattern30 = {
 
@@ -448,7 +449,7 @@ public class Pattern {
 
             case "4":
 
-                // Onomatopeya:  Las cuatro estaciones: Primavera - Vivaldi
+                // Onomatopeya:  "Las Cuatro estaciones: Primavera"  Vivaldi
 
                 long[] pattern31 = {
 
@@ -464,7 +465,7 @@ public class Pattern {
 
                 long[] pattern32 = {
 
-                        // Onomatopeya:  "Jail Rock" Elvis Presley
+                        // Onomatopeya:  "In the Mood" Glenn Miller
 
                         0, 200,
                         50, 800,
@@ -475,7 +476,7 @@ public class Pattern {
                 break;
 
             case "6":
-                // Onomatopeya:  
+                // Onomatopeya:   "Jail Rock" Elvis Presley
 
                 long[] pattern33 = {
 
@@ -509,7 +510,7 @@ public class Pattern {
 
             case "8":
 
-                // Onomatopeya: "La misión"   Ennio Moriconne
+                // Onomatopeya: "La Misión"   Ennio Moriconne
 
                 long[] pattern35 = {
 
@@ -525,7 +526,7 @@ public class Pattern {
 
             case "9":
 
-                // Onomatopeya: "Bajo el Mar" - Disney
+                // Onomatopeya: "Bajo el Mar: La Sirenita" - Disney
 
                 long[] pattern36 = {
 
@@ -548,7 +549,7 @@ public class Pattern {
 
             case "0":
 
-                //Onomatopeya: Cero en morse  -- -- -- -- --
+                //Onomatopeya: Cero en morse  (-- -- -- -- --)
 
                 long[] pattern37 = {
 
