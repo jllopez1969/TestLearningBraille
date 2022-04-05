@@ -187,52 +187,52 @@ public class Lamina_04 extends AppCompatActivity {
 
         switch (code) {
             case 1:
-                mp = MediaPlayer.create(this, R.raw.numero_cero);
+                mp = MediaPlayer.create(this, R.raw.cero);
                 mp.start();
                 break;
 
             case 2:
-                mp = MediaPlayer.create(this, R.raw.);
+                mp = MediaPlayer.create(this, R.raw.uno);
                 mp.start();
                 break;
 
             case 3:
-                mp = MediaPlayer.create(this, R.raw.c_galope_caballo);
+                mp = MediaPlayer.create(this, R.raw.dos);
                 mp.start();
                 break;
 
             case 4:
-                mp = MediaPlayer.create(this, R.raw.d_disparo_arma);
+                mp = MediaPlayer.create(this, R.raw.tres);
                 mp.start();
                 break;
 
             case 5:
-                mp = MediaPlayer.create(this, R.raw.e_maquina_de_escribir);
+                mp = MediaPlayer.create(this, R.raw.cuatro);
                 mp.start();
                 break;
 
             case 11:
-                mp = MediaPlayer.create(this, R.raw.alphabet_a);
+                mp = MediaPlayer.create(this, R.raw.numero_cero);
                 mp.start();
                 break;
 
             case 12:
-                mp = MediaPlayer.create(this, R.raw.alphabet_b);
+                mp = MediaPlayer.create(this, R.raw.numero_uno);
                 mp.start();
                 break;
 
             case 13:
-                mp = MediaPlayer.create(this, R.raw.alphabet_c);
+                mp = MediaPlayer.create(this, R.raw.numero_dos);
                 mp.start();
                 break;
 
             case 14:
-                mp = MediaPlayer.create(this, R.raw.alphabet_d);
+                mp = MediaPlayer.create(this, R.raw.numero_tres);
                 mp.start();
                 break;
 
             case 15:
-                mp = MediaPlayer.create(this, R.raw.alphabet_e);
+                mp = MediaPlayer.create(this, R.raw.numero_cuatro);
                 mp.start();
                 break;
 
@@ -253,7 +253,7 @@ public class Lamina_04 extends AppCompatActivity {
 
 
             case 23:
-                mp = MediaPlayer.create(this, R.raw.lamina_a_e);
+                mp = MediaPlayer.create(this, R.raw.lamina_04);
                 mp.start();
                 break;
             case 24:

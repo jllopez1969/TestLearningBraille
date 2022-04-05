@@ -250,7 +250,7 @@ public class Lamina_59 extends AppCompatActivity {
 
 
                 case 23:
-                    mp = MediaPlayer.create(this, R.raw.lamina_a_e);
+                    mp = MediaPlayer.create(this, R.raw.lamina_59);
                     mp.start();
                     break;
                 case 24:
