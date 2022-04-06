@@ -412,9 +412,9 @@ public class Pattern {
                 long[] pattern28 = {
 
                         0, 200,
-                        50, 800,
-                        50, 200,
-                        50, 800,
+                        50, 1800,
+                        50, 600,
+                        50, 1200,
                 };
                 pattern_result = pattern28;
                 break;
@@ -424,25 +424,33 @@ public class Pattern {
 
                 long[] pattern29 = {
 
-                          0,200,
+                          0,600,
+                        50, 400,
                         50, 200,
-                        50, 100,
-                        50, 100,
-                        50, 200
+                        50, 400,
+                        50, 200,
+                        50, 400,
+                        50, 200,
+                        50, 400
+
                 };
                 pattern_result = pattern29;
                 break;
 
             case "3":
 
-                // Onomatopeya:“ Sound of Silens” Simon & Garfunken
+                // Onomatopeya:“ Sound of Silence” Simon & Garfunken
 
                 long[] pattern30 = {
 
-                        0, 200,
-                        50, 800,
-                        50, 200,
-                        50, 800,
+                          0, 200,
+                         50, 200,
+                        100, 200,
+                         50, 200,
+                        100, 200,
+                         50, 200,
+                        100, 800
+
                 };
                 pattern_result = pattern30;
                 break;
@@ -453,10 +461,14 @@ public class Pattern {
 
                 long[] pattern31 = {
 
-                        0, 200,
-                        50, 800,
-                        50, 200,
-                        50, 800,
+                         0, 300,
+                        100, 300,
+                        50, 300,
+                        50, 300,
+                        50, 150,
+                        50, 150,
+                        50, 600,
+
                 };
                 pattern_result = pattern31;
                 break;
@@ -468,9 +480,11 @@ public class Pattern {
                         // Onomatopeya:  "In the Mood" Glenn Miller
 
                         0, 200,
-                        50, 800,
                         50, 200,
-                        50, 800,
+                        50, 300,
+                        200, 100,
+                        50, 500,
+
                 };
                 pattern_result = pattern32;
                 break;
@@ -481,9 +495,9 @@ public class Pattern {
                 long[] pattern33 = {
 
                         0, 200,
-                        50, 800,
-                        50, 200,
-                        50, 800,
+                        50, 400,
+                        200, 200,
+                        50, 400,
                 };
                 pattern_result = pattern33;
                 break;
@@ -517,7 +531,7 @@ public class Pattern {
 
                          0, 200,
                         50, 200,
-                        50, 200,
+                        50, 400,
                         50, 200,
                         50, 800,
                 };
@@ -534,11 +548,11 @@ public class Pattern {
                          0, 200,
                         50, 200,
                         50, 200,
-                        50, 400,
-                        50, 400,
+                        50, 100,
+                        50, 100,
                         50, 200,
                         50, 200,
-                        50, 400,
+                        50, 100,
                         50, 200,
                         50, 200,
 

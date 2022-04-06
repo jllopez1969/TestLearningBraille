@@ -84,7 +84,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="180dp"
-        android:translationY="70dp"
+        android:translationY="75dp"
         />
 
     <ImageButton
@@ -92,9 +92,68 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="1080dp"
-        android:translationY="70dp"
+        android:translationX="1100dp"
+        android:translationY="75dp"
         />
+
+    // Columna de Respuestas
+
+    <ImageButton
+        android:id="@+id/imageButton61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Numero_5"
+        android:translationX="1150dp"
+        android:translationY="200dp"
+        app:srcCompat="@drawable/png35"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imageButton62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Numero_6"
+        android:translationX="1150dp"
+        android:translationY="300dp"
+        app:srcCompat="@drawable/png36"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Numero_7"
+        android:translationX="1150dp"
+        android:translationY="400dp"
+        app:srcCompat="@drawable/png37"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/Numero_8"
+        android:translationX="1150dp"
+        android:translationY="500dp"
+        app:srcCompat="@drawable/png38"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imageButton65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Numero_9"
+        android:translationX="1150dp"
+        android:translationY="600dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:srcCompat="@drawable/png39"/>
+
 
     // 1º Intento
 
@@ -146,7 +205,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="180dp"
-        android:translationY="232dp"
+        android:translationY="240dp"
         />
 
     <ImageButton
@@ -154,8 +213,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="1080dp"
-        android:translationY="232dp"
+        android:translationX="1100dp"
+        android:translationY="240dp"
         />
 
     // 2º Intento
@@ -207,15 +266,15 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="180dp"
-        android:translationY="325dp"
+        android:translationY="340dp"
         />
     <ImageButton
         android:id="@+id/imageButton46"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="1080dp"
-        android:translationY="325dp"
+        android:translationX="1100dp"
+        android:translationY="340dp"
         />
 
     // 3º intento
@@ -269,16 +328,16 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="190dp"
-        android:translationY="415dp"
+        android:translationX="180dp"
+        android:translationY="425dp"
         />
     <ImageButton
         android:id="@+id/imageButton48"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="1080dp"
-        android:translationY="415dp"
+        android:translationX="1100dp"
+        android:translationY="425dp"
         />
 
     // 4º Intento
@@ -290,8 +349,7 @@
         android:translationX="220dp"
         android:translationY="500dp"
         app:srcCompat="@drawable/png39"
-        tools:layout_editor_absoluteX="370dp"
-        tools:layout_editor_absoluteY="500dp" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton22"
@@ -335,15 +393,15 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="180dp"
-        android:translationY="500dp"
+        android:translationY="510dp"
         />
     <ImageButton
         android:id="@+id/imageButton50"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="1080dp"
-        android:translationY="500dp"
+        android:translationX="1100dp"
+        android:translationY="510dp"
         />
 
 
@@ -355,37 +413,116 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@android:drawable/list_selector_background"
-        android:translationX="100dp"
+        android:translationX="50dp"
         android:translationY="100dp"
         app:srcCompat="@android:drawable/ic_lock_power_off"
         />
 
+    <ImageButton
+        android:id="@+id/Iniciar_Test_off"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@android:drawable/list_selector_background"
+        android:translationX="125dp"
+        android:translationY="100dp"
+        app:srcCompat="@android:drawable/ic_notification_overlay"
+        />
+
     <TextView
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/textView12"
         style="@android:style/Widget.DeviceDefault.Light.TextView"
-        android:layout_width="203dp"
-        android:layout_height="39dp"
+        android:layout_width="569dp"
+        android:layout_height="33dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Linea Activa: "
+        android:text="Línea Activa: Líneas Inactivas"
         android:textIsSelectable="false"
         android:textSize="24sp"
-        android:translationX="370dp"
+        android:textStyle="bold"
+        android:translationX="270dp"
         android:translationY="151dp"
         android:typeface="serif"
         />
 
     <TextView
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="218dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Lámina: "
-        android:textSize="24sp"
-        android:translationX="620dp"
+        android:id="@+id/textView10"
+        android:layout_width="139dp"
+        android:layout_height="107dp"
+        android:text="0"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:translationX="950dp"
         android:translationY="150dp"
         />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="139dp"
+        android:layout_height="107dp"
+        android:text="Segs"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:translationX="1000dp"
+        android:translationY="150dp"
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="230dp"
+        android:layout_height="89dp"
+        android:text="Cronómetro:"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:translationX="700dp"
+        android:translationY="150dp"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="212dp"
+        android:layout_height="100dp"
+        android:text="Patrones de Vibración: "
+        android:textSize="24dp"
+        android:translationX="25dp"
+        android:translationY="150dp"
+        />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id. Prueba"
+        android:textSize="20dp"
+        android:translationX="50dp"
+        android:translationY="300dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="151dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:text="Prueba_"
+        android:translationX="45dp"
+        android:translationY="340dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:translationX="100dp"
+        android:translationY="390dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:translationX="50dp"
+        android:translationY="330dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

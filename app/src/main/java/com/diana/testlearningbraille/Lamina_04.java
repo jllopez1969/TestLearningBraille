@@ -500,11 +500,6 @@ public class Lamina_04 extends AppCompatActivity {
         ImageButton button23 = findViewById(R.id.imageButton23);
         ImageButton button24 = findViewById(R.id.imageButton24);
         ImageButton button25 = findViewById(R.id.imageButton25);
-        ImageButton button26 = findViewById(R.id.imageButton26);
-        ImageButton button27 = findViewById(R.id.imageButton27);
-        ImageButton button28 = findViewById(R.id.imageButton28);
-        ImageButton button29 = findViewById(R.id.imageButton29);
-        ImageButton button30 = findViewById(R.id.imageButton30);
 
 
         ImageButton button61 = findViewById(R.id.imageButton61);
@@ -775,8 +770,8 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('A');
-                                Simbol_elec = 'A';
+                                Double_Click('0');
+                                Simbol_elec = '0';
                             }
                         }
                     }
@@ -800,8 +795,8 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('B');
-                                Simbol_elec = 'B';
+                                Double_Click('1');
+                                Simbol_elec = '1';
                             }
 
                         }
@@ -826,8 +821,8 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('C');
-                                Simbol_elec = 'C';
+                                Double_Click('2');
+                                Simbol_elec = '2';
                             }
                         }
                     }
@@ -851,8 +846,8 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('D');
-                                Simbol_elec = 'D';
+                                Double_Click('3');
+                                Simbol_elec = '3';
                             }
                         }
                     }
@@ -876,8 +871,8 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('E');
-                                Simbol_elec = 'E';
+                                Double_Click('4');
+                                Simbol_elec = '4';
                             }
                         }
                     }
@@ -895,7 +890,7 @@ public class Lamina_04 extends AppCompatActivity {
         //**************************************************************************************
         //  linea de Entrenamiento
         //vibra N milisegundos
-        //  SIGNO ""A""
+        //  SIGNO "0"
 
         button1.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
@@ -909,7 +904,7 @@ public class Lamina_04 extends AppCompatActivity {
                         } catch (Exception e) {
 
                         }
-                        Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
+                        Notification("0", "Cero en Morse", R.mipmap.png30, Pattern.pattern("0"));
                     }else
                     {
                         Sound(11);
@@ -919,7 +914,7 @@ public class Lamina_04 extends AppCompatActivity {
             }
         });
 
-        //SIGNO "B"
+        //SIGNO "1"
 
 
         button2.setOnLongClickListener(new View.OnLongClickListener() {
@@ -935,7 +930,7 @@ public class Lamina_04 extends AppCompatActivity {
                         } catch (Exception e) {
 
                         }
-                        Notification("B", "Sirena de Barco  Niebla", R.mipmap.png2, Pattern.pattern("B"));
+                        Notification("1","La muerte tenía un precio - Ennio Moricone",R.mipmap.png31,Pattern.pattern("1") );
                     }else
                     {
                         Sound(12);
@@ -944,7 +939,7 @@ public class Lamina_04 extends AppCompatActivity {
                 }
                 return false;
             }});
-        //SIGNO ""C""
+        //SIGNO "2"
 
         button3.setOnLongClickListener(new View.OnLongClickListener() {
 
@@ -954,11 +949,11 @@ public class Lamina_04 extends AppCompatActivity {
                         Sound(3);
                         try {
                             //Retardo
-                            Thread.sleep(2500);
+                            Thread.sleep(4000);
                         } catch (Exception e) {
 
                         }
-                        Notification("C", "Galope de caballo", R.mipmap.png3, Pattern.pattern("C"));
+                        Notification("2", "Gotas de lluvia - FRANCK POURCEL", R.mipmap.png32, Pattern.pattern("2"));
                     } else {
                         Sound(13);
                     }
@@ -968,7 +963,7 @@ public class Lamina_04 extends AppCompatActivity {
             }
         });
 
-        // Letra ""D""
+        // Signo "3"
 
         button4.setOnLongClickListener(new View.OnLongClickListener() {
 
@@ -978,11 +973,11 @@ public class Lamina_04 extends AppCompatActivity {
                         Sound(4);
                         try {
                             //Retardo
-                            Thread.sleep(2000);
+                            Thread.sleep(4000);
                         } catch (Exception e) {
 
                         }
-                        Notification("D", "Disparo arma de fuego", R.mipmap.png4, Pattern.pattern("D"));
+                        Notification("3", "Sound of Silence - Simon & Garfunken", R.mipmap.png2, Pattern.pattern("3"));
                     } else {
                         Sound(14);
                     }
@@ -991,7 +986,7 @@ public class Lamina_04 extends AppCompatActivity {
 
             }
         });
-        //SIGNO ""E""
+        //SIGNO "4"
 
         button5.setOnLongClickListener(new View.OnLongClickListener() {
 
@@ -1005,7 +1000,7 @@ public class Lamina_04 extends AppCompatActivity {
                         } catch (Exception e) {
 
                         }
-                        Notification("E", "Máquina de Escribir", R.mipmap.png5, Pattern.pattern("E"));
+                        Notification("4", "Las 4 estaciones: Primavera - Vivaldi", R.mipmap.png34, Pattern.pattern("4"));
                     } else {
                         Sound(15);
                     }
@@ -1017,51 +1012,49 @@ public class Lamina_04 extends AppCompatActivity {
         // Primera linea
         // Test en primera linea
         //vibra N milisegundos
-        //SIGNO ""B""
+        //SIGNO "0"
 
 
         button6.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft>0)) {
                     if (pin.isChecked()){
-                        Notification("B", "Sirena de Barco  Niebla",R.mipmap.png2,Pattern.pattern("B") );
+                        Notification("0", "Cero en Morse", R.mipmap.png30, Pattern.pattern("0"));
                     }
-                    Simbol = 'B';
+                    Simbol = '0';
                     flag_sel= true;
                 }
                 return false;
             }
         });
 
-        //SIGNO "C"
-
-
+        //SIGNO "4"
         button7.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft>0)) {
                     if (pin.isChecked()){
-                        Notification("C","Galope de caballo", R.mipmap.png3,Pattern.pattern("C") );
+                        Notification("4", "Las 4 estaciones: Primavera - Vivaldi", R.mipmap.png34, Pattern.pattern("4"));
                     }
-                    Simbol = 'C';
+                    Simbol = '4';
                     flag_sel= true;
                 }
                 return false;
             }});
-        //SIGNO ""E""
+        //SIGNO "2"
 
         button8.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1)& (secondLeft>0)) {
                     if (pin.isChecked()){
-                        Notification("E", "Máquina de Escribir", R.mipmap.png5,Pattern.pattern("E") );
+                        Notification("2", "Gotas de lluvia  FRANCK POURCEL", R.mipmap.png32, Pattern.pattern("2"));
                     }
-                    Simbol = 'E';
+                    Simbol = '2';
                     flag_sel= true;
                 }
                 return false;
             }});
 
-        // Letra ""A""
+        // Símbolo "3"
 
 
 
@@ -1069,23 +1062,23 @@ public class Lamina_04 extends AppCompatActivity {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1)& (secondLeft>0)) {
                     if (pin.isChecked()){
-                        Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
+                        Notification("3", "Sound of Silence - Simon & Garfunken", R.mipmap.png2, Pattern.pattern("3"));
                     }
-                    Simbol = 'A';
+                    Simbol = '3';
                     flag_sel= true;
                 }
                 return false;
             }});
 
-        // Signo "D"
+        // Signo "1"
 
         button10.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1)&& (secondLeft>0)) {
                     if (pin.isChecked()){
-                        Notification("D","Disparo arma de fuego",R.mipmap.png4,Pattern.pattern("D") );
+                        Notification("1","La muerte tenía un precio - Ennio Moricone",R.mipmap.png31,Pattern.pattern("1") );
                     }
-                    Simbol = 'D';
+                    Simbol = '1';
                     flag_sel= true;
                 }
                 return false;
@@ -1095,7 +1088,7 @@ public class Lamina_04 extends AppCompatActivity {
 // Test en la segunda linea
 
         //vibra N milisegundos
-        //SIGNO ""D""
+        //SIGNO "4"
 
 
         button11.setOnLongClickListener(
@@ -1103,9 +1096,9 @@ public class Lamina_04 extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)){
                             if (pin.isChecked()) {
-                                Notification("D", "Disparo arma de fuego", R.mipmap.png4, Pattern.pattern("D"));
+                                Notification("4", "Las 4 estaciones: Primavera - Vivaldi", R.mipmap.png34, Pattern.pattern("4"));
                             }
-                            Simbol = 'D';
+                            Simbol = '4';
                             flag_sel= true;
                         }
                         return false;
@@ -1119,54 +1112,54 @@ public class Lamina_04 extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
+                                Notification("1","La muerte tenía un precio - Ennio Moricone",R.mipmap.png31,Pattern.pattern("1") );
                             }
-                            Simbol= 'A';
+                            Simbol= '1';
                             flag_sel= true;
                         }
                         return false;
                     }});
-        //SIGNO ""C""
+        //SIGNO "2"
 
         button13.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("C", "Galope de caballo", R.mipmap.png3, Pattern.pattern("C"));
+                                Notification("2", "Tema - Pink Panter", R.mipmap.png32, Pattern.pattern("2"));
                             }
-                            Simbol = 'C';
+                            Simbol = '2';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
-        // Letra ""B""
+        // Letra "3"
 
         button14.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("B", "Sirena de Barco  Niebla",R.mipmap.png2,Pattern.pattern("B") );
+                                Notification("3", "Sound of Silence - Simon & Garfunken", R.mipmap.png2, Pattern.pattern("3"));
                             }
-                            Simbol= 'B';
+                            Simbol= '3';
                             flag_sel= true;
                         }
 
                         return false;
                     }});
 
-        //SIGNO ""E""
+        //SIGNO "0"
 
         button15.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("E", "Máquina de Escribir", R.mipmap.png5, Pattern.pattern("E"));
+                                Notification("0", "Cero en Morse", R.mipmap.png30, Pattern.pattern("0"));
                             }
-                            Simbol = 'E';
+                            Simbol = '0';
                             flag_sel= true;
                         }
                         return false;
@@ -1176,53 +1169,53 @@ public class Lamina_04 extends AppCompatActivity {
 //******************************************
 // Test en la tercera linea
 
-        //SIGNO "C"
+        //SIGNO "3"
 
         button16.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("C","Galope de caballo", R.mipmap.png3,Pattern.pattern("C") );
+                                Notification("3", "Sound of Silence - Simon & Garfunken", R.mipmap.png2, Pattern.pattern("3"));
                             }
-                            Simbol = 'C';
+                            Simbol = '3';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
-        //SIGNO "D"
+        //SIGNO "1"
 
         button17.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("D", "Disparo arma de fuego", R.mipmap.png4, Pattern.pattern("D"));
+                                Notification("1","La muerte tenía un precio - Ennio Moricone",R.mipmap.png31,Pattern.pattern("1") );
                             }
-                            Simbol = 'D';
+                            Simbol = '1';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
-        //SIGNO ""A""
+        //SIGNO "4"
 
         button18.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
+                                Notification("4", "Las 4 estaciones: Primavera - Vivaldi", R.mipmap.png34, Pattern.pattern("4"));
                             }
-                            Simbol = 'A';
+                            Simbol = '4';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
 
-        // Letra ""E""
+        // Letra "0"
 
         button19.setOnLongClickListener(
                 new View.OnLongClickListener() {
@@ -1230,24 +1223,24 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 5)& (secondLeft>0)) {
                             if (pin.isChecked()) {
 
-                                Notification("E", "Máquina de Escribir", R.mipmap.png5, Pattern.pattern("E"));
+                                Notification("0", "Cero en Morse", R.mipmap.png30, Pattern.pattern("0"));
                             }
-                            Simbol = 'E';
+                            Simbol = '0';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
-        //SIGNO ""B""
+        //SIGNO "2"
 
         button20.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("B", "Sirena de Barco  Niebla", R.mipmap.png2, Pattern.pattern("B"));
+                                Notification("2", "Tema - Pink Panter", R.mipmap.png32, Pattern.pattern("2"));
                             }
-                            Simbol = 'B';
+                            Simbol = '2';
                             flag_sel= true;
                         }
                         return false;
@@ -1257,167 +1250,84 @@ public class Lamina_04 extends AppCompatActivity {
 //******************************************
 // Test en la cuarta linea
 
-        //SIGNO ""C""
 
-        button21.setOnLongClickListener(
-                new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
-                        if ((Status_test == 7)& (secondLeft>0)) {
-                            if (pin.isChecked()) {
-                                Notification("C","Galope de caballo", R.mipmap.png3,Pattern.pattern("C") );
-                            }
-                            Simbol = 'C';
-                            flag_sel= true;
-                        }
-                        return false;
-                    }});
-
-        //SIGNO "A"
-
-        button22.setOnLongClickListener(
-                new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
-                        if ((Status_test == 7)& (secondLeft>0)) {
-                            if (pin.isChecked()) {
-
-                                Notification("A", "Tema - Pink Panter", R.mipmap.png1,Pattern.pattern("A") );
-                            }
-                            Simbol = 'A';
-                            flag_sel= true;
-                        }
-                        return false;
-                    }});
-
-        //SIGNO ""E""
-
-        button23.setOnLongClickListener(
-                new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
-                        if ((Status_test == 7)& (secondLeft>0)) {
-                            if (pin.isChecked()) {
-
-                                Notification("E", "Máquina de Escribir", R.mipmap.png5, Pattern.pattern("E"));
-                            }
-                            Simbol = 'E';
-                            flag_sel= true;
-                        }
-                        return false;
-                    }});
-
-        // Letra ""B""
-
-
-        button24.setOnLongClickListener(
-                new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
-                        if ((Status_test == 7)& (secondLeft>0)) {
-                            if (pin.isChecked()) {
-                                Notification("B", "Sirena de Barco  Niebla", R.mipmap.png2, Pattern.pattern("B"));
-                            }
-                            Simbol = 'B';
-                            flag_sel= true;
-                        }
-                        return false;
-                    }});
-
-
-
-
-        //SIGNO ""D""
-
-        button25.setOnLongClickListener(
-                new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
-                        if ((Status_test == 7)& (secondLeft>0)) {
-                            if (pin.isChecked()) {
-
-                                Notification("D", "Disparo arma de fuego", R.mipmap.png4, Pattern.pattern("D"));
-                            }
-                            Simbol = 'D';
-                            flag_sel= true;
-                        }
-                        return false;
-                    }});
-
-//********************************************
-// Test en la quinta linea
 
         //vibra N milisegundos
-        //SIGNO ""A""
+        //SIGNO "2"
 
 
-        button26.setOnLongClickListener(
+        button21.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
                             if (pin.isChecked()) {
 
-                                Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
+                                Notification("2", "Gotas de lluvia - FRANCK POURCEL", R.mipmap.png32, Pattern.pattern("2"));
                             }
-                            Simbol = 'A';
+                            Simbol = '2';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
-        //SIGNO "B"
+        //SIGNO "3"
 
-        button27.setOnLongClickListener(
+        button22.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((secondLeft>0) & (Status_test == 9)) {
                             if (pin.isChecked()) {
-                                Notification("B", "Sirena de Barco  Niebla", R.mipmap.png2, Pattern.pattern("B"));
+                                Notification("3", "Sound of Silence - Simon & Garfunken", R.mipmap.png2, Pattern.pattern("3"));
                             }
-                            Simbol = 'B';
+                            Simbol = '3';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
-        //SIGNO "E"
+        //SIGNO "0"
 
-        button28.setOnLongClickListener(
+        button23.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft>0)) {
                             if (pin.isChecked()) {
 
-                                Notification("E", "Galope de caballo", R.mipmap.png3, Pattern.pattern("E"));
+                                Notification("0", "Cero en Morse", R.mipmap.png30, Pattern.pattern("0"));
                             }
-                            Simbol = 'E';
+                            Simbol = '0';
                             flag_sel= true;
                         }
                         return false;
                     }});
 
-        // Letra ""D""
+        // Letra "1"
 
-        button29.setOnLongClickListener(
+        button24.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
                             if (pin.isChecked()) {
                             }
-                            Notification("D","Disparo arma de fuego",R.mipmap.png4,Pattern.pattern("D") );
+                            Notification("1","La muerte tenía un precio - Ennio Moricone",R.mipmap.png31,Pattern.pattern("1") );
                         }
-                        Simbol = 'D';
+                        Simbol = '1';
                         flag_sel= true;
                         return false;
 
                     }});
 
-        //SIGNO "C"
+        //SIGNO "4"
 
-        button30.setOnLongClickListener(
+        button25.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
                             if (pin.isChecked()) {
-                                Notification("C", "Galope de caballo", R.mipmap.png3, Pattern.pattern("C"));
+                                Notification("4", "Las 4 estaciones: Primavera - Vivaldi", R.mipmap.png34, Pattern.pattern("4"));
                             }
 
-                            Simbol = 'C';
+                            Simbol = '4';
                             flag_sel = true;
                         }
                         return false;
