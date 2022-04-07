@@ -71,8 +71,8 @@ public class Pattern {
                 pattern_result = pattern5;
                 break;
             case "F":
-                // Onomatopeya:  Sonido del Frailecillo
-                // (Ritmo de martinete tac tac tac ...tac)
+                // Onomatopeya:  Tema: Esto es África (Shakira)
+
 
                 long[] pattern6 = {
                         //sleep//vibrate/Largo
@@ -531,7 +531,7 @@ public class Pattern {
 
                          0, 200,
                         50, 200,
-                        50, 400,
+                        50, 200,
                         50, 200,
                         50, 800,
                 };
