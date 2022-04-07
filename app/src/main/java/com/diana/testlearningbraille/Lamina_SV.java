@@ -364,6 +364,13 @@ public class Lamina_SV extends AppCompatActivity {
                         textView.setText("" + secondLeft);
                         if ((secondLeft < 1) & On) {
                             textView2.setText("Fin del test");
+                            if (Success < 5 & (Status_test == 1|Status_test == 3|Status_test == 5|Status_test == 7|Status_test == 9))
+                            {
+                                WriteFileTest File = new WriteFileTest();
+                                File.Write_Text_File(file_out, "- End line ( not completed) ::" + test_line +"\n");
+
+                            }
+
                             secondLeft = Time_slot;
                             On = false;
 
@@ -399,7 +406,7 @@ public class Lamina_SV extends AppCompatActivity {
                                     //textView3.setText(Status_test);
                                     break;
                                 case 7:
-                                    Status_test = 8;
+                                    Status_test = 0;
                                     //textView3.setText(Status_test);
                                     break;
                                 case 8:

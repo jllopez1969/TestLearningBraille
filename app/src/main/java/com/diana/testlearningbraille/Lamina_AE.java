@@ -384,7 +384,7 @@ public class Lamina_AE extends AppCompatActivity {
                             if (Success < 5 & (Status_test == 1|Status_test == 3|Status_test == 5|Status_test == 7|Status_test == 9))
                             {
                                 WriteFileTest File = new WriteFileTest();
-                                File.Write_Text_File(file_out, "- End line ( it haven´t completed) ::" + test_line +"\n");
+                                File.Write_Text_File(file_out, "- End line ( not completed) ::" + test_line +"\n");
 
                             }
                             secondLeft = Time_slot;

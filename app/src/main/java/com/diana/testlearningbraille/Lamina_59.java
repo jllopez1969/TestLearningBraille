@@ -379,7 +379,7 @@ public class Lamina_59 extends AppCompatActivity {
                                 textView2.setText("Fin del test");
                                 if (Success < 5 & (Status_test == 1 | Status_test == 3 | Status_test == 5 | Status_test == 7 | Status_test == 9)) {
                                     WriteFileTest File = new WriteFileTest();
-                                    File.Write_Text_File(file_out, "- End line ( it haven´t completed) ::" + test_line + "\n");
+                                    File.Write_Text_File(file_out, "- End line ( not completed) ::" + test_line + "\n");
 
                                 }
                                 secondLeft = Time_slot;
@@ -417,17 +417,10 @@ public class Lamina_59 extends AppCompatActivity {
                                         //textView3.setText(Status_test);
                                         break;
                                     case 7:
-                                        Status_test = 8;
-                                        //textView3.setText(Status_test);
-                                        break;
-                                    case 8:
-                                        Status_test = 9;
-                                        //textView3.setText(Status_test);
-                                        break;
-                                    case 9:
                                         Status_test = 0;
                                         //textView3.setText(Status_test);
                                         break;
+
 
                                 }
 
@@ -721,31 +714,7 @@ public class Lamina_59 extends AppCompatActivity {
                                     Iniciar_test_off.setEnabled(true);
                                     Sound(31);
                                     break;
-                                case 8:
-                                    On = true;
-                                    textView2.setText("Entrenamiento nº5");
-                                    flag_sel = false;
-                                    secondLeft = Time_slot;
 
-                                    Sound(32);
-                                    break;
-
-                                case 9:
-                                    On = true;
-                                    textView2.setText("Test Linea 5º");
-                                    if (Activ_test) {
-                                        WriteFileTest File5 = new WriteFileTest();
-                                        File5.Write_Text_File(file_out, " - Line 5 ;\n");
-                                    }
-                                    Success = 0;
-                                    Error = 0;
-                                    secondLeft = Time_slot;
-                                    test_line = 5;
-                                    Iniciar_test.setEnabled(false);
-                                    Iniciar_test_off.setVisibility(View.VISIBLE);
-                                    Iniciar_test_off.setEnabled(true);
-                                    Sound(33);
-                                    break;
 
                             }
                         }
