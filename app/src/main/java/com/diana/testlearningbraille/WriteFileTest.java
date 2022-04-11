@@ -1,9 +1,7 @@
 package com.diana.testlearningbraille;
 
-import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -18,7 +16,7 @@ public class WriteFileTest {
     /** FORMA 1 DE ESCRITURA **/
 
 
-    public void Create_file_text(String fileout, String text, Context context, boolean creado) {
+    public void Create_file_text(String fileout, String text) {
 
         File raiz = Environment.getExternalStorageDirectory();
         if (raiz.canWrite()) {
@@ -29,15 +27,15 @@ public class WriteFileTest {
                     FileWriter fichero = new FileWriter(file, true);
                     fichero.write(text + "\n");
                     fichero.close();
-                    creado = true;
+                    //creado = true;
 
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
 
             } else {
-                Toast.makeText(context, "Fichero ya existente: Cambie el nombre de fichero", Toast.LENGTH_SHORT).show();
-                creado = false;
+               // Toast.makeText(context, "Fichero ya existente: Cambie el nombre de fichero", Toast.LENGTH_SHORT).show();
+               // creado = false;
             }
         }
 

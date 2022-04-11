@@ -576,7 +576,7 @@ public class Lamina_04 extends AppCompatActivity {
                             // Crear fichero log *.txt
                             //   *** Falta control de presencia fichero creado **
                             WriteFileTest File = new WriteFileTest();
-                            File.Write_Text_File(file_out,Cabecera);
+                            File.Create_file_text(file_out,Cabecera);
 
                         }
 

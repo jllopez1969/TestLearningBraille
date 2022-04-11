@@ -582,7 +582,7 @@ public class Lamina_FJ extends AppCompatActivity {
                             // Crear fichero log *.txt
 
                             WriteFileTest File = new WriteFileTest();
-                            File.Write_Text_File(file_out,Cabecera);
+                            File.Create_file_text(file_out,Cabecera);
 
                         }
 
