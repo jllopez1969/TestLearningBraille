@@ -495,8 +495,8 @@ public class Pattern {
                 long[] pattern33 = {
 
                         0, 200,
-                        50, 400,
-                        200, 200,
+                        50, 600,
+                        50, 200,
                         50, 400,
                 };
                 pattern_result = pattern33;

@@ -852,7 +852,7 @@ public class Lamina_59 extends AppCompatActivity {
                             Sound(1);
                             try {
                                 //Retardo
-                                Thread.sleep(2000);
+                                Thread.sleep(3000);
                             } catch (Exception e) {
 
                             }
@@ -877,7 +877,7 @@ public class Lamina_59 extends AppCompatActivity {
                             Sound(2);
                             try {
                                 //Retardo
-                                Thread.sleep(5500);
+                                Thread.sleep(3500);
                             } catch (Exception e) {
 
                             }
@@ -900,7 +900,7 @@ public class Lamina_59 extends AppCompatActivity {
                             Sound(3);
                             try {
                                 //Retardo
-                                Thread.sleep(2500);
+                                Thread.sleep(5000);
                             } catch (Exception e) {
 
                             }
@@ -924,7 +924,7 @@ public class Lamina_59 extends AppCompatActivity {
                             Sound(4);
                             try {
                                 //Retardo
-                                Thread.sleep(2000);
+                                Thread.sleep(4000);
                             } catch (Exception e) {
 
                             }
