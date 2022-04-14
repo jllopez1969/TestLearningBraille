@@ -21,10 +21,10 @@ public class WriteFileTest {
         File raiz = Environment.getExternalStorageDirectory();
         if (raiz.canWrite()) {
             File file = new File(raiz, fileout + ".txt");
-            if (!file.exists()) {
+           // if (!file.exists()) {
                 // FileWriter fichero = null;
                 try {
-                    FileWriter fichero = new FileWriter(file, true);
+                    FileWriter fichero = new FileWriter(file, false);
                     fichero.write(text + "\n");
                     fichero.close();
                     //creado = true;
@@ -33,10 +33,10 @@ public class WriteFileTest {
                     e.printStackTrace();
                 }
 
-            } else {
+           // } else {
                // Toast.makeText(context, "Fichero ya existente: Cambie el nombre de fichero", Toast.LENGTH_SHORT).show();
                // creado = false;
-            }
+           // }
         }
 
     }

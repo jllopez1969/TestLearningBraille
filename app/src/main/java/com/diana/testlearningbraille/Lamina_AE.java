@@ -59,7 +59,8 @@ public class Lamina_AE extends AppCompatActivity {
     // Control de test
     boolean flag_sel = false;
     boolean flag_ok= false;
-    char  Simbol= 'A';
+    boolean flag_elec = false;
+    char  Simbol;
     char  Simbol_elec;
     int  Success = 0;
     int  Error =0;
@@ -88,8 +89,9 @@ public class Lamina_AE extends AppCompatActivity {
             if ((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9))
             {
                 // Seleccionado símbolo en línea de test activa
-                if (flag_sel) {
+                if (flag_sel & flag_elec) {
                     flag_sel= false;
+                    flag_elec = false;
 
                     // Determinar éxito o no éxito
                     if (Simbol == character) {
@@ -778,6 +780,7 @@ public class Lamina_AE extends AppCompatActivity {
                             if (secondLeft>0) {
                                 Double_Click('A');
                                 Simbol_elec = 'A';
+
                             }
                         }
                     }
@@ -787,6 +790,7 @@ public class Lamina_AE extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(11);
+                    flag_elec= true;
                 }
                 return false;
             }
@@ -813,6 +817,7 @@ public class Lamina_AE extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(12);
+                    flag_elec= true;
                 }
                 return false;
             }
@@ -838,6 +843,7 @@ public class Lamina_AE extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(13);
+                    flag_elec= true;
                 }
                 return false;
             }
@@ -863,6 +869,7 @@ public class Lamina_AE extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(14);
+                    flag_elec= true;
                 }
                 return false;
             }
@@ -888,6 +895,7 @@ public class Lamina_AE extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(15);
+                    flag_elec= true;
                 }
                 return false;
             }

@@ -61,6 +61,7 @@ public class Lamina_KNN extends AppCompatActivity {
     // Control de test
     boolean flag_sel = false;
     boolean flag_ok= false;
+    boolean flag_elec= false;
     char  Simbol= 'A';
     char  Simbol_elec;
     int  Success = 0;
@@ -90,7 +91,9 @@ public class Lamina_KNN extends AppCompatActivity {
             if ((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9))
             {
                 // Seleccionado símbolo en línea de test activa
-                if (flag_sel) {
+                if (flag_sel & flag_elec) {
+                    flag_sel= false;
+                    flag_elec = false;
 
                     // Determinar éxito o no éxito
                     if (Simbol == character) {
@@ -765,7 +768,7 @@ public class Lamina_KNN extends AppCompatActivity {
         //****************************************************
         // Columna de Respuestas
 
-        //  Símbolo "A"
+        //  Símbolo "K"
 
         button61.setOnClickListener(
                 new View.OnClickListener() {
@@ -774,7 +777,7 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                           if (secondLeft>0) {
-                              Double_Click('A');
+                              Double_Click('K');
                               Simbol_elec = 'A';
                           }
                         }
@@ -785,12 +788,13 @@ public class Lamina_KNN extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(11);
+                    flag_elec = true;
                 }
                 return false;
             }
         });
 
-        //  Símbolo "B"
+        //  Símbolo "L"
 
         button62.setOnClickListener(
                 new View.OnClickListener() {
@@ -799,8 +803,8 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('B');
-                                Simbol_elec = 'B';
+                                Double_Click('L');
+                                Simbol_elec = 'L';
                             }
 
                         }
@@ -811,12 +815,13 @@ public class Lamina_KNN extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(12);
+                    flag_elec = true;
                 }
                 return false;
             }
         });
 
-        //  Símbolo "C"
+        //  Símbolo "M"
 
         button63.setOnClickListener(
                 new View.OnClickListener() {
@@ -825,8 +830,8 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('C');
-                                Simbol_elec = 'C';
+                                Double_Click('M');
+                                Simbol_elec = 'M';
                             }
                         }
                     }
@@ -836,12 +841,13 @@ public class Lamina_KNN extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(13);
+                    flag_elec = true;
                 }
                 return false;
             }
         });
 
-        //  Símbolo "D"
+        //  Símbolo "N"
 
         button64.setOnClickListener(
                 new View.OnClickListener() {
@@ -850,8 +856,8 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('D');
-                                Simbol_elec = 'D';
+                                Double_Click('N');
+                                Simbol_elec = 'N';
                             }
                         }
                     }
@@ -861,12 +867,13 @@ public class Lamina_KNN extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(14);
+                    flag_elec = true;
                 }
                 return false;
             }
         });
 
-        //  Símbolo "E"
+        //  Símbolo "Ñ"
 
         button65.setOnClickListener(
                 new View.OnClickListener() {
@@ -875,8 +882,8 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('E');
-                                Simbol_elec = 'E';
+                                Double_Click('Ñ');
+                                Simbol_elec = 'Ñ';
                             }
                         }
                     }
@@ -886,6 +893,7 @@ public class Lamina_KNN extends AppCompatActivity {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                 {
                     Sound(15);
+                    flag_elec = true;
                 }
                 return false;
             }
