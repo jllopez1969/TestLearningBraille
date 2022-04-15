@@ -72,7 +72,10 @@ public class Lamina_59 extends AppCompatActivity {
 
         // 1ª Acciones al pulsar doble click sobre linea de entrenamiento
 
-        public void Double_Click ( char character){
+        public void Double_Click ( char character, boolean disable_button_resc){
+
+            //Desabilitación de botón de respuesta
+            disable_button_resc= false;
 
             // Toma de tiempo actual
             mCurTime = System.currentTimeMillis();
@@ -512,9 +515,14 @@ public class Lamina_59 extends AppCompatActivity {
             View Create_file = findViewById(R.id.imageView);
             Create_file.setVisibility(View.INVISIBLE);
 
+            //Botoón de habilitación de patrones de reloj
+
             Switch pin = findViewById(R.id.switch1);
 
-            // Selección de símbolo
+            /*****************************
+             * Respuesta acertada: desabilitar botón
+             */
+            boolean disable_button_resc= false;
 
 
             // Declariación de  Variable gráfica de Inicio Test
@@ -745,8 +753,12 @@ public class Lamina_59 extends AppCompatActivity {
 
                             if ((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9)) {
                                 if (secondLeft > 0) {
-                                    Double_Click('5');
+                                    Double_Click('5',disable_button_resc);
                                     Simbol_elec = '5';
+                                    if (disable_button_resc)
+                                    {
+                                        button61.setEnabled(false);
+                                    }
                                 }
                             }
                         }
@@ -768,8 +780,12 @@ public class Lamina_59 extends AppCompatActivity {
 
                             if ((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9)) {
                                 if (secondLeft > 0) {
-                                    Double_Click('6');
+                                    Double_Click('6',disable_button_resc);
                                     Simbol_elec = '6';
+                                    if (disable_button_resc)
+                                    {
+                                        button62.setEnabled(false);
+                                    }
                                 }
 
                             }
@@ -792,8 +808,12 @@ public class Lamina_59 extends AppCompatActivity {
 
                             if ((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9)) {
                                 if (secondLeft > 0) {
-                                    Double_Click('7');
+                                    Double_Click('7',disable_button_resc);
                                     Simbol_elec = '7';
+                                    if (disable_button_resc)
+                                    {
+                                        button63.setEnabled(false);
+                                    }
                                 }
                             }
                         }
@@ -815,8 +835,12 @@ public class Lamina_59 extends AppCompatActivity {
 
                             if ((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9)) {
                                 if (secondLeft > 0) {
-                                    Double_Click('8');
+                                    Double_Click('8',disable_button_resc);
                                     Simbol_elec = '8';
+                                    if (disable_button_resc)
+                                    {
+                                        button64.setEnabled(false);
+                                    }
                                 }
                             }
                         }
@@ -838,8 +862,12 @@ public class Lamina_59 extends AppCompatActivity {
 
                             if ((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9)) {
                                 if (secondLeft > 0) {
-                                    Double_Click('9');
+                                    Double_Click('9',disable_button_resc);
                                     Simbol_elec = '9';
+                                    if (disable_button_resc)
+                                    {
+                                        button65.setEnabled(false);
+                                    }
                                 }
                             }
                         }

@@ -75,11 +75,15 @@ public class Lamina_KNN extends AppCompatActivity {
 
 
 
+
     // 1ª Acciones al pulsar doble click sobre linea de entrenamiento
 
-    public void Double_Click(char character){
+    public void Double_Click(char character, boolean disable_button){
 
+        // Desabitar botón
+           disable_button = false;
         // Toma de tiempo actual
+
         mCurTime= System.currentTimeMillis();
 
         if (flag_db & (mCurTime - mLastTime < 300)) {// Evento de doble clic
@@ -100,6 +104,7 @@ public class Lamina_KNN extends AppCompatActivity {
                         Sc++;
                         flag_ok = true;
                         Sound(20);
+                        disable_button= true;
 
                     } else {
                         Er++;
@@ -114,6 +119,7 @@ public class Lamina_KNN extends AppCompatActivity {
                             if (flag_ok) {
 
                                 File.Write_Text_File( file_out, "(" + Simbol + ")::Sc;");
+
                             }else{
                                 File.Write_Text_File( file_out, "(" + Simbol + "-"+ Simbol_elec +")::Er;");
                             }
@@ -459,6 +465,9 @@ public class Lamina_KNN extends AppCompatActivity {
         }
     };
 
+
+
+
 //************************************************************
 //                  Función principal: Control pantalla
 //**********************************************************************
@@ -534,8 +543,6 @@ public class Lamina_KNN extends AppCompatActivity {
         Create_file.setVisibility(View.INVISIBLE);
 
         Switch pin = findViewById(R.id.switch1);
-
-        // Selección de símbolo
 
 
 
@@ -649,6 +656,11 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 1:
                                     On = true;
                                     textView2.setText("Test Línea 1ª");
+                                    button61.setEnabled(true);
+                                    button62.setEnabled(true);
+                                    button63.setEnabled(true);
+                                    button64.setEnabled(true);
+                                    button65.setEnabled(true);
                                     Sc = 0;
                                     Er = 0;
                                     flag_sel = false;
@@ -677,6 +689,11 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 3:
                                     On = true;
                                     textView2.setText("Test Línea 2ª");
+                                    button61.setEnabled(true);
+                                    button62.setEnabled(true);
+                                    button63.setEnabled(true);
+                                    button64.setEnabled(true);
+                                    button65.setEnabled(true);
                                     Sc = 0;
                                     Er = 0;
                                     flag_sel = false;
@@ -703,6 +720,11 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 5:
                                     On = true;
                                     textView2.setText("Test Línea 3ª");
+                                    button61.setEnabled(true);
+                                    button62.setEnabled(true);
+                                    button63.setEnabled(true);
+                                    button64.setEnabled(true);
+                                    button65.setEnabled(true);
                                     Sc = 0;
                                     Er = 0;
                                     flag_sel = false;
@@ -729,6 +751,11 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 7:
                                     On = true;
                                     textView2.setText("Test Línea 4ª");
+                                    button61.setEnabled(true);
+                                    button62.setEnabled(true);
+                                    button63.setEnabled(true);
+                                    button64.setEnabled(true);
+                                    button65.setEnabled(true);
                                     Sc = 0;
                                     Er = 0;
                                     flag_sel = false;
@@ -757,6 +784,11 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 9:
                                     On = true;
                                     textView2.setText("Test Linea 5º");
+                                    button61.setEnabled(true);
+                                    button62.setEnabled(true);
+                                    button63.setEnabled(true);
+                                    button64.setEnabled(true);
+                                    button65.setEnabled(true);
                                     if (Activ_test) {
                                         WriteFileTest File5 = new WriteFileTest();
                                         File5.Write_Text_File(file_out, " - Line 5 ;");
@@ -774,6 +806,10 @@ public class Lamina_KNN extends AppCompatActivity {
                             }
                     }});
 
+        /*****************************
+         * Respuesta acertada: desabilitar botón
+         */
+        boolean disable_button_resc= false;
 
         //****************************************************
         // Columna de Respuestas
@@ -787,8 +823,12 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                           if (secondLeft>0) {
-                              Double_Click('K');
+                              Double_Click('K',disable_button_resc);
                               Simbol_elec = 'K';
+                              if (disable_button_resc)
+                              {
+                                  button61.setEnabled(false);
+                              }
                           }
                         }
                     }
@@ -813,8 +853,12 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('L');
+                                Double_Click('L', disable_button_resc);
                                 Simbol_elec = 'L';
+                                if (disable_button_resc)
+                                {
+                                    button62.setEnabled(false);
+                                }
                             }
 
                         }
@@ -840,8 +884,12 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('M');
+                                Double_Click('M', disable_button_resc);
                                 Simbol_elec = 'M';
+                                if (disable_button_resc)
+                                {
+                                    button63.setEnabled(false);
+                                }
                             }
                         }
                     }
@@ -866,8 +914,12 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('N');
+                                Double_Click('N',disable_button_resc);
                                 Simbol_elec = 'N';
+                                if (disable_button_resc)
+                                {
+                                    button64.setEnabled(false);
+                                }
                             }
                         }
                     }
@@ -892,8 +944,12 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('Ñ');
+                                Double_Click('Ñ',disable_button_resc);
                                 Simbol_elec = 'Ñ';
+                                if (disable_button_resc)
+                                {
+                                    button65.setEnabled(false);
+                                }
                             }
                         }
                     }

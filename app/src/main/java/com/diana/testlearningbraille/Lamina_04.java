@@ -73,7 +73,9 @@ public class Lamina_04 extends AppCompatActivity {
 
     // 1ª Acciones al pulsar doble click sobre linea de entrenamiento
 
-    public void Double_Click(char character){
+    public void Double_Click(char character,  boolean disable_button_resc){
+
+        disable_button_resc = false;
 
         // Toma de tiempo actual
         mCurTime= System.currentTimeMillis();
@@ -95,6 +97,7 @@ public class Lamina_04 extends AppCompatActivity {
                         Sc++;
                         flag_ok = true;
                         Sound(20);
+                        disable_button_resc= true;
 
                     } else {
                         Er++;
@@ -515,9 +518,14 @@ public class Lamina_04 extends AppCompatActivity {
         View Create_file = findViewById(R.id.imageView);
         Create_file.setVisibility(View.INVISIBLE);
 
+        //Botoón de habilitación de patrones de reloj
+
         Switch pin = findViewById(R.id.switch1);
 
-        // Selección de símbolo
+        /*****************************
+         * Respuesta acertada: desabilitar botón
+         */
+        boolean disable_button_resc= false;
 
 
 
@@ -638,6 +646,11 @@ public class Lamina_04 extends AppCompatActivity {
                             case 1:
                                 On = true;
                                 textView2.setText("Test Línea 1ª");
+                                button61.setEnabled(true);
+                                button62.setEnabled(true);
+                                button63.setEnabled(true);
+                                button64.setEnabled(true);
+                                button65.setEnabled(true);
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
@@ -669,6 +682,11 @@ public class Lamina_04 extends AppCompatActivity {
                             case 3:
                                 On = true;
                                 textView2.setText("Test Línea 2ª");
+                                button61.setEnabled(true);
+                                button62.setEnabled(true);
+                                button63.setEnabled(true);
+                                button64.setEnabled(true);
+                                button65.setEnabled(true);
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
@@ -693,6 +711,11 @@ public class Lamina_04 extends AppCompatActivity {
                             case 5:
                                 On = true;
                                 textView2.setText("Test Línea 3ª");
+                                button61.setEnabled(true);
+                                button62.setEnabled(true);
+                                button63.setEnabled(true);
+                                button64.setEnabled(true);
+                                button65.setEnabled(true);
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
@@ -717,6 +740,11 @@ public class Lamina_04 extends AppCompatActivity {
                             case 7:
                                 On = true;
                                 textView2.setText("Test Línea 4ª");
+                                button61.setEnabled(true);
+                                button62.setEnabled(true);
+                                button63.setEnabled(true);
+                                button64.setEnabled(true);
+                                button65.setEnabled(true);
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
@@ -739,7 +767,7 @@ public class Lamina_04 extends AppCompatActivity {
         //****************************************************
         // Columna de Respuestas
 
-        //  Símbolo "A"
+        //  Símbolo "0"
 
         button61.setOnClickListener(
                 new View.OnClickListener() {
@@ -748,8 +776,12 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('0');
+                                Double_Click('0', disable_button_resc);
                                 Simbol_elec = '0';
+                                if (disable_button_resc)
+                                {
+                                    button61.setEnabled(false);
+                                }
                             }
                         }
                     }
@@ -773,8 +805,12 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('1');
+                                Double_Click('1',disable_button_resc);
                                 Simbol_elec = '1';
+                                if (disable_button_resc)
+                                {
+                                    button62.setEnabled(false);
+                                }
                             }
 
                         }
@@ -799,8 +835,12 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('2');
+                                Double_Click('2',disable_button_resc);
                                 Simbol_elec = '2';
+                                if (disable_button_resc)
+                                {
+                                    button63.setEnabled(false);
+                                }
                             }
                         }
                     }
@@ -824,8 +864,12 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('3');
+                                Double_Click('3',disable_button_resc);
                                 Simbol_elec = '3';
+                                if (disable_button_resc)
+                                {
+                                    button64.setEnabled(false);
+                                }
                             }
                         }
                     }
@@ -849,8 +893,12 @@ public class Lamina_04 extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('4');
+                                Double_Click('4',disable_button_resc);
                                 Simbol_elec = '4';
+                                if (disable_button_resc)
+                                {
+                                    button65.setEnabled(false);
+                                }
                             }
                         }
                     }
