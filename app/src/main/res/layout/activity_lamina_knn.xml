@@ -101,10 +101,10 @@
         android:id="@+id/imageButton61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Letra_A"
+        android:contentDescription="@string/Letra_K"
         android:translationX="1050dp"
         android:translationY="200dp"
-        app:srcCompat="@drawable/png1"
+        app:srcCompat="@drawable/png11"
         />
 
 
@@ -112,20 +112,20 @@
         android:id="@+id/imageButton62"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Letra_B"
+        android:contentDescription="@string/Letra_L"
         android:translationX="1050dp"
         android:translationY="300dp"
-        app:srcCompat="@drawable/png2"
+        app:srcCompat="@drawable/png12"
         />
 
     <ImageButton
         android:id="@+id/imageButton63"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Letra_C"
+        android:contentDescription="@string/Letra_M"
         android:translationX="1050dp"
         android:translationY="400dp"
-        app:srcCompat="@drawable/png3"
+        app:srcCompat="@drawable/png13"
         />
 
 
@@ -135,10 +135,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="false"
-        android:contentDescription="@string/Letra_D"
+        android:contentDescription="@string/Letra_N"
         android:translationX="1050dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png4"
+        app:srcCompat="@drawable/png14"
         />
 
 
@@ -146,12 +146,12 @@
         android:id="@+id/imageButton65"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Letra_E"
+        android:contentDescription="@string/Letra_Ñ"
         android:translationX="1050dp"
         android:translationY="600dp"
         app:layout_constrainedHeight="true"
         app:layout_constrainedWidth="true"
-        app:srcCompat="@drawable/png5"/>
+        app:srcCompat="@drawable/png15"/>
 
 
     // 1º Intento

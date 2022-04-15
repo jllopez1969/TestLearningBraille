@@ -56,7 +56,7 @@ public class WriteFileTest {
 
                 } catch (
                         IOException e) {
-                    Log.e("FILE I/O", "Error en la escritura de fichero: " + e.getMessage());
+                    Log.e("FILE I/O", "Er en la escritura de fichero: " + e.getMessage());
                 }
             }
         }

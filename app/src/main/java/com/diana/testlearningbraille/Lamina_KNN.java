@@ -62,10 +62,10 @@ public class Lamina_KNN extends AppCompatActivity {
     boolean flag_sel = false;
     boolean flag_ok= false;
     boolean flag_elec= false;
-    char  Simbol= 'A';
+    char  Simbol;
     char  Simbol_elec;
-    int  Success = 0;
-    int  Error =0;
+    int  Sc = 0;
+    int  Er =0;
     int  test_line = 0;
 
 
@@ -97,42 +97,42 @@ public class Lamina_KNN extends AppCompatActivity {
 
                     // Determinar éxito o no éxito
                     if (Simbol == character) {
-                        Success++;
+                        Sc++;
                         flag_ok = true;
                         Sound(20);
 
                     } else {
-                        Error++;
+                        Er++;
                         flag_ok = false;
                         Sound(21);
                     }
                     //Casos posibles de test
                     WriteFileTest File = new WriteFileTest();
-                    switch (Success + Error) {
+                    switch (Sc + Er) {
 
                         case 1:
                             if (flag_ok) {
 
-                                File.Write_Text_File( file_out, "(" + Simbol + ")::Success;");
+                                File.Write_Text_File( file_out, "(" + Simbol + ")::Sc;");
                             }else{
-                                File.Write_Text_File( file_out, "(" + Simbol + "-"+ Simbol_elec +")::Error;");
+                                File.Write_Text_File( file_out, "(" + Simbol + "-"+ Simbol_elec +")::Er;");
                             }
 
                             break;
                         case 2:
                             if (flag_ok) {
 
-                                File.Write_Text_File(file_out, "(" + Simbol + ")::Success;");
+                                File.Write_Text_File(file_out, "(" + Simbol + ")::Sc;");
                             }else{
-                                File.Write_Text_File(file_out, "(" + Simbol + "-"+ Simbol_elec +")::Error;");
+                                File.Write_Text_File(file_out, "(" + Simbol + "-"+ Simbol_elec +")::Er;");
                             }
                             break;
                         case 3:
                             if (flag_ok) {
 
-                                File.Write_Text_File(file_out, "(" + Simbol + ")::Success;");
+                                File.Write_Text_File(file_out, "(" + Simbol + ")::Sc;");
                             }else{
-                                File.Write_Text_File(file_out, "(" + Simbol + "-"+ Simbol_elec +")::Error;");
+                                File.Write_Text_File(file_out, "(" + Simbol + "-"+ Simbol_elec +")::Er;");
                             }
 
 
@@ -141,31 +141,33 @@ public class Lamina_KNN extends AppCompatActivity {
                         case 4:
                             if (flag_ok){
 
-                                File.Write_Text_File(file_out, "(" + Simbol + ")::Success;");
+                                File.Write_Text_File(file_out, "(" + Simbol + ")::Sc;");
                             }else{
-                                File.Write_Text_File( file_out, "(" + Simbol + "-"+ Simbol_elec +")::Error;");
+                                File.Write_Text_File( file_out, "(" + Simbol + "-"+ Simbol_elec +")::Er;");
                             }
 
 
                             break;
                         case 5:
-                            if (flag_ok & (Success == 5))  {
+                            if (flag_ok & (Sc == 5))  {
 
-                                File.Write_Text_File(file_out, "(" + Simbol + ")::Success;\n - End line::" + test_line + "\n\n** End Test **");
+                                File.Write_Text_File(file_out, "(" + Simbol + ")::Sc;\n - End line::" + test_line + "\n\n** End Test **");
                                 secondLeft = 0;
                                 On = false;
                                 Activ_test = false;
-                                Sound(23);
+                                Sound(36);
+
 
                             }else{
                                 if (!flag_ok){
-                                    File.Write_Text_File( file_out, "(" + Simbol + "-"+ Simbol_elec +")::Error;\n - End line::" + test_line + "\n");
+                                    File.Write_Text_File( file_out, "(" + Simbol + "-"+ Simbol_elec +")::Er;\n - End line::" + test_line + "\n");
                                 }
                                 else{
-                                    File.Write_Text_File( file_out, "(" + Simbol+ ")::Success;\n - End line::" + test_line + "\n");
+                                    File.Write_Text_File( file_out, "(" + Simbol+ ")::Sc;\n - End line::" + test_line + "\n");
 
                                 }
                                 secondLeft = 0;
+                                Sound(35);
                                 // On=false;
 
                             }
@@ -307,6 +309,14 @@ public class Lamina_KNN extends AppCompatActivity {
                 mp = MediaPlayer.create(this, R.raw.idprueba);
                 mp.start();
                 break;
+            case 35:
+                mp = MediaPlayer.create(this, R.raw.linea_er);
+                mp.start();
+                break;
+            case 36:
+                mp = MediaPlayer.create(this, R.raw.linea_sc);
+                mp.start();
+                break;
 
 
         }
@@ -386,7 +396,7 @@ public class Lamina_KNN extends AppCompatActivity {
                         textView.setText("" + secondLeft);
                         if ((secondLeft < 1) & On) {
                             textView2.setText("Fin del test");
-                            if (Success < 5 & (Status_test == 1|Status_test == 3|Status_test == 5|Status_test == 7|Status_test == 9))
+                            if (Sc < 5 & (Status_test == 1|Status_test == 3|Status_test == 5|Status_test == 7|Status_test == 9))
                             {
                                 WriteFileTest File = new WriteFileTest();
                                 File.Write_Text_File(file_out, "- End line ( not completed) ::" + test_line +"\n");
@@ -582,9 +592,9 @@ public class Lamina_KNN extends AppCompatActivity {
                             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
                             String currentDateandTime = simpleDateFormat.format(new Date());
                             String Cabecera;
-                            Cabecera = "** Start TEST **\n\n" +
+                            Cabecera = "** Start TEST **\n" +
                                     " - Id :: " + file_out + ";\n"+
-                                    " - Date :: " + currentDateandTime + ";\n\n";
+                                    " - Date :: " + currentDateandTime + ";\n";
 
                             // Crear fichero log *.txt
 
@@ -639,8 +649,8 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 1:
                                     On = true;
                                     textView2.setText("Test Línea 1ª");
-                                    Success = 0;
-                                    Error = 0;
+                                    Sc = 0;
+                                    Er = 0;
                                     flag_sel = false;
                                     if (Activ_test) {
                                         WriteFileTest File = new WriteFileTest();
@@ -667,8 +677,8 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 3:
                                     On = true;
                                     textView2.setText("Test Línea 2ª");
-                                    Success = 0;
-                                    Error = 0;
+                                    Sc = 0;
+                                    Er = 0;
                                     flag_sel = false;
                                     if (Activ_test) {
                                         WriteFileTest File2 = new WriteFileTest();
@@ -693,8 +703,8 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 5:
                                     On = true;
                                     textView2.setText("Test Línea 3ª");
-                                    Success = 0;
-                                    Error = 0;
+                                    Sc = 0;
+                                    Er = 0;
                                     flag_sel = false;
                                     if (Activ_test) {
                                         WriteFileTest File3 = new WriteFileTest();
@@ -719,8 +729,8 @@ public class Lamina_KNN extends AppCompatActivity {
                                 case 7:
                                     On = true;
                                     textView2.setText("Test Línea 4ª");
-                                    Success = 0;
-                                    Error = 0;
+                                    Sc = 0;
+                                    Er = 0;
                                     flag_sel = false;
                                     if (Activ_test) {
                                         WriteFileTest File4 = new WriteFileTest();
@@ -751,8 +761,8 @@ public class Lamina_KNN extends AppCompatActivity {
                                         WriteFileTest File5 = new WriteFileTest();
                                         File5.Write_Text_File(file_out, " - Line 5 ;");
                                     }
-                                    Success = 0;
-                                    Error = 0;
+                                    Sc = 0;
+                                    Er = 0;
                                     secondLeft = Time_slot;
                                     test_line = 5;
                                     Iniciar_test.setEnabled(false);
@@ -778,7 +788,7 @@ public class Lamina_KNN extends AppCompatActivity {
                         {
                           if (secondLeft>0) {
                               Double_Click('K');
-                              Simbol_elec = 'A';
+                              Simbol_elec = 'K';
                           }
                         }
                     }
@@ -1012,7 +1022,7 @@ public class Lamina_KNN extends AppCompatActivity {
                         } catch (Exception e) {
 
                         }
-                        Notification("Ñ", "Ñ en Morse", R.mipmap.png5, Pattern.pattern("E"));
+                        Notification("Ñ", "Ñ en Morse", R.mipmap.png5, Pattern.pattern("Ñ"));
                     } else {
                         Sound(15);
                     }
@@ -1049,8 +1059,8 @@ public class Lamina_KNN extends AppCompatActivity {
                         if (pin.isChecked())
                         {
                         Notification("M","Llamada Marmota", R.mipmap.png3,Pattern.pattern("M") );
-                    }
-                    Simbol = 'M';
+                        }
+                        Simbol = 'M';
                     flag_sel= true;
                 }
                 return false;
