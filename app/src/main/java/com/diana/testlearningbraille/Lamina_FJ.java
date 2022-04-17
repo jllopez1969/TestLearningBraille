@@ -78,10 +78,10 @@ public class Lamina_FJ extends AppCompatActivity {
 
     // 1ª Acciones al pulsar doble click sobre linea de entrenamiento
 
-    public void Double_Click(char character, boolean disable_button_resc){
+    public boolean Double_Click(char character){
 
         //Desabilitación de botón de respuesta
-        disable_button_resc= false;
+        boolean disable_button_resc= false;
 
         // Toma de tiempo actual
         mCurTime= System.currentTimeMillis();
@@ -104,6 +104,7 @@ public class Lamina_FJ extends AppCompatActivity {
                         Sc++;
                         flag_ok = true;
                         Sound(20);
+                        disable_button_resc= true;
 
                     } else {
                         Er++;
@@ -188,6 +189,7 @@ public class Lamina_FJ extends AppCompatActivity {
         // Rearme de doble click
         flag_db = true;
         mLastTime= System.currentTimeMillis();
+        return disable_button_resc;
     }
 
     // Función de locuciones
@@ -821,12 +823,11 @@ public class Lamina_FJ extends AppCompatActivity {
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             if (secondLeft>0) {
-                                Double_Click('F',disable_button_resc);
-                                Simbol_elec = 'F';
-                                if (disable_button_resc)
+                                if (  Double_Click('F'))
                                 {
                                     button61.setEnabled(false);
                                 }
+                                Simbol_elec = 'F';
                             }
                         }
                     }
@@ -852,12 +853,11 @@ public class Lamina_FJ extends AppCompatActivity {
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             if (secondLeft>0) {
-                                Double_Click('G',disable_button_resc);
-                                Simbol_elec = 'G';
-                                if (disable_button_resc)
+                                if (Double_Click('G'))
                                 {
                                     button62.setEnabled(false);
                                 }
+                                Simbol_elec = 'G';
                             }
 
                         }
@@ -882,12 +882,11 @@ public class Lamina_FJ extends AppCompatActivity {
 
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
-                            Double_Click('H',disable_button_resc);
-                            Simbol_elec = 'H';
-                            if (disable_button_resc)
+                            if (Double_Click('H'))
                             {
                                 button63.setEnabled(false);
                             }
+                            Simbol_elec = 'H';
                         }
                     }
                 });
@@ -911,12 +910,12 @@ public class Lamina_FJ extends AppCompatActivity {
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             if (secondLeft>0) {
-                                Double_Click('I',disable_button_resc);
-                                Simbol_elec = 'I';
-                                if (disable_button_resc)
+
+                                if ( Double_Click('I'))
                                 {
                                     button64.setEnabled(false);
                                 }
+                                Simbol_elec = 'I';
                             }
                         }
                     }
@@ -941,12 +940,11 @@ public class Lamina_FJ extends AppCompatActivity {
                         if (((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9)) & (secondLeft>0 ))
                         {
                             if (secondLeft>0) {
-                                Double_Click('J',disable_button_resc);
-                                Simbol_elec = 'J';
-                                if (disable_button_resc)
+                                if ( Double_Click('J'))
                                 {
                                     button65.setEnabled(false);
                                 }
+                                Simbol_elec = 'J';
                             }
                         }
                     }

@@ -75,9 +75,9 @@ public class Lamina_WZ extends AppCompatActivity {
 
     // 1ª Acciones al pulsar doble click sobre linea de entrenamiento
 
-    public void Double_Click(char character, boolean disabled_button_resc)
+    public boolean Double_Click(char character)
     {
-        disabled_button_resc = false;
+        boolean disabled_button_resc = false;
         // Toma de tiempo actual
         mCurTime= System.currentTimeMillis();
 
@@ -176,6 +176,7 @@ public class Lamina_WZ extends AppCompatActivity {
         // Rearme de doble click
         flag_db = true;
         mLastTime= System.currentTimeMillis();
+        return  disabled_button_resc;
     }
 
     // Función de locuciones
@@ -802,12 +803,11 @@ public class Lamina_WZ extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('W',disable_button_resc);
-                                Simbol_elec = 'W';
-                                if (disable_button_resc)
+                                if (Double_Click('W'))
                                 {
                                     button61.setEnabled(false);
                                 }
+                                Simbol_elec = 'W';
                             }
                         }
                     }
@@ -832,12 +832,11 @@ public class Lamina_WZ extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('X',disable_button_resc);
-                                Simbol_elec = 'X';
-                                if (disable_button_resc)
+                                if (Double_Click('X'))
                                 {
                                     button62.setEnabled(false);
                                 }
+                                Simbol_elec = 'X';
                             }
 
                         }
@@ -863,12 +862,11 @@ public class Lamina_WZ extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('Y',disable_button_resc);
-                                Simbol_elec = 'Y';
-                                if (disable_button_resc)
+                                if (Double_Click('Y'))
                                 {
                                     button63.setEnabled(false);
                                 }
+                                Simbol_elec = 'Y';
                             }
                         }
                     }
@@ -893,12 +891,11 @@ public class Lamina_WZ extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('Z',disable_button_resc);
-                                Simbol_elec = 'Z';
-                                if (disable_button_resc)
+                                if ( Double_Click('Z'))
                                 {
                                     button64.setEnabled(false);
                                 }
+                                Simbol_elec = 'Z';
                             }
                         }
                     }

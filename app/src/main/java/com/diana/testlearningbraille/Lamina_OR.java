@@ -75,10 +75,10 @@ public class Lamina_OR extends AppCompatActivity {
 
     // 1ª Acciones al pulsar doble click sobre linea de entrenamiento
 
-    public void Double_Click(char character, boolean disable_button_resc){
+    public boolean Double_Click(char character){
 
         //Desabilitación de botón de respuesta
-        disable_button_resc= false;
+        boolean disable_button_resc= false;
 
         // Toma de tiempo actual
         mCurTime= System.currentTimeMillis();
@@ -101,6 +101,7 @@ public class Lamina_OR extends AppCompatActivity {
                         Sc++;
                         flag_ok = true;
                         Sound(20);
+                        disable_button_resc= true;
 
                     } else {
                         Er++;
@@ -177,6 +178,7 @@ public class Lamina_OR extends AppCompatActivity {
         // Rearme de doble click
         flag_db = true;
         mLastTime= System.currentTimeMillis();
+        return disable_button_resc;
     }
 
     // Función de locuciones
@@ -801,12 +803,10 @@ public class Lamina_OR extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('O',disable_button_resc);
-                                Simbol_elec = 'O';
-                                if (disable_button_resc)
-                                {
+                                if (Double_Click('O')) {
                                     button61.setEnabled(false);
                                 }
+                                Simbol_elec = 'O';
                             }
                         }
                     }
@@ -831,12 +831,11 @@ public class Lamina_OR extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('P',disable_button_resc);
-                                Simbol_elec = 'P';
-                                if (disable_button_resc)
+                                if ( Double_Click('P'))
                                 {
                                     button62.setEnabled(false);
                                 }
+                                Simbol_elec = 'P';
                             }
 
                         }
@@ -862,12 +861,11 @@ public class Lamina_OR extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('Q',disable_button_resc);
-                                Simbol_elec = 'Q';
-                                if (disable_button_resc)
+                                if (Double_Click('Q'))
                                 {
                                     button63.setEnabled(false);
                                 }
+                                Simbol_elec = 'Q';
                             }
                         }
                     }
@@ -892,12 +890,11 @@ public class Lamina_OR extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('R',disable_button_resc);
-                                Simbol_elec = 'R';
-                                if (disable_button_resc)
+                                if (Double_Click('R'))
                                 {
                                     button64.setEnabled(false);
                                 }
+                                Simbol_elec = 'R';
                             }
                         }
                     }

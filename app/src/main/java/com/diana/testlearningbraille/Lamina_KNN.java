@@ -78,10 +78,10 @@ public class Lamina_KNN extends AppCompatActivity {
 
     // 1ª Acciones al pulsar doble click sobre linea de entrenamiento
 
-    public void Double_Click(char character, boolean disable_button){
+    public boolean Double_Click(char character){
 
         // Desabitar botón
-           disable_button = false;
+           boolean disable_button = false;
         // Toma de tiempo actual
 
         mCurTime= System.currentTimeMillis();
@@ -192,6 +192,7 @@ public class Lamina_KNN extends AppCompatActivity {
         // Rearme de doble click
         flag_db = true;
         mLastTime= System.currentTimeMillis();
+        return disable_button;
     }
 
     // Función de locuciones
@@ -823,12 +824,11 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                           if (secondLeft>0) {
-                              Double_Click('K',disable_button_resc);
-                              Simbol_elec = 'K';
-                              if (disable_button_resc)
+                              if ( Double_Click('K'))
                               {
                                   button61.setEnabled(false);
                               }
+                              Simbol_elec = 'K';
                           }
                         }
                     }
@@ -853,12 +853,11 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('L', disable_button_resc);
-                                Simbol_elec = 'L';
-                                if (disable_button_resc)
+                                if ( Double_Click('L'))
                                 {
                                     button62.setEnabled(false);
                                 }
+                                Simbol_elec = 'L';
                             }
 
                         }
@@ -884,12 +883,12 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('M', disable_button_resc);
-                                Simbol_elec = 'M';
-                                if (disable_button_resc)
+
+                                if ( Double_Click('M'))
                                 {
                                     button63.setEnabled(false);
                                 }
+                                Simbol_elec = 'M';
                             }
                         }
                     }
@@ -914,12 +913,11 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('N',disable_button_resc);
-                                Simbol_elec = 'N';
-                                if (disable_button_resc)
+                                if ( Double_Click('N'))
                                 {
                                     button64.setEnabled(false);
                                 }
+                                Simbol_elec = 'N';
                             }
                         }
                     }
@@ -944,12 +942,11 @@ public class Lamina_KNN extends AppCompatActivity {
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
-                                Double_Click('Ñ',disable_button_resc);
-                                Simbol_elec = 'Ñ';
-                                if (disable_button_resc)
+                                if ( Double_Click('Ñ'))
                                 {
                                     button65.setEnabled(false);
                                 }
+                                Simbol_elec = 'Ñ';
                             }
                         }
                     }
