@@ -727,6 +727,10 @@ public class Lamina_AE extends AppCompatActivity {
                                     textView2.setText("Entrenamiento nº3");
                                     secondLeft = Time_slot;
 
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
+
                                     Sound(28);
                                     break;
                                 case 5:
@@ -755,6 +759,10 @@ public class Lamina_AE extends AppCompatActivity {
                                     On = true;
                                     textView2.setText("Entrenamiento nº4");
                                     secondLeft = Time_slot;
+                                    secondLeft = Time_slot;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
 
                                     Sound(30);
                                     break;
@@ -785,6 +793,10 @@ public class Lamina_AE extends AppCompatActivity {
                                     textView2.setText("Entrenamiento nº5");
                                     flag_sel = false;
                                     secondLeft = Time_slot;
+                                    secondLeft = Time_slot;
+                                    Iniciar_test.setEnabled(false);
+                                    Iniciar_test_off.setVisibility(View.VISIBLE);
+                                    Iniciar_test_off.setEnabled(true);
 
                                     Sound(32);
                                     break;

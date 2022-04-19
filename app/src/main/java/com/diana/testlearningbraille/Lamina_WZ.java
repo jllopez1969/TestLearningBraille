@@ -515,6 +515,8 @@ public class Lamina_WZ extends AppCompatActivity {
         ImageButton button64 = findViewById(R.id.imageButton64);
         ImageButton button65 = findViewById(R.id.imageButton65);
 
+
+
         // Botón de creación fichero log. *.txt
         View Create_file = findViewById(R.id.imageView);
         Create_file.setVisibility(View.INVISIBLE);
@@ -865,6 +867,7 @@ public class Lamina_WZ extends AppCompatActivity {
                                 if (Double_Click('Y'))
                                 {
                                     button63.setEnabled(false);
+
                                 }
                                 Simbol_elec = 'Y';
                             }
