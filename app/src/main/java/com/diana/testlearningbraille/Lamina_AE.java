@@ -463,6 +463,7 @@ public class Lamina_AE extends AppCompatActivity {
         }
     };
 
+    boolean button_pressed = false;
 //************************************************************
 //                  Función principal: Control pantalla
 //**********************************************************************
@@ -546,8 +547,6 @@ public class Lamina_AE extends AppCompatActivity {
          * Respuesta acertada: desabilitar botón
          */
         boolean disable_button_resc= false;
-
-
 
 
         // Declariación de  Variable gráfica de Inicio Test
@@ -835,7 +834,6 @@ public class Lamina_AE extends AppCompatActivity {
         button61.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
                         if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
                         {
                             if (secondLeft>0) {
@@ -847,14 +845,19 @@ public class Lamina_AE extends AppCompatActivity {
 
                             }
                         }
+
                     }
+
                 });
+
+
+
+
         button61.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
-                if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
-                {
+                if (((Status_test == 1) | (Status_test == 3) | (Status_test == 5) | (Status_test == 7) | (Status_test == 9))) {
                     Sound(11);
-                    flag_elec= true;
+                    flag_elec = true;
                 }
                 return false;
             }
@@ -879,6 +882,7 @@ public class Lamina_AE extends AppCompatActivity {
                         }
                     }
                 });
+
         button62.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1)|(Status_test == 3)|(Status_test == 5)|(Status_test == 7)|(Status_test == 9))
@@ -886,7 +890,7 @@ public class Lamina_AE extends AppCompatActivity {
                     Sound(12);
                     flag_elec= true;
                 }
-                return false;
+               return false;
             }
         });
 
@@ -944,7 +948,7 @@ public class Lamina_AE extends AppCompatActivity {
                     Sound(14);
                     flag_elec= true;
                 }
-                return false;
+                   return false;
             }
         });
 
@@ -973,7 +977,7 @@ public class Lamina_AE extends AppCompatActivity {
                     Sound(15);
                     flag_elec= true;
                 }
-                return false;
+             return false;
             }
         });
 
@@ -982,34 +986,40 @@ public class Lamina_AE extends AppCompatActivity {
         //vibra N milisegundos
         //  SIGNO ""A""
 
-                button1.setOnLongClickListener(new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
-                        if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
-                            if (pin.isChecked())
-                            {
-                                Sound(1);
-                                try {
+        button1.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
+
+
+                    if ((secondLeft > 0) & ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)))
+                    {
+                        if (pin.isChecked()) {
+                            Sound(1);
+                            try {
                                 //Retardo
                                 Thread.sleep(2000);
-                                } catch (Exception e) {
+                            } catch (Exception e) {
 
-                                }
-                            Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
-                            }else
-                            {
-                                Sound(11);
                             }
+                            Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
+                        } else {
+                            Sound(11);
                         }
-                        return false;
+                        button_pressed = true;
+
+                    }
+
+
                     }
                 });
 
                 //SIGNO "B"
 
 
-                button2.setOnLongClickListener(new View.OnLongClickListener() {
-
-                    public boolean onLongClick(View v) {
+        button2.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view)
+                        {
                         if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
                             if (pin.isChecked()) // Vibraciones Activadas
                             {
@@ -1027,13 +1037,14 @@ public class Lamina_AE extends AppCompatActivity {
                             }
 
                        }
-                        return false;
+
                     }});
                 //SIGNO ""C""
 
-                button3.setOnLongClickListener(new View.OnLongClickListener() {
-
-                    public boolean onLongClick(View v) {
+        button3.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view)
+                    {
                         if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
                             if (pin.isChecked()) {
                                 Sound(3);
@@ -1048,16 +1059,15 @@ public class Lamina_AE extends AppCompatActivity {
                                 Sound(13);
                             }
                         }
-                            return false;
-
                     }
                 });
 
                 // Letra ""D""
 
-                button4.setOnLongClickListener(new View.OnLongClickListener() {
-
-                    public boolean onLongClick(View v) {
+        button4.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view)
+                    {
                         if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
                             if (pin.isChecked()) {
                                 Sound(4);
@@ -1072,15 +1082,13 @@ public class Lamina_AE extends AppCompatActivity {
                                 Sound(14);
                             }
                         }
-                            return false;
-
                     }
                 });
                 //SIGNO ""E""
 
-                button5.setOnLongClickListener(new View.OnLongClickListener() {
-
-                    public boolean onLongClick(View v) {
+        button5.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view)  {
                         if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
                             if (pin.isChecked()) {
                                 Sound(5);
@@ -1095,7 +1103,7 @@ public class Lamina_AE extends AppCompatActivity {
                                 Sound(15);
                             }
                         }
-                        return false;
+
                     }
                 });
  // *******************************************************************
@@ -1105,8 +1113,9 @@ public class Lamina_AE extends AppCompatActivity {
                 //SIGNO ""B""
 
 
-                button6.setOnLongClickListener(new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
+        button6.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
                         if ((Status_test == 1) & (secondLeft>0)) {
                             if (pin.isChecked()){
                             Notification("B", "Sirena de Barco  Niebla",R.mipmap.png2,Pattern.pattern("B") );
@@ -1114,15 +1123,15 @@ public class Lamina_AE extends AppCompatActivity {
                             Simbol = 'B';
                             flag_sel= true;
                         }
-                return false;
             }
         });
 
                 //SIGNO "C"
 
 
-                button7.setOnLongClickListener(new View.OnLongClickListener() {
-                    public boolean onLongClick(View v) {
+        button7.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
                         if ((Status_test == 1) & (secondLeft>0)) {
                             if (pin.isChecked()){
                              Notification("C","Galope de caballo", R.mipmap.png3,Pattern.pattern("C") );
@@ -1130,12 +1139,13 @@ public class Lamina_AE extends AppCompatActivity {
                              Simbol = 'C';
                              flag_sel= true;
                          }
-                return false;
+
             }});
                 //SIGNO ""E""
 
-                button8.setOnLongClickListener(new View.OnLongClickListener() {
-                        public boolean onLongClick(View v) {
+        button8.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
                             if ((Status_test == 1)& (secondLeft>0)) {
                                 if (pin.isChecked()){
                                 Notification("E", "Máquina de Escribir", R.mipmap.png5,Pattern.pattern("E") );
@@ -1143,15 +1153,16 @@ public class Lamina_AE extends AppCompatActivity {
                                 Simbol = 'E';
                                 flag_sel= true;
                             }
-                            return false;
+
                         }});
 
                 // Letra ""A""
 
 
 
-                button9.setOnLongClickListener(new View.OnLongClickListener() {
-                            public boolean onLongClick(View v) {
+        button9.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
                                 if ((Status_test == 1)& (secondLeft>0)) {
                                     if (pin.isChecked()){
                                         Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
@@ -1159,13 +1170,14 @@ public class Lamina_AE extends AppCompatActivity {
                                     Simbol = 'A';
                                     flag_sel= true;
                                 }
-                                return false;
+
                             }});
 
              // Signo "D"
 
-                button10.setOnLongClickListener(new View.OnLongClickListener() {
-                        public boolean onLongClick(View v) {
+        button10.setOnClickListener(
+                new View.OnClickListener() {
+                    public void onClick(View view) {
                             if ((Status_test == 1)&& (secondLeft>0)) {
                                 if (pin.isChecked()){
                                 Notification("D","Disparo arma de fuego",R.mipmap.png4,Pattern.pattern("D") );
@@ -1173,7 +1185,7 @@ public class Lamina_AE extends AppCompatActivity {
                             Simbol = 'D';
                                 flag_sel= true;
                             }
-                            return false;
+
                         }});
 
 //****************************************************************

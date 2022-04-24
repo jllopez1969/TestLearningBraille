@@ -581,4 +581,638 @@ public class Pattern {
 
         return pattern_result;
     }
+
+
+    public static long[] pattern_number(String pat) {
+
+        long[] pattern_result = {};
+
+        switch (pat) {
+            case "A":
+                // 1
+                long[] pattern1 = {
+                        //sleep//vibrate/Largo
+                        250, 300,
+
+                };
+                pattern_result = pattern1;
+
+                break;
+
+            case "B":
+                //  1 2 ( --, .. )
+                long[] pattern2 = {
+                        250, 300,
+
+                        150, 100,
+                          50,100
+                };
+                pattern_result = pattern2;
+                break;
+
+            case "C":
+                // 1 4 ( --,--,--)
+                long[] pattern3 = {
+                        250, 300, //sleep//vibrate// Corto
+
+                        150, 300,
+                         50, 300
+                };
+
+                pattern_result = pattern3;
+                break;
+
+            case "D":
+                // 1 4 5 (--,-- --,-- . )
+                long[] pattern4 = {
+                        //sleep//vibrate/Largo
+                        250, 300,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100
+
+                };
+                pattern_result = pattern4;
+                break;
+
+            case "E":
+                //  1 5 ( --,--.)
+                long[] pattern5 = {
+                        250, 300,
+
+                        150, 300,
+                         50, 100,
+
+                };
+                pattern_result = pattern5;
+                break;
+            case "F":
+                // 1 2 4 ( --,..,-- --)
+                long[] pattern6 = {
+                        //sleep//vibrate/Largo
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300
+                       };
+                pattern_result = pattern6;
+                break;
+
+            case "G":
+                //  1 2 4 5 ( --,..,-- --,--.)
+                long[] pattern7 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100
+                };
+                pattern_result = pattern7;
+                break;
+
+            case "H":
+                // 1 2 5 ( --,..,--.)
+                long[] pattern8 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 100
+                };
+                pattern_result = pattern8;
+                break;
+
+            case "I":
+                // 2 4 ( ..,-- --)
+                long[] pattern9 = {
+                        250, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300,
+                };
+                pattern_result = pattern9;
+                break;
+
+            case "J":
+                // 2 4 5 ( ..,-- --,--.)
+                long[] pattern10 = {
+                        250, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100
+
+                };
+                pattern_result = pattern10;
+                break;
+
+            case "K":
+                // 1 3 ( --,...)
+
+                long[] pattern11 = {
+                        //sleep//vibrate/Largo
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                };
+                pattern_result = pattern11;
+                break;
+
+            case "L":
+                //  1 2 3 ( --,..,...)
+                long[] pattern12 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+
+                        150, 100,
+                         50, 100,
+                         50, 100
+                };
+                pattern_result = pattern12;
+                break;
+
+            case "M":
+                // 1 3 4 ( --,...,-- --)
+
+                long[] pattern13 = {
+
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300
+
+                };
+                pattern_result = pattern13;
+                break;
+
+            case "N":
+                // 1 3 4 5 (--,...,-- --,--.)
+                long[] pattern14 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100
+
+
+                };
+                pattern_result = pattern14;
+                break;
+            case "Ñ":
+                 // 1 2 4 5 6
+                long[] pattern15 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+
+                        150 ,300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100,
+
+                        150, 100,
+                         50, 300
+                };
+
+                pattern_result = pattern15;
+                break;
+
+            case "O":
+                // 1 3 5 ( --,...,--.)
+                long[] pattern16 = {
+                        //sleep//vibrate/Largo
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 150,
+
+                };
+                pattern_result = pattern16;
+                break;
+
+
+            case "P":
+                //  1 2 3 4 ( --,..,...,-- --)
+                long[] pattern17 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+
+                        150, 100,
+                         50, 100,
+                         50, 100
+
+                };
+                pattern_result = pattern17;
+                break;
+
+            case "Q":
+                // 1 2 3 4 5  ( --,..,...,-- --,--.)
+                long[] pattern18 = {
+                        250, 300,
+
+                         150, 100,
+                          50, 100,
+
+                         150, 100,
+                          50, 100,
+                          50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100,
+
+                };
+                pattern_result = pattern18;
+                break;
+
+            case "R":
+                // 1 2 3 5 ( --,..,...,--.)
+                long[] pattern19 = {
+                        250, 300,
+
+                        150, 100,
+                        50, 100,
+
+                        150, 100,
+                        50, 100,
+                        50, 100,
+
+                        150, 300,
+                        50, 100,
+                };
+                pattern_result = pattern19;
+                break;
+
+            case "S":
+                //  2 3 4 ( ..,...,-- --)
+                long[] pattern20 = {
+
+                        250, 100,
+                         50, 100,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300
+                };
+                pattern_result = pattern20;
+                break;
+            case "T":
+                // 2 3 4 5 (..,...,-- --,--.)
+                long[] pattern21 = {
+                        250, 100,
+                        50, 100,
+
+                        150, 100,
+                        50, 100,
+                        50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100
+
+                };
+                pattern_result = pattern21;
+                break;
+
+
+            case "U":
+                // 1 3 6 ( --,...,.--)
+                long[] pattern22 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 100,
+                         50, 300,
+                };
+                pattern_result = pattern22;
+                break;
+
+            case "V":
+                // 1 2 3 6 ( --,..,...,.--)
+                long[] pattern23 = {
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 100,
+                         50, 300,
+                };
+                pattern_result = pattern23;
+
+                break;
+            case "W":
+                //  2 4 5 6  ( ..,-- --,--.,.--)
+                long[] pattern24 = {
+                        250, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100,
+
+                        150, 100,
+                         50, 300,
+                };
+
+                pattern_result = pattern24;
+                break;
+
+            case "X":
+                // 1 3 4 6 (--,...,-- --,.--)
+                long[] pattern25 = {
+
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 100,
+                         50, 300
+
+
+
+                };
+                pattern_result = pattern25;
+                break;
+
+            case "Y":
+                // 1 3 4 5 6 ( --,...,-- --,--.,.--)
+                long[] pattern26 = {
+
+                        250, 300,
+
+                        150, 100,
+                         50, 100,
+                         50, 100,
+
+                        150, 300,
+                         50, 300,
+
+                        150, 300,
+                         50, 100,
+
+                        150, 100,
+                         50, 300,
+                };
+
+                pattern_result = pattern26;
+                break;
+            case "Z":
+                // 1 3 5 6  ( --,...,--.,.--)
+
+                long[] pattern27 = {
+
+
+                        250, 300,
+
+                        150, 100,
+                        50, 100,
+                        50, 100,
+
+                        150, 300,
+                        50, 100,
+
+                        150, 100,
+                        50, 300,
+                };
+                pattern_result = pattern27;
+                break;
+
+
+            case "1":
+                // Onomatopeya: La muerte tenía un precio - Ennio Moricone
+
+                long[] pattern28 = {
+
+                        0, 200,
+                        50, 1800,
+                        50, 600,
+                        50, 1200,
+                };
+                pattern_result = pattern28;
+                break;
+
+            case "2":
+                // Onomatopeya: "Gotas de lluvia sobre mi cabeza" FRANCK POURCEL
+
+                long[] pattern29 = {
+
+                        0,600,
+                        50, 400,
+                        50, 200,
+                        50, 400,
+                        50, 200,
+                        50, 400,
+                        50, 200,
+                        50, 400
+
+                };
+                pattern_result = pattern29;
+                break;
+
+            case "3":
+
+                // Onomatopeya:“ Sound of Silence” Simon & Garfunken
+
+                long[] pattern30 = {
+
+                        0, 200,
+                        50, 200,
+                        100, 200,
+                        50, 200,
+                        100, 200,
+                        50, 200,
+                        100, 800
+
+                };
+                pattern_result = pattern30;
+                break;
+
+            case "4":
+
+                // Onomatopeya:  "Las Cuatro estaciones: Primavera"  Vivaldi
+
+                long[] pattern31 = {
+
+                        0, 300,
+                        100, 300,
+                        50, 300,
+                        50, 300,
+                        50, 150,
+                        50, 150,
+                        50, 600,
+
+                };
+                pattern_result = pattern31;
+                break;
+
+            case "5":
+
+                long[] pattern32 = {
+
+                        // Onomatopeya:  "In the Mood" Glenn Miller
+
+                        0, 200,
+                        50, 200,
+                        50, 300,
+                        200, 100,
+                        50, 500,
+
+                };
+                pattern_result = pattern32;
+                break;
+
+            case "6":
+                // Onomatopeya:   "Jail Rock" Elvis Presley
+
+                long[] pattern33 = {
+
+                        0, 200,
+                        50, 600,
+                        50, 200,
+                        50, 400,
+                };
+                pattern_result = pattern33;
+                break;
+
+            case "7":
+
+                // Onomatopeya:  "Let It Be" The Beatles
+
+                long[] pattern34 = {
+
+                        0, 400,
+                        50, 200,
+                        50, 200,
+                        50, 400,
+                        50, 200,
+                        50, 200,
+                        50, 400,
+                        50, 400,
+                        50, 800,
+
+                };
+                pattern_result = pattern34;
+                break;
+
+            case "8":
+
+                // Onomatopeya: "La Misión"   Ennio Moriconne
+
+                long[] pattern35 = {
+
+
+                        0, 200,
+                        50, 200,
+                        50, 200,
+                        50, 200,
+                        50, 800,
+                };
+                pattern_result = pattern35;
+                break;
+
+            case "9":
+
+                // Onomatopeya: "Bajo el Mar: La Sirenita" - Disney
+
+                long[] pattern36 = {
+
+
+                        0, 200,
+                        50, 200,
+                        50, 200,
+                        50, 100,
+                        50, 100,
+                        50, 200,
+                        50, 200,
+                        50, 100,
+                        50, 200,
+                        50, 200,
+
+
+                };
+                pattern_result = pattern36;
+                break;
+
+            case "0":
+
+                //Onomatopeya: Cero en morse  (-- -- -- -- --)
+
+                long[] pattern37 = {
+
+                        0, 300,
+                        50, 300,
+                        50, 300,
+                        50, 300,
+                        50, 300,
+                };
+                pattern_result = pattern37;
+                break;
+
+
+        }
+
+        return pattern_result;
+    }
 }
