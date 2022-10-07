@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TEST DE APRENDIZAJE SÍMBOLOS BRAILLE</string>
+    <string name="intro_message" >Mensaje</string>
+    <string name="selected_language">Spanish</string>
+    <string name="language">Es, Spanish </string>
+
+    <string name="reply_label">Reply</string>
+    <string name="reply_name">Me</string>
+
+
+    <string name="title_activity_big_text_main">BigTextStyle Main Activity</string>
+    <string name="title_activity_big_picture_main">BigPictureStyle Main Activity</string>
+    <string name="title_activity_inbox_main">InboxStyle Main Activity</string>
+    <string name="title_activity_messaging_main">MessagingStyle Main Activity</string>
+
+    <string name="main_text_activity_big_text_main">
+        This Activity would handle the reminder app\'s functionality.
+        \n\nThe notification type for this example was the Big Text Style!
+    </string>
+    <string name="main_text_activity_big_picture_main">
+        This Activity would handle the social app\'s functionality for an individual post.
+        \n\nThe notification type for this example was the Big Picture Style!
+    </string>
+    <string name="main_text_activity_inbox_main">
+        This Activity would handle the email app\'s functionality for an email(s).
+        \n\nThe notification type for this example was the Inbox Style!
+    </string>
+    <string name="main_text_activity_messaging_main">
+        This Activity would handle the messaging app\'s functionality for a chat(s).
+        \n\nThe notification type for this example was the Messaging Style!
+    </string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="title_activity_lamina_ae">Seleccione lámina de test</string>
+
+    <string name="Symbol_A">Letra_A</string>
+    <string name="Symbol_B">Letra_B</string>
+    <string name="Symbol_C">Letra_C</string>
+    <string name="Symbol_D">Letra_D</string>
+    <string name="Symbol_E">Letra_E</string>
+    <string name="Symbol_F">Letra_F</string>
+    <string name="Symbol_G">Letra_G</string>
+    <string name="Symbol_H">Letra_H</string>
+    <string name="Symbol_I">Letra_I</string>
+    <string name="Symbol_J">Letra_J</string>
+    <string name="Symbol_K">Letra_K</string>
+    <string name="Symbol_L">Letra_L</string>
+    <string name="Symbol_M">Letra_M</string>
+    <string name="Symbol_N">Letra_N</string>
+    <string name="Symbol_O">Letra_O</string>
+    <string name="Symbol_P">Letra_P</string>
+    <string name="Symbol_Q">Letra_Q</string>
+    <string name="Symbol_R">Letra_R</string>
+    <string name="Symbol_S">Letra_S</string>
+    <string name="Symbol_T">Letra_T</string>
+    <string name="Symbol_U">Letra_U</string>
+    <string name="Symbol_V">Letra_V</string>
+    <string name="Symbol_W">Letra_V</string>
+    <string name="Symbol_X">Letra_X</string>
+    <string name="Symbol_Y">Letra_Y</string>
+    <string name="Symbol_Z">Letra_Z</string>
+
+    <string name="Symbol_0">Número_0</string>
+    <string name="Symbol_1">Número_1</string>
+    <string name="Symbol_2">Número_2</string>
+    <string name="Symbol_3">Número_3</string>
+    <string name="Symbol_4">Número_4</string>
+    <string name="Symbol_5">Número_5</string>
+    <string name="Symbol_6">Número_6</string>
+    <string name="Symbol_7">Número_7</string>
+    <string name="Symbol_8">Número_8</string>
+    <string name="Symbol_9">Número_9</string>
+    <string name="Symbol_Ñ">Letra_Ñ</string>
+    <string name="Sheet_AE">Lámina de símbolos de A a E</string>
+    <string name="Sheet_FJ">Lámina de símbolos de F a J</string>
+    <string name="Sheet_KO">Lámina de símbolos de K a O</string>
+    <string name="Sheet_PT">Lámina de símbolos de P a T</string>
+    <string name="Sheet_UZ">Lámina de símbolo u,v,x,y,z</string>
+    <string name="Sheet_stressed_vowels">Lámina de vocales acentuadas</string>
+    <string name="Sheet_PS">Láminas de símbolos de puntuación</string>
+    <string name="Sheet_04">Lámina de números de 0 a 4</string>
+    <string name="Sheet_59">Láminas de números de 5 a 9</string>
+    <string name="Sheet_Punctuation_Symbol">Lámina de signos de puntuación</string>
+    <string name="Time_test_learning">Test de tiempo de aprenidaje de símbolos braille</string>
+    <string name="Symbol_Ü">Letra Ü</string>
+    <string name="Symbol_.">Símbolo .</string>
+    <string name="Symbol_comma">Símbolo ,</string>
+    <string name="Selected_Sheet">Selecciona lámina de símbolos</string>
+    <string name="Test_Control">Test de Control</string>
+    <string name="Test_Experimen_Onom">Test de experimento - Patrones de vibración onomatopéyicos</string>
+    <string name="Test_Experiment_Numb">Test de experimemto - Patrones de Vibración  Numéricos</string>
+    <string name="Check_Mode">Modo de testeo</string>
+    <string name="Working_Mode">Modo de trabajo</string>
+
+
+
+</resources>

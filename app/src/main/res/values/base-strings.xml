@@ -16,14 +16,6 @@
 -->
 
 <resources>
-    <string name="app_name">TestLearningBraille</string>
-    <string name="intro_message">
-        <![CDATA[
 
-            App pensada para mejorar el aprendizaje de código braille a través de tactons compuestos por símbolos braille y su
-            correspondiente patrón de vibración ejecutado en un smartwatch.
-            
-        
-        ]]>
-    </string>
+
 </resources>

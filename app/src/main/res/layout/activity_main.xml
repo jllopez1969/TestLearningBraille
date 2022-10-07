@@ -7,10 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    // Línea de entrenamiento
-
-
-    // Iniciar la prueba
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Selected_Sheet"
+        android:textSize="28dp"
+        android:translationX="400dp"
+        android:translationY="100dp" />
 
     <ImageButton
         android:id="@+id/Iniciar_Test"
@@ -22,33 +26,22 @@
         app:srcCompat="@drawable/ic_launcher_round"
         />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LAMINAS DE TESTEO DEL EXPERIMENTO "
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="34sp"
-        android:translationX="300dp"
-        android:translationY="50dp"
-        />
 
     <ImageButton
         android:id="@+id/imageButton1"
         android:layout_width="100dp"
         android:layout_height="75dp"
-        android:onClick="btLanzarLámina_Vocales"
         android:translationX="100dp"
         android:translationY="150dp"
         app:srcCompat="@drawable/png31"
         />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Símbolos Alfabeto Vocales"
-        android:textSize="34sp"
+        android:text="@string/Sheet_stressed_vowels"
+        android:textSize="28dp"
         android:translationX="200dp"
         android:translationY="175dp"
         />
@@ -61,16 +54,17 @@
         android:translationX="100dp"
         android:translationY="250dp"
         />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Símbolos Alfabeto A-E"
-        android:textSize="34sp"
+        android:text="@string/Sheet_AE"
+        android:textSize="28dp"
         android:translationX="200dp"
         android:translationY="275dp"
 
-        />
+         />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -83,10 +77,10 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Símbolos Alfabeto F-J"
-        android:textSize="34sp"
+        android:layout_width="372dp"
+        android:layout_height="47dp"
+        android:text="@string/Sheet_FJ"
+        android:textSize="28dp"
         android:translationX="200dp"
         android:translationY="375dp"
          />
@@ -105,8 +99,8 @@
         android:id="@+id/textView4"
         android:layout_width="415dp"
         android:layout_height="54dp"
-        android:text="Símbolos Alfabeto K-Ñ"
-        android:textSize="34sp"
+        android:text="@string/Sheet_KO"
+        android:textSize="28dp"
         android:translationX="200dp"
         android:translationY="475dp"
          />
@@ -125,8 +119,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Símbolos  Alfabeto O-R"
-        android:textSize="34sp"
+        android:text="@string/Sheet_PT"
+        android:textSize="28dp"
         android:translationX="200dp"
         android:translationY="575dp"
          />
@@ -137,20 +131,20 @@
         android:id="@+id/imageButton6"
         android:layout_width="100dp"
         android:layout_height="75dp"
-        android:onClick="btLanzarLámina_Vocales"
         android:translationX="650dp"
         android:translationY="150dp"
         app:srcCompat="@drawable/png36"
         />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Símbolos Alfabeto Vocales S-V"
-        android:textSize="34sp"
+        android:text="@string/Sheet_UZ"
+        android:textSize="28dp"
         android:translationX="750dp"
         android:translationY="175dp"
-        />
+       />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -164,8 +158,8 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Símbolos Alfabeto  W-Z"
-        android:textSize="34sp"
+        android:text="@string/Sheet_Punctuation_Symbol"
+        android:textSize="28dp"
         android:translationX="750dp"
         android:translationY="275dp"
 
@@ -184,8 +178,8 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Símbolos Números 0-4"
-        android:textSize="34sp"
+        android:text="@string/Sheet_04"
+        android:textSize="28dp"
         android:translationX="750dp"
         android:translationY="375dp"
         />
@@ -204,17 +198,18 @@
         android:id="@+id/textView9"
         android:layout_width="415dp"
         android:layout_height="54dp"
-        android:text="Símbolos Número 5-9"
-        android:textSize="34sp"
+        android:text="@string/Sheet_59"
+        android:textSize="28dp"
         android:translationX="750dp"
         android:translationY="475dp"
         />
 
-
-
-
-
-
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="963dp"
+        tools:layout_editor_absoluteY="62dp" />
 
 
 

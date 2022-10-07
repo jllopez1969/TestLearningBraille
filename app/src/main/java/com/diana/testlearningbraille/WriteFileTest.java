@@ -1,7 +1,8 @@
 package com.diana.testlearningbraille;
 
+import android.content.Context;
 import android.os.Environment;
-import android.util.Log;
+import android.widget.Toast;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -12,61 +13,54 @@ import java.io.IOException;
 
 public class WriteFileTest {
 
+      public void Create_path_and_file(Context context, String path, String name_file )
+      {
+          //Path
+        File dir = new File( Environment.getExternalStorageDirectory() + "/" + path);
+        if (!dir.exists()) {
+              dir.mkdir();
+              Toast.makeText(context,"Now, directory created",Toast.LENGTH_SHORT).show();
+          }else{
+              Toast.makeText(context,"Previously created, directory",Toast.LENGTH_LONG).show();
+          }
+
+          // File
+
+          File file = new File(dir,name_file);
+          if(!file.exists()){
+          try {
+              BufferedWriter out = new BufferedWriter(new FileWriter(file, true));
+                  out.write(";Resp1;Resp2;Resp3;Resp4;Resp5;\n");
+                  out.close();
+                  Toast.makeText(context,"Created File",Toast.LENGTH_LONG).show();
+
+              } catch (IOException e) {
+                  Toast.makeText(context,"Not Created file",Toast.LENGTH_LONG).show();
+              }
+          }else{
+               Toast.makeText(context,"Before, created file",Toast.LENGTH_LONG).show();
+          }
+      }
 
     /** FORMA 1 DE ESCRITURA **/
 
-
-    public void Create_file_text(String fileout, String text) {
-
-        File raiz = Environment.getExternalStorageDirectory();
-        if (raiz.canWrite()) {
-            File file = new File(raiz, fileout + ".txt");
-           // if (!file.exists()) {
-                // FileWriter fichero = null;
-                try {
-                    FileWriter fichero = new FileWriter(file, false);
-                    fichero.write(text + "\n");
-                    fichero.close();
-                    //creado = true;
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-           // } else {
-               // Toast.makeText(context, "Fichero ya existente: Cambie el nombre de fichero", Toast.LENGTH_SHORT).show();
-               // creado = false;
-           // }
-        }
-
-    }
+        public void Write_Text_File (Context context, String path,  String name_file,String text){
 
 
+            File dir = new File(  Environment.getExternalStorageDirectory() + "/" + path);
+            File file = new File(dir, name_file);
+            try {
 
-
-        public void Write_Text_File (String name_file, String Text){
-            File raiz = Environment.getExternalStorageDirectory();
-            if (raiz.canWrite()) {
-                File file = new File(raiz, name_file + ".txt");
-                try {
-
-                    BufferedWriter out = new BufferedWriter(new FileWriter(file, true));
-                    out.write(Text);
-                    out.close();
-
-                } catch (
-                        IOException e) {
-                    Log.e("FILE I/O", "Er en la escritura de fichero: " + e.getMessage());
-                }
+                BufferedWriter out = new BufferedWriter(new FileWriter(file, true));
+                out.write(text);
+                out.close();
+            } catch (IOException e) {
+                    Toast.makeText(context,"Texto no añadido",Toast.LENGTH_LONG).show();
             }
         }
+
+
 }
-
-
-
-
-
-
 
 
 

@@ -14,14 +14,13 @@
  limitations under the License.
 -->
 <resources>
+    <string name="app_name">" Test Learning Braille"</string>
+    <string name="intro_message">Message</string>
+    <string name="selected_language">English</string>
+    <string name="language">En, Test Learning Braille</string>
 
     <string name="reply_label">Reply</string>
     <string name="reply_name">Me</string>
-    <string name="Letra_A">Letra A</string>
-    <string name="Letra_E">Letra E</string>
-    <string name="Letra_I">Letra I</string>
-    <string name="Letra_O">Letra O</string>
-    <string name="Letra_U">Letra U</string>
 
 
     <string name="title_activity_big_text_main">BigTextStyle Main Activity</string>
@@ -47,35 +46,71 @@
     </string>
     <string name="title_activity_main2">MainActivity2</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_lamina_ae">Lamina_AE</string>
-    <string name="Letra_B" />
-    <string name="Letra_C" />
-    <string name="Letra_D" />
-    <string name="Letra_F" />
-    <string name="Letra_G" />
-    <string name="Letra_H" />
-    <string name="Letra_J" />
-    <string name="Letra_K" />
-    <string name="Letra_L" />
-    <string name="Letra_M" />
-    <string name="Letra_N" />
-    <string name="Letra_Ñ" />
-    <string name="Numero_1" />
-    <string name="Numero_0" />
-    <string name="numero_1" />
-    <string name="Numero_2" />
-    <string name="Numero_3" />
-    <string name="Numero_4" />
-    <string name="Numero_5" />
-    <string name="Numero_6" />
-    <string name="Numero_7" />
-    <string name="Numero_8" />
-    <string name="Numero_9" />
+
+    <string name="title_activity_lamina_ae">Selected Test Sheet</string>
+
+    <string name="Symbol_A">Letter_A</string>
+    <string name="Symbol_B">Letter_B</string>
+    <string name="Symbol_C">Letter_C</string>
+    <string name="Symbol_D">Letter_D</string>
+    <string name="Symbol_E">Letter_E</string>
+    <string name="Symbol_F">Letter_F</string>
+    <string name="Symbol_G">Letter_G</string>
+    <string name="Symbol_H">Letter_H</string>
+    <string name="Symbol_I">Letter_I</string>
+    <string name="Symbol_J">Letter_J</string>
+    <string name="Symbol_K">Letter_K</string>
+    <string name="Symbol_L">Letter_L</string>
+    <string name="Symbol_M">Letter_M</string>
+    <string name="Symbol_N">Letter_N</string>
+    <string name="Symbol_O">Letter_O</string>
+    <string name="Symbol_P">Letter_P</string>
+    <string name="Symbol_Q">Letter_Q</string>
+    <string name="Symbol_R">Letter_R</string>
+    <string name="Symbol_S">Letter_S</string>
+    <string name="Symbol_T">Letter_T</string>
+    <string name="Symbol_U">Letter_U</string>
+    <string name="Symbol_V">Letter_V</string>
+    <string name="Symbol_W">Letter_W</string>
+    <string name="Symbol_X">Letter_X</string>
+    <string name="Symbol_Y">Letter_Y</string>
+    <string name="Symbol_Z">Letter_Z</string>
+
+    <string name="Symbol_0">Number_0</string>
+    <string name="Symbol_1">Number_1</string>
+    <string name="Symbol_2">Number_2</string>
+    <string name="Symbol_3">Number_3</string>
+    <string name="Symbol_4">Number_4</string>
+    <string name="Symbol_5">Number_5</string>
+    <string name="Symbol_6">Number_6</string>
+    <string name="Symbol_7">Number_7</string>
+    <string name="Symbol_8">Number_8</string>
+    <string name="Symbol_9">Number_9</string>
+    <string name="Symbol_Ñ">Letter_Ñ</string>
+    <string name="Sheet_AE">Symbols sheet from A to E</string>
+    <string name="Sheet_FJ">Symbols sheet fromt F to J</string>
+    <string name="Sheet_KO">Symbols sheet from K to O</string>
+    <string name="Sheet_PT">Symbols sheet from P to T</string>
+    <string name="Sheet_UZ">Symbols sheet of u,v,x,y,z</string>
+    <string name="Sheet_stressed_vowels">Stressed vowels sheet</string>
+    <string name="Sheet_PS">Puntuation symbols sheet</string>
+    <string name="Sheet_04">Symbols sheet from 0 to 4</string>
+    <string name="Sheet_59">Symbols sheet from 5 to 9</string>
+    <string name="Sheet_Punctuation_Symbol">Punctuation symbols sheet</string>
+    <string name="Time_test_learning">Time test learning braille symbols</string>
+    <string name="Symbol_Ü">Letter Ü</string>
+    <string name="Symbol_.">Symbol .</string>
+    <string name="Symbol_comma">Symbol ,</string>
+    <string name="Selected_Sheet">Selected symbols sheet</string>
+    <string name="Test_Control">Control Test</string>
+    <string name="Test_Experimen_Onom">" Experiment test - Onomatopoeic vibration patterns"</string>
+    <string name="Test_Experiment_Numb">" Experiment test - Numbers list  vibrations patterns"</string>
+    <string name="Check_Mode">Check mode</string>
+    <string name="Working_Mode">Working mode</string>
+
+
 </resources>

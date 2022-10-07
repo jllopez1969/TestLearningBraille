@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.diana.testlearningbraille" >
+    package="com.diana.testlearningbraille">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -11,35 +11,38 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TestLearningBraille" >
+        android:theme="@style/Theme.TestLearningBraille"
+        >
         <activity
-            android:name=".Lamina_WZ"
+            android:name=".Sheet_UZ"
             android:exported="false" />
         <activity
-            android:name=".Lamina_59"
+            android:name=".Sheet_stressed_vowel"
             android:exported="false" />
         <activity
-            android:name=".Lamina_04"
+            android:name=".Sheet_punctuation_symbols"
             android:exported="false" />
         <activity
-            android:name=".Lamina_SV"
+            android:name=".Sheet_PT"
             android:exported="false" />
         <activity
-            android:name=".Lamina_OR"
+            android:name=".Sheet_KO"
             android:exported="false" />
         <activity
-            android:name=".Lamina_KNN"
+            android:name=".Sheet_FJ"
             android:exported="false" />
         <activity
-            android:name=".Lamina_FJ"
+            android:name=".Sheet_AE"
             android:exported="false" />
         <activity
-            android:name=".Lamina_AE"
+            android:name=".Sheet_59"
             android:exported="false" />
         <activity
-            android:name=".Lamina_Vocales"
+            android:name=".Sheet_04"
             android:exported="false" />
-        <activity android:name=".MainActivity" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
