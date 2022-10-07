@@ -359,7 +359,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
     }
 
 
-    //  Pattern notification
+    //  Pattern notification ***
 
     public void Notification( String Text1, String Text2, int icono, long[] pattern)
     {
