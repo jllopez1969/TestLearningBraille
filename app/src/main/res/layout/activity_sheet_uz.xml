@@ -509,7 +509,7 @@
         android:layout_height="33dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Active line:"
+        android:text="@string/Active_line"
         android:textIsSelectable="false"
         android:textSize="24sp"
         android:textStyle="bold"

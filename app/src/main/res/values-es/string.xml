@@ -77,12 +77,12 @@
     <string name="Symbol_8">Número_8</string>
     <string name="Symbol_9">Número_9</string>
     <string name="Symbol_Ñ">Letra_Ñ</string>
-    <string name="Sheet_AE">Lámina de símbolos de A a E</string>
-    <string name="Sheet_FJ">Lámina de símbolos de F a J</string>
-    <string name="Sheet_KO">Lámina de símbolos de K a O</string>
-    <string name="Sheet_PT">Lámina de símbolos de P a T</string>
-    <string name="Sheet_UZ">Lámina de símbolo u,v,x,y,z</string>
-    <string name="Sheet_stressed_vowels">Lámina de vocales acentuadas</string>
+    <string name="Sheet_AE">Símbolos de A a E</string>
+    <string name="Sheet_FJ">Símbolos de F a J</string>
+    <string name="Sheet_KO">Símbolos de K a O</string>
+    <string name="Sheet_PT">Símbolos de P a T</string>
+    <string name="Sheet_UZ">Símbolos u,v,x,y,z</string>
+    <string name="Sheet_stressed_vowels">Vocales acentuadas</string>
     <string name="Sheet_PS">Láminas de símbolos de puntuación</string>
     <string name="Sheet_04">Lámina de números de 0 a 4</string>
     <string name="Sheet_59">Láminas de números de 5 a 9</string>
@@ -97,7 +97,7 @@
     <string name="Test_Experiment_Numb">Test de experimemto - Patrones de Vibración  Numéricos</string>
     <string name="Check_Mode">Modo de testeo</string>
     <string name="Working_Mode">Modo de trabajo</string>
-
+    <string name="Active_line">Línea activa:</string>
 
 
 </resources>

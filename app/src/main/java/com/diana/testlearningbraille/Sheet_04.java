@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -509,6 +510,7 @@ public class Sheet_04 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_sheet04);
 
 
@@ -559,11 +561,11 @@ public class Sheet_04 extends AppCompatActivity {
         ImageButton button23 = findViewById(R.id.imageButton23);
         ImageButton button24 = findViewById(R.id.imageButton24);
         ImageButton button25 = findViewById(R.id.imageButton25);
-        ImageButton button26 = findViewById(R.id.imageButton26);
+       /* ImageButton button26 = findViewById(R.id.imageButton26);
         ImageButton button27 = findViewById(R.id.imageButton27);
         ImageButton button28 = findViewById(R.id.imageButton28);
         ImageButton button29 = findViewById(R.id.imageButton29);
-        ImageButton button30 = findViewById(R.id.imageButton30);
+        ImageButton button30 = findViewById(R.id.imageButton30);*/
 
 
         ImageButton button61 = findViewById(R.id.imageButton61);

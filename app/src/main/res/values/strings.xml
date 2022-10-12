@@ -91,16 +91,16 @@
     <string name="Symbol_8">Number_8</string>
     <string name="Symbol_9">Number_9</string>
     <string name="Symbol_Ñ">Letter_Ñ</string>
-    <string name="Sheet_AE">Symbols sheet from A to E</string>
-    <string name="Sheet_FJ">Symbols sheet fromt F to J</string>
-    <string name="Sheet_KO">Symbols sheet from K to O</string>
-    <string name="Sheet_PT">Symbols sheet from P to T</string>
-    <string name="Sheet_UZ">Symbols sheet of u,v,x,y,z</string>
-    <string name="Sheet_stressed_vowels">Stressed vowels sheet</string>
-    <string name="Sheet_PS">Puntuation symbols sheet</string>
-    <string name="Sheet_04">Symbols sheet from 0 to 4</string>
-    <string name="Sheet_59">Symbols sheet from 5 to 9</string>
-    <string name="Sheet_Punctuation_Symbol">Punctuation symbols sheet</string>
+    <string name="Sheet_AE">Symbols from A to E</string>
+    <string name="Sheet_FJ">Symbols fromt F to J</string>
+    <string name="Sheet_KO">Symbols from K to O</string>
+    <string name="Sheet_PT">Symbols from P to T</string>
+    <string name="Sheet_UZ">Symbols u,v,x,y,z</string>
+    <string name="Sheet_stressed_vowels">Stressed vowels</string>
+    <string name="Sheet_PS">Puntuation symbols</string>
+    <string name="Sheet_04">Symbols from 0 to 4</string>
+    <string name="Sheet_59">Symbols from 5 to 9</string>
+    <string name="Sheet_Punctuation_Symbol">Punctuation symbols</string>
     <string name="Time_test_learning">Time test learning braille symbols</string>
     <string name="Symbol_Ü">Letter Ü</string>
     <string name="Symbol_.">Symbol .</string>
@@ -111,6 +111,7 @@
     <string name="Test_Experiment_Numb">" Experiment test - Numbers list  vibrations patterns"</string>
     <string name="Check_Mode">Check mode</string>
     <string name="Working_Mode">Working mode</string>
+    <string name="Active_line">Active line</string>
 
 
 </resources>
