@@ -83,10 +83,10 @@
     <string name="Sheet_PT">Símbolos de P a T</string>
     <string name="Sheet_UZ">Símbolos u,v,x,y,z</string>
     <string name="Sheet_stressed_vowels">Vocales acentuadas</string>
-    <string name="Sheet_PS">Láminas de símbolos de puntuación</string>
-    <string name="Sheet_04">Lámina de números de 0 a 4</string>
-    <string name="Sheet_59">Láminas de números de 5 a 9</string>
-    <string name="Sheet_Punctuation_Symbol">Lámina de signos de puntuación</string>
+    <string name="Sheet_PS">Símbolos de puntuación</string>
+    <string name="Sheet_04">Números de 0 a 4</string>
+    <string name="Sheet_59">Números de 5 a 9</string>
+    <string name="Sheet_Punctuation_Symbol">Signos de puntuación</string>
     <string name="Time_test_learning">Test de tiempo de aprenidaje de símbolos braille</string>
     <string name="Symbol_Ü">Letra Ü</string>
     <string name="Symbol_.">Símbolo .</string>
