@@ -216,8 +216,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="232dp"
+        android:translationX="310dp"
+        android:translationY="242dp"
         />
 
     <ImageButton

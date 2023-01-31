@@ -217,8 +217,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="232dp"
+        android:translationX="310dp"
+        android:translationY="242dp"
         />
 
     <ImageButton
@@ -226,8 +226,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="232dp"
+        android:translationX="940dp"
+        android:translationY="242dp"
         />
 
     // 2º Intento
@@ -279,16 +279,16 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="325dp"
+        android:translationX="940dp"
+        android:translationY="332dp"
         />
     <ImageButton
         android:id="@+id/imageButton46"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="325dp"
+        android:translationX="310dp"
+        android:translationY="332dp"
         />
 
     // 3º intento
@@ -343,16 +343,16 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="415dp"
+        android:translationX="940dp"
+        android:translationY="423dp"
         />
     <ImageButton
         android:id="@+id/imageButton48"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="415dp"
+        android:translationX="310dp"
+        android:translationY="423dp"
         />
 
     // 4º Intento
@@ -406,16 +406,16 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="500dp"
+        android:translationX="940dp"
+        android:translationY="515dp"
         />
     <ImageButton
         android:id="@+id/imageButton50"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="500dp"
+        android:translationX="310dp"
+        android:translationY="515dp"
         />
 
     // 5º Intento
@@ -468,8 +468,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="597dp"
+        android:translationX="940dp"
+        android:translationY="610dp"
         />
 
     <ImageButton
@@ -477,8 +477,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="597dp"
+        android:translationX="310dp"
+        android:translationY="610dp"
         />
 
     // Iniciar la prueba
