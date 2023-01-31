@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Message extends AppCompatActivity {
 
     public int what;
+    public String obj;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override

@@ -423,7 +423,7 @@
     // Iniciar la prueba
 
     <ImageButton
-        android:id="@+id/Iniciar_Test"
+        android:id="@+id/Start_test"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@android:drawable/list_selector_background"
@@ -433,7 +433,7 @@
         />
 
     <ImageButton
-        android:id="@+id/Iniciar_Test_off"
+        android:id="@+id/Stop_test"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@android:drawable/list_selector_background"
@@ -490,28 +490,7 @@
         android:translationY="150dp"
         />
 
-    <RadioGroup
-        android:id="@+id/mode_program"
-        android:layout_width="241dp"
-        android:layout_height="151dp"
-        android:translationX="10dp"
-        android:translationY="170dp"
-        android:textSize="20dp">
 
-
-        <RadioButton
-            android:id="@+id/Chek"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Check_Mode" />
-
-        <RadioButton
-            android:id="@+id/Test"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Working_Mode" />
-
-    </RadioGroup>
     <RadioGroup
         android:id="@+id/Test_Type"
         android:layout_width="157dp"

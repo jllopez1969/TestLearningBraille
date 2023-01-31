@@ -79,9 +79,9 @@
     <string name="Symbol_Ñ">Letra_Ñ</string>
     <string name="Sheet_AE">Símbolos de A a E</string>
     <string name="Sheet_FJ">Símbolos de F a J</string>
-    <string name="Sheet_KO">Símbolos de K a O</string>
+    <string name="Sheet_KO">Símbolos de K,L,M,N,O</string>
     <string name="Sheet_PT">Símbolos de P a T</string>
-    <string name="Sheet_UZ">Símbolos u,v,x,y,z</string>
+    <string name="Sheet_UZ">Símbolos U,V,X,Y,Z</string>
     <string name="Sheet_stressed_vowels">Vocales acentuadas</string>
     <string name="Sheet_PS">Símbolos de puntuación</string>
     <string name="Sheet_04">Números de 0 a 4</string>
@@ -95,9 +95,11 @@
     <string name="Test_Control">Test de Control</string>
     <string name="Test_Experimen_Onom">Test de experimento - Patrones de vibración onomatopéyicos</string>
     <string name="Test_Experiment_Numb">Test de experimemto - Patrones de Vibración  Numéricos</string>
-    <string name="Check_Mode">Modo de testeo</string>
-    <string name="Working_Mode">Modo de trabajo</string>
+    <string name="Check_Mode">Modo  testeo</string>
+    <string name="Working_Mode">Modo trabajo</string>
     <string name="Active_line">Línea activa:</string>
+    <string name="Experiment_setup">Configuración del experimento</string>
+
 
 
 </resources>

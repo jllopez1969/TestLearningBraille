@@ -215,7 +215,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 break;
 
             case 3:
-                mp = MediaPlayer.create(this, R.raw.u_ulular_buho_dieresis);
+                mp = MediaPlayer.create(this, R.raw.u_dieresis);
                 mp.start();
                 break;
 
@@ -402,9 +402,11 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
     int Time_slot = 120;
     boolean timerOn = false;
 
+    Boolean  Tacton_trip = true;
 
-    //New Timer Object
+    //New Timer Objects
     Timer timer = new Timer();
+    Timer timerSlot1 = new Timer();
 
 
     // Overload TimeTask object
@@ -494,8 +496,337 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         }
     };
 
+    // Flags trip vibrates
+    boolean Symbol_NN = false;
+    boolean Symbol_W = false;
+    boolean Symbol_UU= false;
+    boolean Symbol_pp= false;
+    boolean Symbol_cc= false;
 
 
+
+    int count = 0;
+    TimerTask task1 = new TimerTask() {
+        @Override
+        public void run() {
+
+            // TODO Auto-generated method stub
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+
+                    //******  Symbol Ñ  *****
+
+
+
+                    if (Symbol_NN) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_NN & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 3) {
+                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png1, Pattern.pattern("Ñ"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_NN= false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(40);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png1, Pattern.pattern_number("Ñ"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_NN= false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_NN) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("Ñ", "Ñ en Morse", R.mipmap.png1, Pattern.pattern("Ñ"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_NN = false;
+                                break;
+                            case 2 :
+                                Notification("Ñ", "1-2-4-5-6", R.mipmap.png1, Pattern.pattern_number("Ñ"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_NN = false;
+                                break;
+
+                        }
+                    }
+
+                    //***** Symbol W ******
+
+
+                    if (Symbol_W) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_W & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 8) {
+                                    Notification("W", "Himno U.S.A.", R.mipmap.png2, Pattern.pattern("W"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_W = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(41);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("W", "2-4-5-6", R.mipmap.png2, Pattern.pattern_number("W"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_W = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_W) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("W", "Himno U.S.A.", R.mipmap.png2, Pattern.pattern("W"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_W = false;
+                                break;
+                            case 2 :
+                                Notification("W", "2-4-5-6", R.mipmap.png2, Pattern.pattern_number("W"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_W = false;
+                                break;
+
+                        }
+                    }
+
+
+                    // *******  Symbol Ü ****
+
+                    if (Symbol_UU) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_UU & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 4) {
+                                    Notification("Ü", "Ulular de Búho", R.mipmap.png2, Pattern.pattern("Ü"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_UU = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(42);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("Ü", "1-2-5-6", R.mipmap.png2, Pattern.pattern_number("Ü"));
+
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_UU = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_UU) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("Ü", "Ulular de Búho", R.mipmap.png2, Pattern.pattern("ü"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_UU = false;
+                                break;
+                            case 2 :
+                                Notification("Ü", "1-2-5-6", R.mipmap.png2, Pattern.pattern_number("Ü"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_UU = false;
+                                break;
+
+                        }
+                    }
+
+                    //******  Symbol "."  *********
+
+
+
+
+                    if (Symbol_pp) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_pp & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 2) {
+                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_pp = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(43);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification(".", "3", R.mipmap.png4, Pattern.pattern_number("."));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_pp = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_pp) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_pp = false;
+                                break;
+                            case 2 :
+                                Notification(".", "3", R.mipmap.png4, Pattern.pattern_number("."));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_pp = false;
+                                break;
+
+                        }
+                    }
+
+
+                    // ****** Symbol "," ******
+
+
+
+
+                    if (Symbol_cc) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_cc & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 2) {
+                                    Notification(",", "Revote muelle", R.mipmap.png5, Pattern.pattern(","));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_cc = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(44);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification(",", "2", R.mipmap.png5, Pattern.pattern_number(","));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_cc= false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_cc) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification(",", "Revote muelle", R.mipmap.png5, Pattern.pattern(","));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_cc = false;
+                                break;
+                            case 2 :
+                                Notification(",", "2", R.mipmap.png5, Pattern.pattern_number(","));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_cc = false;
+                                break;
+
+                        }
+                    }
+
+
+
+                } // end run
+
+            });
+        }
+    };
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        finish();
+
+    }
 
 
     boolean button_pressed = false;
@@ -567,23 +898,19 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         ImageButton button63 = findViewById(R.id.imageButton63);
         ImageButton button64 = findViewById(R.id.imageButton64);
         ImageButton button65 = findViewById(R.id.imageButton65);
+
         // Back screen
 
         ImageButton backscreen = findViewById(R.id.backscreen);
-
-        Intent intent1 = new Intent(this, MainActivity.class);
-        Intent intent2 = new Intent(this,Sheet_punctuation_symbols.class);
-
         backscreen.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        //     finishActivity(intent2);
-                        startActivity(intent1);
-
-
-
+                        //     finishActivity;
+                        onBackPressed();
                     }});
+
+
 
 
         // *.cvs file creation button
@@ -592,7 +919,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
         //Selection  mode program
 
-        RadioButton pin_mode_work= findViewById(R.id.Chek);
+   /*     RadioButton pin_mode_work= findViewById(R.id.Chek);
         RadioButton pin_mode_check= findViewById(R.id.Test);
 
 
@@ -617,7 +944,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                         selected_mode= 1;
 
                     }});
-
+*/
 
 
 
@@ -660,15 +987,13 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         boolean disable_button_resc= false;
 
 
-       // Test Interrupt graphical variable declaration
-        ImageButton Iniciar_test = findViewById(R.id.Iniciar_Test);
+       // Test Start
+        ImageButton Start_test = findViewById(R.id.Start_test);
 
-        //Declaración de variable gráfica de Interrupcióon de Test
-        ImageButton Iniciar_test_off= findViewById(R.id.Iniciar_Test_off);
-
+        //Test Stop
+        ImageButton Stop_test= findViewById(R.id.Stop_test);
 
         // Enable vibrate option
-
         Vibrator vibrator;
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -686,13 +1011,12 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         }
 
 
-        // Start thread timer
-
+        // Start threads timer&control
+        Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
+        timerSlot1.schedule(task1,1000,1000);
 
 
-
-        Iniciar_test_off.setVisibility(View.INVISIBLE);
 
         Sound(23);
 
@@ -730,22 +1054,22 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
 
 
-        Iniciar_test_off.setOnClickListener(
+        Stop_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
                         //Interrupción test - Botón emergencia
-                        Iniciar_test.setVisibility(View.VISIBLE);
-                        Iniciar_test.setEnabled(true);
-                        Iniciar_test_off.setVisibility((View.INVISIBLE));
-                        Iniciar_test_off.setEnabled(false);
+                        Start_test.setVisibility(View.VISIBLE);
+                        Start_test.setEnabled(true);
+                        Stop_test.setVisibility((View.INVISIBLE));
+                        Stop_test.setEnabled(false);
                         secondLeft=0;
 
 
                     }});
 
 
-        Iniciar_test.setOnClickListener(
+        Start_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
                         switch (Status_test) {
@@ -759,7 +1083,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 Sound(34);
                                 //Mode programme
 
-                                if  (selected_mode == 0)  // Check mode
+                        /*        if  (selected_mode == 0)  // Check mode
                                 {
                                     pin_mode_check.setEnabled(true);
                                     pin_mode_work.setEnabled(false);
@@ -767,7 +1091,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 {
                                     pin_mode_check.setEnabled(false);
                                     pin_mode_work.setEnabled(true);
-                                }
+                                }*/
 
                                 // Selected test
                                 if (selected_mode == 0){
@@ -807,9 +1131,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 Activ_test = true;
                                 textView2.setText("Entrenamiento nº1");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(24);
                                 break;
@@ -827,9 +1151,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line + 1;
                                 // test_line = 1;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 if (Activ_test) {
                                     WriteFileTest File = new WriteFileTest();
@@ -844,9 +1168,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 On = true;
                                 textView2.setText("Entrenamiento nº2");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(26);
                                 break;
@@ -863,9 +1187,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 Er = 0;
                                 flag_sel = false;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 test_line = test_line + 1;
                                 // test_line = 2;
                                 if (Activ_test) {
@@ -880,9 +1204,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 textView2.setText("Entrenamiento nº3");
                                 secondLeft = Time_slot;
 
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(28);
                                 break;
@@ -900,9 +1224,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line +1;
                                 //test_line = 3;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File3 = new WriteFileTest();
                                     File3.Write_Text_File(Sheet_punctuation_symbols.this,path_braille,file_out,"Line " + test_line +";");
@@ -915,9 +1239,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 textView2.setText("Entrenamiento nº4");
                                 secondLeft = Time_slot;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(30);
                                 break;
@@ -935,9 +1259,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line +1;
                                 //test_line = 4;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File4 = new WriteFileTest();
                                     File4.Write_Text_File(Sheet_punctuation_symbols.this,path_braille,file_out,"Line " + test_line + ";");
@@ -951,9 +1275,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 flag_sel = false;
                                 secondLeft = Time_slot;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(32);
                                 break;
@@ -971,9 +1295,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line  + 1;
                                 //test_line = 5;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File5 = new WriteFileTest();
                                     File5.Write_Text_File(Sheet_punctuation_symbols.this,path_braille,file_out,"Line " + test_line + ";");
@@ -1162,24 +1486,17 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(1);
-                                    Wait(2);
-                                    // Vibration Pattern
-                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png1, Pattern.pattern("Ñ"));
-                                    break;
+                                    Symbol_NN = true;
+                                     break;
 
                                 case 2:
 
                                     // Numbers list
                                     Sound(40);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png1, Pattern.pattern_number("Ñ"));
-
+                                    Symbol_NN = true;
                                     break;
 
-                                default:
-                                    throw new IllegalStateException("Unexpected value: " + selected_test);
-                            }
+                                 }
                         }
                         return false;
                     }});
@@ -1204,19 +1521,14 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(2);
-                                    Wait(6);
-                                    // Vibration Pattern
-                                    Notification("W", "Himno U.S.A.", R.mipmap.png2, Pattern.pattern("W"));
+                                    Symbol_W = true;
                                     break;
 
                                 case 2:
 
                                     // Numbers list
                                     Sound(41);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("W", "2-4-5-6", R.mipmap.png2, Pattern.pattern_number("W"));
-
+                                    Symbol_W = true;
                                     break;
 
                             }
@@ -1241,18 +1553,13 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(3);
-                                    Wait(3);
-                                    // Vibration Pattern
-                                    Notification("Ü", "Ulular de Búho", R.mipmap.png2, Pattern.pattern("ü"));
+                                    Symbol_UU = true;
                                     break;
 
                                 case 2:
                                     // Numbers list
                                     Sound(42);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("Ü", "1-2-5-6", R.mipmap.png2, Pattern.pattern_number("Ü"));
-
+                                    Symbol_UU = true;
                                     break;
 
                             }
@@ -1278,18 +1585,13 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(4);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
-                                    break;
+                                    Symbol_pp = true;
+                                      break;
 
                                 case 2:
                                     // Numbers list
                                     Sound(43);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification(".", "3", R.mipmap.png4, Pattern.pattern_number("."));
-
+                                    Symbol_pp = true;
                                     break;
 
                             }
@@ -1313,17 +1615,13 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 1:
                                     //Symbol locution + onomatopoeid sound
                                     Sound(5);
-                                    Wait(5);
-                                    // Vibration Pattern
-                                    Notification(",", "Revote muelle", R.mipmap.png5, Pattern.pattern(","));
-                                    break;
+                                    Symbol_cc = true;
+                                     break;
 
                                 case 2:
                                     // Numbers list
                                     Sound(44);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification(",", "2", R.mipmap.png5, Pattern.pattern_number(","));
+                                   Symbol_cc = true;
                                     break;
                             }
                         }
@@ -1339,20 +1637,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1) & (secondLeft>0)) {
-
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
-                                    break;
-                                case 2:
-                                    Notification(".", "3",R.mipmap.png2,Pattern.pattern_number(".") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_cc = true;
                             Symbol = '.';
                             flag_sel= true;
                         }
@@ -1366,20 +1652,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1) & (secondLeft>0)) {
-
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("W","Himno U.S.A.", R.mipmap.png3,Pattern.pattern("W") );
-                                    break;
-                                case 2:
-                                    Notification("W","2-4-5-6", R.mipmap.png3,Pattern.pattern_number("W") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_W = true;
                             Symbol = 'W';
                             flag_sel= true;
                         }
@@ -1391,18 +1665,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png5,Pattern.pattern("Ñ") );
-                                    break;
-                                case 2:
-                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png5,Pattern.pattern_number("Ñ") );
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_NN = true;
                             Symbol = 'Ñ';
                             flag_sel= true;
                         }
@@ -1416,18 +1680,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ü", "Ulular de Bucho - descorches", R.mipmap.png1, Pattern.pattern("Ü"));
-                                    break;
-                                case 2:
-                                    Notification("Ü", "1-2-5-6", R.mipmap.png1, Pattern.pattern_number("Ü"));
-                                    break;
-                            }
+                            Symbol_UU = true;
                             Symbol = 'Ü';
                             flag_sel= true;
                         }
@@ -1441,19 +1694,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)&& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(",","Rebote muelle",R.mipmap.png4,Pattern.pattern(",") );
-                                    break;
-                                case 2:
-                                    Notification(",","2",R.mipmap.png4,Pattern.pattern_number(",") );
-                                    break;
-                            }
-
+                            Symbol_pp = true;
                             Symbol = ',';
                             flag_sel= true;
                         }
@@ -1472,19 +1713,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)){
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("W","Himno U.S.A.", R.mipmap.png3,Pattern.pattern("W") );
-                                    break;
-                                case 2:
-                                    Notification("W","2-4-5-6", R.mipmap.png3,Pattern.pattern_number("W") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_W = true;
                             Symbol = 'W';
                             flag_sel= true;
                         }
@@ -1499,19 +1729,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
-                                    break;
-                                case 2:
-                                    Notification(".", "3",R.mipmap.png2,Pattern.pattern_number(".") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_pp = true;
                             Symbol = '.';
                             flag_sel= true;
                         }
@@ -1523,19 +1742,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(",","Rebote muelle",R.mipmap.png4,Pattern.pattern(",") );
-                                    break;
-                                case 2:
-                                    Notification(",","2",R.mipmap.png4,Pattern.pattern_number(",") );
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_cc = true;
                             Symbol = ',';
                             flag_sel= true;
                         }
@@ -1549,18 +1757,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png5,Pattern.pattern("Ñ") );
-                                    break;
-                                case 2:
-                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png5,Pattern.pattern_number("Ñ") );
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_NN = true;
                             Symbol = 'Ñ';
                             flag_sel= true;
                         }
@@ -1574,18 +1772,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ü", "Ulular de Bucho - descorches", R.mipmap.png1, Pattern.pattern("Ü"));
-                                    break;
-                                case 2:
-                                    Notification("Ü", "1-2-5-6", R.mipmap.png1, Pattern.pattern_number("Ü"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_UU = true;
                             Symbol = 'Ü';
                             flag_sel= true;
                         }
@@ -1603,18 +1791,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png5,Pattern.pattern("Ñ") );
-                                    break;
-                                case 2:
-                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png5,Pattern.pattern_number("Ñ") );
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_NN = true;
                             Symbol = 'Ñ';
                             flag_sel= true;
                         }
@@ -1627,18 +1805,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ü", "Ulular de Bucho - descorches", R.mipmap.png1, Pattern.pattern("Ü"));
-                                    break;
-                                case 2:
-                                    Notification("Ü", "1-2-5-6", R.mipmap.png1, Pattern.pattern_number("Ü"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_UU = true;
                             Symbol = 'Ü';
                             flag_sel= true;
                         }
@@ -1651,19 +1819,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("W","Himno U.S.A.", R.mipmap.png3,Pattern.pattern("W") );
-                                    break;
-                                case 2:
-                                    Notification("W","2-4-5-6", R.mipmap.png3,Pattern.pattern_number("W") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_W = true;
                             Symbol = 'W';
                             flag_sel= true;
                         }
@@ -1677,19 +1834,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
-                                    break;
-                                case 2:
-                                    Notification(".", "3",R.mipmap.png2,Pattern.pattern_number(".") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_pp = true;
                             Symbol = '.';
                             flag_sel= true;
                         }
@@ -1702,19 +1848,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(",","Rebote muelle",R.mipmap.png4,Pattern.pattern(",") );
-                                    break;
-                                case 2:
-                                    Notification(",","2",R.mipmap.png4,Pattern.pattern_number(",") );
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_pp = true;
                             Symbol = ',';
                             flag_sel= true;
                         }
@@ -1732,19 +1867,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("W","Himno U.S.A.", R.mipmap.png3,Pattern.pattern("W") );
-                                    break;
-                                case 2:
-                                    Notification("W","2-4-5-6", R.mipmap.png3,Pattern.pattern_number("W") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_W = true;
                             Symbol = 'W';
                             flag_sel= true;
                         }
@@ -1757,19 +1881,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(",","Rebote muelle",R.mipmap.png4,Pattern.pattern(",") );
-                                    break;
-                                case 2:
-                                    Notification(",","2",R.mipmap.png4,Pattern.pattern_number(",") );
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_pp = true;
                             Symbol = ',';
                             flag_sel= true;
                         }
@@ -1783,18 +1896,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ü", "Ulular de Bucho - descorches", R.mipmap.png1, Pattern.pattern("Ü"));
-                                    break;
-                                case 2:
-                                    Notification("Ü", "1-2-5-6", R.mipmap.png1, Pattern.pattern_number("Ü"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_UU = true;
                             Symbol = 'Ü';
                             flag_sel= true;
                         }
@@ -1808,19 +1911,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
-                                    break;
-                                case 2:
-                                    Notification(".", "3",R.mipmap.png2,Pattern.pattern_number(".") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_pp = true;
                             Symbol = '.';
                             flag_sel= true;
                         }
@@ -1836,18 +1928,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png5,Pattern.pattern("Ñ") );
-                                    break;
-                                case 2:
-                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png5,Pattern.pattern_number("Ñ") );
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_NN = true;
                             Symbol = 'Ñ';
                             flag_sel= true;
                         }
@@ -1864,19 +1946,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
-                                    break;
-                                case 2:
-                                    Notification(".", "3",R.mipmap.png2,Pattern.pattern_number(".") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_pp = true;
                             Symbol = '.';
                             flag_sel= true;
                         }
@@ -1889,18 +1960,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((secondLeft>0) & (Status_test == 9)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png5,Pattern.pattern("Ñ") );
-                                    break;
-                                case 2:
-                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png5,Pattern.pattern_number("Ñ") );
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_NN = true;
                             Symbol = 'Ñ';
                             flag_sel= true;
                         }
@@ -1913,18 +1974,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("Ü", "Ulular de Bucho - descorches", R.mipmap.png1, Pattern.pattern("Ü"));
-                                    break;
-                                case 2:
-                                    Notification("Ü", "1-2-5-6", R.mipmap.png1, Pattern.pattern_number("Ü"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_UU = true;
                             Symbol = 'Ü';
                             flag_sel= true;
                         }
@@ -1937,19 +1988,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification(",","Rebote muelle",R.mipmap.png4,Pattern.pattern(",") );
-                                    break;
-                                case 2:
-                                    Notification(",","2",R.mipmap.png4,Pattern.pattern_number(",") );
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_cc = true;
                             Symbol = ',';
                             flag_sel= true;
 
@@ -1964,19 +2004,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("W","Himno U.S.A.", R.mipmap.png3,Pattern.pattern("W") );
-                                    break;
-                                case 2:
-                                    Notification("W","2-4-5-6", R.mipmap.png3,Pattern.pattern_number("W") );
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_W = true;
                             Symbol = 'W';
                             flag_sel= true;
                         }

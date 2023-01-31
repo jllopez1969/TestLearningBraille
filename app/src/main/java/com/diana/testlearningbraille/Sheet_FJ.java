@@ -231,7 +231,7 @@ public class Sheet_FJ extends AppCompatActivity {
                 break;
 
             case 5:
-                mp = MediaPlayer.create(this, R.raw.j_retorno_del_jedi);
+                mp = MediaPlayer.create(this, R.raw.j_final_juego);
                 mp.start();
                 break;
 
@@ -407,9 +407,11 @@ public class Sheet_FJ extends AppCompatActivity {
     int Time_slot = 120;
     //  boolean timerOn = false;
 
+    Boolean  Tacton_trip = true;
 
-    // New object timer
+    // New objects timer
     Timer timer = new Timer();
+    Timer timerSlot1 = new Timer();
 
     // Overload object TimeTask
 
@@ -496,6 +498,341 @@ public class Sheet_FJ extends AppCompatActivity {
         }
     };
 
+    // Flags trip vibrates
+    boolean Symbol_F = false;
+    boolean Symbol_G = false;
+    boolean Symbol_H= false;
+    boolean Symbol_I= false;
+    boolean Symbol_J= false;
+
+
+
+    int count = 0;
+    TimerTask task1 = new TimerTask() {
+        @Override
+        public void run() {
+
+            // TODO Auto-generated method stub
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+
+                    //******  Symbol F  *****
+                    if (Symbol_F) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_F & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 3) {
+                                    Notification("F", "Ésto es África - Shakira", R.mipmap.png1, Pattern.pattern("F"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_F= false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(40);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("F", "1-2-4", R.mipmap.png1, Pattern.pattern_number("F"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_F= false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_F) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("F", "Ésto es África - Shakira", R.mipmap.png1, Pattern.pattern("F"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_F = false;
+                                break;
+                            case 2 :
+                                Notification("F", "1-2-4", R.mipmap.png1, Pattern.pattern_number("F"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_F = false;
+                                break;
+
+                        }
+                    }
+
+                    //***** Symbol G ******
+
+
+
+                    if (Symbol_G) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_G & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 4) {
+                                    Notification("G", "Canto de Grillo", R.mipmap.png2, Pattern.pattern("G"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_G = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(41);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("G", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("G"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_G = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_G) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("G", "Canto de Grillo", R.mipmap.png2, Pattern.pattern("G"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_G = false;
+                                break;
+                            case 2 :
+                                Notification("G", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("G"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_G = false;
+                                break;
+
+                        }
+                    }
+
+
+                    // *******  Symbol H ****
+
+
+                    if (Symbol_H) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_H & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 2) {
+                                    Notification("H", "H en Morse", R.mipmap.png3, Pattern.pattern("H"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_H = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(42);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("H", "1-2-5", R.mipmap.png3, Pattern.pattern_number("H"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_H = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_H) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("H", "H en Morse", R.mipmap.png3, Pattern.pattern("H"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_H = false;
+                                break;
+                            case 2 :
+                                 Notification("H", "1-2-5", R.mipmap.png3, Pattern.pattern_number("H"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_H = false;
+                                break;
+
+                        }
+                    }
+
+
+
+                    //******  Symbol I *********
+
+
+
+
+                    if (Symbol_I) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_I & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 4) {
+                                    Notification("I", "Campana", R.mipmap.png4, Pattern.pattern("I"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_I = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(43);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("I", "2-4", R.mipmap.png4, Pattern.pattern("I"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_I = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_I) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("I", "Campana", R.mipmap.png4, Pattern.pattern("I"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_I = false;
+                                break;
+                            case 2 :
+                                Notification("I", "2-4", R.mipmap.png4, Pattern.pattern("I"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_I = false;
+                                break;
+
+                        }
+                    }
+
+
+
+
+                    // ****** Symbol J  ******
+
+
+
+
+
+
+                    if (Symbol_J) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_J & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 6) {
+                                    Notification("J", "Melodia: Marcha Imperial - Star War", R.mipmap.png5, Pattern.pattern("J"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_J = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(44);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("J", "2 - 4 - 5", R.mipmap.png5, Pattern.pattern_number("J"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_J = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_J) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("J", "Melodía: Marcha Imperial - Star War", R.mipmap.png5, Pattern.pattern("J"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_J = false;
+                                break;
+                            case 2 :
+                                Notification("J", "2-4-5", R.mipmap.png5, Pattern.pattern_number("J"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_J = false;
+                                break;
+
+                        }
+                    }
+
+
+
+                } // end run
+
+            });
+        }
+    };
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        finish();
+
+    }
 //************************************************************
 //                  Create function
 //**********************************************************************
@@ -570,20 +907,17 @@ public class Sheet_FJ extends AppCompatActivity {
         // Back screen
 
         ImageButton backscreen = findViewById(R.id.backscreen);
-
-        Intent intent1 = new Intent(this, MainActivity.class);
-        Intent intent2 = new Intent(this,Sheet_FJ.class);
-
         backscreen.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        //     finishActivity(intent2);
-                        startActivity(intent1);
-
-
-
+                        //     finishActivity;
+                        onBackPressed();
                     }});
+
+
+
+
 
 
         // *.cvs file creation button
@@ -592,7 +926,7 @@ public class Sheet_FJ extends AppCompatActivity {
 
         //Selection  mode program
 
-        RadioButton pin_mode_work= findViewById(R.id.Chek);
+   /*     RadioButton pin_mode_work= findViewById(R.id.Chek);
         RadioButton pin_mode_check= findViewById(R.id.Test);
 
 
@@ -616,7 +950,7 @@ public class Sheet_FJ extends AppCompatActivity {
                     public void onClick(View view) {
                         selected_mode= 1;
 
-                    }});
+                    }});*/
 
 
 
@@ -663,22 +997,19 @@ public class Sheet_FJ extends AppCompatActivity {
 
 
 
-        // Declariación de  Variable gráfica de Inicio Test
+        //Test Start variable
+        ImageButton Start_test = findViewById(R.id.Start_test);
 
-        ImageButton Iniciar_test = findViewById(R.id.Iniciar_Test);
-
-        //Test Interrupt graphical variable declaration
-        ImageButton Iniciar_test_off= findViewById(R.id.Iniciar_Test_off);
+        //Test Stop variable
+        ImageButton Stop_test= findViewById(R.id.Stop_test);
 
 
-        // Enable vibrate option
-
+        //Enable vibrate option
         Vibrator vibrator;
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 
         // Enable file write permission on disk
-
         int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
@@ -688,15 +1019,14 @@ public class Sheet_FJ extends AppCompatActivity {
             Log.i("Mensaje", "Se tiene permiso para leer y escribir!");
         }
 
-
-        // Start timer thread
-
+// Start threads timer&control
+        Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
+        timerSlot1.schedule(task1,1000,1000);
 
         Sound(23);
 
-        // Start test
-
+        //Create file "*.cvs"
         Create_file.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -726,15 +1056,15 @@ public class Sheet_FJ extends AppCompatActivity {
 
                     }});
 
-        Iniciar_test_off.setOnClickListener(
+        Stop_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
                         //Interrupción test - Botón emergencia
-                        Iniciar_test.setVisibility(View.VISIBLE);
-                        Iniciar_test.setEnabled(true);
-                        Iniciar_test_off.setVisibility((View.INVISIBLE));
-                        Iniciar_test_off.setEnabled(false);
+                        Start_test.setVisibility(View.VISIBLE);
+                        Start_test.setEnabled(true);
+                        Stop_test.setVisibility((View.INVISIBLE));
+                        Stop_test.setEnabled(false);
                         secondLeft=0;
 
 
@@ -742,7 +1072,7 @@ public class Sheet_FJ extends AppCompatActivity {
 
 
 
-        Iniciar_test.setOnClickListener(
+        Start_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
@@ -759,7 +1089,7 @@ public class Sheet_FJ extends AppCompatActivity {
 
                                 //Mode programme
 
-                                if  (selected_mode == 0)  // Check mode
+                          /*      if  (selected_mode == 0)  // Check mode
                                 {
                                     pin_mode_check.setEnabled(true);
                                     pin_mode_work.setEnabled(false);
@@ -767,7 +1097,7 @@ public class Sheet_FJ extends AppCompatActivity {
                                 {
                                     pin_mode_check.setEnabled(false);
                                     pin_mode_work.setEnabled(true);
-                                }
+                                }*/
 
                                 // Selected test
                                 if (selected_mode == 0){
@@ -807,9 +1137,9 @@ public class Sheet_FJ extends AppCompatActivity {
                                 Activ_test = true;
                                 textView2.setText("Entrenamiento nº1");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(24);
                                 break;
                             case 1:
@@ -829,9 +1159,9 @@ public class Sheet_FJ extends AppCompatActivity {
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 1;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(25);
                                 break;
 
@@ -839,9 +1169,9 @@ public class Sheet_FJ extends AppCompatActivity {
                                 On = true;
                                 textView2.setText("Entrenamiento nº2");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(26);
                                 break;
 
@@ -862,18 +1192,18 @@ public class Sheet_FJ extends AppCompatActivity {
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 2;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(27);
                                 break;
                             case 4:
                                 On = true;
                                 textView2.setText("Entrenamiento nº3");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(28);
                                 break;
                             case 5:
@@ -893,18 +1223,18 @@ public class Sheet_FJ extends AppCompatActivity {
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 3;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(29);
                                 break;
                             case 6:
                                 On = true;
                                 textView2.setText("Entrenamiento nº4");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(30);
                                 break;
                             case 7:
@@ -924,9 +1254,9 @@ public class Sheet_FJ extends AppCompatActivity {
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 4;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(31);
                                 break;
                             case 8:
@@ -934,9 +1264,9 @@ public class Sheet_FJ extends AppCompatActivity {
                                 textView2.setText("Entrenamiento nº5");
                                 flag_sel = false;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(32);
                                 break;
 
@@ -956,9 +1286,9 @@ public class Sheet_FJ extends AppCompatActivity {
                                 Er = 0;
                                 secondLeft = Time_slot;
                                 test_line = 5;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 Sound(33);
                                 break;
 
@@ -1133,21 +1463,13 @@ public class Sheet_FJ extends AppCompatActivity {
                         case 1:
                             //Symbol Locution + onomatopoeic sound
                             Sound(1);
-                            // Pattern Vibrate
-                            Wait(5);
-                            Notification("F", "Ésto es África - Shakira", R.mipmap.png1, Pattern.pattern("F"));
+                            Symbol_F = true;
                             break;
 
                         case 2:
 
                             Sound(11);
-                            Wait(1);
-                            // Numbers list
-                            Sound(40);
-                            Wait(1);
-                            // Vibration Pattern
-                            Notification("F", "1-2-4", R.mipmap.png1, Pattern.pattern_number("F"));
-
+                            Symbol_F = true;
                             break;
 
                     }
@@ -1173,19 +1495,12 @@ public class Sheet_FJ extends AppCompatActivity {
                         case 1:
                             //Symbol Locution + onomatopoeic sound
                             Sound(2);
-                            Wait(2);
-                            // Vibration Pattern
-                            Notification("G", "Canto de Grillo", R.mipmap.png2, Pattern.pattern("G"));
+                            Symbol_G = true;
                             break;
 
                         case 2:
                             Sound(12);
-                            Wait(1);
-                            //Numbers list
-                            Sound(41);
-                            Wait(1);
-                            //Vibration Pattern
-                            Notification("G", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("G"));
+                            Symbol_G = true;
                             break;
 
 
@@ -1209,19 +1524,12 @@ public class Sheet_FJ extends AppCompatActivity {
                         case 1:
                             //Symbol Locution + onomatopoeic sound
                             Sound(3);
-                            Wait(2);
-                            // Vibration Pattern
-                            Notification("H", "H en Morse", R.mipmap.png3, Pattern.pattern("H"));
+                            Symbol_H = true;
                             break;
 
                         case 2:
                             Sound(13);
-                            Wait(1);
-                            //Numbers list
-                            Sound(42);
-                            Wait(1);
-                            //Vibration Pattern
-                            Notification("H", "1-2-5", R.mipmap.png3, Pattern.pattern_number("H"));
+                            Symbol_H = true;
                             break;
 
 
@@ -1248,20 +1556,13 @@ public class Sheet_FJ extends AppCompatActivity {
                         case 1:
                             //Symbol Locution + onomatopoeic sound
                             Sound(4);
-                            Wait(5);
-                            // Vibration Pattern
-                            Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
+                            Symbol_I = true;
                             break;
 
                         case 2:
                             Sound(14);
-                            Wait(1);
-                            //Numbers list
-                            Sound(43);
-                            Wait(1);
-                            // Vibration Pattern
-                            Notification("I", "2-4", R.mipmap.png4, Pattern.pattern("I"));
-                            break;
+                            Symbol_I = true;
+                           break;
 
 
                     }
@@ -1286,19 +1587,12 @@ public class Sheet_FJ extends AppCompatActivity {
                         case 1:
                             //Symbol Locution + onomatopoeic sound
                             Sound(5);
-                            Wait(6);
-                            // Vibration Pattern
-                            Notification("J", "Marcha Imperial - Star war - John Williams", R.mipmap.png5, Pattern.pattern("J"));
+                            Symbol_J = true;
                             break;
 
                         case 2:
                             Sound(15);
-                            Wait(1);
-                            //Numbers list
-                            Sound(44);
-                            Wait(1);
-                            // Vibration Pattern
-                            Notification("J", "2 - 4 - 5", R.mipmap.png5, Pattern.pattern_number("J"));
+                            Symbol_J = true;
                             break;
 
 
@@ -1314,23 +1608,14 @@ public class Sheet_FJ extends AppCompatActivity {
         // *******************************************************************
 
 
-        //Symbol ""B""
+        //Symbol "J"
 
 
         button6.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft > 0)) {
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("J", "Retorno del Jedi - Marcha Imperial",R.mipmap.png2,Pattern.pattern("J") );
-                            break;
-                        case 2:
-                            Notification("J", "2-4-5",R.mipmap.png2,Pattern.pattern_number("J") );
-                            break;
-                    }
+                    Tacton_trip = false;
+                    Symbol_J = true;
                     Symbol = 'J';
                     flag_sel= true;
                 }
@@ -1344,17 +1629,8 @@ public class Sheet_FJ extends AppCompatActivity {
         button7.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft > 0)) {
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("I","Toques de Campana", R.mipmap.png3,Pattern.pattern("I") );
-                            break;
-                        case 2:
-                            Notification("I","2-4", R.mipmap.png3,Pattern.pattern_number("I") );
-                            break;
-                    }
+                    Tacton_trip = false;
+                    Symbol_I = true;
                     Symbol = 'I';
                     flag_sel= true;
                 }
@@ -1365,17 +1641,8 @@ public class Sheet_FJ extends AppCompatActivity {
         button8.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft > 0)) {
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("F", "Ésto es África - Shakira", R.mipmap.png5, Pattern.pattern("F"));
-                            break;
-                        case 2:
-                            Notification("F", "1-2-4", R.mipmap.png5, Pattern.pattern_number("F"));
-                            break;
-                    }
+                    Tacton_trip = false;
+                    Symbol_F = true;
                     Symbol = 'F';
                     flag_sel = true;
                 }
@@ -1387,18 +1654,8 @@ public class Sheet_FJ extends AppCompatActivity {
         button9.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1)  & (secondLeft>0)){
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern("G"));
-                            break;
-                        case 2:
-                            Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern_number("G"));
-                            break;
-                    }
-
+                    Tacton_trip = false;
+                    Symbol_G = true;
                     Symbol = 'G';
                     flag_sel= true;
                 }
@@ -1410,17 +1667,8 @@ public class Sheet_FJ extends AppCompatActivity {
         button10.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1)  & (secondLeft>0)){
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("H","H en Morse",R.mipmap.png4,Pattern.pattern("H") );
-                            break;
-                        case 2:
-                            Notification("H","1-2-5",R.mipmap.png4,Pattern.pattern_number("H") );
-                            break;
-                    }
+                    Tacton_trip = false;
+                    Symbol_H = true;
                     Symbol = 'H';
                     flag_sel= true;
                 }
@@ -1438,18 +1686,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
-                                    break;
-                                case 2:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern_number("I"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_I = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1463,19 +1701,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-
-                                    Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern("G"));
-                                    break;
-                                case 2:
-                                    Notification("G", "1-2-4-5", R.mipmap.png1, Pattern.pattern_number("G"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_G = true;
                             Symbol= 'G';
                             flag_sel= true;
                         }
@@ -1487,18 +1714,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-
-                                    Notification("J", "Retorno del Jedi - Marcha Imperial", R.mipmap.png3, Pattern.pattern("J"));
-                                    break;
-                                case 2:
-                                    Notification("J", "2-4-5", R.mipmap.png3, Pattern.pattern_number("J"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_J = true;
                             Symbol = 'J';
                             flag_sel= true;
                         }
@@ -1511,19 +1728,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-
-                                    Notification("F", "Ésto es África - Shakira",R.mipmap.png2,Pattern.pattern("F") );
-                                    break;
-                                case 2:
-                                    Notification("F", "1-2-4",R.mipmap.png2,Pattern.pattern_number("F") );
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_F = true;
                             Symbol= 'F';
                             flag_sel= true;
                         }
@@ -1538,18 +1744,8 @@ public class Sheet_FJ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
 
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("H", "H en Morse", R.mipmap.png5, Pattern.pattern("H"));
-                                    break;
-                                case 2:
-                                    Notification("H", "1-2-5", R.mipmap.png5, Pattern.pattern_number("H"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_H = true;
                             Symbol = 'H';
                             flag_sel= true;
                         }
@@ -1566,17 +1762,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) &(secondLeft > 0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("F", "Ésto es África - Shakira", R.mipmap.png5, Pattern.pattern("F"));
-                                    break;
-                                case 2:
-                                    Notification("F", "1-2-4", R.mipmap.png5, Pattern.pattern_number("F"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_F = true;
                             Symbol = 'F';
                             flag_sel= true;
                         }
@@ -1589,17 +1776,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) &(secondLeft > 0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("J", "Retorno del Jedi - Marcha Imperial",R.mipmap.png2,Pattern.pattern("J") );
-                                    break;
-                                case 2:
-                                    Notification("J", "2-4-5",R.mipmap.png2,Pattern.pattern_number("J") );
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_J = true;
                             Symbol = 'J';
                             flag_sel= true;
                         }
@@ -1612,17 +1790,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) &(secondLeft > 0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("H","H en Morse",R.mipmap.png4,Pattern.pattern("H") );
-                                    break;
-                                case 2:
-                                    Notification("H","1-2-5",R.mipmap.png4,Pattern.pattern_number("H") );
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_H = true;
                             Symbol = 'H';
                             flag_sel= true;
                         }
@@ -1636,17 +1805,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) &(secondLeft > 0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
-                                    break;
-                                case 2:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern_number("I"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_I = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1659,18 +1819,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) &(secondLeft > 0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-
-                                    Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern("G"));
-                                    break;
-                                case 2:
-                                    Notification("G", "1-2-4-5", R.mipmap.png1, Pattern.pattern_number("G"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_G = true;
                             Symbol = 'G';
                             flag_sel= true;
                         }
@@ -1688,17 +1838,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("H","H en Morse",R.mipmap.png4,Pattern.pattern("H") );
-                                    break;
-                                case 2:
-                                    Notification("H","1-2-5",R.mipmap.png4,Pattern.pattern_number("H") );
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_H = true;
                             Symbol = 'H';
                             flag_sel= true;
                         }
@@ -1711,18 +1852,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
-
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("F", "Ésto es África - Shakira", R.mipmap.png5, Pattern.pattern("F"));
-                                    break;
-                                case 2:
-                                    Notification("F", "1-2-4", R.mipmap.png5, Pattern.pattern_number("F"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_F = true;
                             Symbol = 'F';
                             flag_sel= true;
                         }
@@ -1735,18 +1866,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-
-                                    Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern("G"));
-                                    break;
-                                case 2:
-                                    Notification("G", "1-2-4-5", R.mipmap.png1, Pattern.pattern_number("G"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_G= true;
                             Symbol = 'G';
                             flag_sel= true;
                         }
@@ -1761,17 +1882,8 @@ public class Sheet_FJ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
 
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("J", "Retorno del Jedi - Marcha Imperial",R.mipmap.png2,Pattern.pattern("J") );
-                                    break;
-                                case 2:
-                                    Notification("J", "2-4-5",R.mipmap.png2,Pattern.pattern_number("J") );
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_J = true;
                             Symbol = 'J';
                             flag_sel= true;
                         }
@@ -1787,17 +1899,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
-                                    break;
-                                case 2:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern_number("I"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_I = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1815,17 +1918,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft >0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern("I"));
-                                    break;
-                                case 2:
-                                    Notification("I", "Toques de Campana", R.mipmap.png4, Pattern.pattern_number("I"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_I = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1838,18 +1932,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft >0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-
-                                    Notification("G", "Canto de Grillo", R.mipmap.png1, Pattern.pattern("G"));
-                                    break;
-                                case 2:
-                                    Notification("G", "1-2-4-5", R.mipmap.png1, Pattern.pattern_number("G"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_G = true;
                             Symbol = 'G';
                             flag_sel= true;
                         }
@@ -1862,17 +1946,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft >0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("F", "Ésto es África - Shakira", R.mipmap.png5, Pattern.pattern("F"));
-                                    break;
-                                case 2:
-                                    Notification("F", "1-2-4", R.mipmap.png5, Pattern.pattern_number("F"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_F = true;
                             Symbol = 'F';
                             flag_sel= true;
                         }
@@ -1885,16 +1960,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft >0)) {
-                            switch (selected_test) {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("H", "H en Morse", R.mipmap.png4, Pattern.pattern("H"));
-                                    break;
-                                case 2:
-                                    Notification("H", "1-2-5", R.mipmap.png4, Pattern.pattern_number("H"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_H = true;
                             Symbol = 'H';
                             flag_sel = true;
                         }
@@ -1908,17 +1975,8 @@ public class Sheet_FJ extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft >0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("J", "Retorno del Jedi - Marcha Imperial",R.mipmap.png2,Pattern.pattern("J") );
-                                    break;
-                                case 2:
-                                    Notification("J", "2-4-5",R.mipmap.png2,Pattern.pattern_number("J") );
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_J = true;
                             Symbol = 'J';
                             flag_sel= true;
                         }

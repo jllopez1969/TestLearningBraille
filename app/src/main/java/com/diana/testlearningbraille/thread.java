@@ -1,16 +1,13 @@
 package com.diana.testlearningbraille;
+import java.util.Timer;
 
-public class thread extends Thread {
+public class thread extends Timer {
 
-
-            public void run() {
-
-
-            }
-
-            public void Notifiacion( String letra)
-            {
+    public void run() {
 
             }
-        }
+
+}
+
+
 

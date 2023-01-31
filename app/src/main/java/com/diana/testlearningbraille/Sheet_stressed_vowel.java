@@ -405,9 +405,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
     int Time_slot = 120;
     boolean timerOn = false;
 
+    Boolean  Tacton_trip = true;
 
-    //New Timer Object
+
+    //New Timer Objects
     Timer timer = new Timer();
+    Timer timerSlot1 = new Timer();
 
 
     // Overload TimeTask object
@@ -497,9 +500,333 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
         }
     };
 
+    // Flags trip vibrates
+    boolean Symbol_aa = false;
+    boolean Symbol_ee= false;
+    boolean Symbol_ii= false;
+    boolean Symbol_oo= false;
+    boolean Symbol_uu= false;
 
 
 
+    int count = 0;
+    TimerTask task1 = new TimerTask() {
+        @Override
+        public void run() {
+
+            // TODO Auto-generated method stub
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+
+                    //******  Symbol á  *****
+
+
+
+                    if (Symbol_aa) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_aa & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 3) {
+                                    Notification("AA", "Tema - Pantera Rosa", R.mipmap.png1, Pattern.pattern("AA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_aa= false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(40);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_aa= false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_aa) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("AA", "Tema - Pantera Rosa", R.mipmap.png1, Pattern.pattern("AA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_aa = false;
+                                break;
+                            case 2 :
+                                Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_aa = false;
+                                break;
+
+                        }
+                    }
+
+                    //***** Symbol é ******
+
+
+                    if (Symbol_ee) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_ee & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 6) {
+                                    Notification("EA", "Máquina de Escribir", R.mipmap.png2, Pattern.pattern("EA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_ee = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(41);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_ee = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_ee) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("EA", "Máquina de Escribir", R.mipmap.png2, Pattern.pattern("EA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_ee = false;
+                                break;
+                            case 2 :
+                                Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_ee = false;
+                                break;
+
+                        }
+                    }
+
+
+                    // *******  Symbol í ****
+
+
+                    if (Symbol_ii) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_ii & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 6) {
+                                    Notification("IA", "Sonido de campana", R.mipmap.png2, Pattern.pattern("IA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_ii = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(42);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_ii = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_ii) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("IA", "Sonido de campana", R.mipmap.png2, Pattern.pattern("IA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_ii = false;
+                                break;
+                            case 2 :
+                                Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_ii = false;
+                                break;
+
+                        }
+                    }
+
+                    //******  Symbol ó *********
+
+
+                    if (Symbol_oo) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_oo & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 4) {
+                                    Notification("OA", "Encuentros en la tercera fase", R.mipmap.png4, Pattern.pattern("OA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_oo = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(43);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_oo = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_oo) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("OA", "Encuentros en la tercera fase", R.mipmap.png4, Pattern.pattern("OA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_oo = false;
+                                break;
+                            case 2 :
+                                Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_oo = false;
+                                break;
+
+                        }
+                    }
+
+
+                    // ****** Symbol ú ******
+
+
+                    if (Symbol_uu) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_uu & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 3) {
+                                    Notification("UA", "Ulular de Buho", R.mipmap.png5, Pattern.pattern("UA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_uu = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(44);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_uu = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_uu) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("UA", "Ulular de Buho", R.mipmap.png5, Pattern.pattern("UA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_uu = false;
+                                break;
+                            case 2 :
+                                Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_uu = false;
+                                break;
+
+                        }
+                    }
+
+
+
+                } // end run
+
+            });
+        }
+    };
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        finish();
+
+    }
 
     boolean button_pressed = false;
 //************************************************************
@@ -580,20 +907,14 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
         // Back screen
 
         ImageButton backscreen = findViewById(R.id.backscreen);
-
-        Intent intent1 = new Intent(this, MainActivity.class);
-        Intent intent2 = new Intent(this,Sheet_stressed_vowel.class);
-
         backscreen.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        //     finishActivity(intent2);
-                        startActivity(intent1);
-
-
-
+                        //     finishActivity;
+                        onBackPressed();
                     }});
+
 
 
         // *.cvs file creation button
@@ -602,12 +923,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
         //Selection  mode program
 
-        RadioButton pin_mode_work= findViewById(R.id.Chek);
+    /*    RadioButton pin_mode_work= findViewById(R.id.Chek);
         RadioButton pin_mode_check= findViewById(R.id.Test);
 
 
         // Init selected_mode
-        pin_mode_check.setEnabled(true);
+       pin_mode_check.setEnabled(true);
         pin_mode_work.setEnabled(true);
 
         pin_mode_work.setChecked(true);
@@ -626,9 +947,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     public void onClick(View view) {
                         selected_mode= 1;
 
-                    }});
-
-
+                    }});*/
 
 
 
@@ -670,10 +989,10 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
         //Declaration of Test Start graphical variable
 
-        ImageButton Iniciar_test = findViewById(R.id.Iniciar_Test);
+        ImageButton Start_test = findViewById(R.id.Start_test);
 
         //Test Interrupt graphical variable declaration
-        ImageButton Iniciar_test_off= findViewById(R.id.Iniciar_Test_off);
+        ImageButton Stop_test= findViewById(R.id.Stop_test);
 
 
         // Enable the vibration option
@@ -695,13 +1014,10 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
         }
 
 
-        // Start thread timer
-
+        // Start threads timer&control
+        Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
-
-
-
-        Iniciar_test_off.setVisibility(View.INVISIBLE);
+        timerSlot1.schedule(task1,1000,1000);
 
         Sound(23);
 
@@ -739,22 +1055,22 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
 
 
-        Iniciar_test_off.setOnClickListener(
+        Stop_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
                         //Interrupción test - Botón emergencia
-                        Iniciar_test.setVisibility(View.VISIBLE);
-                        Iniciar_test.setEnabled(true);
-                        Iniciar_test_off.setVisibility((View.INVISIBLE));
-                        Iniciar_test_off.setEnabled(false);
+                        Start_test.setVisibility(View.VISIBLE);
+                        Start_test.setEnabled(true);
+                        Stop_test.setVisibility((View.INVISIBLE));
+                        Stop_test.setEnabled(false);
                         secondLeft=0;
 
 
                     }});
 
 
-        Iniciar_test.setOnClickListener(
+        Start_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
                         switch (Status_test) {
@@ -768,7 +1084,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Sound(34);
                                 //Mode programme
 
-                                if  (selected_mode == 0)  // Check mode
+                    /*            if  (selected_mode == 0)  // Check mode
                                 {
                                     pin_mode_check.setEnabled(true);
                                     pin_mode_work.setEnabled(false);
@@ -776,7 +1092,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 {
                                     pin_mode_check.setEnabled(false);
                                     pin_mode_work.setEnabled(true);
-                                }
+                                }*/
 
                                 // Selected test
                                 if (selected_mode == 0){
@@ -816,9 +1132,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Activ_test = true;
                                 textView2.setText("Entrenamiento nº1");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(24);
                                 break;
@@ -836,9 +1152,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line + 1;
                                 // test_line = 1;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 if (Activ_test) {
                                     WriteFileTest File = new WriteFileTest();
@@ -853,9 +1169,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 On = true;
                                 textView2.setText("Entrenamiento nº2");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(26);
                                 break;
@@ -872,9 +1188,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Er = 0;
                                 flag_sel = false;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 test_line = test_line + 1;
                                 // test_line = 2;
                                 if (Activ_test) {
@@ -889,9 +1205,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 textView2.setText("Entrenamiento nº3");
                                 secondLeft = Time_slot;
 
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(28);
                                 break;
@@ -909,9 +1225,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line +1;
                                 //test_line = 3;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File3 = new WriteFileTest();
                                     File3.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line +";");
@@ -924,9 +1240,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 textView2.setText("Entrenamiento nº4");
                                 secondLeft = Time_slot;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(30);
                                 break;
@@ -944,9 +1260,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line +1;
                                 //test_line = 4;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File4 = new WriteFileTest();
                                     File4.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
@@ -960,9 +1276,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 flag_sel = false;
                                 secondLeft = Time_slot;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(32);
                                 break;
@@ -980,9 +1296,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line  + 1;
                                 //test_line = 5;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File5 = new WriteFileTest();
                                     File5.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
@@ -1171,19 +1487,14 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(1);
-                                    Wait(2);
-                                    // Vibration Pattern
-                                    Notification("AA", "Tema - Pantera Rosa", R.mipmap.png1, Pattern.pattern("AA"));
+                                    Symbol_aa = true;
                                     break;
 
                                 case 2:
 
                                     // Numbers list
                                     Sound(40);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
-
+                                 Symbol_aa = true;
                                     break;
 
                                 default:
@@ -1213,20 +1524,14 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 1:
                                     //Locución symbol + onomatopoeid sound
                                     Sound(2);
-                                    Wait(6);
-                                    // Vibration Pattern
-                                    Notification("EA", "Máquina de Escribir", R.mipmap.png2, Pattern.pattern("EA"));
-                                    break;
+                                    Symbol_ee = true;
+                                      break;
 
                                 case 2:
 
                                     // Numbers list
                                     Wait(1);
-                                    Sound(41);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
-
+                                    Symbol_ee= true;
                                     break;
 
                             }
@@ -1251,20 +1556,14 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(3);
-                                    Wait(2);
-                                    // Vibration Pattern
-                                    Notification("IA", "Sonido de campana", R.mipmap.png2, Pattern.pattern("C"));
-                                    break;
+                                    Symbol_ii = true;
+                                   break;
 
                                 case 2:
 
-                                    // Numbers list
-                                    Wait(2);
-                                    Sound(42);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("C"));
 
+                                    Sound(42);
+                                   Symbol_ii = true;
                                     break;
 
                             }
@@ -1290,20 +1589,14 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution  + onomatopoeid sound
                                     Sound(4);
-                                    Wait(6);
-                                    // Vibration Pattern
-                                    Notification("OA", "Encuentros en la tercera fase", R.mipmap.png4, Pattern.pattern("OA"));
+                                    Symbol_oo = true;
                                     break;
 
                                 case 2:
 
-                                    // Numbers list
-                                    Wait(1);
-                                    Sound(43);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
 
+                                    Sound(43);
+                                    Symbol_oo = true;
                                     break;
 
                             }
@@ -1327,19 +1620,15 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution  + onomatopoeid sound
                                     Sound(5);
-                                    Wait(3);
-                                    // Vibration Pattern
-                                    Notification("UA", "Ulular de Buho", R.mipmap.png5, Pattern.pattern("UA"));
+                                    Symbol_uu = true;
                                     break;
 
                                 case 2:
                                     // Numbers list
 
                                     Sound(44);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
-                                    break;
+                                    Symbol_uu = true;
+                                   break;
                             }
                         }
                         return false;
@@ -1355,20 +1644,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1) & (secondLeft>0)) {
-
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("EA", "Máquina de Escribir",R.mipmap.png2,Pattern.pattern("EA") );
-                                    break;
-                                case 2:
-                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_ee = true;
                             Symbol = 'E';
                             flag_sel= true;
                         }
@@ -1382,20 +1659,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1) & (secondLeft>0)) {
-
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("UA","Ulular de buho", R.mipmap.png3,Pattern.pattern("UA") );
-                                    break;
-                                case 2:
-                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_uu = true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -1407,18 +1672,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("IA", "Sonido de campana", R.mipmap.png5,Pattern.pattern("IA") );
-                                    break;
-                                case 2:
-                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_ii = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1432,18 +1687,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("AA", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("AA"));
-                                    break;
-                                case 2:
-                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                           Symbol_aa = true;
                             Symbol = 'A';
                             flag_sel= true;
                         }
@@ -1457,19 +1702,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)&& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("OA","Odisea-Encuentros en la 3ª fase",R.mipmap.png4,Pattern.pattern("OA") );
-                                    break;
-                                case 2:
-                                    Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_oo = true;
                             Symbol = 'O';
                             flag_sel= true;
                         }
@@ -1488,19 +1722,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)){
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("OA","Odisea-Encuentros en la 3ª fase",R.mipmap.png4,Pattern.pattern("OA") );
-                                    break;
-                                case 2:
-                                    Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_oo = true;
                             Symbol = 'O';
                             flag_sel= true;
                         }
@@ -1515,19 +1738,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("AA", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("AA"));
-                                    break;
-                                case 2:
-                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                          Symbol_aa = true;
                             Symbol= 'A';
                             flag_sel= true;
                         }
@@ -1539,18 +1751,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("IA", "Sonido de campana", R.mipmap.png5,Pattern.pattern("IA") );
-                                    break;
-                                case 2:
-                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                           Symbol_ii = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1563,19 +1765,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("EA", "Sirena de Barco  Niebla",R.mipmap.png2,Pattern.pattern("EA") );
-                                    break;
-                                case 2:
-                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_ee = true;
                             Symbol = 'E';
                             flag_sel= true;
                         }
@@ -1589,19 +1780,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("UA","Ulular de buho", R.mipmap.png3,Pattern.pattern("UA") );
-                                    break;
-                                case 2:
-                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_uu = true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -1619,19 +1799,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("UA","Ulular de buho", R.mipmap.png3,Pattern.pattern("UA") );
-                                    break;
-                                case 2:
-                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_uu = true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -1644,19 +1813,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("EA", "Sirena de Barco  Niebla",R.mipmap.png2,Pattern.pattern("EA") );
-                                    break;
-                                case 2:
-                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_ee = true;
                             Symbol = 'E';
                             flag_sel= true;
                         }
@@ -1669,19 +1827,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("OA","Odisea-Encuentros en la 3ª fase",R.mipmap.png4,Pattern.pattern("OA") );
-                                    break;
-                                case 2:
-                                    Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_oo = true;
                             Symbol = 'O';
                             flag_sel= true;
                         }
@@ -1695,18 +1842,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("IA", "Sonido de campana", R.mipmap.png5,Pattern.pattern("IA") );
-                                    break;
-                                case 2:
-                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_ii = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1719,19 +1856,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("AA", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("AA"));
-                                    break;
-                                case 2:
-                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_aa = true;
                             Symbol= 'A';
                             flag_sel= true;
                         }
@@ -1749,18 +1875,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("IA", "Sonido de campana", R.mipmap.png5,Pattern.pattern("IA") );
-                                    break;
-                                case 2:
-                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                            Symbol_ii = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }
@@ -1773,19 +1889,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("OA","Odisea-Encuentros en la 3ª fase",R.mipmap.png4,Pattern.pattern("OA") );
-                                    break;
-                                case 2:
-                                    Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_oo = true;
                             Symbol = 'O';
                             flag_sel= true;
                         }
@@ -1798,19 +1903,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("AA", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("AA"));
-                                    break;
-                                case 2:
-                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                           Symbol_aa = true;
                             Symbol= 'A';
                             flag_sel= true;
                         }
@@ -1824,19 +1918,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("UA","Ulular de buho", R.mipmap.png3,Pattern.pattern("UA") );
-                                    break;
-                                case 2:
-                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_uu = true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -1852,19 +1935,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("EA", "Sirena de Barco  Niebla",R.mipmap.png2,Pattern.pattern("EA") );
-                                    break;
-                                case 2:
-                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_ee = true;
                             Symbol = 'E';
                             flag_sel= true;
                         }
@@ -1881,19 +1953,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("AA", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("AA"));
-                                    break;
-                                case 2:
-                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_aa = true;
                             Symbol= 'A';
                             flag_sel= true;
                         }
@@ -1906,19 +1967,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((secondLeft>0) & (Status_test == 9)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("OA","Odisea-Encuentros en la 3ª fase",R.mipmap.png4,Pattern.pattern("OA") );
-                                    break;
-                                case 2:
-                                    Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
-                                    break;
-                            }
-
+                            Tacton_trip = false;
+                            Symbol_oo = true;
                             Symbol = 'O';
                             flag_sel= true;
                         }
@@ -1931,19 +1981,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("UA","Ulular de buho", R.mipmap.png3,Pattern.pattern("UA") );
-                                    break;
-                                case 2:
-                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_uu = true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -1956,19 +1995,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("EA", "Sirena de Barco  Niebla",R.mipmap.png2,Pattern.pattern("EA") );
-                                    break;
-                                case 2:
-                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
-                                    break;
-
-                            }
+                            Tacton_trip = false;
+                            Symbol_ee = true;
                             Symbol = 'E';
                             flag_sel= true;
                         }
@@ -1982,18 +2010,8 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("IA", "Sonido de campana", R.mipmap.png5,Pattern.pattern("IA") );
-                                    break;
-                                case 2:
-                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
-                                    break;
-                            }
+                            Tacton_trip = false;
+                           Symbol_ii = true;
                             Symbol = 'I';
                             flag_sel= true;
                         }

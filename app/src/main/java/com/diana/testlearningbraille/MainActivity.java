@@ -21,11 +21,15 @@ public class MainActivity extends AppCompatActivity {
     //Resources resources;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_main);
+
+        // Data intro
+
 
 
         // Idioma
@@ -92,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         Sheet_stressed_vowel.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -113,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         Sheet_FJ.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
+
 
                         startActivity(intent3);
 
@@ -178,7 +182,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
 
 
     }

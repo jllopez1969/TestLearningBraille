@@ -80,14 +80,34 @@
         android:translationY="65dp"
         app:srcCompat="@drawable/png47"/>
 
+
+    <ImageButton
+        android:id="@+id/imageButton40"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:drawable/presence_online"
+        android:translationX="310dp"
+        android:translationY="90dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton41"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:drawable/presence_online"
+        android:translationX="940dp"
+        android:translationY="90dp" />
+
+
     // Columna de Respuestas
 
     <ImageButton
         android:id="@+id/imageButton61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:translationX="1050dp"
-        android:translationY="200dp"
+        android:translationX="1060dp"
+        android:translationY="216dp"
         app:srcCompat="@drawable/png15"
         />
 
@@ -96,8 +116,8 @@
         android:id="@+id/imageButton62"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:translationX="1050dp"
-        android:translationY="300dp"
+        android:translationX="1060dp"
+        android:translationY="312dp"
         app:srcCompat="@drawable/png24"
         />
 
@@ -105,8 +125,8 @@
         android:id="@+id/imageButton63"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:translationX="1050dp"
-        android:translationY="400dp"
+        android:translationX="1057dp"
+        android:translationY="410dp"
         app:srcCompat="@drawable/png45"
         />
 
@@ -117,8 +137,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="false"
-        android:translationX="1050dp"
-        android:translationY="500dp"
+        android:translationX="1060dp"
+        android:translationY="504dp"
         app:srcCompat="@drawable/png46"
         />
 
@@ -127,7 +147,7 @@
         android:id="@+id/imageButton65"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:translationX="1050dp"
+        android:translationX="1060dp"
         android:translationY="600dp"
         app:layout_constrainedHeight="true"
         app:layout_constrainedWidth="true"
@@ -182,8 +202,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="232dp"
+        android:translationX="310dp"
+        android:translationY="242dp"
         />
 
     <ImageButton
@@ -191,8 +211,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="232dp"
+        android:translationX="940dp"
+        android:translationY="242dp"
         />
 
     // 2º Intento
@@ -244,16 +264,16 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="325dp"
+        android:translationX="940dp"
+        android:translationY="332dp"
         />
     <ImageButton
         android:id="@+id/imageButton46"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="325dp"
+        android:translationX="310dp"
+        android:translationY="332dp"
         />
 
     // 3º intento
@@ -308,16 +328,16 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="415dp"
+        android:translationX="940dp"
+        android:translationY="423dp"
         />
     <ImageButton
         android:id="@+id/imageButton48"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="415dp"
+        android:translationX="310dp"
+        android:translationY="423dp"
         />
 
     // 4º Intento
@@ -371,16 +391,16 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="500dp"
+        android:translationX="940dp"
+        android:translationY="515dp"
         />
     <ImageButton
         android:id="@+id/imageButton50"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="500dp"
+        android:translationX="310dp"
+        android:translationY="515dp"
         />
 
     // 5º Intento
@@ -433,8 +453,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="925dp"
-        android:translationY="597dp"
+        android:translationX="940dp"
+        android:translationY="610dp"
         />
 
     <ImageButton
@@ -442,14 +462,14 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="597dp"
+        android:translationX="310dp"
+        android:translationY="610dp"
         />
 
     // Iniciar la prueba
 
     <ImageButton
-        android:id="@+id/Iniciar_Test"
+        android:id="@+id/Start_test"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@android:drawable/list_selector_background"
@@ -459,7 +479,7 @@
         />
 
     <ImageButton
-        android:id="@+id/Iniciar_Test_off"
+        android:id="@+id/Stop_test"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@android:drawable/list_selector_background"
@@ -550,28 +570,7 @@
         android:translationX="50dp"
         android:translationY="530dp" />
 
-    <RadioGroup
-        android:id="@+id/mode_program"
-        android:layout_width="241dp"
-        android:layout_height="151dp"
-        android:translationX="50dp"
-        android:translationY="170dp"
-        android:textSize="20dp">
 
-
-        <RadioButton
-            android:id="@+id/Chek"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Check_Mode" />
-
-        <RadioButton
-            android:id="@+id/Test"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Working_Mode" />
-
-    </RadioGroup>
 
     <RadioGroup
         android:id="@+id/Test_Type"

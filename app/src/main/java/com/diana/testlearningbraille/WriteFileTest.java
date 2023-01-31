@@ -30,7 +30,7 @@ public class WriteFileTest {
           if(!file.exists()){
           try {
               BufferedWriter out = new BufferedWriter(new FileWriter(file, true));
-                  out.write(";Resp1;Resp2;Resp3;Resp4;Resp5;\n");
+                //  out.write(";Resp1;Resp2;Resp3;Resp4;Resp5;\n");
                   out.close();
                   Toast.makeText(context,"Created File",Toast.LENGTH_LONG).show();
 

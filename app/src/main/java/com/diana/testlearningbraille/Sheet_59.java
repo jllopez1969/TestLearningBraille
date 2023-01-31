@@ -405,9 +405,13 @@ public class Sheet_59 extends AppCompatActivity {
     int Time_slot = 120;
     boolean timerOn = false;
 
+    Boolean Tacton_trip = true;
+
+
 
     //New Timer Object
     Timer timer = new Timer();
+    Timer timerSlot1 = new Timer();
 
 
     // Overload TimeTask object
@@ -497,11 +501,337 @@ public class Sheet_59 extends AppCompatActivity {
         }
     };
 
+    // Flags trip vibrates
+    boolean Symbol_5 = false;
+    boolean Symbol_6 = false;
+    boolean Symbol_7= false;
+    boolean Symbol_8= false;
+    boolean Symbol_9= false;
 
 
 
+    int count = 0;
+    TimerTask task1 = new TimerTask() {
+        @Override
+        public void run() {
+
+            // TODO Auto-generated method stub
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+
+                    //******  Symbol 5  *****
+
+
+                    if (Symbol_5) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_5 & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 3) {
+                                    Notification("5", "In the Mood - Glenn Miller", R.mipmap.png1, Pattern.pattern("5"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_5= false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(40);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("5", "1-5", R.mipmap.png1, Pattern.pattern_number("5"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_5= false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_5) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("5", "In the Mood - Glenn Miller", R.mipmap.png1, Pattern.pattern("5"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_5 = false;
+                                break;
+                            case 2 :
+                                Notification("5", "1-5", R.mipmap.png1, Pattern.pattern_number("5"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_5 = false;
+                                break;
+
+                        }
+                    }
+
+                    //***** Symbol 6 ******
+
+                    if (Symbol_6) {
+                        count++;
+                    }
+                    // Training case
+                    if (Symbol_6 & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 5) {
+                                    Notification("6", "Jail Rock-Elvis Presley", R.mipmap.png2, Pattern.pattern("6"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_6 = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(41);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("6", "1-2-4", R.mipmap.png2, Pattern.pattern_number("6"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_6 = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_6) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("6", "Jail Rock-Elvis Presley", R.mipmap.png2, Pattern.pattern("6"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_6 = false;
+                                break;
+                            case 2 :
+                                Notification("6", "1-2-4", R.mipmap.png2, Pattern.pattern_number("6"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_6 = false;
+                                break;
+
+                        }
+                    }
+
+
+                    // *******  Symbol 7 ****
+
+
+                    if (Symbol_7) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_7 & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 4) {
+                                    Notification("7", "Let It Be-The Beatles", R.mipmap.png2, Pattern.pattern("7"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_7 = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(42);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("7", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("7"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_7 = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_7) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("7", "Let It Be-The Beatles", R.mipmap.png2, Pattern.pattern("7"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_7 = false;
+                                break;
+                            case 2 :
+                                Notification("7", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("7"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_7 = false;
+                                break;
+
+                        }
+                    }
+
+
+
+                    //******  Symbol 8 *********
+
+
+
+                    if (Symbol_8) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_8 & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 4) {
+                                    Notification("8", "La Misión -Ennio Moriconne", R.mipmap.png4, Pattern.pattern("8"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_8 = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(43);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("8", "1-2-5", R.mipmap.png4, Pattern.pattern_number("8"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_8 = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_8) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("8", "La Misión -Ennio Moriconne", R.mipmap.png4, Pattern.pattern("8"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_8 = false;
+                                break;
+                            case 2 :
+                                Notification("8", "1-2-5", R.mipmap.png4, Pattern.pattern_number("8"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_8 = false;
+                                break;
+
+                        }
+                    }
+
+
+                    // ****** Symbol 9 ******
+
+
+                    if (Symbol_9) {
+                        count++;
+                    }
+
+                    // Training case
+                    if (Symbol_9 & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+                            case 1:
+                                if (count == 3) {
+                                    Notification("9", "Bajo el Mar: La Sirenita - Disney", R.mipmap.png5, Pattern.pattern("9"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_9 = false;
+                                }
+
+                                break;
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(44);
+                                }
+                                if (count==4) {
+                                    // Coded Pattern of number list phrase
+                                    Notification("9", "-1-5-", R.mipmap.png5, Pattern.pattern_number("9"));
+                                    Tacton_trip = true;
+                                    count = 0;
+                                    Symbol_9 = false;
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+                    if ((count == 1) &  (Symbol_9) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    {
+                        switch (selected_test) {
+                            case 1:
+                                Notification("9", "Bajo el Mar: La Sirenita - Disney", R.mipmap.png5, Pattern.pattern("9"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_9 = false;
+                                break;
+                            case 2 :
+                                Notification("9", "-1-5-", R.mipmap.png5, Pattern.pattern_number("9"));
+                                Tacton_trip = true;
+                                count = 0;
+                                Symbol_9 = false;
+                                break;
+
+                        }
+                    }
+
+
+
+                } // end run
+
+            });
+        }
+    };
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        finish();
+
+    }
 
     boolean button_pressed = false;
+
 //************************************************************
 //                 Create Function
 //**********************************************************************
@@ -599,7 +929,7 @@ public class Sheet_59 extends AppCompatActivity {
 
         //Selection  mode program
 
-        RadioButton pin_mode_work= findViewById(R.id.Chek);
+  /*      RadioButton pin_mode_work= findViewById(R.id.Chek);
         RadioButton pin_mode_check= findViewById(R.id.Test);
 
 
@@ -623,7 +953,7 @@ public class Sheet_59 extends AppCompatActivity {
                     public void onClick(View view) {
                         selected_mode= 1;
 
-                    }});
+                    }});*/
 
 
 
@@ -665,22 +995,18 @@ public class Sheet_59 extends AppCompatActivity {
         boolean disable_button_resc= false;
 
 
-        // Declaration of Test Start graphical variable
+        //Test Start variable
+        ImageButton Start_test = findViewById(R.id.Start_test);
 
-        ImageButton Iniciar_test = findViewById(R.id.Iniciar_Test);
-
-        //Test Interrupt graphical variable declaration
-        ImageButton Iniciar_test_off= findViewById(R.id.Iniciar_Test_off);
-
+        //Test Stop variable
+        ImageButton Stop_test= findViewById(R.id.Stop_test);
 
         // Enable vibrate option
-
         Vibrator vibrator;
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 
         // Enable write permission on disk
-
         int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
@@ -691,20 +1017,16 @@ public class Sheet_59 extends AppCompatActivity {
             Log.i("Mensaje", "Se tiene permiso para leer y escribir!");
         }
 
-
-        // Start thread timer
-
+        // Start threads timer&control
+        Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
+        timerSlot1.schedule(task1,1000,1000);
 
-
-
-        Iniciar_test_off.setVisibility(View.INVISIBLE);
 
         Sound(23);
 
 
-        // Start test
-
+        //Create file "*.csv"
         Create_file.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -735,23 +1057,23 @@ public class Sheet_59 extends AppCompatActivity {
                     }});
 
 
-
-        Iniciar_test_off.setOnClickListener(
+        //Stop rutine
+        Stop_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
                         //Interrupción test - Botón emergencia
-                        Iniciar_test.setVisibility(View.VISIBLE);
-                        Iniciar_test.setEnabled(true);
-                        Iniciar_test_off.setVisibility((View.INVISIBLE));
-                        Iniciar_test_off.setEnabled(false);
+                        Start_test.setVisibility(View.VISIBLE);
+                        Start_test.setEnabled(true);
+                        Stop_test.setVisibility((View.INVISIBLE));
+                        Stop_test.setEnabled(false);
                         secondLeft=0;
 
 
                     }});
 
-
-        Iniciar_test.setOnClickListener(
+        //Start rutine
+        Start_test.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
                         switch (Status_test) {
@@ -766,7 +1088,7 @@ public class Sheet_59 extends AppCompatActivity {
 
                                 //Mode programme
 
-                                if  (selected_mode == 0)  // Check mode
+                         /*       if  (selected_mode == 0)  // Check mode
                                 {
                                     pin_mode_check.setEnabled(true);
                                     pin_mode_work.setEnabled(false);
@@ -774,7 +1096,7 @@ public class Sheet_59 extends AppCompatActivity {
                                 {
                                     pin_mode_check.setEnabled(false);
                                     pin_mode_work.setEnabled(true);
-                                }
+                                }*/
 
                                 // Selected test
                                 if (selected_mode == 0){
@@ -814,9 +1136,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 Activ_test = true;
                                 textView2.setText("Entrenamiento nº1");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(24);
                                 break;
@@ -834,9 +1156,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line + 1;
                                 // test_line = 1;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 if (Activ_test) {
                                     WriteFileTest File = new WriteFileTest();
@@ -851,9 +1173,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 On = true;
                                 textView2.setText("Entrenamiento nº2");
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(26);
                                 break;
@@ -870,9 +1192,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 Er = 0;
                                 flag_sel = false;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 test_line = test_line + 1;
                                 // test_line = 2;
                                 if (Activ_test) {
@@ -887,9 +1209,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 textView2.setText("Entrenamiento nº3");
                                 secondLeft = Time_slot;
 
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(28);
                                 break;
@@ -907,9 +1229,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line +1;
                                 //test_line = 3;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File3 = new WriteFileTest();
                                     File3.Write_Text_File(Sheet_59.this,path_braille,file_out,"Line " + test_line +";");
@@ -922,9 +1244,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 textView2.setText("Entrenamiento nº4");
                                 secondLeft = Time_slot;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(30);
                                 break;
@@ -942,9 +1264,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line +1;
                                 //test_line = 4;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File4 = new WriteFileTest();
                                     File4.Write_Text_File(Sheet_59.this,path_braille,file_out,"Line " + test_line + ";");
@@ -959,9 +1281,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 flag_sel = false;
                                 secondLeft = Time_slot;
                                 secondLeft = Time_slot;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
 
                                 Sound(32);
                                 break;
@@ -979,9 +1301,9 @@ public class Sheet_59 extends AppCompatActivity {
                                 secondLeft = Time_slot;
                                 test_line = test_line  + 1;
                                 //test_line = 5;
-                                Iniciar_test.setEnabled(false);
-                                Iniciar_test_off.setVisibility(View.VISIBLE);
-                                Iniciar_test_off.setEnabled(true);
+                                Start_test.setEnabled(false);
+                                Stop_test.setVisibility(View.VISIBLE);
+                                Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File5 = new WriteFileTest();
                                     File5.Write_Text_File(Sheet_59.this,path_braille,file_out,"Line " + test_line + ";");
@@ -1170,23 +1492,16 @@ public class Sheet_59 extends AppCompatActivity {
                                 case 1:
                                     //Locución Symbol + onomatopoeid sound
                                     Sound(1);
-                                    Wait(2);
-                                    // Vibration Pattern
-                                    Notification("5", "In the Mood - Glenn Miller", R.mipmap.png1, Pattern.pattern("5"));
+                                    Symbol_5 = true;
                                     break;
 
                                 case 2:
                                     // Numbers list
                                     Sound(40);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("5", "1-5", R.mipmap.png1, Pattern.pattern_number("5"));
-
+                                    Symbol_5 = true;
                                     break;
 
-                                default:
-                                    throw new IllegalStateException("Unexpected value: " + selected_test);
-                            }
+                               }
                         }
                         return false;
                     }});
@@ -1211,9 +1526,7 @@ public class Sheet_59 extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(2);
-                                    Wait(6);
-                                    // Patrón de Vibración onomatopéyido
-                                    Notification("6", "Jail Rock-Elvis Presley", R.mipmap.png2, Pattern.pattern("6"));
+                                    Symbol_6 = true;
                                     break;
 
                                 case 2:
@@ -1221,10 +1534,7 @@ public class Sheet_59 extends AppCompatActivity {
                                     // Numbers list
 
                                     Sound(41);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("6", "1-2-4", R.mipmap.png2, Pattern.pattern_number("6"));
-
+                                    Symbol_6 = true;
                                     break;
 
                             }
@@ -1249,20 +1559,14 @@ public class Sheet_59 extends AppCompatActivity {
                                 case 1:
                                     //Symbol  Locution + onomatopoeid sound
                                     Sound(3);
-                                    Wait(3);
-                                    // Vibration Pattern
-                                    Notification("7", "Let It Be-The Beatles", R.mipmap.png2, Pattern.pattern("7"));
-                                    break;
+                                    Symbol_7 = true;
+                                     break;
 
                                 case 2:
 
-                                    // Numbers list
-                                    Wait(2);
-                                    Sound(42);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("7", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("7"));
 
+                                    Sound(42);
+                                    Symbol_7 = true;
                                     break;
 
                             }
@@ -1288,9 +1592,7 @@ public class Sheet_59 extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(4);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("8", "La Misión -Ennio Moriconne", R.mipmap.png4, Pattern.pattern("8"));
+                                    Symbol_8 = true;
                                     break;
 
                                 case 2:
@@ -1298,10 +1600,7 @@ public class Sheet_59 extends AppCompatActivity {
                                     // Numbers list
 
                                     Sound(43);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("8", "1-2-5", R.mipmap.png4, Pattern.pattern_number("8"));
-
+                                    Symbol_8 = true;
                                     break;
 
                             }
@@ -1325,9 +1624,7 @@ public class Sheet_59 extends AppCompatActivity {
                                 case 1:
                                     //Symbol Locution + Onomatopoeid Sound
                                     Sound(5);
-                                    Wait(5);
-                                    // Vibration Pattern
-                                    Notification("9", "Bajo el Mar: La Sirenita - Disney", R.mipmap.png5, Pattern.pattern("9"));
+                                    Symbol_9= true;
                                     break;
 
                                 case 2:
@@ -1335,9 +1632,7 @@ public class Sheet_59 extends AppCompatActivity {
                                     // Numbers List
 
                                     Sound(44);
-                                    Wait(1);
-                                    // Vibration Pattern
-                                    Notification("9", "-1-5-", R.mipmap.png5, Pattern.pattern_number("9"));
+                                    Symbol_9 = true;
                                     break;
                             }
                         }
@@ -1354,20 +1649,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1) & (secondLeft>0)) {
-
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("5", "In the Mood - Glenn Miller", R.mipmap.png1, Pattern.pattern("5"));
-                                    break;
-                                case 2:
-                                    Notification("5", "1-5", R.mipmap.png1, Pattern.pattern_number("5"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_5 = true;
                             Symbol = '5';
                             flag_sel= true;
                         }
@@ -1381,20 +1664,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1) & (secondLeft>0)) {
-
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("6", "Jail Rock-Elvis Presley", R.mipmap.png2, Pattern.pattern("6"));
-                                    break;
-                                case 2:
-                                    Notification("6", "1-2-4", R.mipmap.png2, Pattern.pattern_number("6"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_6 = true;
                             Symbol = '6';
                             flag_sel= true;
                         }
@@ -1406,18 +1677,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("7", "Let It Be-The Beatles", R.mipmap.png2, Pattern.pattern("7"));
-                                    break;
-                                case 2:
-                                    Notification("7", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("7"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_7 = true;
                             Symbol = '7';
                             flag_sel= true;
                         }
@@ -1431,18 +1692,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("8", "La Misión -Ennio Moriconne", R.mipmap.png4, Pattern.pattern("8"));
-                                    break;
-                                case 2:
-                                    Notification("8", "1-2-5", R.mipmap.png4, Pattern.pattern_number("8"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_8 = true;
                             Symbol = '8';
                             flag_sel= true;
                         }
@@ -1456,19 +1707,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 1)&& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("9", "Bajo el Mar: La Sirenita - Disney", R.mipmap.png5, Pattern.pattern("9"));
-                                    break;
-                                case 2:
-                                    Notification("9", "1-5", R.mipmap.png5, Pattern.pattern_number("9"));
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_9 = true;
                             Symbol = '9';
                             flag_sel= true;
                         }
@@ -1487,19 +1727,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)){
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("5", "In the Mood - Glenn Miller", R.mipmap.png1, Pattern.pattern("5"));
-                                    break;
-                                case 2:
-                                    Notification("5", "1-5", R.mipmap.png1, Pattern.pattern_number("5"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_5 = true;
                             Symbol = '5';
                             flag_sel= true;
                         }
@@ -1514,19 +1743,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("9", "Bajo el Mar: La Sirenita - Disney", R.mipmap.png5, Pattern.pattern("9"));
-                                    break;
-                                case 2:
-                                    Notification("9", "1-5", R.mipmap.png5, Pattern.pattern_number("9"));
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_9 = true;
                             Symbol = '9';
                             flag_sel= true;
                         }
@@ -1538,18 +1756,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("7", "Let It Be-The Beatles", R.mipmap.png2, Pattern.pattern("7"));
-                                    break;
-                                case 2:
-                                    Notification("7", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("7"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_7 = true;
                             Symbol = '7';
                             flag_sel= true;
                         }
@@ -1562,18 +1770,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("8", "La Misión -Ennio Moriconne", R.mipmap.png4, Pattern.pattern("8"));
-                                    break;
-                                case 2:
-                                    Notification("8", "1-2-5", R.mipmap.png4, Pattern.pattern_number("8"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_8 = true;
                             Symbol = '8';
                             flag_sel= true;
                         }
@@ -1587,19 +1785,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("6", "Jail Rock-Elvis Presley", R.mipmap.png2, Pattern.pattern("6"));
-                                    break;
-                                case 2:
-                                    Notification("6", "1-2-4", R.mipmap.png2, Pattern.pattern_number("6"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_6 = true;
                             Symbol = '6';
                             flag_sel= true;
                         }
@@ -1617,18 +1804,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("8", "La Misión -Ennio Moriconne", R.mipmap.png4, Pattern.pattern("8"));
-                                    break;
-                                case 2:
-                                    Notification("8", "1-2-5", R.mipmap.png4, Pattern.pattern_number("8"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_8 = true;
                             Symbol = '8';
                             flag_sel= true;
                         }
@@ -1641,19 +1818,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("6", "Jail Rock-Elvis Presley", R.mipmap.png2, Pattern.pattern("6"));
-                                    break;
-                                case 2:
-                                    Notification("6", "1-2-4", R.mipmap.png2, Pattern.pattern_number("6"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_6 = true;
                             Symbol = '6';
                             flag_sel= true;
                         }
@@ -1666,19 +1832,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("5", "In the Mood - Glenn Miller", R.mipmap.png1, Pattern.pattern("5"));
-                                    break;
-                                case 2:
-                                    Notification("5", "1-5", R.mipmap.png1, Pattern.pattern_number("5"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_5 = true;
                             Symbol = '5';
                             flag_sel= true;
                         }
@@ -1692,18 +1847,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("7", "Let It Be-The Beatles", R.mipmap.png2, Pattern.pattern("7"));
-                                    break;
-                                case 2:
-                                    Notification("7", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("7"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_7 = true;
                             Symbol = '7';
                             flag_sel= true;
                         }
@@ -1716,19 +1861,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("9", "Bajo el Mar: La Sirenita - Disney", R.mipmap.png5, Pattern.pattern("9"));
-                                    break;
-                                case 2:
-                                    Notification("9", "1-5", R.mipmap.png5, Pattern.pattern_number("9"));
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_9 = true;
                             Symbol = '9';
                             flag_sel= true;
                         }
@@ -1746,19 +1880,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("9", "Bajo el Mar: La Sirenita - Disney", R.mipmap.png5, Pattern.pattern("9"));
-                                    break;
-                                case 2:
-                                    Notification("9", "1-5", R.mipmap.png5, Pattern.pattern_number("9"));
-                                    break;
-                            }
-
+                            Tacton_trip = true;
+                            Symbol_9 = true;
                             Symbol = '9';
                             flag_sel= true;
                         }
@@ -1771,19 +1894,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("5", "In the Mood - Glenn Miller", R.mipmap.png1, Pattern.pattern("5"));
-                                    break;
-                                case 2:
-                                    Notification("5", "1-5", R.mipmap.png1, Pattern.pattern_number("5"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_5 = true;
                             Symbol = '5';
                             flag_sel= true;
                         }
@@ -1796,19 +1908,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("6", "Jail Rock-Elvis Presley", R.mipmap.png2, Pattern.pattern("6"));
-                                    break;
-                                case 2:
-                                    Notification("6", "1-2-4", R.mipmap.png2, Pattern.pattern_number("6"));
-                                    break;
-
-                            }
+                            Tacton_trip = true;
+                            Symbol_6 = true;
                             Symbol = '6';
                             flag_sel= true;
                         }
@@ -1822,18 +1923,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("8", "La Misión -Ennio Moriconne", R.mipmap.png4, Pattern.pattern("8"));
-                                    break;
-                                case 2:
-                                    Notification("8", "1-2-5", R.mipmap.png4, Pattern.pattern_number("8"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_8 = true;
                             Symbol = '8';
                             flag_sel= true;
                         }
@@ -1849,18 +1940,8 @@ public class Sheet_59 extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7)& (secondLeft>0)) {
-                            switch (selected_test)
-                            {
-                                case 0:
-
-                                    break;
-                                case 1:
-                                    Notification("7", "Let It Be-The Beatles", R.mipmap.png2, Pattern.pattern("7"));
-                                    break;
-                                case 2:
-                                    Notification("7", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("7"));
-                                    break;
-                            }
+                            Tacton_trip = true;
+                            Symbol_7 = true;
                             Symbol = '7';
                             flag_sel= true;
                         }

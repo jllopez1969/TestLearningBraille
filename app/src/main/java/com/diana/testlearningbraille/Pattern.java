@@ -98,7 +98,7 @@ public class Pattern {
                         300, 200,//Corto
                         300, 200,//Corto
                         300, 200,//Largo
-                        300, 200 //Final letra
+
                 };
                 pattern_result = pattern7;
                 break;
@@ -120,33 +120,27 @@ public class Pattern {
                 // Onomatoperya: Campana iglesia.
 
                 long[] pattern9 = {
-                        0, 200,// 1ª Toque
+                        0, 100,// 1ª Toque
                         30, 500,
-                        300, 200,// 2º Toque
+                        300, 100,// 2º Toque
                         30, 500
                 };
                 pattern_result = pattern9;
                 break;
 
             case "J":
-                // Onomatopeya: Retorno del Jedi, Marcha Imperial
+                // Onomatopeya: Pitidos final juego
                 long[] pattern10 = {
-                        0, 4000,
-                        200, 4000,
-                        200, 4000,
-                        200, 6000,
-                        200, 2000,
-                        200, 2000,
-                        200, 6000,
-                        200, 2000,
-                        200, 2000,
-                        200,6000,
+                        0, 600,
+                        100, 600,
+                        100, 1000,
+
                 };
                 pattern_result = pattern10;
                 break;
 
             case "K":
-                // Onomatopeya: Una llamada de un koala
+                // Onomatopeya: Una Llamada de koala
 
                 long[] pattern11 = {
                         //sleep//vibrate/Largo
@@ -206,15 +200,15 @@ public class Pattern {
                 pattern_result = pattern14;
                 break;
             case "Ñ":
-                // Onomatopeya: Ñ en Morse
+                // Onomatopeya: Ñ en Morse (-- -- . -- -- )
                 long[] pattern15 = {
 
-                        //Largo
+                        0, 300,
+                        50, 300,
                         50, 100,
-                        50, 100,
-                        50, 50,//Corto
-                        100, 100,
-                        50, 100
+                        50,300,
+                        50,300,
+
 
                 };
 
@@ -350,9 +344,9 @@ public class Pattern {
                         0, 200,
                         100, 200,
                         100, 400,
-                        200, 300,
-                        100, 300,
-                        100, 700,
+                        200, 400,
+                        200, 400,
+                        200, 800,
                 };
                 pattern_result = pattern24;
                 break;
@@ -383,10 +377,10 @@ public class Pattern {
                 long[] pattern26 = {
 
                         0, 200,
-                        100, 200,
-                        100, 200,   // El bueno el feo y el malo
-                        100, 200,
-                        50, 200,
+                        200, 400,
+                        200, 400,   // El bueno el feo y el malo
+                        200, 400,
+                        500, 200,
                         50, 200,
                         50, 200,
                 };
@@ -406,28 +400,32 @@ public class Pattern {
                 pattern_result = pattern27;
                 break;
 
+            case "Ü":
+                // Onomatopeya : Dos golpes
+                long[] pattern50 = {
+
+                          0, 200,
+                        200, 200
+                };
+                pattern_result = pattern50;
+
+                break;
+
             case ".":
-                // Onomatopeya: . en Morse (.--.--.--)
+                // Onomatopeya:  Sonido de golpeo bola
                 long[] pattern28 = {
 
                         0,  100,
-                        50, 300,
-                        50, 100,
-                        50, 300,
-                        50, 100
-                };
+                                    };
                 pattern_result = pattern28;
                 break;
             case ",":
-                // Onomatopeya: , en morse
+                // Onomatopeya: Onomatopeya de sonido rebote de bola
                 long[] pattern29 = {
 
-                        0,  300,
-                        50, 300,
+                        0,  50,
                         50, 100,
-                        50, 100,
-                        50, 300,
-                        50, 300,
+
                 };
                 pattern_result = pattern29;
                 break;
@@ -437,10 +435,10 @@ public class Pattern {
 
                 long[] pattern30 = {
 
-                        0, 200,
-                        50, 1800,
-                        50, 600,
-                        50, 1200,
+                          0,  200,
+                        100, 1800,
+                        100,  600,
+                        100, 1200,
                 };
                 pattern_result = pattern30;
                 break;

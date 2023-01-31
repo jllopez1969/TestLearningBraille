@@ -8,6 +8,7 @@
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/drawable/ic_lock_power_close.xml" value="0.113" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout-land/activity_lamina_vocalesacentuadas.xml" value="0.18" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout-sw600dp/activity_lamina_vocalesacentuadas.xml" value="0.17" />
+        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_configuration.xml" value="0.1" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_inbox_main.xml" value="0.33" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_lamina.xml" value="0.1" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_lamina04.xml" value="0.17" />
@@ -33,14 +34,15 @@
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_mainnotofications.xml" value="0.1" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_message.xml" value="0.1" />
-        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet04.xml" value="0.1" />
+        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_setup_app.xml" value="0.18" />
+        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet04.xml" value="0.25" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet59.xml" value="0.11" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_ae.xml" value="0.18" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_fj.xml" value="0.33" />
-        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_ko.xml" value="0.1" />
-        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_pt.xml" value="0.1" />
+        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_ko.xml" value="0.15" />
+        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_pt.xml" value="0.16" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_punctuation_symbols.xml" value="0.1" />
-        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_stressed_vowel.xml" value="0.1" />
+        <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_stressed_vowel.xml" value="0.25" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/activity_sheet_uz.xml" value="0.1" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/layout/ko_lamina.xml" value="0.1" />
         <entry key="..\:/Users/JoseLuis/Desktop/Articulos Hapticos/Android Studio Proyects/TestLearningBraille/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
