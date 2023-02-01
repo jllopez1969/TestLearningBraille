@@ -1158,7 +1158,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                                 if (Activ_test) {
                                     WriteFileTest File = new WriteFileTest();
-                                    File.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line "+ test_line+";");
+                                   // File.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line "+ test_line+";");
                                 }
 
                                 Sound(25);
@@ -1195,7 +1195,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 // test_line = 2;
                                 if (Activ_test) {
                                     WriteFileTest File2 = new WriteFileTest();
-                                    File2.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";" );
+                                   // File2.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";" );
                                 }
 
                                 Sound(27);
@@ -1230,7 +1230,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File3 = new WriteFileTest();
-                                    File3.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line +";");
+                                   // File3.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line +";");
                                 }
 
                                 Sound(29);
@@ -1265,7 +1265,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File4 = new WriteFileTest();
-                                    File4.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
+                                  //  File4.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
                                 }
 
                                 Sound(31);
@@ -1301,7 +1301,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File5 = new WriteFileTest();
-                                    File5.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
+                                  //  File5.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
                                 }
 
                                 Sound(33);

@@ -1145,7 +1145,7 @@ public class Sheet_UZ extends AppCompatActivity {
                                 flag_sel = false;
                                 if (Activ_test) {
                                     WriteFileTest File = new WriteFileTest();
-                                    File.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 1;");
+                                //    File.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 1;");
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 1;
@@ -1178,7 +1178,7 @@ public class Sheet_UZ extends AppCompatActivity {
                                 flag_sel = false;
                                 if (Activ_test) {
                                     WriteFileTest File2 = new WriteFileTest();
-                                    File2.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 2;");
+                                  //  File2.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 2;");
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 2;
@@ -1209,7 +1209,7 @@ public class Sheet_UZ extends AppCompatActivity {
                                 flag_sel = false;
                                 if (Activ_test) {
                                     WriteFileTest File3 = new WriteFileTest();
-                                    File3.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 3;");
+                                  //  File3.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 3;");
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 3;
@@ -1240,7 +1240,7 @@ public class Sheet_UZ extends AppCompatActivity {
                                 flag_sel = false;
                                 if (Activ_test) {
                                     WriteFileTest File4 = new WriteFileTest();
-                                    File4.Write_Text_File(Sheet_UZ.this,path_braille,file_out, " - Line 4;");
+                                   // File4.Write_Text_File(Sheet_UZ.this,path_braille,file_out, " - Line 4;");
                                 }
                                 secondLeft = Time_slot;
                                 test_line = 4;
@@ -1270,7 +1270,7 @@ public class Sheet_UZ extends AppCompatActivity {
                                 button65.setEnabled(true);
                                 if (Activ_test) {
                                     WriteFileTest File5 = new WriteFileTest();
-                                    File5.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 5 ;");
+                                  //  File5.Write_Text_File(Sheet_UZ.this,path_braille,file_out," - Line 5 ;");
                                 }
                                 Sc = 0;
                                 Er = 0;

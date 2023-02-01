@@ -11,11 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/Symbol_A"
-        android:translationX="10dp"
-        android:translationY="10dp"
+        android:translationX="50dp"
+        android:translationY="610dp"
         app:srcCompat="@android:drawable/ic_media_previous"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="10dp" />
+       />
 
 
     // Línea de entrenamiento
