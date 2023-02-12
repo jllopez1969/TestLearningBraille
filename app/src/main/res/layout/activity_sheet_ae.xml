@@ -165,7 +165,7 @@
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:translationX="375dp"
+        android:translationX="370dp"
         android:translationY="232dp"
         app:srcCompat="@drawable/png2" />
 
@@ -208,9 +208,9 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
-        android:translationX="325dp"
-        android:translationY="232dp"
-        android:visibility="invisible" />
+        android:translationX="310dp"
+        android:translationY="242dp"
+        />
 
     <ImageButton
         android:id="@+id/imageButton43"
@@ -219,7 +219,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
         android:translationY="242dp"
-        android:visibility="invisible" />
+        />
 
     // 2º Intento
 
@@ -272,7 +272,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
         android:translationY="332dp"
-        android:visibility="invisible" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton46"
@@ -281,7 +281,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
         android:translationY="332dp"
-        android:visibility="invisible" />
+        />
 
     // 3º intento
 
@@ -333,7 +333,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
         android:translationY="423dp"
-        android:visibility="invisible" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton48"
@@ -342,7 +342,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
         android:translationY="423dp"
-        android:visibility="invisible" />
+         />
 
     // 4º Intento
 
@@ -393,7 +393,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
         android:translationY="515dp"
-        android:visibility="invisible" />
+       />
 
     <ImageButton
         android:id="@+id/imageButton50"
@@ -402,7 +402,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
         android:translationY="515dp"
-        android:visibility="invisible" />
+        />
 
     // 5º Intento
 
@@ -453,7 +453,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
         android:translationY="610dp"
-        android:visibility="invisible" />
+         />
 
     <ImageButton
         android:id="@+id/imageButton53"
@@ -462,7 +462,7 @@
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
         android:translationY="610dp"
-        android:visibility="invisible" />
+        />
 
     // Iniciar la prueba
 

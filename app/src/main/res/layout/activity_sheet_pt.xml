@@ -175,7 +175,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/png19"
-        android:translationX="375dp"
+        android:translationX="370dp"
         android:translationY="232dp"/>
 
     <ImageButton
@@ -279,7 +279,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
-        android:translationY="242dp"
+        android:translationY="332dp"
         />
     <ImageButton
         android:id="@+id/imageButton46"
@@ -287,7 +287,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
-        android:translationY="242dp"
+        android:translationY="332dp"
         />
 
     // 3º intento

@@ -175,7 +175,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/png22"
-        android:translationX="375dp"
+        android:translationX="370dp"
         android:translationY="232dp"/>
 
     <ImageButton

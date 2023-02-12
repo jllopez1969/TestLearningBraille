@@ -97,7 +97,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="180dp"
-        android:translationY="75dp"
+        android:translationY="90dp"
         />
 
     <ImageButton
@@ -106,7 +106,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="1100dp"
-        android:translationY="75dp"
+        android:translationY="90dp"
         />
 
     // Columna de Respuestas
