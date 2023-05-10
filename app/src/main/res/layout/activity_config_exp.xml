@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".config_exp">
+
+    <ImageButton
+        android:id="@+id/backscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Symbol_A"
+        android:translationX="50dp"
+        android:translationY="610dp"
+        app:srcCompat="@android:drawable/ic_media_previous"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="450dp"
+        android:layout_height="64dp"
+        android:text="SETUP TEST"
+        android:textSize="48dp"
+        android:translationX="400dp"
+        android:translationY="150dp"
+         />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identificación de la prueba:"
+        android:textSize="24dp"
+        android:translationX="700dp"
+        android:translationY="350dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="151dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Prueba_"
+        android:textSize="24dp"
+        android:translationX="700dp"
+        android:translationY="400dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:translationX="930dp"
+        android:translationY="400dp"
+        app:srcCompat="@android:drawable/ic_media_play"
+        />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:translationX="50dp"
+        android:translationY="530dp" />
+
+
+
+
+
+    <RadioGroup
+        android:id="@+id/Test_Type"
+        android:layout_width="450dp"
+        android:layout_height="207dp"
+        android:translationX="150dp"
+        android:translationY="300dp"
+        >
+
+        <RadioButton
+            android:id="@+id/Test_Control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Test_Control"
+            android:textSize="24dp"/>
+
+        <RadioButton
+            android:id="@+id/Test_V_Onom"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="@string/Test_Experimen_Onom"
+            android:textSize="24dp"/>
+
+        <RadioButton
+            android:id="@+id/Test_V_Number"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/Test_Experiment_Numb"
+            android:textSize="24dp"/>
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

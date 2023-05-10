@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     //Context context;
     //Resources resources;
 
-
+    int sheet_select;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         TextView text_PT = findViewById(R.id.textView5);
         TextView text_UZ = findViewById(R.id.textView6);
         TextView text_SP = findViewById(R.id.textView7);
-        TextView text_04 = findViewById(R.id.textView8);
-        TextView text_59 = findViewById(R.id.textView9);
+     //   TextView text_04 = findViewById(R.id.textView8);
+     //   TextView text_59 = findViewById(R.id.textView9);
 
      /*   if ( l8.equals("es_ES"))
         {
@@ -76,12 +76,12 @@ public class MainActivity extends AppCompatActivity {
         ImageButton  Sheet_PT = findViewById(R.id.imageButton5);
         ImageButton  Sheet_UZ = findViewById(R.id.imageButton6);
         ImageButton Sheet_punctuation_symbols= findViewById(R.id.imageButton7);
-        ImageButton  Sheet_04 = findViewById(R.id.imageButton8);
-        ImageButton  Sheet_59 = findViewById(R.id.imageButton9);
+      //  ImageButton  Sheet_04 = findViewById(R.id.imageButton8);
+      //  ImageButton  Sheet_59 = findViewById(R.id.imageButton9);
 
 
 
-        Intent intent1 = new Intent(this, Sheet_stressed_vowel.class);
+      /*  Intent intent1 = new Intent(this, Sheet_stressed_vowel.class);
         Intent intent2 = new Intent(this, Sheet_AE.class);
         Intent intent3 = new Intent(this, Sheet_FJ.class);
         Intent intent4 = new Intent(this, Sheet_KO.class);
@@ -89,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent6 = new Intent(this, Sheet_UZ.class);
         Intent intent7 = new Intent(this, Sheet_punctuation_symbols.class);
         Intent intent8 = new Intent(this, Sheet_04.class);
-        Intent intent9 = new Intent(this, Sheet_59.class);
+        Intent intent9 = new Intent(this, Sheet_59.class);*/
+        Intent intent0 = new Intent(this,config_exp.class);
 
         // Enables Always-on
         //setAmbientEnabled();
@@ -99,17 +100,18 @@ public class MainActivity extends AppCompatActivity {
         Sheet_stressed_vowel.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
-                        startActivity(intent1);
-
-
+                        sheet_select = 1;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
                     }});
 
         Sheet_AE.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-                        startActivity(intent2);
+                        sheet_select = 2;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
@@ -117,16 +119,18 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View view) {
 
-
-                        startActivity(intent3);
+                        sheet_select = 3;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
         Sheet_KO.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
-                        startActivity(intent4);
+                        sheet_select = 4;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
@@ -134,8 +138,9 @@ public class MainActivity extends AppCompatActivity {
         Sheet_PT.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
-                        startActivity(intent5);
+                        sheet_select = 5;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
@@ -143,8 +148,9 @@ public class MainActivity extends AppCompatActivity {
         Sheet_UZ.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
-                        startActivity(intent6);
+                        sheet_select = 6;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
@@ -152,16 +158,18 @@ public class MainActivity extends AppCompatActivity {
         Sheet_punctuation_symbols.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
-                        startActivity(intent7);
+                        sheet_select = 7;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
-        Sheet_04.setOnClickListener(
+      /*  Sheet_04.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
-                        startActivity(intent8);
+                        sheet_select = 8;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
@@ -169,17 +177,19 @@ public class MainActivity extends AppCompatActivity {
         Sheet_59.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
-
-                        startActivity(intent9);
+                        sheet_select = 9;
+                        intent0.putExtra("sheet_select", sheet_select);
+                        startActivity(intent0);
 
 
                     }});
 
+       */
+
+        // audio message
         MediaPlayer mp;
         mp = MediaPlayer.create(this, R.raw.seleccion);
         mp.start();
-
-
 
     }
 

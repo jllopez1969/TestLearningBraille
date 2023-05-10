@@ -365,7 +365,8 @@ public class Sheet_PT extends AppCompatActivity {
         //  int icono = R.mipmap.png1;
         Intent i = new Intent(Sheet_PT.this, Message.class);
         PendingIntent pendingIntent;
-        pendingIntent = PendingIntent.getActivity(Sheet_PT.this, 0, i, 0);
+   //     pendingIntent = PendingIntent.getActivity(Sheet_PT.this, 0, i, 0);
+        pendingIntent = PendingIntent.getActivity(Sheet_PT.this, 0, i, PendingIntent.FLAG_IMMUTABLE);
         mBuilder = new NotificationCompat.Builder(getApplicationContext());
         mBuilder.setContentIntent(pendingIntent);
         mBuilder.setSmallIcon(icono, 2);

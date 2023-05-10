@@ -12,9 +12,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,8 +20,6 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -371,7 +367,8 @@ public class Sheet_AE extends AppCompatActivity {
         //  int icono = R.mipmap.png1;
         Intent i = new Intent(Sheet_AE.this, Message.class);
         PendingIntent pendingIntent;
-        pendingIntent = PendingIntent.getActivity(Sheet_AE.this, 0, i, 0);
+     //   pendingIntent = PendingIntent.getActivity(Sheet_AE.this, 0, i, 0);
+        pendingIntent = PendingIntent.getActivity(Sheet_AE.this, 0, i, PendingIntent.FLAG_IMMUTABLE);
         mBuilder = new NotificationCompat.Builder(getApplicationContext());
         mBuilder.setContentIntent(pendingIntent);
         mBuilder.setSmallIcon(icono, 2);
@@ -402,7 +399,7 @@ public class Sheet_AE extends AppCompatActivity {
 
 
     // State variable and test time
-    int Status_test = 21;
+    int Status_test = 0;
     int Time_slot = 120;
     boolean timerOn = false;
 
@@ -851,15 +848,15 @@ public class Sheet_AE extends AppCompatActivity {
         textView3 = findViewById(R.id.textView13);
 
 
-        textView_file1 = findViewById(R.id.textView14);
-        textView_file2= findViewById(R.id.textView15);
-        EditText edit_file = findViewById(R.id.editTextTextPersonName);
+       // textView_file1 = findViewById(R.id.textView14);
+       // textView_file2= findViewById(R.id.textView15);
+       // EditText edit_file = findViewById(R.id.editTextTextPersonName);
 
 
 
-        textView_file1.setVisibility(View.INVISIBLE);
-        textView_file2.setVisibility(View.INVISIBLE);
-        edit_file.setVisibility(View.INVISIBLE);
+       // textView_file1.setVisibility(View.INVISIBLE);
+       // textView_file2.setVisibility(View.INVISIBLE);
+      //  edit_file.setVisibility(View.INVISIBLE);
 
 
 
@@ -904,6 +901,14 @@ public class Sheet_AE extends AppCompatActivity {
         ImageButton button64 = findViewById(R.id.imageButton64);
         ImageButton button65 = findViewById(R.id.imageButton65);
 
+
+        // Entrada de datos externos de la pantalla de configuración
+
+        Bundle datos = this.getIntent().getExtras();
+        selected_test = datos.getInt("selected_test");
+        file_out=  datos.getString("file_out");
+
+
         // Back screen
 
         ImageButton backscreen = findViewById(R.id.backscreen);
@@ -918,15 +923,15 @@ public class Sheet_AE extends AppCompatActivity {
 
 
         // *.cvs file creation button
-        View Create_file = findViewById(R.id.imageView);
-        Create_file.setVisibility(View.INVISIBLE);
+       // View Create_file = findViewById(R.id.imageView);
+       // Create_file.setVisibility(View.INVISIBLE);
 
 
       //Selection  mode program
 
 
 
-     /*   RadioButton pin_mode_work= findViewById(R.id.Chek);
+     /**  RadioButton pin_mode_work= findViewById(R.id.Chek);
         RadioButton pin_mode_check= findViewById(R.id.Test);
 
 
@@ -953,10 +958,10 @@ public class Sheet_AE extends AppCompatActivity {
                     }});
 
 
-*/
 
 
-        // Type test variables creation
+
+         Type test variables creation
 
         RadioButton pin_Onom = findViewById(R.id.Test_V_Onom);
         RadioButton pin_Control= findViewById(R.id.Test_Control);
@@ -993,7 +998,7 @@ public class Sheet_AE extends AppCompatActivity {
                         Selected_test = "_N_";
                     }});
 
-
+*/
 
         boolean disable_button_resc= false;
 
@@ -1030,7 +1035,9 @@ public class Sheet_AE extends AppCompatActivity {
         Sound(23);
 
 
+
         //Start rutine
+        /*
         Create_file.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -1071,7 +1078,7 @@ public class Sheet_AE extends AppCompatActivity {
                         }
 
                     }});
-
+      */
 
         //Stop rutine
         Stop_test.setOnClickListener(
@@ -1095,7 +1102,7 @@ public class Sheet_AE extends AppCompatActivity {
                         switch (Status_test) {
 
 
-
+                       /*
                             case 21:
                                 textView_file1.setVisibility(View.VISIBLE);
                                 edit_file.setVisibility(View.VISIBLE);
@@ -1106,7 +1113,7 @@ public class Sheet_AE extends AppCompatActivity {
 
                                 //Mode programme
 
-                  /*           if  (selected_mode == 0)  // Check mode
+                            if  (selected_mode == 0)  // Check mode
                                 {
 
                                    pin_mode_check.setEnabled(true);
@@ -1119,7 +1126,7 @@ public class Sheet_AE extends AppCompatActivity {
                                     pin_mode_check.setEnabled(false);
                                     pin_mode_work.setEnabled(true);
 
-                                }*/
+                                }
 
                                 // Selected test
                                 if (selected_mode == 0){
@@ -1154,7 +1161,7 @@ public class Sheet_AE extends AppCompatActivity {
 
 
                                 break;
-
+                                    */
                             case 0:
                                 On = true;
                                 Activ_test = true;
