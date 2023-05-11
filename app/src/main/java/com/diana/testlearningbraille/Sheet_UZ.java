@@ -13,9 +13,7 @@ import android.os.Message;
 import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,8 +21,6 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -401,7 +397,7 @@ public class Sheet_UZ extends AppCompatActivity {
 
 
     // State variable and time of test
-    int Status_test = 21;
+    int Status_test = 0;
     int Time_slot = 120;
 
 
@@ -851,7 +847,7 @@ public class Sheet_UZ extends AppCompatActivity {
         textView1 = findViewById(R.id.textView11);
         textView2 = findViewById(R.id.textView12);
         textView3 = findViewById(R.id.textView13);
-
+/*
         textView_file1 = findViewById(R.id.textView14);
         textView_file2= findViewById(R.id.textView15);
         EditText edit_file = findViewById(R.id.editTextTextPersonName);
@@ -861,6 +857,8 @@ public class Sheet_UZ extends AppCompatActivity {
         textView_file1.setVisibility(View.INVISIBLE);
         textView_file2.setVisibility(View.INVISIBLE);
         edit_file.setVisibility(View.INVISIBLE);
+
+ */
 
 
 
@@ -905,6 +903,13 @@ public class Sheet_UZ extends AppCompatActivity {
         ImageButton button64 = findViewById(R.id.imageButton64);
         ImageButton button65 = findViewById(R.id.imageButton65);
 
+        // Entrada de datos externos de la pantalla de configuración
+
+        Bundle datos = this.getIntent().getExtras();
+        selected_test = datos.getInt("selected_test");
+        file_out=  datos.getString("file_out");
+
+
         // Back screen
 
         ImageButton backscreen = findViewById(R.id.backscreen);
@@ -920,8 +925,8 @@ public class Sheet_UZ extends AppCompatActivity {
 
 
         // *.cvs file creation button
-        View Create_file = findViewById(R.id.imageView);
-        Create_file.setVisibility(View.INVISIBLE);
+        // View Create_file = findViewById(R.id.imageView);
+        // Create_file.setVisibility(View.INVISIBLE);
 
         //Selection  mode program
 
@@ -949,7 +954,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public void onClick(View view) {
                         selected_mode= 1;
 
-                    }}); */
+                    }});
 
 
 
@@ -987,6 +992,8 @@ public class Sheet_UZ extends AppCompatActivity {
                         selected_test = 2;
                     }});
 
+       */
+
 
 
         //Test Start variable
@@ -1018,7 +1025,8 @@ public class Sheet_UZ extends AppCompatActivity {
         // Initial locution
         Sound(23);
 
-        // Start test
+ /*
+       // Start test
 
         Create_file.setOnClickListener(
                 new View.OnClickListener() {
@@ -1047,6 +1055,8 @@ public class Sheet_UZ extends AppCompatActivity {
                         }
 
                     }});
+
+  */
         
 
         Stop_test.setOnClickListener(
@@ -1069,7 +1079,7 @@ public class Sheet_UZ extends AppCompatActivity {
 
 
                         switch (Status_test) {
-
+/*
                             case 21:
                                 textView_file1.setVisibility(View.VISIBLE);
                                 edit_file.setVisibility(View.VISIBLE);
@@ -1081,7 +1091,7 @@ public class Sheet_UZ extends AppCompatActivity {
 
                                 //Mode programme
 
-                   /*             if  (selected_mode == 0)  // Check mode
+                           if  (selected_mode == 0)  // Check mode
                                 {
                                     pin_mode_check.setEnabled(true);
                                     pin_mode_work.setEnabled(false);
@@ -1089,7 +1099,7 @@ public class Sheet_UZ extends AppCompatActivity {
                                 {
                                     pin_mode_check.setEnabled(false);
                                     pin_mode_work.setEnabled(true);
-                                }*/
+                                }
 
                                 // Selected test
                                 if (selected_mode == 0){
@@ -1123,6 +1133,8 @@ public class Sheet_UZ extends AppCompatActivity {
 
 
                                 break;
+
+ */
 
                             case 0:
                                 On = true;

@@ -487,20 +487,18 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@android:drawable/list_selector_background"
-        android:translationX="100dp"
+        android:translationX="50dp"
         android:translationY="100dp"
-        app:srcCompat="@android:drawable/ic_lock_power_off"
-        />
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
 
     <ImageButton
         android:id="@+id/Stop_test"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@android:drawable/list_selector_background"
-        android:translationX="175dp"
+        android:translationX="125dp"
         android:translationY="100dp"
-        app:srcCompat="@android:drawable/ic_notification_overlay"
-        />
+        app:srcCompat="@android:drawable/ic_notification_overlay" />
     <TextView
         android:id="@+id/textView12"
         style="@android:style/Widget.DeviceDefault.Light.TextView"
@@ -523,8 +521,8 @@
         android:text="0"
         android:textSize="36dp"
         android:textStyle="bold"
-        android:translationX="1050dp"
-        android:translationY="100dp" />
+        android:translationX="50dp"
+        android:translationY="300dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -533,8 +531,8 @@
         android:text="Secs"
         android:textSize="36dp"
         android:textStyle="bold"
-        android:translationX="1170dp"
-        android:translationY="100dp" />
+        android:translationX="120dp"
+        android:translationY="300dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -543,77 +541,20 @@
         android:text="Timer"
         android:textSize="36dp"
         android:textStyle="bold"
-        android:translationX="1050dp"
-        android:translationY="50dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Id. Prueba"
-        android:textSize="20dp"
         android:translationX="50dp"
-        android:translationY="500dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="151dp"
-        android:layout_height="57dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Prueba_"
-        android:textSize="20dp"
-        android:translationX="45dp"
-        android:translationY="540dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:translationX="200dp"
-        android:translationY="530dp"
-        app:srcCompat="@android:drawable/ic_media_play" />
+        android:translationY="250dp" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
         android:text=""
         android:textSize="20dp"
         android:translationX="50dp"
-        android:translationY="530dp" />
+        android:translationY="530dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="533dp" />
 
 
-
-
-    <RadioGroup
-        android:id="@+id/Test_Type"
-        android:layout_width="246dp"
-        android:layout_height="207dp"
-        android:textSize="20dp"
-        android:translationX="50dp"
-        android:translationY="210dp"
-        tools:layout_editor_absoluteX="-6dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <RadioButton
-            android:id="@+id/Test_Control"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Test_Control" />
-
-        <RadioButton
-            android:id="@+id/Test_V_Onom"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:text="@string/Test_Experimen_Onom" />
-
-        <RadioButton
-            android:id="@+id/Test_V_Number"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:text="@string/Test_Experiment_Numb" />
-
-    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
