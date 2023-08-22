@@ -422,7 +422,7 @@
         android:id="@+id/imageButton26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png9"
+        app:srcCompat="@drawable/png10"
         android:translationX="370dp"
         android:translationY="597dp"
         />
@@ -457,7 +457,7 @@
         android:id="@+id/imageButton30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png10"
+        app:srcCompat="@drawable/png9"
         android:translationX="825dp"
         android:translationY="597dp"
         />

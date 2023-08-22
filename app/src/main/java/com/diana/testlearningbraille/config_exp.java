@@ -46,12 +46,12 @@ public class config_exp extends AppCompatActivity {
 
          // Object display
 
-        Intent intent1 = new Intent(this, Sheet_stressed_vowel.class);
-        Intent intent2 = new Intent(this, Sheet_AE.class);
-        Intent intent3 = new Intent(this, Sheet_FJ.class);
-        Intent intent4 = new Intent(this, Sheet_KO.class);
-        Intent intent5 = new Intent(this, Sheet_PT.class);
-        Intent intent6 = new Intent(this, Sheet_UZ.class);
+        Intent intent1 = new Intent(this, Sheet_AE.class);
+        Intent intent2= new Intent(this, Sheet_FJ.class);
+        Intent intent3 = new Intent(this, Sheet_KO.class);
+        Intent intent4 = new Intent(this, Sheet_PT.class);
+        Intent intent5 = new Intent(this, Sheet_UZ.class);
+        Intent intent6 = new Intent(this, Sheet_stressed_vowel.class);
         Intent intent7 = new Intent(this, Sheet_punctuation_symbols.class);
      //   Intent intent8 = new Intent(this, Sheet_04.class);
       //  Intent intent9 = new Intent(this, Sheet_59.class);

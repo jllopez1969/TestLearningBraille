@@ -37,7 +37,7 @@
         android:id="@+id/imageButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_K"
+        android:contentDescription="@string/Symbol_P"
         android:translationX="370dp"
         android:translationY="65dp"
         app:srcCompat="@drawable/png17"
@@ -48,7 +48,7 @@
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_L"
+        android:contentDescription="@string/Symbol_Q"
         android:translationX="482dp"
         android:translationY="65dp"
         app:srcCompat="@drawable/png18"
@@ -58,7 +58,7 @@
         android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_M"
+        android:contentDescription="@string/Symbol_R"
         android:translationX="595dp"
         android:translationY="65dp"
         app:srcCompat="@drawable/png19"
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="false"
-        android:contentDescription="@string/Symbol_N"
+        android:contentDescription="@string/Symbol_S"
         android:translationX="710dp"
         android:translationY="65dp"
         app:srcCompat="@drawable/png20"
@@ -82,7 +82,7 @@
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_Ñ"
+        android:contentDescription="@string/Symbol_T"
         android:translationX="825dp"
         android:translationY="65dp"
         app:layout_constrainedHeight="true"
@@ -113,7 +113,7 @@
         android:id="@+id/imageButton61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_K"
+        android:contentDescription="@string/Symbol_P"
         android:translationX="1060dp"
         android:translationY="216dp"
         app:srcCompat="@drawable/png17"
@@ -124,7 +124,7 @@
         android:id="@+id/imageButton62"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_L"
+        android:contentDescription="@string/Symbol_Q"
         android:translationX="1060dp"
         android:translationY="312dp"
         app:srcCompat="@drawable/png18"
@@ -134,7 +134,7 @@
         android:id="@+id/imageButton63"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_M"
+        android:contentDescription="@string/Symbol_R"
         android:translationX="1060dp"
         android:translationY="410dp"
         app:srcCompat="@drawable/png19"
@@ -147,7 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="false"
-        android:contentDescription="@string/Symbol_N"
+        android:contentDescription="@string/Symbol_S"
         android:translationX="1060dp"
         android:translationY="504dp"
         app:srcCompat="@drawable/png20"
@@ -158,7 +158,7 @@
         android:id="@+id/imageButton65"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/Symbol_Ñ"
+        android:contentDescription="@string/Symbol_T"
         android:translationX="1060dp"
         android:translationY="600dp"
         app:layout_constrainedHeight="true"
@@ -174,7 +174,7 @@
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png19"
+        app:srcCompat="@drawable/png18"
         android:translationX="370dp"
         android:translationY="232dp"/>
 
@@ -192,7 +192,7 @@
         android:layout_height="wrap_content"
         android:translationX="595dp"
         android:translationY="232dp"
-        app:srcCompat="@drawable/png19"
+        app:srcCompat="@drawable/png20"
         />
 
     <ImageButton
@@ -235,7 +235,7 @@
         android:id="@+id/imageButton11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png13"
+        app:srcCompat="@drawable/png19"
         android:translationX="370dp"
         android:translationY="325dp"/>
     />
@@ -243,7 +243,7 @@
         android:id="@+id/imageButton12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png11"
+        app:srcCompat="@drawable/png17"
         android:translationX="482dp"
         android:translationY="325dp"/>
 
@@ -251,7 +251,7 @@
         android:id="@+id/imageButton13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png14"
+        app:srcCompat="@drawable/png18"
         android:translationX="595dp"
         android:translationY="325dp"/>
     />
@@ -259,7 +259,7 @@
         android:id="@+id/imageButton14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png16"
+        app:srcCompat="@drawable/png20"
         android:translationX="710dp"
         android:translationY="325dp"
         />
@@ -268,7 +268,7 @@
         android:id="@+id/imageButton15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png12"
+        app:srcCompat="@drawable/png21"
         android:translationX="825dp"
         android:translationY="325dp" />
 
@@ -295,7 +295,7 @@
         android:id="@+id/imageButton16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png16"
+        app:srcCompat="@drawable/png17"
         android:translationX="370dp"
         android:translationY="415dp"
         />
@@ -303,7 +303,7 @@
         android:id="@+id/imageButton17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png12"
+        app:srcCompat="@drawable/png20"
         android:translationX="482dp"
         android:translationY="415dp"
         />
@@ -315,7 +315,7 @@
         android:layout_height="wrap_content"
         android:translationX="595dp"
         android:translationY="415dp"
-        app:srcCompat="@drawable/png13"
+        app:srcCompat="@drawable/png19"
         />
 
     <ImageButton
@@ -324,7 +324,7 @@
         android:layout_height="wrap_content"
         android:translationX="710dp"
         android:translationY="415dp"
-        app:srcCompat="@drawable/png14"
+        app:srcCompat="@drawable/png18"
         />
 
 
@@ -334,7 +334,7 @@
         android:layout_height="wrap_content"
         android:translationX="825dp"
         android:translationY="415dp"
-        app:srcCompat="@drawable/png11"
+        app:srcCompat="@drawable/png21"
         />
 
     <ImageButton
@@ -362,13 +362,13 @@
         android:layout_height="wrap_content"
         android:translationX="370dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png13"
+        app:srcCompat="@drawable/png20"
         />
     <ImageButton
         android:id="@+id/imageButton22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png11"
+        app:srcCompat="@drawable/png18"
         android:translationX="482dp"
         android:translationY="500dp"
         />
@@ -379,7 +379,7 @@
         android:layout_height="wrap_content"
         android:translationX="595dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png14"
+        app:srcCompat="@drawable/png17"
         />
 
     <ImageButton
@@ -388,7 +388,7 @@
         android:layout_height="wrap_content"
         android:translationX="710dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png13"
+        app:srcCompat="@drawable/png19"
         />
 
     <ImageButton
@@ -397,7 +397,7 @@
         android:layout_height="wrap_content"
         android:translationX="825dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png16"
+        app:srcCompat="@drawable/png21"
         />
 
     <ImageButton
@@ -422,7 +422,7 @@
         android:id="@+id/imageButton26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png12"
+        app:srcCompat="@drawable/png17"
         android:translationX="370dp"
         android:translationY="597dp"
         />
@@ -431,7 +431,7 @@
         android:id="@+id/imageButton27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png16"
+        app:srcCompat="@drawable/png18"
         android:translationX="482dp"
         android:translationY="597dp"
         />
@@ -439,7 +439,7 @@
         android:id="@+id/imageButton28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png11"
+        app:srcCompat="@drawable/png19"
         android:translationX="595dp"
         android:translationY="597dp"
         />
@@ -450,14 +450,14 @@
         android:layout_height="wrap_content"
         android:translationX="710dp"
         android:translationY="597dp"
-        app:srcCompat="@drawable/png14"
+        app:srcCompat="@drawable/png20"
         />
 
     <ImageButton
         android:id="@+id/imageButton30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png13"
+        app:srcCompat="@drawable/png21"
         android:translationX="825dp"
         android:translationY="597dp"
         />
