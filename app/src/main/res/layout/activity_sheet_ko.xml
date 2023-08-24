@@ -13,10 +13,7 @@
         android:contentDescription="@string/Symbol_A"
         android:translationX="50dp"
         android:translationY="610dp"
-        app:srcCompat="@android:drawable/ic_media_previous"
-        />
-
-
+        app:srcCompat="@android:drawable/ic_media_previous" />
 
 
     // Línea de entrenamiento
@@ -30,8 +27,7 @@
         android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -40,8 +36,7 @@
         android:contentDescription="@string/Symbol_K"
         android:translationX="370dp"
         android:translationY="65dp"
-        app:srcCompat="@drawable/png11"
-        />
+        app:srcCompat="@drawable/png11" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -50,8 +45,7 @@
         android:contentDescription="@string/Symbol_L"
         android:translationX="482dp"
         android:translationY="65dp"
-        app:srcCompat="@drawable/png12"
-        />
+        app:srcCompat="@drawable/png12" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -60,9 +54,7 @@
         android:contentDescription="@string/Symbol_M"
         android:translationX="595dp"
         android:translationY="65dp"
-        app:srcCompat="@drawable/png13"
-        />
-
+        app:srcCompat="@drawable/png13" />
 
 
     <ImageButton
@@ -73,8 +65,7 @@
         android:contentDescription="@string/Symbol_N"
         android:translationX="710dp"
         android:translationY="65dp"
-        app:srcCompat="@drawable/png14"
-        />
+        app:srcCompat="@drawable/png14" />
 
 
     <ImageButton
@@ -86,7 +77,7 @@
         android:translationY="65dp"
         app:layout_constrainedHeight="true"
         app:layout_constrainedWidth="true"
-        app:srcCompat="@drawable/png16"/>
+        app:srcCompat="@drawable/png16" />
 
     <ImageButton
         android:id="@+id/imageButton40"
@@ -116,8 +107,7 @@
         android:contentDescription="@string/Symbol_K"
         android:translationX="1060dp"
         android:translationY="216dp"
-        app:srcCompat="@drawable/png11"
-        />
+        app:srcCompat="@drawable/png11" />
 
 
     <ImageButton
@@ -127,8 +117,7 @@
         android:contentDescription="@string/Symbol_L"
         android:translationX="1060dp"
         android:translationY="312dp"
-        app:srcCompat="@drawable/png12"
-        />
+        app:srcCompat="@drawable/png12" />
 
     <ImageButton
         android:id="@+id/imageButton63"
@@ -137,9 +126,7 @@
         android:contentDescription="@string/Symbol_M"
         android:translationX="1060dp"
         android:translationY="410dp"
-        app:srcCompat="@drawable/png13"
-        />
-
+        app:srcCompat="@drawable/png13" />
 
 
     <ImageButton
@@ -150,8 +137,7 @@
         android:contentDescription="@string/Symbol_N"
         android:translationX="1060dp"
         android:translationY="504dp"
-        app:srcCompat="@drawable/png14"
-        />
+        app:srcCompat="@drawable/png14" />
 
 
     <ImageButton
@@ -163,28 +149,27 @@
         android:translationY="600dp"
         app:layout_constrainedHeight="true"
         app:layout_constrainedWidth="true"
-        app:srcCompat="@drawable/png15"/>
+        app:srcCompat="@drawable/png15" />
 
 
     // 1º Intento
-
 
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png11"
         android:translationX="370dp"
-        android:translationY="232dp"/>
+        android:translationY="232dp"
+        app:srcCompat="@drawable/png11" />
 
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png13"
         android:translationX="482dp"
-        android:translationY="232dp"/>
+        android:translationY="232dp"
+        app:srcCompat="@drawable/png13" />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -192,24 +177,23 @@
         android:layout_height="wrap_content"
         android:translationX="595dp"
         android:translationY="232dp"
-        app:srcCompat="@drawable/png16"
-        />
+        app:srcCompat="@drawable/png16" />
 
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png12"
         android:translationX="710dp"
-        android:translationY="232dp"/>
+        android:translationY="232dp"
+        app:srcCompat="@drawable/png12" />
 
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png14"
         android:translationX="825dp"
-        android:translationY="232dp" />
+        android:translationY="232dp"
+        app:srcCompat="@drawable/png14" />
 
     <ImageButton
         android:id="@+id/imageButton42"
@@ -217,8 +201,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
-        android:translationY="242dp"
-        />
+        android:translationY="242dp" />
 
     <ImageButton
         android:id="@+id/imageButton43"
@@ -226,8 +209,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
-        android:translationY="242dp"
-        />
+        android:translationY="242dp" />
 
     // 2º Intento
 
@@ -235,42 +217,43 @@
         android:id="@+id/imageButton11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png13"
         android:translationX="370dp"
-        android:translationY="325dp"/>
+        android:translationY="325dp"
+        app:srcCompat="@drawable/png13" />
     />
+
     <ImageButton
         android:id="@+id/imageButton12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png11"
         android:translationX="482dp"
-        android:translationY="325dp"/>
+        android:translationY="325dp"
+        app:srcCompat="@drawable/png11" />
 
     <ImageButton
         android:id="@+id/imageButton13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png14"
         android:translationX="595dp"
-        android:translationY="327dp"/>
+        android:translationY="327dp"
+        app:srcCompat="@drawable/png14" />
     />
+
     <ImageButton
         android:id="@+id/imageButton14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png16"
         android:translationX="710dp"
         android:translationY="325dp"
-        />
+        app:srcCompat="@drawable/png16" />
 
     <ImageButton
         android:id="@+id/imageButton15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png12"
         android:translationX="825dp"
-        android:translationY="325dp" />
+        android:translationY="325dp"
+        app:srcCompat="@drawable/png12" />
 
 
     <ImageButton
@@ -279,34 +262,33 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
-        android:translationY="332dp"
-        />
+        android:translationY="332dp" />
+
     <ImageButton
         android:id="@+id/imageButton46"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
-        android:translationY="332dp"
-        />
+        android:translationY="332dp" />
 
     // 3º intento
+
     <ImageButton
         android:id="@+id/imageButton16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png16"
         android:translationX="370dp"
         android:translationY="415dp"
-        />
+        app:srcCompat="@drawable/png16" />
+
     <ImageButton
         android:id="@+id/imageButton17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png12"
         android:translationX="482dp"
         android:translationY="415dp"
-        />
+        app:srcCompat="@drawable/png12" />
 
 
     <ImageButton
@@ -315,8 +297,7 @@
         android:layout_height="wrap_content"
         android:translationX="595dp"
         android:translationY="415dp"
-        app:srcCompat="@drawable/png13"
-        />
+        app:srcCompat="@drawable/png13" />
 
     <ImageButton
         android:id="@+id/imageButton19"
@@ -324,8 +305,7 @@
         android:layout_height="wrap_content"
         android:translationX="710dp"
         android:translationY="415dp"
-        app:srcCompat="@drawable/png14"
-        />
+        app:srcCompat="@drawable/png14" />
 
 
     <ImageButton
@@ -334,8 +314,7 @@
         android:layout_height="wrap_content"
         android:translationX="825dp"
         android:translationY="415dp"
-        app:srcCompat="@drawable/png11"
-        />
+        app:srcCompat="@drawable/png11" />
 
     <ImageButton
         android:id="@+id/imageButton47"
@@ -343,16 +322,15 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
-        android:translationY="423dp"
-        />
+        android:translationY="423dp" />
+
     <ImageButton
         android:id="@+id/imageButton48"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
-        android:translationY="423dp"
-        />
+        android:translationY="423dp" />
 
     // 4º Intento
 
@@ -362,16 +340,15 @@
         android:layout_height="wrap_content"
         android:translationX="370dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png13"
-        />
+        app:srcCompat="@drawable/png13" />
+
     <ImageButton
         android:id="@+id/imageButton22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png11"
         android:translationX="482dp"
         android:translationY="500dp"
-        />
+        app:srcCompat="@drawable/png11" />
 
     <ImageButton
         android:id="@+id/imageButton23"
@@ -379,8 +356,7 @@
         android:layout_height="wrap_content"
         android:translationX="595dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png14"
-        />
+        app:srcCompat="@drawable/png14" />
 
     <ImageButton
         android:id="@+id/imageButton24"
@@ -388,8 +364,7 @@
         android:layout_height="wrap_content"
         android:translationX="710dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png13"
-        />
+        app:srcCompat="@drawable/png12" />
 
     <ImageButton
         android:id="@+id/imageButton25"
@@ -397,8 +372,7 @@
         android:layout_height="wrap_content"
         android:translationX="825dp"
         android:translationY="500dp"
-        app:srcCompat="@drawable/png16"
-        />
+        app:srcCompat="@drawable/png16" />
 
     <ImageButton
         android:id="@+id/imageButton49"
@@ -406,43 +380,41 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
-        android:translationY="515dp"
-        />
+        android:translationY="515dp" />
+
     <ImageButton
         android:id="@+id/imageButton50"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
-        android:translationY="515dp"
-        />
+        android:translationY="515dp" />
 
     // 5º Intento
+
     <ImageButton
         android:id="@+id/imageButton26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png12"
         android:translationX="370dp"
         android:translationY="597dp"
-        />
+        app:srcCompat="@drawable/png12" />
 
     <ImageButton
         android:id="@+id/imageButton27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png16"
         android:translationX="482dp"
         android:translationY="597dp"
-        />
+        app:srcCompat="@drawable/png16" />
+
     <ImageButton
         android:id="@+id/imageButton28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png11"
         android:translationX="595dp"
         android:translationY="597dp"
-        />
+        app:srcCompat="@drawable/png11" />
 
     <ImageButton
         android:id="@+id/imageButton29"
@@ -450,17 +422,15 @@
         android:layout_height="wrap_content"
         android:translationX="710dp"
         android:translationY="597dp"
-        app:srcCompat="@drawable/png14"
-        />
+        app:srcCompat="@drawable/png14" />
 
     <ImageButton
         android:id="@+id/imageButton30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/png13"
         android:translationX="825dp"
         android:translationY="597dp"
-        />
+        app:srcCompat="@drawable/png13" />
 
     <ImageButton
         android:id="@+id/imageButton52"
@@ -468,8 +438,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="940dp"
-        android:translationY="610dp"
-        />
+        android:translationY="610dp" />
 
     <ImageButton
         android:id="@+id/imageButton53"
@@ -477,8 +446,7 @@
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
         android:translationX="310dp"
-        android:translationY="610dp"
-        />
+        android:translationY="610dp" />
 
     // Iniciar la prueba
 
@@ -499,6 +467,7 @@
         android:translationX="125dp"
         android:translationY="100dp"
         app:srcCompat="@android:drawable/ic_notification_overlay" />
+
     <TextView
         android:id="@+id/textView12"
         style="@android:style/Widget.DeviceDefault.Light.TextView"
@@ -554,7 +523,6 @@
         android:translationY="530dp"
         tools:layout_editor_absoluteX="50dp"
         tools:layout_editor_absoluteY="533dp" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

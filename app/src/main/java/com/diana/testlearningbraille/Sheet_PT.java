@@ -1608,18 +1608,8 @@ public class Sheet_PT extends AppCompatActivity {
         button6.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft>0)) {
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("Q", "Orquesta - 5ª Sinfonía de Beethoven", R.mipmap.png3, Pattern.pattern("Q"));
-                            break;
-                        case 2:
-                            Notification("Q", "1-2-3-4-5", R.mipmap.png3, Pattern.pattern_number("Q"));
-                            break;
-
-                    }
+                    Tacton_trip = false;
+                    Symbol_Q = true;
                     Symbol = 'Q';
                     flag_sel= true;
                 }
@@ -1633,19 +1623,8 @@ public class Sheet_PT extends AppCompatActivity {
             public boolean onLongClick(View v) {
 
                 if ((Status_test == 1) & (secondLeft>0)) {
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("R", "Vals Saga Strauss", R.mipmap.png4, Pattern.pattern("R"));
-                            break;
-                        case 2:
-                            Notification("R", "1-2-3-5", R.mipmap.png4, Pattern.pattern_number("R"));
-                            break;
-
-                    }
-
+                    Tacton_trip = false;
+                    Symbol_R = true;
                     Symbol = 'R';
                     flag_sel= true;
                 }
@@ -1657,19 +1636,8 @@ public class Sheet_PT extends AppCompatActivity {
             public boolean onLongClick(View v) {
 
                 if ((Status_test == 1) & (secondLeft>0)) {
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("S", "Contacto Sónar Submarino", R.mipmap.png1, Pattern.pattern("S"));
-                            break;
-                        case 2:
-                            Notification("S", "2-3-4", R.mipmap.png1, Pattern.pattern_number("S"));
-                            break;
-
-                    }
-
+                    Tacton_trip = false;
+                    Symbol_S = true;
                     Symbol = 'S';
                     flag_sel= true;
                 }
@@ -1683,18 +1651,8 @@ public class Sheet_PT extends AppCompatActivity {
         button9.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft>0)) {
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("P", "Golpeo Puerta", R.mipmap.png2, Pattern.pattern("P"));
-                            break;
-                        case 2:
-                            Notification("P", "1-2-3-4", R.mipmap.png2, Pattern.pattern_number("P"));
-                            break;
-                    }
-
+                    Tacton_trip = false;
+                    Symbol_P = true;
                     Symbol = 'P';
                     flag_sel= true;
                 }
@@ -1706,18 +1664,9 @@ public class Sheet_PT extends AppCompatActivity {
         button10.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft>0)) {
-                        switch (selected_test)
-                        {
-                            case 0:
-                                break;
-                            case 1:
-                                Notification("T", "Timbre Teléfono Clásico", R.mipmap.png2, Pattern.pattern("T"));
-                                break;
-                            case 2:
-                                Notification("T", "2-3-4-5", R.mipmap.png2, Pattern.pattern_number("T"));
-                                break;
-                        }
-                    Symbol = 'N';
+                    Tacton_trip = false;
+                    Symbol_T = true;
+                    Symbol = 'T';
                     flag_sel= true;
                 }
                 return false;
@@ -1734,6 +1683,7 @@ public class Sheet_PT extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
+                            Tacton_trip = false;
                             Symbol_R = true;
                             Symbol = 'R';
                             flag_sel= true;
@@ -1792,7 +1742,7 @@ public class Sheet_PT extends AppCompatActivity {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             Tacton_trip = false;
                             Symbol_T = true;
-                            Symbol = 'L';
+                            Symbol = 'T';
                             flag_sel= true;
                         }
                         return false;
@@ -1866,7 +1816,7 @@ public class Sheet_PT extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) & (secondLeft>0)) {
                             Symbol_T = true;
-                            Symbol = 'K';
+                            Symbol = 'T';
                             flag_sel= true;
                         }
                         return false;
@@ -1943,7 +1893,7 @@ public class Sheet_PT extends AppCompatActivity {
                         if ((Status_test == 7) & (secondLeft>0)) {
                             Tacton_trip = false;
                             Symbol_T = true;
-                            Symbol = 'O';
+                            Symbol = 'T';
                             flag_sel= true;
                         }
                         return false;

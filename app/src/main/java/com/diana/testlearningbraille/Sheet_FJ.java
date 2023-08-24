@@ -1959,15 +1959,15 @@ public class Sheet_FJ extends AppCompatActivity {
 
                     }});
 
-        //Symbol "J"
+        //Symbol "I"
 
         button30.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft >0)) {
                             Tacton_trip = false;
-                            Symbol_J = true;
-                            Symbol = 'J';
+                            Symbol_I = true;
+                            Symbol = 'I';
                             flag_sel= true;
                         }
                         return false;

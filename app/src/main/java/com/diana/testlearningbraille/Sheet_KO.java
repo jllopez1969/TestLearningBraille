@@ -1869,14 +1869,14 @@ public class Sheet_KO extends AppCompatActivity {
                         return false;
                     }});
 
-        // Symbol "M"
+        // Symbol "L"
         button24.setOnLongClickListener(
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_M = true;
-                            Symbol = 'M';
+                            Symbol_L = true;
+                            Symbol = 'L';
                             flag_sel= true;
                         }
                         return false;

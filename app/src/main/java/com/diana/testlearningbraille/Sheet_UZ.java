@@ -1674,19 +1674,6 @@ public class Sheet_UZ extends AppCompatActivity {
                 if ((Status_test == 1) & (secondLeft>0) & Tacton_trip) {
                     Tacton_trip = false;
                     Symbol_U = true;
-                    /*switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("U", "Ulular Búho", R.mipmap.png3, Pattern.pattern("U"));
-                            Symbol_U = true;
-                            break;
-                        case 2:
-                            Notification("U", "1-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
-                            break;
-
-                    }*/
                     Symbol = 'U';
                     flag_sel= true;
                 }
@@ -1702,19 +1689,6 @@ public class Sheet_UZ extends AppCompatActivity {
                 if ((Status_test == 1) & (secondLeft>0)) {
                     Tacton_trip = false;
                     Symbol_X= true;
-                  /*  switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("X", "S.O.S.: Auxilio Morse ", R.mipmap.png2, Pattern.pattern("X"));
-                            break;
-                        case 2:
-                            Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
-                            break;
-
-                    }*/
-
                     Symbol = 'X';
                     flag_sel= true;
                 }
@@ -1728,20 +1702,6 @@ public class Sheet_UZ extends AppCompatActivity {
                 if ((Status_test == 1) & (secondLeft>0)) {
                     Tacton_trip = false;
                     Symbol_Y= true;
-
-                    /*switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("Y", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png3, Pattern.pattern("Y"));
-                            break;
-                        case 2:
-                            Notification("Y", "1-3-4-5-6", R.mipmap.png3, Pattern.pattern_number("Y"));
-                            break;
-
-                    }*/
-
                     Symbol = 'Y';
                     flag_sel= true;
                 }
@@ -1757,19 +1717,6 @@ public class Sheet_UZ extends AppCompatActivity {
                 if ((Status_test == 1) & (secondLeft>0)) {
                     Tacton_trip = false;
                     Symbol_Z= true;
-                    /*switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
-                            break;
-                        case 2:
-                            Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern("Z"));
-                            break;
-
-                    }*/
-
                     Symbol = 'Z';
                     flag_sel= true;
                 }
@@ -1782,19 +1729,7 @@ public class Sheet_UZ extends AppCompatActivity {
             public boolean onLongClick(View v) {
                 if ((Status_test == 1) & (secondLeft>0)) {
                     Tacton_trip = false;
-                    Symbol_V= true;/*
-                    switch (selected_test)
-                    {
-                        case 0:
-                            break;
-                        case 1:
-                            Notification("V", "V en Morse", R.mipmap.png4, Pattern.pattern("V"));
-                            break;
-                        case 2:
-                            Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
-                            break;
-
-                    }*/
+                    Symbol_V= true;
                     Symbol = 'V';
                     flag_sel= true;
                 }
@@ -1814,18 +1749,6 @@ public class Sheet_UZ extends AppCompatActivity {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             Tacton_trip = false;
                             Symbol_U= true;
-                         /*   switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("U", "Ulular Búho", R.mipmap.png3, Pattern.pattern("U"));
-                                    break;
-                                case 2:
-                                    Notification("U", "1-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
-                                    break;
-
-                            }*/
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -1840,19 +1763,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_V= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("V", "V en Morse", R.mipmap.png4, Pattern.pattern("V"));
-                                    break;
-                                case 2:
-                                    Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
-                                    break;
-
-                            }*/
+                            Symbol_V= true;
                             Symbol= 'V';
                             flag_sel= true;
                         }
@@ -1865,20 +1776,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_Z= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-                                case 2:
-                                    Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-
-                            }*/
-
+                            Symbol_Z= true;
                             Symbol = 'Z';
                             flag_sel= true;
                         }
@@ -1892,19 +1790,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_X= true; /*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("X", "S.O.S.: Auxilio Morse ", R.mipmap.png2, Pattern.pattern("X"));
-                                    break;
-                                case 2:
-                                    Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
-                                    break;
-
-                            }*/
+                            Symbol_X= true;
                             Symbol= 'X';
                             flag_sel= true;
                         }
@@ -1919,19 +1805,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 3) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_Y= true; /*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("Y", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png3, Pattern.pattern("Y"));
-                                    break;
-                                case 2:
-                                    Notification("Y", "1-3-4-5-6", R.mipmap.png3, Pattern.pattern_number("Y"));
-                                    break;
-
-                            }*/
+                            Symbol_Y= true;
                             Symbol = 'Y';
                             flag_sel= true;
                         }
@@ -1949,19 +1823,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_U= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("U", "Ulular Búho", R.mipmap.png3, Pattern.pattern("U"));
-                                    break;
-                                case 2:
-                                    Notification("U", "1-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
-                                    break;
-
-                            }*/
+                            Symbol_U= true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -1975,20 +1837,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_Z= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-                                case 2:
-                                    Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-
-                            }*/
-
+                            Symbol_Z= true;
                             Symbol = 'Z';
                             flag_sel= true;
                         }
@@ -2002,19 +1851,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_V= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("V", "V en Morse", R.mipmap.png4, Pattern.pattern("V"));
-                                    break;
-                                case 2:
-                                    Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
-                                    break;
-
-                            }*/
+                            Symbol_V= true;
                             Symbol = 'V';
                             flag_sel= true;
                         }
@@ -2055,19 +1892,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 5) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_X= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("X", "S.O.S.: Auxilio Morse ", R.mipmap.png2, Pattern.pattern("X"));
-                                    break;
-                                case 2:
-                                    Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
-                                    break;
-
-                            }*/
+                            Symbol_X= true;
                             Symbol = 'X';
                             flag_sel= true;
                         }
@@ -2085,19 +1910,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_U= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("U", "Ulular Búho", R.mipmap.png3, Pattern.pattern("U"));
-                                    break;
-                                case 2:
-                                    Notification("U", "1-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
-                                    break;
-
-                            }*/
+                            Symbol_U= true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -2111,19 +1924,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_Y= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("Y", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png3, Pattern.pattern("Y"));
-                                    break;
-                                case 2:
-                                    Notification("Y", "1-3-4-5-6", R.mipmap.png3, Pattern.pattern_number("Y"));
-                                    break;
-
-                            }*/
+                            Symbol_Y= true;
                             Symbol = 'Y';
                             flag_sel= true;
                         }
@@ -2137,19 +1938,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_X= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("X", "S.O.S.: Auxilio Morse ", R.mipmap.png2, Pattern.pattern("X"));
-                                    break;
-                                case 2:
-                                    Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
-                                    break;
-
-                            }*/
+                            Symbol_X= true;
                             Symbol = 'X';
                             flag_sel= true;
                         }
@@ -2162,19 +1951,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_V= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("V", "V en Morse", R.mipmap.png4, Pattern.pattern("V"));
-                                    break;
-                                case 2:
-                                    Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
-                                    break;
-
-                            }*/
+                            Symbol_V= true;
                             Symbol = 'V';
                             flag_sel= true;
                         }
@@ -2191,20 +1968,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 7) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_Z= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-                                case 2:
-                                    Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-
-                            }*/
-
+                            Symbol_Z= true;
                             Symbol = 'Z';
                             flag_sel= true;
                         }
@@ -2223,19 +1987,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_U= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("U", "Ulular Búho", R.mipmap.png3, Pattern.pattern("U"));
-                                    break;
-                                case 2:
-                                    Notification("U", "1-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
-                                    break;
-
-                            }*/
+                            Symbol_U= true;
                             Symbol = 'U';
                             flag_sel= true;
                         }
@@ -2249,19 +2001,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_V= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("V", "V en Morse", R.mipmap.png4, Pattern.pattern("V"));
-                                    break;
-                                case 2:
-                                    Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
-                                    break;
-
-                            }*/
+                            Symbol_V= true;
                             Symbol = 'V';
                             flag_sel= true;
                         }
@@ -2275,19 +2015,7 @@ public class Sheet_UZ extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         if ((Status_test == 9) & (secondLeft>0)) {
                             Tacton_trip = false;
-                            Symbol_X= true;/*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("X", "S.O.S.: Auxilio Morse ", R.mipmap.png2, Pattern.pattern("X"));
-                                    break;
-                                case 2:
-                                    Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
-                                    break;
-
-                            }*/
+                            Symbol_X= true;
                             Symbol = 'X';
                             flag_sel= true;
                         }
@@ -2302,18 +2030,6 @@ public class Sheet_UZ extends AppCompatActivity {
                         if ((Status_test == 9) & (secondLeft>0)) {
                             Tacton_trip = false;
                             Symbol_Y= true;
-                            /*
-                            switch (selected_test) {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("Y", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png3, Pattern.pattern("Y"));
-                                    break;
-                                case 2:
-                                    Notification("Y", "1-3-4-5-6", R.mipmap.png3, Pattern.pattern_number("Y"));
-                                    break;
-
-                            }*/
                             Symbol = 'Y';
                             flag_sel = true;
                         }
@@ -2329,20 +2045,6 @@ public class Sheet_UZ extends AppCompatActivity {
                         if ((Status_test == 9) & (secondLeft>0)) {
                             Tacton_trip = false;
                             Symbol_Z= true;
-                            /*
-                            switch (selected_test)
-                            {
-                                case 0:
-                                    break;
-                                case 1:
-                                    Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-                                case 2:
-                                    Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern("Z"));
-                                    break;
-
-                            }*/
-
                             Symbol = 'Z';
                             flag_sel= true;
                         }
