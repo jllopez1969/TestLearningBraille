@@ -891,6 +891,20 @@ public class Sheet_PT extends AppCompatActivity {
         ImageButton button64 = findViewById(R.id.imageButton64);
         ImageButton button65 = findViewById(R.id.imageButton65);
 
+        ImageButton button40 = findViewById(R.id.imageButton40);
+        ImageButton button41 = findViewById(R.id.imageButton41);
+        ImageButton button42 = findViewById(R.id.imageButton42);
+        ImageButton button43 = findViewById(R.id.imageButton43);
+        ImageButton button44 = findViewById(R.id.imageButton44);
+        ImageButton button45 = findViewById(R.id.imageButton45);
+        ImageButton button46 = findViewById(R.id.imageButton46);
+        ImageButton button47 = findViewById(R.id.imageButton47);
+        ImageButton button48 = findViewById(R.id.imageButton48);
+        ImageButton button49 = findViewById(R.id.imageButton49);
+        ImageButton button50 = findViewById(R.id.imageButton50);
+        ImageButton button51 = findViewById(R.id.imageButton51);
+
+
         // Entrada de datos externos de la pantalla de configuración
 
         Bundle datos = this.getIntent().getExtras();
@@ -1131,6 +1145,13 @@ public class Sheet_PT extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button26.setImageResource(R.drawable.png17);
+                                button27.setImageResource(R.drawable.png18);
+                                button28.setImageResource(R.drawable.png19);
+                                button29.setImageResource(R.drawable.png20);
+                                button30.setImageResource(R.drawable.png21);
+
                                 Sound(24);
                                 break;
                             case 1:
@@ -1144,6 +1165,13 @@ public class Sheet_PT extends AppCompatActivity {
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
+
+                                button6.setImageResource(R.drawable.png0);
+                                button7.setImageResource(R.drawable.png0);
+                                button8.setImageResource(R.drawable.png0);
+                                button9.setImageResource(R.drawable.png0);
+                                button10.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File = new WriteFileTest();
                                   //  File.Write_Text_File(Sheet_PT.this,path_braille,file_out," - Line 1;");
@@ -1163,6 +1191,13 @@ public class Sheet_PT extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button6.setImageResource(R.drawable.png18);
+                                button7.setImageResource(R.drawable.png19);
+                                button8.setImageResource(R.drawable.png20);
+                                button9.setImageResource(R.drawable.png17);
+                                button10.setImageResource(R.drawable.png21);
+
                                 Sound(26);
                                 break;
 
@@ -1177,6 +1212,13 @@ public class Sheet_PT extends AppCompatActivity {
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
+
+                                button11.setImageResource(R.drawable.png0);
+                                button12.setImageResource(R.drawable.png0);
+                                button13.setImageResource(R.drawable.png0);
+                                button14.setImageResource(R.drawable.png0);
+                                button15.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File2 = new WriteFileTest();
                                  //   File2.Write_Text_File(Sheet_PT.this,path_braille,file_out," - Line 2;");
@@ -1195,6 +1237,13 @@ public class Sheet_PT extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button11.setImageResource(R.drawable.png19);
+                                button12.setImageResource(R.drawable.png17);
+                                button13.setImageResource(R.drawable.png18);
+                                button14.setImageResource(R.drawable.png20);
+                                button15.setImageResource(R.drawable.png21);
+
                                 Sound(28);
                                 break;
                             case 5:
@@ -1208,6 +1257,13 @@ public class Sheet_PT extends AppCompatActivity {
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
+
+                                button16.setImageResource(R.drawable.png0);
+                                button17.setImageResource(R.drawable.png0);
+                                button18.setImageResource(R.drawable.png0);
+                                button19.setImageResource(R.drawable.png0);
+                                button20.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File3 = new WriteFileTest();
                                    // File3.Write_Text_File(Sheet_PT.this,path_braille,file_out," - Line 3;");
@@ -1227,6 +1283,14 @@ public class Sheet_PT extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button16.setImageResource(R.drawable.png17);
+                                button17.setImageResource(R.drawable.png20);
+                                button18.setImageResource(R.drawable.png19);
+                                button19.setImageResource(R.drawable.png18);
+                                button20.setImageResource(R.drawable.png21);
+
+
                                 break;
                             case 7:
                                 On = true;
@@ -1239,6 +1303,14 @@ public class Sheet_PT extends AppCompatActivity {
                                 Sc = 0;
                                 Er = 0;
                                 flag_sel = false;
+
+                                button21.setImageResource(R.drawable.png0);
+                                button22.setImageResource(R.drawable.png0);
+                                button23.setImageResource(R.drawable.png0);
+                                button24.setImageResource(R.drawable.png0);
+                                button25.setImageResource(R.drawable.png0);
+
+
                                 if (Activ_test) {
                                     WriteFileTest File4 = new WriteFileTest();
                                    // File4.Write_Text_File(Sheet_PT.this,path_braille,file_out, " - Line 4;");
@@ -1258,6 +1330,14 @@ public class Sheet_PT extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button21.setImageResource(R.drawable.png20);
+                                button22.setImageResource(R.drawable.png18);
+                                button23.setImageResource(R.drawable.png17);
+                                button24.setImageResource(R.drawable.png19);
+                                button25.setImageResource(R.drawable.png21);
+
+
                                 Sound(32);
                                 break;
 
@@ -1269,6 +1349,13 @@ public class Sheet_PT extends AppCompatActivity {
                                 button63.setEnabled(true);
                                 button64.setEnabled(true);
                                 button65.setEnabled(true);
+
+                                button26.setImageResource(R.drawable.png0);
+                                button27.setImageResource(R.drawable.png0);
+                                button28.setImageResource(R.drawable.png0);
+                                button29.setImageResource(R.drawable.png0);
+                                button30.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File5 = new WriteFileTest();
                                    // File5.Write_Text_File(Sheet_PT.this,path_braille,file_out," - Line 5 ;");

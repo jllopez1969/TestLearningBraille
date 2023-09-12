@@ -271,7 +271,7 @@
         android:translationY="325dp" />
 
     <ImageButton
-        android:id="@+id/imageButton45"
+        android:id="@+id/imageButton44"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
@@ -279,7 +279,7 @@
         android:translationY="332dp"
         />
     <ImageButton
-        android:id="@+id/imageButton46"
+        android:id="@+id/imageButton45"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
@@ -339,7 +339,7 @@
         />
 
     <ImageButton
-        android:id="@+id/imageButton47"
+        android:id="@+id/imageButton46"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
@@ -347,7 +347,7 @@
         android:translationY="423dp"
         />
     <ImageButton
-        android:id="@+id/imageButton48"
+        android:id="@+id/imageButton47"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
@@ -401,7 +401,7 @@
         />
 
     <ImageButton
-        android:id="@+id/imageButton49"
+        android:id="@+id/imageButton48"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
@@ -409,7 +409,7 @@
         android:translationY="515dp"
         />
     <ImageButton
-        android:id="@+id/imageButton50"
+        android:id="@+id/imageButton49"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
@@ -463,7 +463,7 @@
         />
 
     <ImageButton
-        android:id="@+id/imageButton52"
+        android:id="@+id/imageButton50"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"
@@ -472,7 +472,7 @@
         />
 
     <ImageButton
-        android:id="@+id/imageButton53"
+        android:id="@+id/imageButton51"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@android:drawable/presence_online"

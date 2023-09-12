@@ -903,6 +903,20 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
         ImageButton button64 = findViewById(R.id.imageButton64);
         ImageButton button65 = findViewById(R.id.imageButton65);
 
+        ImageButton button40 = findViewById(R.id.imageButton40);
+        ImageButton button41 = findViewById(R.id.imageButton41);
+        ImageButton button42 = findViewById(R.id.imageButton42);
+        ImageButton button43 = findViewById(R.id.imageButton43);
+        ImageButton button44 = findViewById(R.id.imageButton44);
+        ImageButton button45 = findViewById(R.id.imageButton45);
+        ImageButton button46 = findViewById(R.id.imageButton46);
+        ImageButton button47 = findViewById(R.id.imageButton47);
+        ImageButton button48 = findViewById(R.id.imageButton48);
+        ImageButton button49 = findViewById(R.id.imageButton49);
+        ImageButton button50 = findViewById(R.id.imageButton50);
+        ImageButton button51 = findViewById(R.id.imageButton51);
+
+
         // Entrada de datos externos de la pantalla de configuración
 
         Bundle datos = this.getIntent().getExtras();
@@ -1149,6 +1163,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
 
+                                button26.setImageResource(R.drawable.png40);
+                                button27.setImageResource(R.drawable.png43);
+                                button28.setImageResource(R.drawable.png44);
+                                button29.setImageResource(R.drawable.png41);
+                                button30.setImageResource(R.drawable.png42);
+
                                 Sound(24);
                                 break;
                             case 1:
@@ -1169,6 +1189,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
 
+                                button6.setImageResource(R.drawable.png0);
+                                button7.setImageResource(R.drawable.png0);
+                                button8.setImageResource(R.drawable.png0);
+                                button9.setImageResource(R.drawable.png0);
+                                button10.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File = new WriteFileTest();
                                    // File.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line "+ test_line+";");
@@ -1185,6 +1211,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button6.setImageResource(R.drawable.png41);
+                                button7.setImageResource(R.drawable.png44);
+                                button8.setImageResource(R.drawable.png42);
+                                button9.setImageResource(R.drawable.png40);
+                                button10.setImageResource(R.drawable.png43);
 
                                 Sound(26);
                                 break;
@@ -1205,6 +1237,13 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
                                 test_line = test_line + 1;
+
+                                button11.setImageResource(R.drawable.png0);
+                                button12.setImageResource(R.drawable.png0);
+                                button13.setImageResource(R.drawable.png0);
+                                button14.setImageResource(R.drawable.png0);
+                                button15.setImageResource(R.drawable.png0);
+
                                 // test_line = 2;
                                 if (Activ_test) {
                                     WriteFileTest File2 = new WriteFileTest();
@@ -1221,6 +1260,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button11.setImageResource(R.drawable.png43);
+                                button12.setImageResource(R.drawable.png40);
+                                button13.setImageResource(R.drawable.png42);
+                                button14.setImageResource(R.drawable.png41);
+                                button15.setImageResource(R.drawable.png44);
 
                                 Sound(28);
                                 break;
@@ -1241,6 +1286,13 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button16.setImageResource(R.drawable.png0);
+                                button17.setImageResource(R.drawable.png0);
+                                button18.setImageResource(R.drawable.png0);
+                                button19.setImageResource(R.drawable.png0);
+                                button20.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File3 = new WriteFileTest();
                                    // File3.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line +";");
@@ -1256,6 +1308,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button16.setImageResource(R.drawable.png44);
+                                button17.setImageResource(R.drawable.png41);
+                                button18.setImageResource(R.drawable.png43);
+                                button19.setImageResource(R.drawable.png42);
+                                button20.setImageResource(R.drawable.png40);
 
                                 Sound(30);
                                 break;
@@ -1276,6 +1334,13 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button21.setImageResource(R.drawable.png0);
+                                button22.setImageResource(R.drawable.png0);
+                                button23.setImageResource(R.drawable.png0);
+                                button24.setImageResource(R.drawable.png0);
+                                button25.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File4 = new WriteFileTest();
                                   //  File4.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
@@ -1292,6 +1357,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button21.setImageResource(R.drawable.png42);
+                                button22.setImageResource(R.drawable.png43);
+                                button23.setImageResource(R.drawable.png40);
+                                button24.setImageResource(R.drawable.png44);
+                                button25.setImageResource(R.drawable.png42);
 
                                 Sound(32);
                                 break;
@@ -1312,6 +1383,13 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button26.setImageResource(R.drawable.png0);
+                                button27.setImageResource(R.drawable.png0);
+                                button28.setImageResource(R.drawable.png0);
+                                button29.setImageResource(R.drawable.png0);
+                                button30.setImageResource(R.drawable.png0);
+
                                 if (Activ_test) {
                                     WriteFileTest File5 = new WriteFileTest();
                                   //  File5.Write_Text_File(Sheet_stressed_vowel.this,path_braille,file_out,"Line " + test_line + ";");
