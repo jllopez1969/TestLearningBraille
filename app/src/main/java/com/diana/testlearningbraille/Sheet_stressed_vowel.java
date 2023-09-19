@@ -1163,6 +1163,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
 
+                                button40.setVisibility(View.VISIBLE);
+                                button41.setVisibility(View.VISIBLE);
+                                button50.setVisibility(View.INVISIBLE);
+                                button51.setVisibility(View.INVISIBLE);
+
                                 button26.setImageResource(R.drawable.png40);
                                 button27.setImageResource(R.drawable.png43);
                                 button28.setImageResource(R.drawable.png44);
@@ -1189,6 +1194,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
 
+                                button40.setVisibility(View.INVISIBLE);
+                                button41.setVisibility(View.INVISIBLE);
+                                button42.setVisibility(View.VISIBLE);
+                                button43.setVisibility(View.VISIBLE);
+
                                 button6.setImageResource(R.drawable.png0);
                                 button7.setImageResource(R.drawable.png0);
                                 button8.setImageResource(R.drawable.png0);
@@ -1211,6 +1221,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button40.setVisibility(View.VISIBLE);
+                                button41.setVisibility(View.VISIBLE);
+                                button42.setVisibility(View.INVISIBLE);
+                                button43.setVisibility(View.INVISIBLE);
 
                                 button6.setImageResource(R.drawable.png41);
                                 button7.setImageResource(R.drawable.png44);
@@ -1238,6 +1253,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setEnabled(true);
                                 test_line = test_line + 1;
 
+                                button40.setVisibility(View.INVISIBLE);
+                                button41.setVisibility(View.INVISIBLE);
+                                button44.setVisibility(View.VISIBLE);
+                                button45.setVisibility(View.VISIBLE);
+
                                 button11.setImageResource(R.drawable.png0);
                                 button12.setImageResource(R.drawable.png0);
                                 button13.setImageResource(R.drawable.png0);
@@ -1260,6 +1280,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button40.setVisibility(View.VISIBLE);
+                                button41.setVisibility(View.VISIBLE);
+                                button44.setVisibility(View.INVISIBLE);
+                                button45.setVisibility(View.INVISIBLE);
 
                                 button11.setImageResource(R.drawable.png43);
                                 button12.setImageResource(R.drawable.png40);
@@ -1287,6 +1312,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
 
+                                button40.setVisibility(View.INVISIBLE);
+                                button41.setVisibility(View.INVISIBLE);
+                                button46.setVisibility(View.VISIBLE);
+                                button47.setVisibility(View.VISIBLE);
+
                                 button16.setImageResource(R.drawable.png0);
                                 button17.setImageResource(R.drawable.png0);
                                 button18.setImageResource(R.drawable.png0);
@@ -1308,6 +1338,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button40.setVisibility(View.VISIBLE);
+                                button41.setVisibility(View.VISIBLE);
+                                button46.setVisibility(View.INVISIBLE);
+                                button47.setVisibility(View.INVISIBLE);
 
                                 button16.setImageResource(R.drawable.png44);
                                 button17.setImageResource(R.drawable.png41);
@@ -1335,6 +1370,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
 
+                                button40.setVisibility(View.INVISIBLE);
+                                button41.setVisibility(View.INVISIBLE);
+                                button48.setVisibility(View.VISIBLE);
+                                button49.setVisibility(View.VISIBLE);
+
                                 button21.setImageResource(R.drawable.png0);
                                 button22.setImageResource(R.drawable.png0);
                                 button23.setImageResource(R.drawable.png0);
@@ -1357,6 +1397,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button40.setVisibility(View.VISIBLE);
+                                button41.setVisibility(View.VISIBLE);
+                                button48.setVisibility(View.INVISIBLE);
+                                button49.setVisibility(View.INVISIBLE);
 
                                 button21.setImageResource(R.drawable.png42);
                                 button22.setImageResource(R.drawable.png43);
@@ -1383,6 +1428,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 Start_test.setEnabled(false);
                                 Stop_test.setVisibility(View.VISIBLE);
                                 Stop_test.setEnabled(true);
+
+                                button40.setVisibility(View.INVISIBLE);
+                                button41.setVisibility(View.INVISIBLE);
+                                button50.setVisibility(View.VISIBLE);
+                                button51.setVisibility(View.VISIBLE);
 
                                 button26.setImageResource(R.drawable.png0);
                                 button27.setImageResource(R.drawable.png0);
