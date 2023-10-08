@@ -408,6 +408,7 @@ public class Sheet_UZ extends AppCompatActivity {
     Boolean  Train_Selecc_trip = true;
 
     Timer timer = new Timer();
+    Timer timerSound = new Timer();
     Timer timerSlot1 = new Timer();
 
     // Flags trip vibrates
@@ -450,7 +451,7 @@ public class Sheet_UZ extends AppCompatActivity {
                                 case 2:
                                     if (count==2) {
                                         // Number list phrase
-                                        Sound(40);
+                                       // Sound(40);
                                     }
                                     if (count==4) {
                                         // Coded Pattern of number list phrase
@@ -508,7 +509,7 @@ public class Sheet_UZ extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(41);
+                                   // Sound(41);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -568,7 +569,7 @@ public class Sheet_UZ extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(42);
+                                    //Sound(42);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -627,7 +628,7 @@ public class Sheet_UZ extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(43);
+                                    //Sound(43);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -688,7 +689,7 @@ public class Sheet_UZ extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(44);
+                                   // Sound(44);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -817,6 +818,157 @@ public class Sheet_UZ extends AppCompatActivity {
                         }
                     }
                 }
+            });
+        }
+    };
+
+    TimerTask task2 = new TimerTask() {
+
+        @Override
+        public void run() {
+
+
+            // TODO Auto-generated method stub
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+
+                    //******  Symbol A  *****
+                    if (Symbol_U) {
+                        // count++;
+                    }
+                    // Training case
+                    if (Symbol_U & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(40);
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+                    //***** Symbol B ******
+
+
+
+                    if (Symbol_V) {
+                        // count++;
+                    }
+                    // Training case
+                    if (Symbol_V & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(41);
+                                }
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+                    // *******  Symbol C ****
+
+
+
+                    if (Symbol_X) {
+                        // count++;
+                    }
+
+                    // Training case
+                    if (Symbol_X & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(42);
+                                }
+                                break;
+
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+
+                    //******  Symbol D *********
+
+                    if (Symbol_Y) {
+                        // count++;
+                    }
+
+                    // Training case
+                    if (Symbol_Y & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(43);
+                                }
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+
+
+                    // ****** Symbol E  ******
+
+
+                    if (Symbol_Z) {
+                        //  count++;
+                    }
+
+                    // Training case
+                    if (Symbol_Z & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(44);
+                                }
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+
+
+                } // end run
+
             });
         }
     };
@@ -1035,6 +1187,8 @@ public class Sheet_UZ extends AppCompatActivity {
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
         timerSlot1.schedule(task1,1000,1000);
+        timerSound.schedule(task2,1000,1000);
+
 
         // Initial locution
         Sound(23);

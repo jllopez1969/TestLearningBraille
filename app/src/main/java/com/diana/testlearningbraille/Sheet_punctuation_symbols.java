@@ -403,6 +403,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
     //New Timer Objects
     Timer timer = new Timer();
+    Timer timerSound = new Timer();
     Timer timerSlot1 = new Timer();
 
 
@@ -536,7 +537,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(40);
+                                   // Sound(40);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -593,7 +594,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(41);
+                                 //   Sound(41);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -651,7 +652,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(42);
+                                 //   Sound(42);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -712,7 +713,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(43);
+                                 //   Sound(43);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -773,7 +774,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             case 2:
                                 if (count==2) {
                                     // Number list phrase
-                                    Sound(44);
+                                  //  Sound(44);
                                 }
                                 if (count==4) {
                                     // Coded Pattern of number list phrase
@@ -816,6 +817,156 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         }
     };
 
+    TimerTask task2 = new TimerTask() {
+
+        @Override
+        public void run() {
+
+
+            // TODO Auto-generated method stub
+            runOnUiThread(new Runnable() {
+
+                @Override
+                public void run() {
+
+                    //******  Symbol A  *****
+                    if (Symbol_NN) {
+                        // count++;
+                    }
+                    // Training case
+                    if (Symbol_NN & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(40);
+                                }
+
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+                    //***** Symbol B ******
+
+
+
+                    if (Symbol_W) {
+                        // count++;
+                    }
+                    // Training case
+                    if (Symbol_W & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(41);
+                                }
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+                    // *******  Symbol C ****
+
+
+
+                    if (Symbol_UU) {
+                        // count++;
+                    }
+
+                    // Training case
+                    if (Symbol_UU & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(42);
+                                }
+                                break;
+
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+
+                    //******  Symbol D *********
+
+                    if (Symbol_pp) {
+                        // count++;
+                    }
+
+                    // Training case
+                    if (Symbol_pp & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(43);
+                                }
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+
+
+                    // ****** Symbol E  ******
+
+
+                    if (Symbol_cc) {
+                        //  count++;
+                    }
+
+                    // Training case
+                    if (Symbol_cc & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+
+                        switch (selected_test) {
+
+                            case 2:
+                                if (count==2) {
+                                    // Number list phrase
+                                    Sound(44);
+                                }
+                                break;
+                        }
+
+                    }
+                    // Experiment case
+
+
+
+
+
+
+                } // end run
+
+            });
+        }
+    };
 
     @Override
     public void onBackPressed() {
@@ -1036,6 +1187,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
         timerSlot1.schedule(task1,1000,1000);
+        timerSound.schedule(task2,1000,1000);
 
 
 
