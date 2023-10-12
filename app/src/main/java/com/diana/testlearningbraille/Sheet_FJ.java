@@ -517,34 +517,32 @@ public class Sheet_FJ extends AppCompatActivity {
                 public void run() {
 
                     //******  Symbol F  *****
-                    if (Symbol_F) {
-                        count++;
-                    }
-                    // Training case
+                                    // Training case
                     if (Symbol_F & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(3);
                                     Notification("F", "Ésto es África - Shakira", R.mipmap.png1, Pattern.pattern("F"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_F= false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(40);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(40);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("F", "1-2-4", R.mipmap.png1, Pattern.pattern_number("F"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_F= false;
-                                }
+
 
                                 break;
                         }
@@ -552,7 +550,7 @@ public class Sheet_FJ extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_F) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_F) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -575,34 +573,32 @@ public class Sheet_FJ extends AppCompatActivity {
 
 
 
-                    if (Symbol_G) {
-                        count++;
-                    }
+
                     // Training case
                     if (Symbol_G & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
+                                    Wait(4);
                                     Notification("G", "Canto de Grillo", R.mipmap.png2, Pattern.pattern("G"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_G = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                 //   Sound(41);
-                                }
-                                if (count==4) {
+
+                                // Number list phrase
+                                   Wait(2);
+                                   Sound(41);
+
+                                   Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("G", "1-2-4-5", R.mipmap.png2, Pattern.pattern_number("G"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_G = false;
-                                }
 
                                 break;
                         }
@@ -610,7 +606,7 @@ public class Sheet_FJ extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_G) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ( (Symbol_G) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -633,35 +629,34 @@ public class Sheet_FJ extends AppCompatActivity {
                     // *******  Symbol H ****
 
 
-                    if (Symbol_H) {
-                        count++;
-                    }
+
 
                     // Training case
                     if (Symbol_H & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 2) {
+                                    Wait(2);
                                     Notification("H", "H en Morse", R.mipmap.png3, Pattern.pattern("H"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_H = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                 //   Sound(42);
-                                }
-                                if (count==4) {
+
+                                  // Number list phrase
+                                   Wait(2);
+                                   Sound(42);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("H", "1-2-5", R.mipmap.png3, Pattern.pattern_number("H"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_H = false;
-                                }
+
 
                                 break;
                         }
@@ -669,7 +664,7 @@ public class Sheet_FJ extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_H) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_H) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -693,37 +688,33 @@ public class Sheet_FJ extends AppCompatActivity {
                     //******  Symbol I *********
 
 
-
-
-                    if (Symbol_I) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_I & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
+                                    Wait(4);
                                     Notification("I", "Campana", R.mipmap.png4, Pattern.pattern("I"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_I = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(43);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(43);
+
+
                                     // Coded Pattern of number list phrase
+                                    Wait(2);
                                     Notification("I", "2-4", R.mipmap.png4, Pattern.pattern("I"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_I = false;
-                                }
+
 
                                 break;
                         }
@@ -731,7 +722,7 @@ public class Sheet_FJ extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_I) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_I) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -757,38 +748,32 @@ public class Sheet_FJ extends AppCompatActivity {
 
 
 
-
-
-
-                    if (Symbol_J) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_J & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
-                                    Notification("J", "Melodia: Marcha Imperial - Star War", R.mipmap.png5, Pattern.pattern("J"));
+                                    Wait(4);
+                                    Notification("J", "Final del partido", R.mipmap.png5, Pattern.pattern("J"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_J = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                  //  Sound(44);
-                                }
-                                if (count==4) {
+                                  Wait(2);
+                                  Sound(44);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("J", "2 - 4 - 5", R.mipmap.png5, Pattern.pattern_number("J"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_J = false;
-                                }
+
 
                                 break;
                         }
@@ -796,11 +781,11 @@ public class Sheet_FJ extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_J) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_J) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
-                                Notification("J", "Melodía: Marcha Imperial - Star War", R.mipmap.png5, Pattern.pattern("J"));
+                                Notification("J", "Final del partido", R.mipmap.png5, Pattern.pattern("J"));
                                 Tacton_trip = true;
                                 count = 0;
                                 Symbol_J = false;
@@ -824,156 +809,7 @@ public class Sheet_FJ extends AppCompatActivity {
     };
 
 
-    TimerTask task2 = new TimerTask() {
 
-        @Override
-        public void run() {
-
-
-            // TODO Auto-generated method stub
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-
-                    //******  Symbol A  *****
-                    if (Symbol_F) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_F & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(40);
-                                }
-
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-                    //***** Symbol B ******
-
-
-
-                    if (Symbol_G) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_G & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(41);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-                    // *******  Symbol C ****
-
-
-
-                    if (Symbol_H) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_H & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(42);
-                                }
-                                break;
-
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-                    //******  Symbol D *********
-
-                    if (Symbol_I) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_I & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(43);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                    // ****** Symbol E  ******
-
-
-                    if (Symbol_J) {
-                        //  count++;
-                    }
-
-                    // Training case
-                    if (Symbol_J & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(44);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                } // end run
-
-            });
-        }
-    };
 
 
     @Override
@@ -1196,7 +1032,7 @@ public class Sheet_FJ extends AppCompatActivity {
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
         timerSlot1.schedule(task1,1000,1000);
-        timerSound.schedule(task2,1000,1000);
+
 
         Sound(23);
 

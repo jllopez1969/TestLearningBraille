@@ -525,34 +525,30 @@ public class Sheet_AE extends AppCompatActivity {
                 public void run() {
 
                     //******  Symbol A  *****
-                    if (Symbol_A) {
-                        count++;
-                    }
+
                     // Training case
                     if (Symbol_A & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 2) {
+                                    Wait(2);
                                     Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_A= false;
-                                }
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(40);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(40);
+
                                     // Coded Pattern of number list phrase
+                                    Wait(2);
                                     Notification("A", "1", R.mipmap.png1, Pattern.pattern_number("A"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_A= false;
-                                }
+
 
                                 break;
                         }
@@ -560,19 +556,17 @@ public class Sheet_AE extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_A) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if (Symbol_A & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)))
                     {
                         switch (selected_test) {
                             case 1:
                                 Notification("A", "Tema - Pink Panter", R.mipmap.png1, Pattern.pattern("A"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_A = false;
                                 break;
                             case 2 :
                                 Notification("A", "1", R.mipmap.png1, Pattern.pattern_number("A"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_A = false;
                                 break;
 
@@ -583,34 +577,32 @@ public class Sheet_AE extends AppCompatActivity {
 
 
 
-                    if (Symbol_B) {
-                        count++;
-                    }
+
                     // Training case
-                    if (Symbol_B & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+                    if (Symbol_B && ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
+                                    Wait(4);
                                     Notification("B", "Sirena de Barco  Niebla", R.mipmap.png2, Pattern.pattern("B"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_B = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                    //Sound(41);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(41);
+
+
                                     // Coded Pattern of number list phrase
+                                    Wait(2);
                                     Notification("B", "1-2", R.mipmap.png2, Pattern.pattern_number("B"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_B = false;
-                                }
+
 
                                 break;
                         }
@@ -618,19 +610,17 @@ public class Sheet_AE extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_B) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if (Symbol_B & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
                                 Notification("B", "Sirena de Barco  Niebla", R.mipmap.png2, Pattern.pattern("B"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_B = false;
                                 break;
                             case 2 :
                                 Notification("B", "1-2", R.mipmap.png2, Pattern.pattern_number("B"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_B = false;
                                 break;
 
@@ -642,35 +632,32 @@ public class Sheet_AE extends AppCompatActivity {
 
 
 
-                    if (Symbol_C) {
-                        count++;
-                    }
+
 
                     // Training case
                     if (Symbol_C & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(2);
                                     Notification("C", "Galope de Caballo", R.mipmap.png2, Pattern.pattern("C"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_C = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                  //  Sound(42);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(42);
+
                                     // Coded Pattern of number list phrase
+                                    Wait(2);
                                     Notification("C", "-1-4-", R.mipmap.png2, Pattern.pattern_number("C"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_C = false;
-                                }
+
 
                                 break;
                         }
@@ -678,19 +665,19 @@ public class Sheet_AE extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_C) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if (Symbol_C & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
                                 Notification("C", "Galope de Caballo", R.mipmap.png2, Pattern.pattern("C"));
                                 Tacton_trip = true;
-                                count = 0;
+
                                 Symbol_C = false;
                                 break;
                             case 2 :
                                 Notification("C", "-1-4-", R.mipmap.png2, Pattern.pattern_number("C"));
                                 Tacton_trip = true;
-                                count = 0;
+
                                 Symbol_C = false;
                                 break;
 
@@ -701,35 +688,32 @@ public class Sheet_AE extends AppCompatActivity {
 
                     //******  Symbol D *********
 
-                    if (Symbol_D) {
-                        count++;
-                    }
+
 
                     // Training case
                     if (Symbol_D & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(1);
                                     Notification("D", "Disparo arma de fuego", R.mipmap.png4, Pattern.pattern("D"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_D = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
                                     // Number list phrase
-                                  //  Sound(43);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(43);
+
+
                                     // Coded Pattern of number list phrase
+                                    Wait(2);
                                     Notification("D", "-1-4-5-", R.mipmap.png4, Pattern.pattern_number("D"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_D = false;
-                                }
+
 
                                 break;
                         }
@@ -737,19 +721,17 @@ public class Sheet_AE extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_D) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_D) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
                                 Notification("D", "Disparo arma de fuego", R.mipmap.png4, Pattern.pattern("D"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_D = false;
                                 break;
                             case 2 :
                                 Notification("D", "-1-4-5-", R.mipmap.png4, Pattern.pattern_number("D"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_D = false;
                                 break;
 
@@ -762,35 +744,29 @@ public class Sheet_AE extends AppCompatActivity {
                     // ****** Symbol E  ******
 
 
-                    if (Symbol_E) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_E & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 5) {
+                                    Wait(4);
                                     Notification("E", "Máquina de Escribir", R.mipmap.png5, Pattern.pattern("E"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_E = false;
-                                }
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(44);
-                                }
-                                if (count==4) {
+                                   Wait(2);
+                                   Sound(44);
+
+
                                     // Coded Pattern of number list phrase
+                                    Wait(2);
                                     Notification("E", "-1-5-", R.mipmap.png5, Pattern.pattern_number("E"));
                                     Tacton_trip = true;
-                                    count = 0;
                                     Symbol_E = false;
-                                }
 
                                 break;
                         }
@@ -798,19 +774,17 @@ public class Sheet_AE extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_E) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ( (Symbol_E) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
                                 Notification("E", "Máquina de Escribir", R.mipmap.png5, Pattern.pattern("E"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_E = false;
                                 break;
                             case 2 :
                                 Notification("E", "-1-5-", R.mipmap.png5, Pattern.pattern_number("E"));
                                 Tacton_trip = true;
-                                count = 0;
                                 Symbol_E = false;
                                 break;
 
@@ -826,156 +800,6 @@ public class Sheet_AE extends AppCompatActivity {
     };
 
 
-    TimerTask task2 = new TimerTask() {
-
-        @Override
-        public void run() {
-
-
-            // TODO Auto-generated method stub
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-
-                    //******  Symbol A  *****
-                    if (Symbol_A) {
-                       // count++;
-                    }
-                    // Training case
-                    if (Symbol_A & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(40);
-                                }
-
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-                    //***** Symbol B ******
-
-
-
-                    if (Symbol_B) {
-                       // count++;
-                    }
-                    // Training case
-                    if (Symbol_B & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(41);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-                    // *******  Symbol C ****
-
-
-
-                    if (Symbol_C) {
-                       // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_C & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(42);
-                                }
-                                break;
-
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-                    //******  Symbol D *********
-
-                    if (Symbol_D) {
-                       // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_D & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(43);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                    // ****** Symbol E  ******
-
-
-                    if (Symbol_E) {
-                      //  count++;
-                    }
-
-                    // Training case
-                    if (Symbol_E & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(44);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                } // end run
-
-            });
-    }
-};
 
 
 
@@ -1208,7 +1032,6 @@ public class Sheet_AE extends AppCompatActivity {
         // Start threads timer&control
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
-        timerSound.schedule(task2,1000,1000);
         timerSlot1.schedule(task1,1000,1000);
 
 

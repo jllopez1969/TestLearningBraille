@@ -522,34 +522,32 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
 
 
-                    if (Symbol_aa) {
-                        count++;
-                    }
                     // Training case
                     if (Symbol_aa & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(3);
                                     Notification("AA", "Tema - Pantera Rosa", R.mipmap.png1, Pattern.pattern("AA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_aa= false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(40);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(40);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_aa= false;
-                                }
+
 
                                 break;
                         }
@@ -557,7 +555,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_aa) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ( (Symbol_aa) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -578,35 +576,31 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                     //***** Symbol é ******
 
-
-                    if (Symbol_ee) {
-                        count++;
-                    }
                     // Training case
                     if (Symbol_ee & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
+                                    Wait(6);
                                     Notification("EA", "Máquina de Escribir", R.mipmap.png2, Pattern.pattern("EA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_ee = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                 //   Sound(41);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(41);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_ee = false;
-                                }
 
                                 break;
                         }
@@ -614,7 +608,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_ee) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_ee) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -637,35 +631,31 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     // *******  Symbol í ****
 
 
-                    if (Symbol_ii) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_ii & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
+                                    Wait(6);
                                     Notification("IA", "Sonido de campana", R.mipmap.png2, Pattern.pattern("IA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_ii = false;
-                                }
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(42);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(42);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_ii = false;
-                                }
+
 
                                 break;
                         }
@@ -673,7 +663,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_ii) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_ii) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -694,36 +684,30 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                     //******  Symbol ó *********
 
-
-                    if (Symbol_oo) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_oo & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
+                                    Wait(4);
                                     Notification("OA", "Encuentros en la tercera fase", R.mipmap.png4, Pattern.pattern("OA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_oo = false;
-                                }
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                  //  Sound(43);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(43);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_oo = false;
-                                }
 
                                 break;
                         }
@@ -731,7 +715,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_oo) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_oo) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -753,36 +737,31 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                     // ****** Symbol ú ******
 
-
-                    if (Symbol_uu) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_uu & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(3);
                                     Notification("UA", "Ulular de Buho", R.mipmap.png5, Pattern.pattern("UA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_uu = false;
-                                }
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                 //   Sound(44);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(44);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_uu = false;
-                                }
+
 
                                 break;
                         }
@@ -790,7 +769,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_uu) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_uu) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -817,156 +796,6 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
         }
     };
 
-    TimerTask task2 = new TimerTask() {
-
-        @Override
-        public void run() {
-
-
-            // TODO Auto-generated method stub
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-
-                    //******  Symbol A  *****
-                    if (Symbol_aa) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_aa & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(40);
-                                }
-
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-                    //***** Symbol B ******
-
-
-
-                    if (Symbol_ee) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_ee & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(41);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-                    // *******  Symbol C ****
-
-
-
-                    if (Symbol_ii) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_ii & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(42);
-                                }
-                                break;
-
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-                    //******  Symbol D *********
-
-                    if (Symbol_oo) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_oo & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(43);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                    // ****** Symbol E  ******
-
-
-                    if (Symbol_uu) {
-                        //  count++;
-                    }
-
-                    // Training case
-                    if (Symbol_uu & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(44);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                } // end run
-
-            });
-        }
-    };
 
 
 
@@ -1190,7 +1019,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
         timerSlot1.schedule(task1,1000,1000);
-        timerSound.schedule(task2,1000,1000);
+
 
 
         Sound(23);

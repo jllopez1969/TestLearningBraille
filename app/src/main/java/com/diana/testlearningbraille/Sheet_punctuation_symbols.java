@@ -518,34 +518,32 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
 
 
-                    if (Symbol_NN) {
-                        count++;
-                    }
                     // Training case
                     if (Symbol_NN & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(3);
                                     Notification("Ñ", "Ñ en Morse", R.mipmap.png1, Pattern.pattern("Ñ"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_NN= false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(40);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(40);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("Ñ", "1-2-4-5-6", R.mipmap.png1, Pattern.pattern_number("Ñ"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_NN= false;
-                                }
+
 
                                 break;
                         }
@@ -553,7 +551,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_NN) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ( (Symbol_NN) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -575,34 +573,32 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                     //***** Symbol W ******
 
 
-                    if (Symbol_W) {
-                        count++;
-                    }
                     // Training case
                     if (Symbol_W & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 8) {
+                                   Wait(7);
                                     Notification("W", "Himno U.S.A.", R.mipmap.png2, Pattern.pattern("W"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_W = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                 //   Sound(41);
-                                }
-                                if (count==4) {
+
+                                // Number list phrase
+                                Wait(2);
+                                Sound(41);
+
+                                Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("W", "2-4-5-6", R.mipmap.png2, Pattern.pattern_number("W"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_W = false;
-                                }
+
 
                                 break;
                         }
@@ -610,7 +606,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_W) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_W) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -632,36 +628,34 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                     // *******  Symbol Ü ****
 
-                    if (Symbol_UU) {
-                        count++;
-                    }
+
 
                     // Training case
                     if (Symbol_UU & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
-                                    Notification("Ü", "Ulular de Búho", R.mipmap.png2, Pattern.pattern("Ü"));
+                                    Wait(4);
+                                    Notification("Ü", "Dos descorches", R.mipmap.png2, Pattern.pattern("Ü"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_UU = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                 //   Sound(42);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(42);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("Ü", "1-2-5-6", R.mipmap.png2, Pattern.pattern_number("Ü"));
 
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_UU = false;
-                                }
 
                                 break;
                         }
@@ -669,11 +663,11 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_UU) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_UU) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
-                                Notification("Ü", "Ulular de Búho", R.mipmap.png2, Pattern.pattern("ü"));
+                                Notification("Ü", "Dos descorches", R.mipmap.png2, Pattern.pattern("Ü"));
                                 Tacton_trip = true;
                                 count = 0;
                                 Symbol_UU = false;
@@ -690,38 +684,30 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                     //******  Symbol "."  *********
 
-
-
-
-                    if (Symbol_pp) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_pp & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 2) {
+                                    Wait(2);
                                     Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_pp = false;
-                                }
 
                                 break;
                             case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                 //   Sound(43);
-                                }
-                                if (count==4) {
+                                // Number list phrase
+                                 Wait(2);
+                                 Sound(43);
+
+                                 Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification(".", "3", R.mipmap.png4, Pattern.pattern_number("."));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_pp = false;
-                                }
+
 
                                 break;
                         }
@@ -729,7 +715,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_pp) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_pp) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -752,37 +738,32 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                     // ****** Symbol "," ******
 
 
-
-
-                    if (Symbol_cc) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_cc & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 2) {
+                                    Wait(2);
                                     Notification(",", "Revote muelle", R.mipmap.png5, Pattern.pattern(","));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_cc = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                  //  Sound(44);
-                                }
-                                if (count==4) {
+                                     Wait(2);
+                                     Sound(44);
+
+                                     Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification(",", "2", R.mipmap.png5, Pattern.pattern_number(","));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_cc= false;
-                                }
+
 
                                 break;
                         }
@@ -790,7 +771,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_cc) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_cc) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -817,156 +798,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         }
     };
 
-    TimerTask task2 = new TimerTask() {
 
-        @Override
-        public void run() {
-
-
-            // TODO Auto-generated method stub
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-
-                    //******  Symbol A  *****
-                    if (Symbol_NN) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_NN & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(40);
-                                }
-
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-                    //***** Symbol B ******
-
-
-
-                    if (Symbol_W) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_W & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(41);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-                    // *******  Symbol C ****
-
-
-
-                    if (Symbol_UU) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_UU & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(42);
-                                }
-                                break;
-
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-                    //******  Symbol D *********
-
-                    if (Symbol_pp) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_pp & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(43);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                    // ****** Symbol E  ******
-
-
-                    if (Symbol_cc) {
-                        //  count++;
-                    }
-
-                    // Training case
-                    if (Symbol_cc & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(44);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                } // end run
-
-            });
-        }
-    };
 
     @Override
     public void onBackPressed() {
@@ -1187,7 +1019,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
         timerSlot1.schedule(task1,1000,1000);
-        timerSound.schedule(task2,1000,1000);
+
 
 
 

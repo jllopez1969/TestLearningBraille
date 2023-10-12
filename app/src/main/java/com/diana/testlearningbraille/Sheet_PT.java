@@ -522,26 +522,27 @@ public class Sheet_PT extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(3);
                                     Notification("P", "Golpeo Puerta", R.mipmap.png2, Pattern.pattern("P"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_P= false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                  // Sound(40);
-                                }
-                                if (count==4) {
+                                     Wait(2);
+                                     Sound(40);
+
+                                     Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("P", "1-2-3-4", R.mipmap.png2, Pattern.pattern_number("P"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_P= false;
-                                }
+
 
                                 break;
                         }
@@ -570,36 +571,32 @@ public class Sheet_PT extends AppCompatActivity {
 
                     //***** Symbol Q ******
 
-
-
-                    if (Symbol_Q) {
-                        count++;
-                    }
                     // Training case
                     if (Symbol_Q & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
+                                    Wait(4);
                                     Notification("Q", "Melodía: 5ª Sinfonía de Beethoven", R.mipmap.png3, Pattern.pattern("Q"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_Q = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                  //  Sound(41);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(41);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("Q", "1-2-3-4-5", R.mipmap.png3, Pattern.pattern_number("Q"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_Q = false;
-                                }
+
 
                                 break;
                         }
@@ -607,7 +604,7 @@ public class Sheet_PT extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_Q) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_Q) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -630,35 +627,32 @@ public class Sheet_PT extends AppCompatActivity {
                     // *******  Symbol R ****
 
 
-                    if (Symbol_R) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_R & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
+                                    Wait(6);
                                     Notification("R", "Melodía: Vals Saga Strauss", R.mipmap.png4, Pattern.pattern("R"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_R = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+                                     Wait(2);
                                     // Number list phrase
-                                 //   Sound(42);
-                                }
-                                if (count==4) {
+                                     Sound(42);
+
+                                     Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("R", "1-2-3-5", R.mipmap.png4, Pattern.pattern_number("R"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_R = false;
-                                }
+
+
 
                                 break;
                         }
@@ -666,7 +660,7 @@ public class Sheet_PT extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_R) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_R) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -689,38 +683,32 @@ public class Sheet_PT extends AppCompatActivity {
 
                     //******  Symbol S *********
 
-
-
-
-                    if (Symbol_S) {
-                        count++;
-                    }
-
                     // Training case
-                    if (Symbol_S & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+                    if ((Symbol_S) & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
+                                    Wait(4);
                                     Notification("S", "Sónar Submarino", R.mipmap.png1, Pattern.pattern("S"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_S = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                //    Sound(43);
-                                }
-                                if (count==4) {
+                                       Wait(2);
+                                       Sound(43);
+
+                                      Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("S", "2-3-4", R.mipmap.png1, Pattern.pattern_number("S"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_S = false;
-                                }
+
 
                                 break;
                         }
@@ -728,7 +716,7 @@ public class Sheet_PT extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_S) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_S) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -750,10 +738,6 @@ public class Sheet_PT extends AppCompatActivity {
                     // ****** Symbol T ******
 
 
-                    if (Symbol_T) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_T & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
@@ -768,17 +752,18 @@ public class Sheet_PT extends AppCompatActivity {
 
                                 break;
                             case 2:
-                                if (count==2) {
                                     // Number list phrase
-                                //    Sound(44);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(44);
+
+
                                     // Coded Pattern of number list phrase
+                                    Wait(2);
                                     Notification("T", "2-3-4-5", R.mipmap.png2, Pattern.pattern_number("T"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_T = false;
-                                }
+
 
                                 break;
                         }
@@ -786,7 +771,7 @@ public class Sheet_PT extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_T) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_T) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -813,156 +798,6 @@ public class Sheet_PT extends AppCompatActivity {
         }
     };
 
-    TimerTask task2 = new TimerTask() {
-
-        @Override
-        public void run() {
-
-
-            // TODO Auto-generated method stub
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-
-                    //******  Symbol A  *****
-                    if (Symbol_P) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_P & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(40);
-                                }
-
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-                    //***** Symbol B ******
-
-
-
-                    if (Symbol_Q) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_Q & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(41);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-                    // *******  Symbol C ****
-
-
-
-                    if (Symbol_R) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_R & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(42);
-                                }
-                                break;
-
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-                    //******  Symbol D *********
-
-                    if (Symbol_S) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_S & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(43);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                    // ****** Symbol E  ******
-
-
-                    if (Symbol_T) {
-                        //  count++;
-                    }
-
-                    // Training case
-                    if (Symbol_T & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(44);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                } // end run
-
-            });
-        }
-    };
 
     @Override
     public void onBackPressed() {
@@ -1177,7 +1012,7 @@ public class Sheet_PT extends AppCompatActivity {
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
         timerSlot1.schedule(task1,1000,1000);
-        timerSound.schedule(task2,1000,1000);
+
 
 
         Sound(23);

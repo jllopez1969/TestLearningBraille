@@ -521,26 +521,27 @@ public class Sheet_KO extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 3) {
+                                    Wait(3);
                                     Notification("K", "Llamada de koala", R.mipmap.png1, Pattern.pattern("K"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_K= false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                  //  Sound(40);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(40);
+
+                                     Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("K", "1-3", R.mipmap.png1, Pattern.pattern_number("K"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_K= false;
-                                }
+
 
                                 break;
                         }
@@ -548,7 +549,7 @@ public class Sheet_KO extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_K) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_K) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -570,34 +571,33 @@ public class Sheet_KO extends AppCompatActivity {
                     //***** Symbol L ******
 
 
-                    if (Symbol_L) {
-                        count++;
-                    }
+
                     // Training case
                     if (Symbol_L & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
+                                    Wait(6);
                                     Notification("L", "Melodia: Levando Ancla-Zimmerman", R.mipmap.png2, Pattern.pattern("L"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_L = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                 //   Sound(41);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(41);
+
+                                     Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("L", "1-2-3", R.mipmap.png2, Pattern.pattern_number("L"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_L = false;
-                                }
+
 
                                 break;
                         }
@@ -605,7 +605,7 @@ public class Sheet_KO extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_L) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_L) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -628,36 +628,32 @@ public class Sheet_KO extends AppCompatActivity {
                     // *******  Symbol M ****
 
 
-
-                    if (Symbol_M) {
-                        count++;
-                    }
-
                     // Training case
                     if (Symbol_M & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
+                                    Wait(6);
                                     Notification("M", "Sonido de Marmota", R.mipmap.png2, Pattern.pattern("M"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_M = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                 //   Sound(42);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(42);
+
+                                    Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("M", "1-3-4", R.mipmap.png2, Pattern.pattern_number("M"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_M = false;
-                                }
+
 
                                 break;
                         }
@@ -665,7 +661,7 @@ public class Sheet_KO extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_M) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ( (Symbol_M) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -688,35 +684,33 @@ public class Sheet_KO extends AppCompatActivity {
 
                     //******  Symbol N *********
 
-                    if (Symbol_N) {
-                        count++;
-                    }
 
                     // Training case
                     if (Symbol_N & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
+                                    Wait(4);
                                     Notification("N", "Melodia: New York, New York", R.mipmap.png4, Pattern.pattern("N"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_N = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                 //   Sound(43);
-                                }
-                                if (count==4) {
-                                    // Coded Pattern of number list phrase
+
+                                // Number list phrase
+                                Wait(2);
+                                Sound(43);
+
+                                Wait(2);
+                                // Coded Pattern of number list phrase
                                     Notification("N", "-1-3-4-5-", R.mipmap.png4, Pattern.pattern_number("N"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_N = false;
-                                }
+
 
                                 break;
                         }
@@ -724,7 +718,7 @@ public class Sheet_KO extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_N) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_N) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -749,35 +743,34 @@ public class Sheet_KO extends AppCompatActivity {
                     // ****** Symbol O  ******
 
 
-                    if (Symbol_O) {
-                        count++;
-                    }
+
 
                     // Training case
                     if (Symbol_O & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 6) {
+                                    Wait(6);
                                     Notification("O", "Melodia: Encuentros en la III Fase", R.mipmap.png5, Pattern.pattern("O"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_O = false;
-                                }
+
 
                                 break;
                             case 2:
-                                if (count==2) {
+
                                     // Number list phrase
-                                   // Sound(44);
-                                }
-                                if (count==4) {
+                                    Wait(2);
+                                    Sound(44);
+
+                                     Wait(2);
                                     // Coded Pattern of number list phrase
                                     Notification("O", "1-3-5", R.mipmap.png5, Pattern.pattern_number("O"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_O = false;
-                                }
+
 
                                 break;
                         }
@@ -785,7 +778,7 @@ public class Sheet_KO extends AppCompatActivity {
                     }
                     // Experiment case
 
-                    if ((count == 1) &  (Symbol_O) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
+                    if ((Symbol_O) & ((Status_test==1)||(Status_test==3)||(Status_test==5) || (Status_test==7)||(Status_test==9)) )
                     {
                         switch (selected_test) {
                             case 1:
@@ -812,156 +805,6 @@ public class Sheet_KO extends AppCompatActivity {
         }
     };
 
-    TimerTask task2 = new TimerTask() {
-
-        @Override
-        public void run() {
-
-
-            // TODO Auto-generated method stub
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-
-                    //******  Symbol A  *****
-                    if (Symbol_K) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_K & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(40);
-                                }
-
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-                    //***** Symbol B ******
-
-
-
-                    if (Symbol_L) {
-                        // count++;
-                    }
-                    // Training case
-                    if (Symbol_L & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(41);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-                    // *******  Symbol C ****
-
-
-
-                    if (Symbol_M) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_M & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(42);
-                                }
-                                break;
-
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-                    //******  Symbol D *********
-
-                    if (Symbol_N) {
-                        // count++;
-                    }
-
-                    // Training case
-                    if (Symbol_N & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(43);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                    // ****** Symbol E  ******
-
-
-                    if (Symbol_O) {
-                        //  count++;
-                    }
-
-                    // Training case
-                    if (Symbol_O & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
-
-                        switch (selected_test) {
-
-                            case 2:
-                                if (count==2) {
-                                    // Number list phrase
-                                    Sound(44);
-                                }
-                                break;
-                        }
-
-                    }
-                    // Experiment case
-
-
-
-
-
-
-                } // end run
-
-            });
-        }
-    };
 
 
 
@@ -1186,7 +1029,7 @@ public class Sheet_KO extends AppCompatActivity {
         Stop_test.setVisibility(View.INVISIBLE);
         timer.schedule(task, 1000, 1000);
         timerSlot1.schedule(task1,1000,1000);
-        timerSound.schedule(task2,1000,1000);
+
 
 
 
