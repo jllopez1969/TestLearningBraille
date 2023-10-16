@@ -198,155 +198,184 @@ public class Sheet_UZ extends AppCompatActivity {
 
     public void Sound( int code) {
 
-        MediaPlayer mp;
+
 
         switch (code) {
             case 1:
-                mp = MediaPlayer.create(this, R.raw.u_lular_buho);
-                mp.start();
+                MediaPlayer mp1;
+                mp1 = MediaPlayer.create(this, R.raw.u_lular_buho);
+                mp1.start();
                 break;
 
             case 2:
-                mp = MediaPlayer.create(this, R.raw.v_morse);
-                mp.start();
+                MediaPlayer mp2;
+                mp2 = MediaPlayer.create(this, R.raw.v_morse);
+                mp2.start();
                 break;
 
             case 3:
-                mp = MediaPlayer.create(this, R.raw.x_sos_auxilio_morse);
-                mp.start();
+                MediaPlayer mp3;
+                mp3 = MediaPlayer.create(this, R.raw.x_sos_auxilio_morse);
+                mp3.start();
                 break;
 
             case 4:
-                mp = MediaPlayer.create(this, R.raw.y_bfymalo);
-                mp.start();
+                MediaPlayer mp4;
+                mp4 = MediaPlayer.create(this, R.raw.y_bfymalo);
+                mp4.start();
                 break;
 
             case 5:
-                mp = MediaPlayer.create(this, R.raw.z_morse);
-                mp.start();
+                MediaPlayer mp5;
+                mp5 = MediaPlayer.create(this, R.raw.z_morse);
+                mp5.start();
                 break;
 
             case 11:
-                mp = MediaPlayer.create(this, R.raw.alphabet_u);
-                mp.start();
+                MediaPlayer mp6;
+                mp6 = MediaPlayer.create(this, R.raw.alphabet_u);
+                mp6.start();
                 break;
 
             case 12:
-                mp = MediaPlayer.create(this, R.raw.alphabet_v);
-                mp.start();
+                MediaPlayer mp7;
+                mp7 = MediaPlayer.create(this, R.raw.alphabet_v);
+                mp7.start();
                 break;
 
             case 13:
-                mp = MediaPlayer.create(this, R.raw.alphabet_x);
-                mp.start();
+                MediaPlayer mp8;
+                mp8 = MediaPlayer.create(this, R.raw.alphabet_x);
+                mp8.start();
                 break;
 
             case 14:
-                mp = MediaPlayer.create(this, R.raw.alphabet_y);
-                mp.start();
+                MediaPlayer mp9;
+                mp9 = MediaPlayer.create(this, R.raw.alphabet_y);
+                mp9.start();
                 break;
 
             case 15:
-                mp = MediaPlayer.create(this, R.raw.alphabet_z);
-                mp.start();
+                MediaPlayer mp10;
+                mp10 = MediaPlayer.create(this, R.raw.alphabet_z);
+                mp10.start();
                 break;
 
             case 20:
-                mp = MediaPlayer.create(this, R.raw.loc_acierto);
-                mp.start();
+                MediaPlayer mp11;
+                mp11 = MediaPlayer.create(this, R.raw.loc_acierto);
+                mp11.start();
                 break;
 
             case 21:
-                mp = MediaPlayer.create(this, R.raw.loc_error);
-                mp.start();
+                MediaPlayer mp21;
+                mp21 = MediaPlayer.create(this, R.raw.loc_error);
+                mp21.start();
                 break;
 
             case 22:
-                mp = MediaPlayer.create(this, R.raw.loc_final_test);
-                mp.start();
+                MediaPlayer mp22;
+                mp22 = MediaPlayer.create(this, R.raw.loc_final_test);
+                mp22.start();
                 break;
             case 23:
-                mp = MediaPlayer.create(this, R.raw.sheet_uz);
-                mp.start();
+                MediaPlayer mp23;
+                mp23 = MediaPlayer.create(this, R.raw.sheet_uz);
+                mp23.start();
                 break;
             case 24:
-                mp = MediaPlayer.create(this, R.raw.primer_entrenamiento);
-                mp.start();
+                MediaPlayer mp24;
+                mp24 = MediaPlayer.create(this, R.raw.primer_entrenamiento);
+                mp24.start();
                 break;
 
             case 25:
-                mp = MediaPlayer.create(this, R.raw.primera_linea_test);
-                mp.start();
+                MediaPlayer mp25;
+                mp25 = MediaPlayer.create(this, R.raw.primera_linea_test);
+                mp25.start();
                 break;
             case 26:
-                mp = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
-                mp.start();
+                MediaPlayer mp26;
+                mp26 = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
+                mp26.start();
                 break;
             case 27:
-                mp = MediaPlayer.create(this, R.raw.segunda_linea_test);
-                mp.start();
+                MediaPlayer mp27;
+                mp27 = MediaPlayer.create(this, R.raw.segunda_linea_test);
+                mp27.start();
                 break;
             case 28:
-                mp = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
-                mp.start();
+                MediaPlayer mp28;
+                mp28 = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
+                mp28.start();
                 break;
             case 29:
-                mp = MediaPlayer.create(this, R.raw.tercera_linea_test);
-                mp.start();
+                MediaPlayer mp29;
+                mp29 = MediaPlayer.create(this, R.raw.tercera_linea_test);
+                mp29.start();
                 break;
             case 30:
-                mp = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
-                mp.start();
+                MediaPlayer mp30;
+                mp30 = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
+                mp30.start();
                 break;
             case 31:
-                mp = MediaPlayer.create(this, R.raw.cuarta_linea_test);
-                mp.start();
+                MediaPlayer mp31;
+                mp31 = MediaPlayer.create(this, R.raw.cuarta_linea_test);
+                mp31.start();
                 break;
             case 32:
-                mp = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
-                mp.start();
+                MediaPlayer mp32;
+                mp32 = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
+                mp32.start();
                 break;
             case 33:
-                mp = MediaPlayer.create(this, R.raw.quinta_linea_test);
-                mp.start();
+                MediaPlayer mp33;
+                mp33 = MediaPlayer.create(this, R.raw.quinta_linea_test);
+                mp33.start();
                 break;
 
             case 34:
-                mp = MediaPlayer.create(this, R.raw.idprueba);
-                mp.start();
+                MediaPlayer mp34;
+                mp34 = MediaPlayer.create(this, R.raw.idprueba);
+                mp34.start();
                 break;
             case 35:
-                mp = MediaPlayer.create(this, R.raw.linea_er);
-                mp.start();
+                MediaPlayer mp35;
+                mp35 = MediaPlayer.create(this, R.raw.linea_er);
+                mp35.start();
                 break;
             case 36:
-                mp = MediaPlayer.create(this, R.raw.linea_sc);
-                mp.start();
+                MediaPlayer mp36;
+                mp36 = MediaPlayer.create(this, R.raw.linea_sc);
+                mp36.start();
                 break;
 
             case 40:
-                mp = MediaPlayer.create(this, R.raw.numbers_u);
-                mp.start();
+                MediaPlayer mp37;
+                mp37 = MediaPlayer.create(this, R.raw.numbers_u);
+                mp37.start();
                 break;
             case 41:
-                mp = MediaPlayer.create(this, R.raw.numbers_v);
-                mp.start();
+                MediaPlayer mp38;
+                mp38 = MediaPlayer.create(this, R.raw.numbers_v);
+                mp38.start();
                 break;
             case 42:
-                mp = MediaPlayer.create(this, R.raw.numbers_x);
-                mp.start();
+                MediaPlayer mp39;
+                mp39 = MediaPlayer.create(this, R.raw.numbers_x);
+                mp39.start();
                 break;
             case 43:
-                mp = MediaPlayer.create(this, R.raw.numbers_y);
-                mp.start();
+                MediaPlayer mp40;
+                mp40 = MediaPlayer.create(this, R.raw.numbers_y);
+                mp40.start();
                 break;
             case 44:
-                mp = MediaPlayer.create(this, R.raw.numbers_z);
-                mp.start();
+                MediaPlayer mp41;
+                mp41 = MediaPlayer.create(this, R.raw.numbers_z);
+                mp41.start();
                 break;
-
-
-
 
         }
 
@@ -432,32 +461,35 @@ public class Sheet_UZ extends AppCompatActivity {
                 public void run() {
 
                     //******  Symbol U  *****
-
+                    if (Symbol_U) {
+                        count++;
+                    }
                         // Training case
                         if (Symbol_U & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                             switch (selected_test) {
                                 case 1:
-                                        Wait(3);
+                                    if (count == 4) {
                                         Notification("U", "Ulular Búho", R.mipmap.png3, Pattern.pattern("U"));
                                         Tacton_trip = true;
                                         count = 0;
                                         Symbol_U = false;
-
+                                    }
                                 break;
                                 case 2:
 
                                         // Number list phrase
-                                         Wait(2);
-                                         Sound(40);
+                                         if (count == 2) {
+                                             Sound(40);
+                                         }
 
-                                         Wait(2);
                                         // Coded Pattern of number list phrase
-                                        Notification("U", "1-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
-                                        Tacton_trip = true;
-                                        count = 0;
-                                        Symbol_U = false;
-
+                                        if (count == 4) {
+                                            Notification("U", "1-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
+                                            Tacton_trip = true;
+                                            count = 0;
+                                            Symbol_U = false;
+                                        }
 
                                     break;
                             }
@@ -486,8 +518,6 @@ public class Sheet_UZ extends AppCompatActivity {
 
                    //***** Symbol V ******
 
-
-
                     if (Symbol_V) {
                         count++;
                     }
@@ -496,26 +526,27 @@ public class Sheet_UZ extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(3);
-                                    Notification("V", "Tema Superman", R.mipmap.png3, Pattern.pattern("V"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_V = false;
-
+                                    if (count == 4) {
+                                        Notification("V", "Tema Superman", R.mipmap.png3, Pattern.pattern("V"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_V = false;
+                                    }
 
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(41);
-
-                                    Wait(2);
-                                    // Coded Pattern of number list phrase
-                                    Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_V = false;
+                                    if (count == 2) {
+                                        Sound(41);
+                                    }
+                                    if (count == 4) {
+                                        // Coded Pattern of number list phrase
+                                        Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_V = false;
+                                    }
 
                                 break;
                         }
@@ -544,32 +575,37 @@ public class Sheet_UZ extends AppCompatActivity {
 
 
                     // *******  Symbol X ****
+                    if (Symbol_X) {
+                        count++;
+                    }
 
                     // Training case
                     if (Symbol_X & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(4);
-                                    Notification("X", "S.O.S.: Auxilio Morse ", R.mipmap.png2, Pattern.pattern("X"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_X = false;
-
+                                    if (count == 4) {
+                                        Notification("X", "S.O.S.: Auxilio Morse ", R.mipmap.png2, Pattern.pattern("X"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_X = false;
+                                    }
 
                                 break;
                             case 2:
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(42);
+                                    if (count == 2) {
+                                        Sound(42);
+                                    }
 
-                                    Wait(2);
+
                                     // Coded Pattern of number list phrase
-                                    Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_X = false;
-
+                                    if (count == 4) {
+                                        Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_X = false;
+                                    }
                                 break;
                         }
 
@@ -598,34 +634,37 @@ public class Sheet_UZ extends AppCompatActivity {
 
 
                  //******  Symbol Y *********
-
+                    if (Symbol_Y) {
+                        count++;
+                    }
 
                     // Training case
                     if (Symbol_Y & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(4);
-                                    Notification("Y", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png3, Pattern.pattern("Y"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_Y = false;
-
+                                    if (count == 4) {
+                                        Notification("Y", "Tema: El Bueno, El Malo y el Feo", R.mipmap.png3, Pattern.pattern("Y"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_Y = false;
+                                    }
 
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(43);
+                                    if (count == 2) {
+                                        Sound(43);
+                                    }
 
-                                    Wait(2);
                                     // Coded Pattern of number list phrase
-                                    Notification("Y", "1-3-4-5-6", R.mipmap.png3, Pattern.pattern_number("Y"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_Y = false;
-
+                                    if (count == 4) {
+                                        Notification("Y", "1-3-4-5-6", R.mipmap.png3, Pattern.pattern_number("Y"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_Y = false;
+                                    }
                                 break;
                         }
 
@@ -651,36 +690,36 @@ public class Sheet_UZ extends AppCompatActivity {
                         }
                     }
 
-
-
-
                    // ****** Symbol Z  ******
-
+                    if (Symbol_Z) {
+                        count++;
+                    }
                     // Training case
                     if (Symbol_Z & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(3);
-                                    Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_Z = false;
-
+                                    if (count == 4) {
+                                        Notification("Z", "Z en Morse", R.mipmap.png4, Pattern.pattern("Z"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_Z = false;
+                                    }
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(44);
+                                    if (count == 2) {
+                                        Sound(44);
+                                    }
 
-                                    Wait(2);
                                     // Coded Pattern of number list phrase
-                                    Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern_number("Z"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_Z = false;
-
+                                    if (count == 4) {
+                                        Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern_number("Z"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_Z = false;
+                                    }
 
                                 break;
                         }

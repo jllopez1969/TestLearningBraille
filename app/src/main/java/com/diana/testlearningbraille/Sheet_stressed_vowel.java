@@ -196,158 +196,188 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
     public void Sound( int code) {
 
-        MediaPlayer mp;
 
         switch (code) {
             case 1:
-                mp = MediaPlayer.create(this, R.raw.a_pantera_rosa_acento);
-                mp.start();
+                MediaPlayer mp1;
+                mp1 = MediaPlayer.create(this, R.raw.a_pantera_rosa_acento);
+                mp1.start();
                 break;
 
             case 2:
-                mp = MediaPlayer.create(this, R.raw.e_maquina_de_escribir_acento);
-                mp.start();
+                MediaPlayer mp2;
+                mp2 = MediaPlayer.create(this, R.raw.e_maquina_de_escribir_acento);
+                mp2.start();
                 break;
 
             case 3:
-                mp = MediaPlayer.create(this, R.raw.i_campanadas_iglesia_acento);
-                mp.start();
+                MediaPlayer mp3;
+                mp3 = MediaPlayer.create(this, R.raw.i_campanadas_iglesia_acento);
+                mp3.start();
                 break;
 
             case 4:
-                mp = MediaPlayer.create(this, R.raw.o_odisea_encuentro_3_fase_acento);
-                mp.start();
+                MediaPlayer mp4;
+                mp4 = MediaPlayer.create(this, R.raw.o_odisea_encuentro_3_fase_acento);
+                mp4.start();
                 break;
 
             case 5:
-                mp = MediaPlayer.create(this, R.raw.u_lular_buho_acento);
-                mp.start();
+                MediaPlayer mp5;
+                mp5 = MediaPlayer.create(this, R.raw.u_lular_buho_acento);
+                mp5.start();
                 break;
             case 6:
-                mp = MediaPlayer.create(this, R.raw.acento);
-                mp.start();
+                MediaPlayer mp6;
+                mp6 = MediaPlayer.create(this, R.raw.acento);
+                mp6.start();
                 break;
 
             case 11:
-                mp = MediaPlayer.create(this, R.raw.alphabet_a);
-                mp.start();
+                MediaPlayer mp7;
+                mp7 = MediaPlayer.create(this, R.raw.alphabet_a);
+                mp7.start();
                 break;
 
             case 12:
-                mp = MediaPlayer.create(this, R.raw.alphabet_e);
-                mp.start();
+                MediaPlayer mp8;
+                mp8 = MediaPlayer.create(this, R.raw.alphabet_e);
+                mp8.start();
                 break;
 
             case 13:
-                mp = MediaPlayer.create(this, R.raw.alphabet_i);
-                mp.start();
+                MediaPlayer mp9;
+                mp9 = MediaPlayer.create(this, R.raw.alphabet_i);
+                mp9.start();
                 break;
 
             case 14:
-                mp = MediaPlayer.create(this, R.raw.alphabet_o);
-                mp.start();
+                MediaPlayer mp10;
+                mp10 = MediaPlayer.create(this, R.raw.alphabet_o);
+                mp10.start();
                 break;
 
             case 15:
-                mp = MediaPlayer.create(this, R.raw.alphabet_u);
-                mp.start();
+                MediaPlayer mp11;
+                mp11 = MediaPlayer.create(this, R.raw.alphabet_u);
+                mp11.start();
                 break;
 
-
-
             case 20:
-                mp = MediaPlayer.create(this, R.raw.loc_acierto);
-                mp.start();
+                MediaPlayer mp12;
+                mp12 = MediaPlayer.create(this, R.raw.loc_acierto);
+                mp12.start();
                 break;
 
             case 21:
-                mp = MediaPlayer.create(this, R.raw.loc_error);
-                mp.start();
+                MediaPlayer mp21;
+                mp21 = MediaPlayer.create(this, R.raw.loc_error);
+                mp21.start();
                 break;
 
             case 22:
-                mp = MediaPlayer.create(this, R.raw.loc_final_test);
-                mp.start();
+                MediaPlayer mp22;
+                mp22 = MediaPlayer.create(this, R.raw.loc_final_test);
+                mp22.start();
                 break;
 
 
             case 23:
-                mp = MediaPlayer.create(this, R.raw.sheet_stressed_vowels);
-                mp.start();
+                MediaPlayer mp23;
+                mp23 = MediaPlayer.create(this, R.raw.sheet_stressed_vowels);
+                mp23.start();
                 break;
             case 24:
-                mp = MediaPlayer.create(this, R.raw.primer_entrenamiento);
-                mp.start();
+                MediaPlayer mp24;
+                mp24 = MediaPlayer.create(this, R.raw.primer_entrenamiento);
+                mp24.start();
                 break;
 
             case 25:
-                mp = MediaPlayer.create(this, R.raw.primera_linea_test);
-                mp.start();
+                MediaPlayer mp25;
+                mp25 = MediaPlayer.create(this, R.raw.primera_linea_test);
+                mp25.start();
                 break;
             case 26:
-                mp = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
-                mp.start();
+                MediaPlayer mp26;
+                mp26 = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
+                mp26.start();
                 break;
             case 27:
-                mp = MediaPlayer.create(this, R.raw.segunda_linea_test);
-                mp.start();
+                MediaPlayer mp27;
+                mp27 = MediaPlayer.create(this, R.raw.segunda_linea_test);
+                mp27.start();
                 break;
             case 28:
-                mp = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
-                mp.start();
+                MediaPlayer mp28;
+                mp28 = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
+                mp28.start();
                 break;
             case 29:
-                mp = MediaPlayer.create(this, R.raw.tercera_linea_test);
-                mp.start();
+                MediaPlayer mp29;
+                mp29 = MediaPlayer.create(this, R.raw.tercera_linea_test);
+                mp29.start();
                 break;
             case 30:
-                mp = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
-                mp.start();
+                MediaPlayer mp30;
+                mp30 = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
+                mp30.start();
                 break;
             case 31:
-                mp = MediaPlayer.create(this, R.raw.cuarta_linea_test);
-                mp.start();
+                MediaPlayer mp31;
+                mp31 = MediaPlayer.create(this, R.raw.cuarta_linea_test);
+                mp31.start();
                 break;
             case 32:
-                mp = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
-                mp.start();
+                MediaPlayer mp32;
+                mp32 = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
+                mp32.start();
                 break;
             case 33:
-                mp = MediaPlayer.create(this, R.raw.quinta_linea_test);
-                mp.start();
+                MediaPlayer mp33;
+                mp33 = MediaPlayer.create(this, R.raw.quinta_linea_test);
+                mp33.start();
                 break;
             case 34:
-                mp = MediaPlayer.create(this, R.raw.idprueba);
-                mp.start();
+                MediaPlayer mp34;
+                mp34 = MediaPlayer.create(this, R.raw.idprueba);
+                mp34.start();
                 break;
             case 35:
-                mp = MediaPlayer.create(this, R.raw.linea_er);
-                mp.start();
+                MediaPlayer mp35;
+                mp35 = MediaPlayer.create(this, R.raw.linea_er);
+                mp35.start();
                 break;
             case 36:
-                mp = MediaPlayer.create(this, R.raw.linea_sc);
-                mp.start();
+                MediaPlayer mp36;
+                mp36 = MediaPlayer.create(this, R.raw.linea_sc);
+                mp36.start();
                 break;
 
             case 40:
-                mp = MediaPlayer.create(this, R.raw.numbers_as);
-                mp.start();
+                MediaPlayer mp37;
+                mp37 = MediaPlayer.create(this, R.raw.numbers_as);
+                mp37.start();
                 break;
             case 41:
-                mp = MediaPlayer.create(this, R.raw.numbers_es);
-                mp.start();
+                MediaPlayer mp38;
+                mp38 = MediaPlayer.create(this, R.raw.numbers_es);
+                mp38.start();
                 break;
             case 42:
-                mp = MediaPlayer.create(this, R.raw.numbers_is);
-                mp.start();
+                MediaPlayer mp39;
+                mp39 = MediaPlayer.create(this, R.raw.numbers_is);
+                mp39.start();
                 break;
             case 43:
-                mp = MediaPlayer.create(this, R.raw.numbers_os);
-                mp.start();
+                MediaPlayer mp40;
+                mp40 = MediaPlayer.create(this, R.raw.numbers_os);
+                mp40.start();
                 break;
             case 44:
-                mp = MediaPlayer.create(this, R.raw.numbers_us);
-                mp.start();
+                MediaPlayer mp41;
+                mp41 = MediaPlayer.create(this, R.raw.numbers_us);
+                mp41.start();
                 break;
 
         }
@@ -407,7 +437,6 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
     //New Timer Objects
     Timer timer = new Timer();
-    Timer timerSound = new Timer();
     Timer timerSlot1 = new Timer();
 
 
@@ -520,33 +549,39 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                     //******  Symbol á  *****
 
-
+                    if (Symbol_aa) {
+                        count++;
+                    }
 
                     // Training case
                     if (Symbol_aa & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(3);
-                                    Notification("AA", "Tema - Pantera Rosa", R.mipmap.png1, Pattern.pattern("AA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_aa= false;
+                                    if (count == 4) {
+                                        Notification("AA", "Tema - Pantera Rosa", R.mipmap.png1, Pattern.pattern("AA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_aa = false;
+                                    }
 
 
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(40);
+                                    if (count == 2) {
+                                        Sound(40);
+                                    }
 
-                                    Wait(2);
+
                                     // Coded Pattern of number list phrase
-                                    Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_aa= false;
+                                    if (count == 4) {
+                                        Notification("AA", "1-2-3-5-6", R.mipmap.png1, Pattern.pattern_number("AA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_aa = false;
+                                    }
 
 
                                 break;
@@ -575,33 +610,36 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     }
 
                     //***** Symbol é ******
-
+                    if (Symbol_ee) {
+                        count++;
+                    }
                     // Training case
                     if (Symbol_ee & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(6);
-                                    Notification("EA", "Máquina de Escribir", R.mipmap.png2, Pattern.pattern("EA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_ee = false;
-
+                                    if (count == 6) {
+                                        Notification("EA", "Máquina de Escribir", R.mipmap.png2, Pattern.pattern("EA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_ee = false;
+                                    }
 
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(41);
+                                    if (count == 2) {
+                                        Sound(41);
+                                    }
 
-                                    Wait(2);
                                     // Coded Pattern of number list phrase
-                                    Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_ee = false;
-
+                                    if (count == 4) {
+                                        Notification("EA", "2-3-4-6", R.mipmap.png2, Pattern.pattern_number("EA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_ee = false;
+                                    }
                                 break;
                         }
 
@@ -630,32 +668,35 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                     // *******  Symbol í ****
 
-
+                    if (Symbol_ii) {
+                        count++;
+                    }
                     // Training case
                     if (Symbol_ii & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(6);
-                                    Notification("IA", "Sonido de campana", R.mipmap.png2, Pattern.pattern("IA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_ii = false;
-
+                                    if (count == 6) {
+                                        Notification("IA", "Sonido de campana", R.mipmap.png2, Pattern.pattern("IA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_ii = false;
+                                    }
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(42);
+                                    if (count == 2) {
+                                        Sound(42);
+                                    }
 
-                                    Wait(2);
                                     // Coded Pattern of number list phrase
-                                    Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_ii = false;
-
+                                    if (count == 4) {
+                                        Notification("IA", "3-4", R.mipmap.png2, Pattern.pattern_number("IA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_ii = false;
+                                    }
 
                                 break;
                         }
@@ -683,32 +724,34 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     }
 
                     //******  Symbol ó *********
-
+                    if (Symbol_oo) {
+                        count++;
+                    }
                     // Training case
                     if (Symbol_oo & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(4);
+                                if (count == 4) {
                                     Notification("OA", "Encuentros en la tercera fase", R.mipmap.png4, Pattern.pattern("OA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_oo = false;
-
+                                }
                                 break;
                             case 2:
 
-                                    // Number list phrase
-                                    Wait(2);
+                                // Number list phrase
+                                if (count == 2) {
                                     Sound(43);
-
-                                    Wait(2);
+                                }
+                                if (count == 4) {
                                     // Coded Pattern of number list phrase
                                     Notification("OA", "3-4-6", R.mipmap.png4, Pattern.pattern_number("OA"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_oo = false;
-
+                                }
                                 break;
                         }
 
@@ -736,32 +779,35 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
 
                     // ****** Symbol ú ******
-
+                    if (Symbol_uu) {
+                        count++;
+                    }
                     // Training case
                     if (Symbol_uu & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(3);
-                                    Notification("UA", "Ulular de Buho", R.mipmap.png5, Pattern.pattern("UA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_uu = false;
-
+                                    if (count == 4) {
+                                        Notification("UA", "Ulular de Buho", R.mipmap.png5, Pattern.pattern("UA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_uu = false;
+                                    }
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(44);
+                                    if (count == 2) {
+                                        Sound(44);
+                                    }
 
-                                    Wait(2);
                                     // Coded Pattern of number list phrase
-                                    Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_uu = false;
-
+                                    if (count == 4) {
+                                        Notification("UA", "2-3-4-5-6", R.mipmap.png5, Pattern.pattern_number("UA"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_uu = false;
+                                    }
 
                                 break;
                         }
@@ -1604,6 +1650,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 0:
                                     //Symbol Locution
                                     Sound(11);
+                                    Symbol_aa=true;
                                     break;
 
                                 case 1:
@@ -1616,7 +1663,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                                     // Numbers list
                                     Sound(40);
-                                 Symbol_aa = true;
+                                   Symbol_aa = true;
                                     break;
 
                                 default:
@@ -1641,6 +1688,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 0:
                                     //Symbol Locution
                                     Sound(12);
+                                    Symbol_ee=true;
                                     break;
 
                                 case 1:
@@ -1653,6 +1701,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                                     // Numbers list
                                     Wait(1);
+                                    Sound(41);
                                     Symbol_ee= true;
                                     break;
 
@@ -1673,6 +1722,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 0:
                                     //Symbol Locution
                                     Sound(13);
+                                    Symbol_ii=true;
                                     break;
 
                                 case 1:
@@ -1706,6 +1756,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 0:
                                     //Symbol Locution
                                     Sound(14);
+                                    Symbol_oo = true;
                                     break;
 
                                 case 1:
@@ -1737,6 +1788,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                 case 0:
                                     //Symbol Locution
                                     Sound(15);
+                                    Symbol_uu = true;
                                     break;
 
                                 case 1:

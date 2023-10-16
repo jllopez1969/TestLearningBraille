@@ -197,154 +197,183 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
     public void Sound( int code) {
 
-        MediaPlayer mp;
+
 
         switch (code) {
             case 1:
-                mp = MediaPlayer.create(this, R.raw.nn_sonido_morse);
-                mp.start();
+                MediaPlayer mp1;
+                mp1 = MediaPlayer.create(this, R.raw.nn_sonido_morse);
+                mp1.start();
                 break;
 
             case 2:
-                mp = MediaPlayer.create(this, R.raw.w_himno_usa);
-                mp.start();
+                MediaPlayer mp2;
+                mp2 = MediaPlayer.create(this, R.raw.w_himno_usa);
+                mp2.start();
                 break;
 
             case 3:
-                mp = MediaPlayer.create(this, R.raw.u_dieresis);
-                mp.start();
+                MediaPlayer mp3;
+                mp3 = MediaPlayer.create(this, R.raw.u_dieresis);
+                mp3.start();
                 break;
 
             case 4:
-                mp = MediaPlayer.create(this, R.raw.p_punto);
-                mp.start();
+                MediaPlayer mp4;
+                mp4 = MediaPlayer.create(this, R.raw.p_punto);
+                mp4.start();
                 break;
 
             case 5:
-                mp = MediaPlayer.create(this, R.raw.c_coma);
-                mp.start();
+                MediaPlayer mp5;
+                mp5 = MediaPlayer.create(this, R.raw.c_coma);
+                mp5.start();
                 break;
 
             case 11:
-                mp = MediaPlayer.create(this, R.raw.alphabet_nn);
-                mp.start();
+                MediaPlayer mp6;
+                mp6 = MediaPlayer.create(this, R.raw.alphabet_nn);
+                mp6.start();
                 break;
 
             case 12:
-                mp = MediaPlayer.create(this, R.raw.alphabet_w);
-                mp.start();
+                MediaPlayer mp7;
+                mp7 = MediaPlayer.create(this, R.raw.alphabet_w);
+                mp7.start();
                 break;
 
             case 13:
-                mp = MediaPlayer.create(this, R.raw.alphabet_u_dieresis);
-                mp.start();
+                MediaPlayer mp8;
+                mp8 = MediaPlayer.create(this, R.raw.alphabet_u_dieresis);
+                mp8.start();
                 break;
 
             case 14:
-                mp = MediaPlayer.create(this, R.raw.alphabet_punto);
-                mp.start();
+                MediaPlayer mp9;
+                mp9 = MediaPlayer.create(this, R.raw.alphabet_punto);
+                mp9.start();
                 break;
 
             case 15:
-                mp = MediaPlayer.create(this, R.raw.alphabet_coma);
-                mp.start();
+                MediaPlayer mp10;
+                mp10 = MediaPlayer.create(this, R.raw.alphabet_coma);
+                mp10.start();
                 break;
 
-
-
             case 20:
-                mp = MediaPlayer.create(this, R.raw.loc_acierto);
-                mp.start();
+                MediaPlayer mp11;
+                mp11 = MediaPlayer.create(this, R.raw.loc_acierto);
+                mp11.start();
                 break;
 
             case 21:
-                mp = MediaPlayer.create(this, R.raw.loc_error);
-                mp.start();
+                MediaPlayer mp12;
+                mp12 = MediaPlayer.create(this, R.raw.loc_error);
+                mp12.start();
                 break;
 
             case 22:
-                mp = MediaPlayer.create(this, R.raw.loc_final_test);
-                mp.start();
+                MediaPlayer mp13;
+                mp13 = MediaPlayer.create(this, R.raw.loc_final_test);
+                mp13.start();
                 break;
-
 
             case 23:
-                mp = MediaPlayer.create(this, R.raw.sheet_punctuation_symbols_);
-                mp.start();
+                MediaPlayer mp14;
+                mp14 = MediaPlayer.create(this, R.raw.sheet_punctuation_symbols_);
+                mp14.start();
                 break;
             case 24:
-                mp = MediaPlayer.create(this, R.raw.primer_entrenamiento);
-                mp.start();
+                MediaPlayer mp15;
+                mp15 = MediaPlayer.create(this, R.raw.primer_entrenamiento);
+                mp15.start();
                 break;
 
             case 25:
-                mp = MediaPlayer.create(this, R.raw.primera_linea_test);
-                mp.start();
+                MediaPlayer mp16;
+                mp16 = MediaPlayer.create(this, R.raw.primera_linea_test);
+                mp16.start();
                 break;
             case 26:
-                mp = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
-                mp.start();
+                MediaPlayer mp17;
+                mp17 = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
+                mp17.start();
                 break;
             case 27:
-                mp = MediaPlayer.create(this, R.raw.segunda_linea_test);
-                mp.start();
+                MediaPlayer mp18;
+                mp18 = MediaPlayer.create(this, R.raw.segunda_linea_test);
+                mp18.start();
                 break;
             case 28:
-                mp = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
-                mp.start();
+                MediaPlayer mp19;
+                mp19 = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
+                mp19.start();
                 break;
             case 29:
-                mp = MediaPlayer.create(this, R.raw.tercera_linea_test);
-                mp.start();
+                MediaPlayer mp20;
+                mp20 = MediaPlayer.create(this, R.raw.tercera_linea_test);
+                mp20.start();
                 break;
             case 30:
-                mp = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
-                mp.start();
+                MediaPlayer mp21;
+                mp21 = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
+                mp21.start();
                 break;
             case 31:
-                mp = MediaPlayer.create(this, R.raw.cuarta_linea_test);
-                mp.start();
+                MediaPlayer mp22;
+                mp22 = MediaPlayer.create(this, R.raw.cuarta_linea_test);
+                mp22.start();
                 break;
             case 32:
-                mp = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
-                mp.start();
+                MediaPlayer mp23;
+                mp23 = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
+                mp23.start();
                 break;
             case 33:
-                mp = MediaPlayer.create(this, R.raw.quinta_linea_test);
-                mp.start();
+                MediaPlayer mp24;
+                mp24 = MediaPlayer.create(this, R.raw.quinta_linea_test);
+                mp24.start();
                 break;
             case 34:
-                mp = MediaPlayer.create(this, R.raw.idprueba);
-                mp.start();
+                MediaPlayer mp25;
+                mp25 = MediaPlayer.create(this, R.raw.idprueba);
+                mp25.start();
                 break;
             case 35:
-                mp = MediaPlayer.create(this, R.raw.linea_er);
-                mp.start();
+                MediaPlayer mp26;
+                mp26 = MediaPlayer.create(this, R.raw.linea_er);
+                mp26.start();
                 break;
             case 36:
-                mp = MediaPlayer.create(this, R.raw.linea_sc);
-                mp.start();
+                MediaPlayer mp27;
+                mp27 = MediaPlayer.create(this, R.raw.linea_sc);
+                mp27.start();
                 break;
 
             case 40:
-                mp = MediaPlayer.create(this, R.raw.numbers_nn);
-                mp.start();
+                MediaPlayer mp28;
+                mp28 = MediaPlayer.create(this, R.raw.numbers_nn);
+                mp28.start();
                 break;
             case 41:
-                mp = MediaPlayer.create(this, R.raw.numbers_w);
-                mp.start();
+                MediaPlayer mp29;
+                mp29 = MediaPlayer.create(this, R.raw.numbers_w);
+                mp29.start();
                 break;
             case 42:
-                mp = MediaPlayer.create(this, R.raw.numbers_u_umlaut);
-                mp.start();
+                MediaPlayer mp30;
+                mp30 = MediaPlayer.create(this, R.raw.numbers_u_umlaut);
+                mp30.start();
                 break;
             case 43:
-                mp = MediaPlayer.create(this, R.raw.numbers_dot);
-                mp.start();
+                MediaPlayer mp31;
+                mp31 = MediaPlayer.create(this, R.raw.numbers_dot);
+                mp31.start();
                 break;
             case 44:
-                mp = MediaPlayer.create(this, R.raw.numbers_comma);
-                mp.start();
+                MediaPlayer mp32;
+                mp32 = MediaPlayer.create(this, R.raw.numbers_comma);
+                mp32.start();
                 break;
 
         }
@@ -515,7 +544,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                 public void run() {
 
                     //******  Symbol Ñ  *****
-
+                    if (Symbol_NN) {
+                        count++;
+                    }
 
 
                     // Training case
@@ -523,27 +554,28 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(3);
-                                    Notification("Ñ", "Ñ en Morse", R.mipmap.png1, Pattern.pattern("Ñ"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_NN= false;
-
+                                    if (count == 4) {
+                                        Notification("Ñ", "Ñ en Morse", R.mipmap.png1, Pattern.pattern("Ñ"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_NN = false;
+                                    }
 
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                    Wait(2);
-                                    Sound(40);
+                                    if (count == 2) {
+                                        Sound(40);
+                                    }
 
-                                    Wait(2);
-                                    // Coded Pattern of number list phrase
-                                    Notification("Ñ", "1-2-4-5-6", R.mipmap.png1, Pattern.pattern_number("Ñ"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_NN= false;
-
+                                    if (count == 4) {
+                                        // Coded Pattern of number list phrase
+                                        Notification("Ñ", "1-2-4-5-6", R.mipmap.png1, Pattern.pattern_number("Ñ"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_NN = false;
+                                    }
 
                                 break;
                         }
@@ -572,33 +604,35 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                     //***** Symbol W ******
 
-
+                    if (Symbol_W) {
+                        count++;
+                    }
                     // Training case
                     if (Symbol_W & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                   Wait(7);
-                                    Notification("W", "Himno U.S.A.", R.mipmap.png2, Pattern.pattern("W"));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_W = false;
-
+                                    if (count == 8) {
+                                        Notification("W", "Himno U.S.A.", R.mipmap.png2, Pattern.pattern("W"));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_W = false;
+                                    }
 
                                 break;
                             case 2:
 
                                 // Number list phrase
-                                Wait(2);
-                                Sound(41);
-
-                                Wait(2);
+                                if (count == 2) {
+                                    Sound(41);
+                                }
+                                if (count == 4) {
                                     // Coded Pattern of number list phrase
                                     Notification("W", "2-4-5-6", R.mipmap.png2, Pattern.pattern_number("W"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_W = false;
-
+                                }
 
                                 break;
                         }
@@ -628,35 +662,37 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                     // *******  Symbol Ü ****
 
-
+                    if (Symbol_UU) {
+                        count++;
+                    }
 
                     // Training case
                     if (Symbol_UU & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(4);
+                                if (count == 4) {
                                     Notification("Ü", "Dos descorches", R.mipmap.png2, Pattern.pattern("Ü"));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_UU = false;
-
+                                }
 
                                 break;
                             case 2:
 
-                                    // Number list phrase
-                                    Wait(2);
-                                    Sound(42);
+                                     // Number list phrase
+                                          if (count == 2) {
+                                              Sound(42);
+                                          }
+                                    if (count == 4) {
+                                        // Coded Pattern of number list phrase
+                                        Notification("Ü", "1-2-5-6", R.mipmap.png2, Pattern.pattern_number("Ü"));
 
-                                    Wait(2);
-                                    // Coded Pattern of number list phrase
-                                    Notification("Ü", "1-2-5-6", R.mipmap.png2, Pattern.pattern_number("Ü"));
-
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_UU = false;
-
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_UU = false;
+                                    }
                                 break;
                         }
 
@@ -689,25 +725,27 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(2);
-                                    Notification(".", "Descorche",R.mipmap.png2,Pattern.pattern(".") );
+                                if (count == 2) {
+                                    Notification(".", "Descorche", R.mipmap.png2, Pattern.pattern("."));
                                     Tacton_trip = true;
                                     count = 0;
                                     Symbol_pp = false;
+                                }
 
                                 break;
                             case 2:
                                 // Number list phrase
-                                 Wait(2);
-                                 Sound(43);
+                                 if (count == 2) {
+                                     Sound(43);
+                                 }
 
-                                 Wait(2);
-                                    // Coded Pattern of number list phrase
-                                    Notification(".", "3", R.mipmap.png4, Pattern.pattern_number("."));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_pp = false;
-
+                                 if ( count== 2) {
+                                     // Coded Pattern of number list phrase
+                                     Notification(".", "3", R.mipmap.png4, Pattern.pattern_number("."));
+                                     Tacton_trip = true;
+                                     count = 0;
+                                     Symbol_pp = false;
+                                 }
 
                                 break;
                         }
@@ -736,34 +774,37 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
 
                     // ****** Symbol "," ******
-
+                    if (Symbol_cc) {
+                        count++;
+                    }
 
                     // Training case
                     if (Symbol_cc & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
-                                    Wait(2);
-                                    Notification(",", "Revote muelle", R.mipmap.png5, Pattern.pattern(","));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_cc = false;
-
+                                    if (count == 2) {
+                                        Notification(",", "Revote muelle", R.mipmap.png5, Pattern.pattern(","));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_cc = false;
+                                    }
 
                                 break;
                             case 2:
 
                                     // Number list phrase
-                                     Wait(2);
-                                     Sound(44);
+                                     if (count == 2) {
+                                         Sound(44);
+                                     }
 
-                                     Wait(2);
                                     // Coded Pattern of number list phrase
-                                    Notification(",", "2", R.mipmap.png5, Pattern.pattern_number(","));
-                                    Tacton_trip = true;
-                                    count = 0;
-                                    Symbol_cc= false;
-
+                                    if (count == 4) {
+                                        Notification(",", "2", R.mipmap.png5, Pattern.pattern_number(","));
+                                        Tacton_trip = true;
+                                        count = 0;
+                                        Symbol_cc = false;
+                                    }
 
                                 break;
                         }
