@@ -46,7 +46,7 @@ public class config_exp extends AppCompatActivity {
 
          // Object display
 
-        Intent intent1 = new Intent(this, Sheet_AE.class);
+         Intent intent1 = new Intent(this, Sheet_AE.class);
         Intent intent2= new Intent(this, Sheet_FJ.class);
         Intent intent3 = new Intent(this, Sheet_KO.class);
         Intent intent4 = new Intent(this, Sheet_PT.class);

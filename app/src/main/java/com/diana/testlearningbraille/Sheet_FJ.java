@@ -558,7 +558,7 @@ public class Sheet_FJ extends AppCompatActivity {
                         switch (selected_test) {
                             case 1:
 
-                                    if (count == 3) {
+                                    if (count == 4) {
                                         Notification("F", "Ésto es África - Shakira", R.mipmap.png1, Pattern.pattern("F"));
                                         Tacton_trip = true;
                                         count = 0;
@@ -683,7 +683,7 @@ public class Sheet_FJ extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                    if (count == 2) {
+                                    if (count == 4) {
                                         Notification("H", "H en Morse", R.mipmap.png3, Pattern.pattern("H"));
                                         Tacton_trip = true;
                                         count = 0;
@@ -1642,12 +1642,22 @@ public class Sheet_FJ extends AppCompatActivity {
                             //Symbol Locution + onomatopoeic sound
                             Sound(1);
                             Symbol_F = true;
+                            Symbol_G = false;
+                            Symbol_H = false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
                             break;
 
                         case 2:
 
                             Sound(11);
                             Symbol_F = true;
+                            Symbol_G = false;
+                            Symbol_H= false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
                             break;
 
                     }
@@ -1674,11 +1684,21 @@ public class Sheet_FJ extends AppCompatActivity {
                             //Symbol Locution + onomatopoeic sound
                             Sound(2);
                             Symbol_G = true;
+                            Symbol_F = false;
+                            Symbol_H= false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
                             break;
 
                         case 2:
                             Sound(12);
                             Symbol_G = true;
+                            Symbol_F = false;
+                            Symbol_H= false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
                             break;
 
 
@@ -1703,11 +1723,21 @@ public class Sheet_FJ extends AppCompatActivity {
                             //Symbol Locution + onomatopoeic sound
                             Sound(3);
                             Symbol_H = true;
+                            Symbol_G = false;
+                            Symbol_F= false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
                             break;
 
                         case 2:
                             Sound(13);
                             Symbol_H = true;
+                            Symbol_G = false;
+                            Symbol_F= false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
                             break;
 
 
@@ -1735,11 +1765,21 @@ public class Sheet_FJ extends AppCompatActivity {
                             //Symbol Locution + onomatopoeic sound
                             Sound(4);
                             Symbol_I = true;
+                            Symbol_G = false;
+                            Symbol_H= false;
+                            Symbol_F = false;
+                            Symbol_J = false;
+                            count = 0;
                             break;
 
                         case 2:
                             Sound(14);
                             Symbol_I = true;
+                            Symbol_G = false;
+                            Symbol_H= false;
+                            Symbol_F = false;
+                            Symbol_J = false;
+                            count = 0;
                            break;
 
 
@@ -1766,11 +1806,21 @@ public class Sheet_FJ extends AppCompatActivity {
                             //Symbol Locution + onomatopoeic sound
                             Sound(5);
                             Symbol_J = true;
+                            Symbol_G = false;
+                            Symbol_H= false;
+                            Symbol_I = false;
+                            Symbol_F = false;
+                            count = 0;
                             break;
 
                         case 2:
                             Sound(15);
                             Symbol_J = true;
+                            Symbol_G = false;
+                            Symbol_H= false;
+                            Symbol_I = false;
+                            Symbol_F = false;
+                            count = 0;
                             break;
 
 

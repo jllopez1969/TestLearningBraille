@@ -1748,11 +1748,21 @@ public class Sheet_AE extends AppCompatActivity {
                                     //Symbol locution + onomatopoeic sound
                                     Sound(1);
                                     Symbol_A= true;
+                                    Symbol_B = false;
+                                    Symbol_C = false;
+                                    Symbol_D = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
                                     Sound(11);
                                     Symbol_A = true;
+                                    Symbol_B = false;
+                                    Symbol_C = false;
+                                    Symbol_D = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                                 default:
@@ -1785,11 +1795,21 @@ public class Sheet_AE extends AppCompatActivity {
                                     //Symbol locution + onomatopoeic sound
                                     Sound(2);
                                     Symbol_B= true;
+                                    Symbol_A = false;
+                                    Symbol_C = false;
+                                    Symbol_D = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
                                     Sound(12);
-                                    Symbol_B = true;
+                                    Symbol_B= true;
+                                    Symbol_A = false;
+                                    Symbol_C = false;
+                                    Symbol_D = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1816,12 +1836,22 @@ public class Sheet_AE extends AppCompatActivity {
                                 case 1:
                                     //Symbol locution + onomatopoeic sound
                                     Sound(3);
-                                    Symbol_C = true;
+                                    Symbol_C= true;
+                                    Symbol_A = false;
+                                    Symbol_B = false;
+                                    Symbol_D = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
                                     Sound(13);
                                     Symbol_C = true;
+                                    Symbol_A = false;
+                                    Symbol_B = false;
+                                    Symbol_D = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1848,11 +1878,21 @@ public class Sheet_AE extends AppCompatActivity {
                                     //Symbol locution + onomatopoeic sound
                                     Sound(4);
                                     Symbol_D = true;
+                                    Symbol_A = false;
+                                    Symbol_B = false;
+                                    Symbol_C = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
                                     Sound(14);
                                     Symbol_D = true;
+                                    Symbol_A = false;
+                                    Symbol_B = false;
+                                    Symbol_C = false;
+                                    Symbol_E = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1878,11 +1918,21 @@ public class Sheet_AE extends AppCompatActivity {
                                     //Symbol locution + onomatopoeic sound
                                     Sound(5);
                                     Symbol_E = true;
+                                    Symbol_A = false;
+                                    Symbol_B = false;
+                                    Symbol_D = false;
+                                    Symbol_C = false;
+                                    count = 0;
                                      break;
 
                                 case 2:
                                     Sound(15);
                                     Symbol_E = true;
+                                    Symbol_A = false;
+                                    Symbol_B = false;
+                                    Symbol_D = false;
+                                    Symbol_C = false;
+                                    count = 0;
                                     break;
                             }
                         }

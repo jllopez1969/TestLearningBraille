@@ -1638,12 +1638,22 @@ public class Sheet_UZ extends AppCompatActivity {
                             //Symbol locution and onomatopoeid sound
                             Sound(1);
                             Symbol_U = true;
+                            Symbol_V = false;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
                              break;
 
                         case 2:
                             //Symbol Locution
                             Sound(11);
                             Symbol_U= true;
+                            Symbol_V = false;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
                         /*    Wait(1);
                             // Number list phrase
                             Sound(40);
@@ -1720,12 +1730,22 @@ public class Sheet_UZ extends AppCompatActivity {
                             Sound(3);
                             // Vibration Pattern
                             Symbol_X = true;
+                            Symbol_V = false;
+                            Symbol_U= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
                             break;
 
                         case 2:
                             //Symbol Locution
                             Sound(13);
                             Symbol_X = true;
+                            Symbol_V = false;
+                            Symbol_U= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
           /*                  Wait(1);
                             // Number list phrase
                             Sound(42);
@@ -1761,6 +1781,11 @@ public class Sheet_UZ extends AppCompatActivity {
                             //Symbol locution and onomatopoeid sound
                             Sound(4);
                             Symbol_Y = true;
+                            Symbol_V = false;
+                            Symbol_X= false;
+                            Symbol_U= false;
+                            Symbol_Z = false;
+                            count = 0;
 
                             break;
 
@@ -1768,6 +1793,11 @@ public class Sheet_UZ extends AppCompatActivity {
                             //Symbol Locution
                             Sound(14);
                             Symbol_Y= true;
+                            Symbol_V = false;
+                            Symbol_X= false;
+                            Symbol_U= false;
+                            Symbol_Z = false;
+                            count = 0;
                             /*
                             Wait(1);
                             // Number list phrase
@@ -1803,12 +1833,22 @@ public class Sheet_UZ extends AppCompatActivity {
                             Sound(5);
                             // Vibration Pattern
                             Symbol_Z = true;
+                            Symbol_V = false;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_U = false;
+                            count = 0;
                             break;
 
                         case 2:
                             //Symbol Locution
                             Sound(15);
                             Symbol_Z = true;
+                            Symbol_V = false;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_U = false;
+                            count = 0;
                       /*      Wait(1);
                             // Number list phrase
                             Sound(44);

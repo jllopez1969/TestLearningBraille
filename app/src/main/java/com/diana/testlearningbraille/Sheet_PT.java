@@ -1632,12 +1632,24 @@ public class Sheet_PT extends AppCompatActivity {
                             Sound(1);
                             // Pattern Vibrate
                             Symbol_P = true;
+                            Symbol_Q = false;
+                            Symbol_R = false;
+                            Symbol_S = false;
+                            Symbol_T = false;
+                            count =0;
+
                             break;
 
                         case 2:
                             //Symbol Locution
                             Sound(11);
                             Symbol_P = true;
+                            Symbol_Q = false;
+                            Symbol_R = false;
+                            Symbol_S = false;
+                            Symbol_T = false;
+                            count= 0;
+
                             break;
 
                     }
@@ -1664,12 +1676,24 @@ public class Sheet_PT extends AppCompatActivity {
                             //Symbol locution and onomatopoeid sound
                             Sound(2);
                             Symbol_Q = true;
+                            Symbol_P = false;
+                            Symbol_R = false;
+                            Symbol_S = false;
+                            Symbol_T = false;
+                            count = 0;
+
                             break;
 
                         case 2:
                             //Symbol Locution
                             Sound(12);
                             Symbol_Q = true;
+                            Symbol_P = false;
+                            Symbol_R = false;
+                            Symbol_S = false;
+                            Symbol_T = false;
+                            count= 0;
+
                             break;
 
                     }
@@ -1692,12 +1716,22 @@ public class Sheet_PT extends AppCompatActivity {
                             //Symbol locution and onomatopoeid sound
                             Sound(3);
                             Symbol_R = true;
+                            Symbol_Q = false;
+                            Symbol_P = false;
+                            Symbol_S = false;
+                            Symbol_T = false;
+                            count = 0;
                             break;
 
                         case 2:
                             //Symbol Locution
                             Sound(13);
                             Symbol_R = true;
+                            Symbol_Q = false;
+                            Symbol_P = false;
+                            Symbol_S = false;
+                            Symbol_T = false;
+                            count = 0;
                             break;
 
                     }
@@ -1724,12 +1758,22 @@ public class Sheet_PT extends AppCompatActivity {
                             //Symbol locution and onomatopoeid sound
                             Sound(4);
                             Symbol_S = true;
+                            Symbol_R = false;
+                            Symbol_Q = false;
+                            Symbol_P = false;
+                            Symbol_T = false;
+                            count = 0 ;
                             break;
 
                         case 2:
                             //Symbol Locution
                             Sound(14);
                             Symbol_S = true;
+                            Symbol_R = false;
+                            Symbol_Q = false;
+                            Symbol_P = false;
+                            Symbol_T = false;
+                            count = 0 ;
                             break;
 
                     }

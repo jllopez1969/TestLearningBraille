@@ -612,7 +612,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                    if (count == 8) {
+                                    if (count == 6) {
                                         Notification("W", "Himno U.S.A.", R.mipmap.png2, Pattern.pattern("W"));
                                         Tacton_trip = true;
                                         count = 0;
@@ -671,7 +671,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                         switch (selected_test) {
                             case 1:
-                                if (count == 4) {
+                                if (count == 2) {
                                     Notification("Ü", "Dos descorches", R.mipmap.png2, Pattern.pattern("Ü"));
                                     Tacton_trip = true;
                                     count = 0;
@@ -720,6 +720,10 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                     //******  Symbol "."  *********
 
+                    if (Symbol_pp) {
+                        count++;
+                    }
+
                     // Training case
                     if (Symbol_pp & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
@@ -739,7 +743,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                      Sound(43);
                                  }
 
-                                 if ( count== 2) {
+                                 if ( count == 4) {
                                      // Coded Pattern of number list phrase
                                      Notification(".", "3", R.mipmap.png4, Pattern.pattern_number("."));
                                      Tacton_trip = true;
@@ -1653,6 +1657,11 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(1);
                                     Symbol_NN = true;
+                                    Symbol_W = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                      break;
 
                                 case 2:
@@ -1660,6 +1669,11 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     // Numbers list
                                     Sound(40);
                                     Symbol_NN = true;
+                                    Symbol_W = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                     break;
 
                                  }
@@ -1688,6 +1702,11 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(2);
                                     Symbol_W = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
@@ -1695,6 +1714,11 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     // Numbers list
                                     Sound(41);
                                     Symbol_W = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1720,12 +1744,22 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(3);
                                     Symbol_UU = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_W = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
                                     // Numbers list
                                     Sound(42);
                                     Symbol_UU = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_W = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1752,12 +1786,22 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(4);
                                     Symbol_pp = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_W= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                       break;
 
                                 case 2:
                                     // Numbers list
                                     Sound(43);
                                     Symbol_pp = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_W= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1782,12 +1826,22 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     //Symbol locution + onomatopoeid sound
                                     Sound(5);
                                     Symbol_cc = true;
+                                    Symbol_NN = false;
+                                    Symbol_W= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                      break;
 
                                 case 2:
                                     // Numbers list
                                     Sound(44);
                                    Symbol_cc = true;
+                                    Symbol_NN = false;
+                                    Symbol_W= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
                                     break;
                             }
                         }

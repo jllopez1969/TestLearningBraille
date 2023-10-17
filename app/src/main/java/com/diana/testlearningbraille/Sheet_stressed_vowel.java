@@ -728,7 +728,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                         count++;
                     }
                     // Training case
-                    if (Symbol_oo & ((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
+                    if (Symbol_oo &((Status_test==0)||(Status_test==2)||(Status_test==4) || (Status_test==6)||(Status_test==8))) {
 
                         switch (selected_test) {
                             case 1:
@@ -1644,26 +1644,35 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     public boolean onLongClick(View v) {
 
 
-                        if ((secondLeft > 0) & ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
+                        if ( (secondLeft > 0) & ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
 
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
                                     Sound(11);
-                                    Symbol_aa=true;
                                     break;
 
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(1);
                                     Symbol_aa = true;
+                                    Symbol_ee = false;
+                                    Symbol_ii= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
 
                                     // Numbers list
                                     Sound(40);
-                                   Symbol_aa = true;
+                                    Symbol_aa = true;
+                                    Symbol_ee = false;
+                                    Symbol_ii= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
                                     break;
 
                                 default:
@@ -1681,28 +1690,37 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
 
-                        if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)))
+                        if ((secondLeft>0) & ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0)))
                         {
 
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
                                     Sound(12);
-                                    Symbol_ee=true;
                                     break;
 
                                 case 1:
                                     //Locución symbol + onomatopoeid sound
                                     Sound(2);
                                     Symbol_ee = true;
+                                    Symbol_aa = false;
+                                    Symbol_ii= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
                                       break;
 
                                 case 2:
 
                                     // Numbers list
-                                    Wait(1);
+
                                     Sound(41);
                                     Symbol_ee= true;
+                                    Symbol_aa = false;
+                                    Symbol_ii= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1716,19 +1734,23 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
 
-                        if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
+                        if ((secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
 
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
                                     Sound(13);
-                                    Symbol_ii=true;
                                     break;
 
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
                                     Sound(3);
                                     Symbol_ii = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
                                    break;
 
                                 case 2:
@@ -1736,6 +1758,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                                     Sound(42);
                                    Symbol_ii = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1751,18 +1778,22 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v)
                     {
-                        if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
+                        if ((secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
                                     Sound(14);
-                                    Symbol_oo = true;
                                     break;
 
                                 case 1:
                                     //Symbol Locution  + onomatopoeid sound
                                     Sound(4);
                                     Symbol_oo = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa= false;
+                                    Symbol_uu = false;
+                                    Symbol_ii = false;
+                                    count = 0;
                                     break;
 
                                 case 2:
@@ -1770,6 +1801,12 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                                     Sound(43);
                                     Symbol_oo = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    Symbol_ii= false;
+                                    count = 0;
                                     break;
 
                             }
@@ -1783,18 +1820,22 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                 new View.OnLongClickListener() {
                     public boolean onLongClick(View v)
                     {
-                        if ( (secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
+                        if ((secondLeft>0) &((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
                                     Sound(15);
-                                    Symbol_uu = true;
                                     break;
 
                                 case 1:
                                     //Symbol Locution  + onomatopoeid sound
                                     Sound(5);
                                     Symbol_uu = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa= false;
+                                    Symbol_oo= false;
+                                    Symbol_ii=false;
+                                    count = 0;
                                     break;
 
                                 case 2:
@@ -1802,6 +1843,11 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                                     Sound(44);
                                     Symbol_uu = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa = false;
+                                    Symbol_oo = false;
+                                    Symbol_ii = false;
+                                    count = 0;
                                    break;
                             }
                         }
