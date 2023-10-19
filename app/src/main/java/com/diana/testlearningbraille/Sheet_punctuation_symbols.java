@@ -1668,7 +1668,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                                     // Numbers list
                                     Sound(40);
-                                    Symbol_NN = true;
+                                    Symbol_NN = false;
                                     Symbol_W = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
@@ -1713,7 +1713,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
                                     // Numbers list
                                     Sound(41);
-                                    Symbol_W = true;
+                                    Symbol_W = false;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
@@ -1754,7 +1754,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 2:
                                     // Numbers list
                                     Sound(42);
-                                    Symbol_UU = true;
+                                    Symbol_UU = false;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
@@ -1796,7 +1796,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 2:
                                     // Numbers list
                                     Sound(43);
-                                    Symbol_pp = true;
+                                    Symbol_pp = false;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_W= false;
@@ -1836,7 +1836,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 2:
                                     // Numbers list
                                     Sound(44);
-                                   Symbol_cc = true;
+                                   Symbol_cc = false;
                                     Symbol_NN = false;
                                     Symbol_W= false;
                                     Symbol_pp= false;

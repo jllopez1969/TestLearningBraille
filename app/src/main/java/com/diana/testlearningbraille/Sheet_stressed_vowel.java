@@ -1644,7 +1644,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                     public boolean onLongClick(View v) {
 
 
-                        if ( (secondLeft > 0) & ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
+                        if ((secondLeft > 0) & ((Status_test == 2) | (Status_test == 4) | (Status_test == 6) | (Status_test == 8) | (Status_test == 0))) {
 
                             switch (selected_test) {
                                 case 0:
@@ -1667,7 +1667,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
                                     // Numbers list
                                     Sound(40);
-                                    Symbol_aa = true;
+                                    Symbol_aa = false;
                                     Symbol_ee = false;
                                     Symbol_ii= false;
                                     Symbol_oo= false;
@@ -1715,7 +1715,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                     // Numbers list
 
                                     Sound(41);
-                                    Symbol_ee= true;
+                                    Symbol_ee= false;
                                     Symbol_aa = false;
                                     Symbol_ii= false;
                                     Symbol_oo= false;
@@ -1757,7 +1757,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
 
                                     Sound(42);
-                                   Symbol_ii = true;
+                                   Symbol_ii = false;
                                     Symbol_ee = false;
                                     Symbol_aa= false;
                                     Symbol_oo= false;
@@ -1800,10 +1800,9 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
 
 
                                     Sound(43);
-                                    Symbol_oo = true;
+                                    Symbol_oo = false;
                                     Symbol_ee = false;
                                     Symbol_aa= false;
-                                    Symbol_oo= false;
                                     Symbol_uu = false;
                                     Symbol_ii= false;
                                     count = 0;
@@ -1842,7 +1841,7 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                                     // Numbers list
 
                                     Sound(44);
-                                    Symbol_uu = true;
+                                    Symbol_uu = false;
                                     Symbol_ee = false;
                                     Symbol_aa = false;
                                     Symbol_oo = false;
