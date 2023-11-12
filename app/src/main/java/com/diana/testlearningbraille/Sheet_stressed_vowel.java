@@ -1649,30 +1649,45 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(11);
-                                    break;
-
-                                case 1:
-                                    //Symbol Locution + onomatopoeid sound
-                                    Sound(1);
                                     Symbol_aa = true;
                                     Symbol_ee = false;
                                     Symbol_ii= false;
                                     Symbol_oo= false;
                                     Symbol_uu = false;
                                     count = 0;
+                                    if (Symbol_ee) {
+                                        Sound(11);
+                                    }
                                     break;
 
-                                case 2:
+                                case 1:
+                                    //Symbol Locution + onomatopoeid sound
 
-                                    // Numbers list
-                                    Sound(40);
-                                    Symbol_aa = false;
+                                    Symbol_aa = true;
                                     Symbol_ee = false;
                                     Symbol_ii= false;
                                     Symbol_oo= false;
                                     Symbol_uu = false;
                                     count = 0;
+                                    if (Symbol_ee) {
+                                        Sound(1);
+                                    }
+
+                                    break;
+
+                                case 2:
+
+                                    // Numbers list
+                                    Symbol_aa = true;
+                                    Symbol_ee = false;
+                                    Symbol_ii= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
+                                    if (Symbol_ee) {
+                                        Sound(40);
+                                    }
+
                                     break;
 
                                 default:
@@ -1696,31 +1711,43 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(12);
-                                    break;
-
-                                case 1:
-                                    //Locución symbol + onomatopoeid sound
-                                    Sound(2);
                                     Symbol_ee = true;
                                     Symbol_aa = false;
                                     Symbol_ii= false;
                                     Symbol_oo= false;
                                     Symbol_uu = false;
                                     count = 0;
-                                      break;
+                                    if(Symbol_ee) {
+                                        Sound(12);
+                                    }
+                                    break;
 
-                                case 2:
-
-                                    // Numbers list
-
-                                    Sound(41);
-                                    Symbol_ee= false;
+                                case 1:
+                                    //Locución symbol + onomatopoeid sound
+                                    Symbol_ee = true;
                                     Symbol_aa = false;
                                     Symbol_ii= false;
                                     Symbol_oo= false;
                                     Symbol_uu = false;
                                     count = 0;
+                                    if(Symbol_ee) {
+                                        Sound(2);
+                                    }
+
+                                      break;
+
+                                case 2:
+
+                                    // Numbers list
+                                    Symbol_ee= true;
+                                    Symbol_aa = false;
+                                    Symbol_ii= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
+                                    if(Symbol_ee) {
+                                        Sound(41);
+                                    }
                                     break;
 
                             }
@@ -1739,30 +1766,43 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(13);
-                                    break;
-
-                                case 1:
-                                    //Symbol Locution + onomatopoeid sound
-                                    Sound(3);
                                     Symbol_ii = true;
                                     Symbol_ee = false;
                                     Symbol_aa= false;
                                     Symbol_oo= false;
                                     Symbol_uu = false;
                                     count = 0;
-                                   break;
+                                    if (Symbol_ii) {
+                                        Sound(13);
+                                    }
+                                    break;
 
-                                case 2:
-
-
-                                    Sound(42);
-                                   Symbol_ii = false;
+                                case 1:
+                                    //Symbol Locution + onomatopoeid sound
+                                    Symbol_ii = true;
                                     Symbol_ee = false;
                                     Symbol_aa= false;
                                     Symbol_oo= false;
                                     Symbol_uu = false;
                                     count = 0;
+                                    if (Symbol_ii) {
+                                        Sound(3);
+                                    }
+
+                                   break;
+
+                                case 2:
+
+                                    Symbol_ii = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa= false;
+                                    Symbol_oo= false;
+                                    Symbol_uu = false;
+                                    count = 0;
+                                    if (Symbol_ii) {
+                                        Sound(42);
+                                    }
+
                                     break;
 
                             }
@@ -1782,30 +1822,41 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(14);
-                                    break;
-
-                                case 1:
-                                    //Symbol Locution  + onomatopoeid sound
-                                    Sound(4);
                                     Symbol_oo = true;
                                     Symbol_ee = false;
                                     Symbol_aa= false;
                                     Symbol_uu = false;
                                     Symbol_ii = false;
                                     count = 0;
+                                    if (Symbol_oo) {
+                                        Sound(14);
+                                    }
+                                    break;
+
+                                case 1:
+                                    //Symbol Locution  + onomatopoeid sound
+                                    Symbol_oo = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa= false;
+                                    Symbol_uu = false;
+                                    Symbol_ii = false;
+                                    count = 0;
+                                    if (Symbol_oo) {
+                                        Sound(4);
+                                    }
                                     break;
 
                                 case 2:
 
-
-                                    Sound(43);
-                                    Symbol_oo = false;
+                                    Symbol_oo = true;
                                     Symbol_ee = false;
                                     Symbol_aa= false;
                                     Symbol_uu = false;
                                     Symbol_ii= false;
                                     count = 0;
+                                    if (Symbol_oo) {
+                                        Sound(43);
+                                    }
                                     break;
 
                             }
@@ -1823,30 +1874,42 @@ public class Sheet_stressed_vowel extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(15);
-                                    break;
-
-                                case 1:
-                                    //Symbol Locution  + onomatopoeid sound
-                                    Sound(5);
                                     Symbol_uu = true;
                                     Symbol_ee = false;
                                     Symbol_aa= false;
                                     Symbol_oo= false;
                                     Symbol_ii=false;
                                     count = 0;
+                                    if (Symbol_uu) {
+                                        Sound(15);
+                                    }
                                     break;
 
-                                case 2:
-                                    // Numbers list
-
-                                    Sound(44);
-                                    Symbol_uu = false;
+                                case 1:
+                                    //Symbol Locution  + onomatopoeid sound
+                                    Symbol_uu = true;
                                     Symbol_ee = false;
                                     Symbol_aa = false;
                                     Symbol_oo = false;
                                     Symbol_ii = false;
                                     count = 0;
+                                    if (Symbol_uu) {
+                                        Sound(5);
+                                    }
+
+                                    break;
+
+                                case 2:
+                                    // Numbers list
+                                    Symbol_uu = true;
+                                    Symbol_ee = false;
+                                    Symbol_aa = false;
+                                    Symbol_oo = false;
+                                    Symbol_ii = false;
+                                    count = 0;
+                                    if (Symbol_uu) {
+                                        Sound(44);
+                                    }
                                    break;
                             }
                         }

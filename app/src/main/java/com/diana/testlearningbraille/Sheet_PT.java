@@ -1624,12 +1624,19 @@ public class Sheet_PT extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(11);
+                            Symbol_P = true;
+                            Symbol_Q = false;
+                            Symbol_R = false;
+                            Symbol_S = false;
+                            Symbol_T = false;
+                            count =0;
+                            if (Symbol_P) {
+                                Sound(11);
+                            }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Sound(1);
                             // Pattern Vibrate
                             Symbol_P = true;
                             Symbol_Q = false;
@@ -1637,18 +1644,24 @@ public class Sheet_PT extends AppCompatActivity {
                             Symbol_S = false;
                             Symbol_T = false;
                             count =0;
+                            if (Symbol_P) {
+                                Sound(1);
+                            }
 
                             break;
 
                         case 2:
                             //Symbol Locution
-                            Sound(11);
                             Symbol_P = true;
                             Symbol_Q = false;
                             Symbol_R = false;
                             Symbol_S = false;
                             Symbol_T = false;
-                            count= 0;
+                            count =0;
+                            if (Symbol_P) {
+                                Sound(11);
+                            }
+
 
                             break;
 

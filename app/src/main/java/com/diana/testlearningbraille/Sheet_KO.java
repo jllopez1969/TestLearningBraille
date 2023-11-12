@@ -1639,19 +1639,41 @@ public class Sheet_KO extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol Locution
-                            Sound(11);
+                            Symbol_K = true;
+                            Symbol_L = false;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_K) {
+                                Sound(11);
+                            }
                             break;
 
                         case 1:
                             //Symbol Locution + onomatopoeic sound
-                            Sound(1);
                             Symbol_K = true;
+                            Symbol_L = false;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_K) {
+                                Sound(1);
+                            }
                             break;
 
                         case 2:
                             //Symbol Locution
-                            Sound(11);
                             Symbol_K = true;
+                            Symbol_L = false;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_K) {
+                                Sound(11);
+                            }
                            break;
 
                     }
@@ -1671,19 +1693,41 @@ public class Sheet_KO extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(12);
+                            Symbol_K = false;
+                            Symbol_L = true;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_L) {
+                                Sound(12);
+                            }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Sound(2);
+                            Symbol_K = false;
                             Symbol_L = true;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_L) {
+                                Sound(2);
+                            }
                             break;
 
                         case 2:
                             //symbol Locution
-                            Sound(12);
+                            Symbol_K = false;
                             Symbol_L = true;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_L) {
+                                Sound(12);
+                            }
                             break;
 
                     }
@@ -1700,19 +1744,41 @@ public class Sheet_KO extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(13);
+                            Symbol_K = false;
+                            Symbol_L = false;
+                            Symbol_M = true;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_M) {
+                                Sound(13);
+                            }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Sound(3);
+                            Symbol_K = false;
+                            Symbol_L = false;
                             Symbol_M = true;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_M) {
+                                Sound(3);
+                            }
                             break;
 
                         case 2:
                             //symbol Locuction
-                            Sound(13);
+                            Symbol_K = false;
+                            Symbol_L = false;
                             Symbol_M = true;
+                            Symbol_N = false;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_M) {
+                                Sound(13);
+                            }
                             break;
 
                     }
@@ -1732,19 +1798,41 @@ public class Sheet_KO extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(14);
+                            Symbol_K = false;
+                            Symbol_L = false;
+                            Symbol_M = false;
+                            Symbol_N = true;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_N) {
+                                Sound(14);
+                            }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Sound(4);
+                            Symbol_K = false;
+                            Symbol_L = false;
+                            Symbol_M = false;
                             Symbol_N = true;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_N) {
+                                Sound(4);
+                            }
                             break;
 
                         case 2:
                             //Symbol Locuction
-                            Sound(14);
+                            Symbol_K = false;
+                            Symbol_L = false;
+                            Symbol_M = false;
                             Symbol_N = true;
+                            Symbol_O = false;
+                            count = 0;
+                            if (Symbol_N) {
+                                Sound(14);
+                            }
                             break;
 
                     }
@@ -1762,19 +1850,41 @@ public class Sheet_KO extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(15);
+                            Symbol_K = false;
+                            Symbol_L = false;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = true;
+                            count = 0;
+                            if (Symbol_O) {
+                                Sound(15);
+                            }
                             break;
 
                         case 1:
                             //Symbol Locution + onomatopoeic sound
-                            Sound(5);
-                          Symbol_O = true;
+                            Symbol_K = false;
+                            Symbol_L = false;
+                            Symbol_M = false;
+                            Symbol_N = false;
+                            Symbol_O = true;
+                            count = 0;
+                            if (Symbol_O) {
+                                Sound(5);
+                            }
                              break;
 
                         case 2:
                             //Symbol Locution
-                            Sound(15);
+                            Symbol_K = false;
+                            Symbol_L = false;
+                            Symbol_M = false;
+                            Symbol_N = false;
                             Symbol_O = true;
+                            count = 0;
+                            if (Symbol_O) {
+                            Sound(15);
+                             }
                             break;
 
 

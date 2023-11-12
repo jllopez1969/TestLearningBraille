@@ -540,6 +540,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
             // TODO Auto-generated method stub
             runOnUiThread(new Runnable() {
 
+
+                // Se hace esto para coordinar los patrones con los sonidos. Aquí sólo hay patrones
+
                 @Override
                 public void run() {
 
@@ -565,7 +568,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             case 2:
 
                                     // Number list phrase
-                                    if (count == 2) {
+                                  if (count == 2) {
                                         Sound(40);
                                     }
 
@@ -1650,30 +1653,50 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(11);
+                                    Symbol_NN = true;  // coordinación patrón retardo
+                                    Symbol_W = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+
+                                    if (Symbol_NN) {
+                                        Sound(11);
+                                    }
                                     break;
 
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
-                                    Sound(1);
-                                    Symbol_NN = true;
+                                    Symbol_NN = true;  // coordinación patrón retardo
                                     Symbol_W = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
                                     Symbol_UU = false;
                                     count = 0;
+                                    if (Symbol_NN) {
+                                        Sound(1);
+                                    }
+
                                      break;
 
                                 case 2:
+                                    // locucion de numero
+
+
+                                    // retardo
 
                                     // Numbers list
-                                    Sound(40);
-                                    Symbol_NN = false;
+                                    Symbol_NN = true;  // coordinación patrón retardo
                                     Symbol_W = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
                                     Symbol_UU = false;
                                     count = 0;
+                                    if (Symbol_NN) {
+                                        Sound(40);
+                                    }
+
+
+
                                     break;
 
                                  }
@@ -1695,30 +1718,44 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(12);
-                                    break;
-
-                                case 1:
-                                    //Symbol Locution + onomatopoeid sound
-                                    Sound(2);
                                     Symbol_W = true;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
                                     Symbol_UU = false;
                                     count = 0;
+                                    if (Symbol_W) {
+                                        Sound(12);
+                                    }
+                                    break;
+
+                                case 1:
+                                    //Symbol Locution + onomatopoeid sound
+                                    Symbol_W = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
+
+                                    if (Symbol_W) {
+                                        Sound(2);
+                                    }
+
                                     break;
 
                                 case 2:
 
                                     // Numbers list
-                                    Sound(41);
                                     Symbol_W = false;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
                                     Symbol_UU = false;
                                     count = 0;
+                                    if (Symbol_W) {
+                                        Sound(41);
+                                    }
                                     break;
 
                             }
@@ -1737,29 +1774,43 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(13);
-                                    break;
-
-                                case 1:
-                                    //Symbol Locution + onomatopoeid sound
-                                    Sound(3);
                                     Symbol_UU = true;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
                                     Symbol_W = false;
                                     count = 0;
+                                   if (Symbol_UU) {
+                                       Sound(13);
+                                   }
                                     break;
 
-                                case 2:
-                                    // Numbers list
-                                    Sound(42);
-                                    Symbol_UU = false;
+                                case 1:
+                                    //Symbol Locution + onomatopoeid sound
+                                    Symbol_UU = true;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
                                     Symbol_W = false;
                                     count = 0;
+                                    if (Symbol_UU) {
+                                        Sound(13);
+                                    }
+
+                                    break;
+
+                                case 2:
+                                    // Numbers list
+                                    Symbol_UU = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_pp= false;
+                                    Symbol_W = false;
+                                    count = 0;
+                                    if (Symbol_UU) {
+                                        Sound(42);
+                                    }
+
                                     break;
 
                             }
@@ -1779,29 +1830,41 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Sound(14);
-                                    break;
-
-                                case 1:
-                                    //Symbol Locution + onomatopoeid sound
-                                    Sound(4);
                                     Symbol_pp = true;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_W= false;
                                     Symbol_UU = false;
                                     count = 0;
-                                      break;
+                                    if (Symbol_pp) {
+                                        Sound(14);
+                                    }
+                                    break;
 
-                                case 2:
-                                    // Numbers list
-                                    Sound(43);
-                                    Symbol_pp = false;
+                                case 1:
+                                    //Symbol Locution + onomatopoeid sound
+                                    Symbol_pp = true;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_W= false;
                                     Symbol_UU = false;
                                     count = 0;
+                                    if (Symbol_pp) {
+                                        Sound(4);
+                                    }
+                                      break;
+
+                                case 2:
+                                    // Numbers list
+                                    Symbol_pp = true;
+                                    Symbol_NN = false;
+                                    Symbol_cc= false;
+                                    Symbol_W= false;
+                                    Symbol_UU = false;
+
+                                    if (Symbol_pp) {
+                                        Sound(43);
+                                    }
                                     break;
 
                             }
@@ -1819,29 +1882,42 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     // Symbol Locution
-                                    Sound(15);
-                                    break;
-
-                                case 1:
-                                    //Symbol locution + onomatopoeid sound
-                                    Sound(5);
                                     Symbol_cc = true;
                                     Symbol_NN = false;
                                     Symbol_W= false;
                                     Symbol_pp= false;
                                     Symbol_UU = false;
                                     count = 0;
-                                     break;
+                                    if (Symbol_cc) {
+                                        Sound(15);
+                                    }
+                                    break;
 
-                                case 2:
-                                    // Numbers list
-                                    Sound(44);
-                                   Symbol_cc = false;
+                                case 1:
+                                    //Symbol locution + onomatopoeid soun
+
+                                    Symbol_cc = true;
                                     Symbol_NN = false;
                                     Symbol_W= false;
                                     Symbol_pp= false;
                                     Symbol_UU = false;
                                     count = 0;
+                                    if (Symbol_cc) {
+                                        Sound(5);
+                                    }
+                                     break;
+
+                                case 2:
+                                    // Numbers list
+                                    Symbol_cc = false;
+                                    Symbol_NN = false;
+                                    Symbol_W= false;
+                                    Symbol_pp= false;
+                                    Symbol_UU = false;
+                                    count = 0;
+                                    if (Symbol_cc) {
+                                        Sound(44);
+                                    }
                                     break;
                             }
                         }

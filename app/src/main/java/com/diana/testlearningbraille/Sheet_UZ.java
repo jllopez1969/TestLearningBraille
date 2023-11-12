@@ -1631,18 +1631,30 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(11);
-                            break;
-
-                        case 1:
-                            //Symbol locution and onomatopoeid sound
-                            Sound(1);
                             Symbol_U = true;
                             Symbol_V = false;
                             Symbol_X= false;
                             Symbol_Y= false;
                             Symbol_Z = false;
                             count = 0;
+                            if (Symbol_U) {
+                                Sound(11);
+                            }
+                            break;
+
+                        case 1:
+                            //Symbol locution and onomatopoeid sound
+
+                            Symbol_U = true;
+                            Symbol_V = false;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
+                            if (Symbol_U) {
+                                Sound(1);
+                            }
+
                              break;
 
                         case 2:
@@ -1654,13 +1666,9 @@ public class Sheet_UZ extends AppCompatActivity {
                             Symbol_Y= false;
                             Symbol_Z = false;
                             count = 0;
-                        /*    Wait(1);
-                            // Number list phrase
-                            Sound(40);
-                            Wait(1);
-                            // Coded Pattern of number list phrase
-                            Notification("U", "2-3-6", R.mipmap.png3, Pattern.pattern_number("U"));
-                        */
+                            if (Symbol_U) {
+                                Sound(11);
+                            }
                             break;
 
                     }
@@ -1682,28 +1690,43 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(12);
+                            Symbol_U= false;
+                            Symbol_V = true;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
+                            if (Symbol_V) {
+                                Sound(12);
+                            }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Sound(2);
+                            Symbol_U= false;
                             Symbol_V = true;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
+                            if (Symbol_V) {
+                                Sound(2);
+                            }
 
                             break;
 
                         case 2:
                             //Symbol Locution
-                            Sound(12);
-                            Symbol_V= true;
+                            Symbol_U= false;
+                            Symbol_V = true;
+                            Symbol_X= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
+                            if (Symbol_V) {
+                                Sound(12);
+                            }
 
-                    /*        Wait(1);
-                            // Number list phrase
-                            Sound(41);
-                            Wait(1);
-                            // Coded Pattern of number list phrase
-                            Notification("V", "1-2-3-6", R.mipmap.png4, Pattern.pattern_number("V"));
-*/
                             break;
 
                     }
@@ -1722,12 +1745,19 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(13);
+                            Symbol_X = true;
+                            Symbol_V = false;
+                            Symbol_U= false;
+                            Symbol_Y= false;
+                            Symbol_Z = false;
+                            count = 0;
+                            if (Symbol_X) {
+                                Sound(13);
+                            }
                             break;
 
                         case 1:
-                            //Symbol locution and onomatopoeid sound
-                            Sound(3);
+
                             // Vibration Pattern
                             Symbol_X = true;
                             Symbol_V = false;
@@ -1735,25 +1765,22 @@ public class Sheet_UZ extends AppCompatActivity {
                             Symbol_Y= false;
                             Symbol_Z = false;
                             count = 0;
+                            if (Symbol_X) {
+                                Sound(3);
+                            }
                             break;
 
                         case 2:
                             //Symbol Locution
-                            Sound(13);
                             Symbol_X = true;
                             Symbol_V = false;
                             Symbol_U= false;
                             Symbol_Y= false;
                             Symbol_Z = false;
                             count = 0;
-          /*                  Wait(1);
-                            // Number list phrase
-                            Sound(42);
-                            Wait(1);
-                            // Coded Pattern of number list phrase
-                            Notification("X", "1-3-4-6", R.mipmap.png2, Pattern.pattern_number("X"));
-*/
-                            break;
+                            if (Symbol_X) {
+                                Sound(13);
+                            }
 
                     }
 
@@ -1774,38 +1801,44 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(14);
+                            Symbol_X = false;
+                            Symbol_V = false;
+                            Symbol_U= false;
+                            Symbol_Y= true;
+                            Symbol_Z = false;
+                            count = 0;
+                            if (Symbol_Y) {
+                                Sound(14);
+                            }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Sound(4);
-                            Symbol_Y = true;
+                            Symbol_X = false;
                             Symbol_V = false;
-                            Symbol_X= false;
                             Symbol_U= false;
+                            Symbol_Y= true;
                             Symbol_Z = false;
                             count = 0;
+                            if (Symbol_Y) {
+                                Sound(4);
+                            }
 
                             break;
 
                         case 2:
-                            //Symbol Locution
-                            Sound(14);
-                            Symbol_Y= true;
+                            //Symbol
+                            Symbol_X = false;
                             Symbol_V = false;
-                            Symbol_X= false;
                             Symbol_U= false;
+                            Symbol_Y= true;
                             Symbol_Z = false;
                             count = 0;
-                            /*
-                            Wait(1);
-                            // Number list phrase
-                            Sound(43);
-                            Wait(1);
-                            // Coded Pattern of number list phrase
-                            Notification("Y", "1-3-4-5-6", R.mipmap.png3, Pattern.pattern_number("Y"));
-                           */
+                            if (Symbol_Y) {
+                                Sound(14);
+                            }
+
+
                             break;
 
 
@@ -1830,32 +1863,30 @@ public class Sheet_UZ extends AppCompatActivity {
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Sound(5);
-                            // Vibration Pattern
                             Symbol_Z = true;
                             Symbol_V = false;
                             Symbol_X= false;
                             Symbol_Y= false;
                             Symbol_U = false;
                             count = 0;
+                            if (Symbol_Z) {
+                                Sound(5);
+                            }
+                            // Vibration Pattern
+
                             break;
 
                         case 2:
                             //Symbol Locution
-                            Sound(15);
                             Symbol_Z = true;
                             Symbol_V = false;
                             Symbol_X= false;
                             Symbol_Y= false;
                             Symbol_U = false;
                             count = 0;
-                      /*      Wait(1);
-                            // Number list phrase
-                            Sound(44);
-                            Wait(1);
-                            // Coded Pattern of number list phrase
-                            Notification("Z", "1-3-5-6", R.mipmap.png4, Pattern.pattern_number("Z"));
-                        */
+                            if (Symbol_Z) {
+                                Sound(15);
+                            }
                             break;
 
                     }

@@ -1635,29 +1635,42 @@ public class Sheet_FJ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol Locution
-                            Sound(11);
-                            break;
-
-                        case 1:
-                            //Symbol Locution + onomatopoeic sound
-                            Sound(1);
                             Symbol_F = true;
                             Symbol_G = false;
                             Symbol_H = false;
                             Symbol_I = false;
                             Symbol_J = false;
                             count = 0;
+                            if (Symbol_F) {
+                                Sound(11);
+                            }
+                            break;
+
+                        case 1:
+                            //Symbol Locution + onomatopoeic sound
+                            Symbol_F = true;
+                            Symbol_G = false;
+                            Symbol_H = false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
+                            if (Symbol_F) {
+                                Sound(1);
+                            }
+
                             break;
 
                         case 2:
 
-                            Sound(11);
                             Symbol_F = true;
                             Symbol_G = false;
                             Symbol_H= false;
                             Symbol_I = false;
                             Symbol_J = false;
                             count = 0;
+                            if (Symbol_F) {
+                                Sound(11);
+                            }
                             break;
 
                     }
@@ -1677,28 +1690,41 @@ public class Sheet_FJ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol Locution
-                            Sound(12);
+                            Symbol_G = true;
+                            Symbol_F = false;
+                            Symbol_H= false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
+                            if (Symbol_G) {
+                                Sound(12);
+                            }
                             break;
 
                         case 1:
                             //Symbol Locution + onomatopoeic sound
-                            Sound(2);
                             Symbol_G = true;
                             Symbol_F = false;
                             Symbol_H= false;
                             Symbol_I = false;
                             Symbol_J = false;
                             count = 0;
+                            if (Symbol_G) {
+                                Sound(2);
+                            }
                             break;
 
                         case 2:
-                            Sound(12);
                             Symbol_G = true;
                             Symbol_F = false;
                             Symbol_H= false;
                             Symbol_I = false;
                             Symbol_J = false;
                             count = 0;
+                            if (Symbol_G) {
+                                Sound(12);
+                            }
+
                             break;
 
 
@@ -1716,28 +1742,44 @@ public class Sheet_FJ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol Locution
-                            Sound(13);
+                            Symbol_H = true;
+                            Symbol_G = false;
+                            Symbol_F= false;
+                            Symbol_I = false;
+                            Symbol_J = false;
+                            count = 0;
+                            if (Symbol_H) {
+                                Sound(13);
+                            }
                             break;
 
                         case 1:
                             //Symbol Locution + onomatopoeic sound
-                            Sound(3);
                             Symbol_H = true;
                             Symbol_G = false;
                             Symbol_F= false;
                             Symbol_I = false;
                             Symbol_J = false;
                             count = 0;
+
+                            if (Symbol_H) {
+                                Sound(3);
+                            }
+
                             break;
 
                         case 2:
-                            Sound(13);
+
                             Symbol_H = true;
                             Symbol_G = false;
                             Symbol_F= false;
                             Symbol_I = false;
                             Symbol_J = false;
                             count = 0;
+                            if (Symbol_H) {
+                                Sound(13);
+                            }
+
                             break;
 
 
@@ -1758,28 +1800,44 @@ public class Sheet_FJ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol Locution
-                            Sound(14);
+                            Symbol_I = true;
+                            Symbol_G = false;
+                            Symbol_H= false;
+                            Symbol_F = false;
+                            Symbol_J = false;
+                            count = 0;
+                            if (Symbol_I) {
+                                Sound(14);
+                            }
                             break;
 
                         case 1:
                             //Symbol Locution + onomatopoeic sound
-                            Sound(4);
                             Symbol_I = true;
                             Symbol_G = false;
                             Symbol_H= false;
                             Symbol_F = false;
                             Symbol_J = false;
                             count = 0;
+
+                            if (Symbol_I) {
+                                Sound(4);
+                            }
+
                             break;
 
                         case 2:
-                            Sound(14);
+
                             Symbol_I = true;
                             Symbol_G = false;
                             Symbol_H= false;
                             Symbol_F = false;
                             Symbol_J = false;
                             count = 0;
+                            if (Symbol_I) {
+                                Sound(14);
+                            }
+
                            break;
 
 
@@ -1799,28 +1857,41 @@ public class Sheet_FJ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol Locution
-                            Sound(15);
+                            Symbol_J = true;
+                            Symbol_G = false;
+                            Symbol_H= false;
+                            Symbol_I = false;
+                            Symbol_F = false;
+                            count = 0;
+                            if (Symbol_J) {
+                                Sound(15);
+                            }
                             break;
 
                         case 1:
                             //Symbol Locution + onomatopoeic sound
-                            Sound(5);
                             Symbol_J = true;
                             Symbol_G = false;
                             Symbol_H= false;
                             Symbol_I = false;
                             Symbol_F = false;
                             count = 0;
+                            if (Symbol_J) {
+                                Sound(5);
+                            }
                             break;
 
                         case 2:
-                            Sound(15);
                             Symbol_J = true;
                             Symbol_G = false;
                             Symbol_H= false;
                             Symbol_I = false;
                             Symbol_F = false;
                             count = 0;
+                            if (Symbol_J) {
+                                Sound(15);
+                            }
+
                             break;
 
 

@@ -13,7 +13,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 
+
 public class MainActivity extends AppCompatActivity {
+
+
+    // Common Wait
+    public void Wait( float time ) {
+
+        try {
+            //Retardo
+            Thread.sleep((long) time*1000);
+        } catch (Exception e) {
+
+        }
+    }
+
 
     //public static final String TAG = "MainActivity";
     //private static final String INBOX_STYLE = "INBOX_STYLE";
@@ -98,76 +112,100 @@ public class MainActivity extends AppCompatActivity {
         //setAmbientEnabled();
 
 
+        // start locution
+        MediaPlayer mp;
+        mp = MediaPlayer.create(this, R.raw.seleccion);
+        mp.start();
+
+        // stop locution
+        voice  wait = new voice();
+        wait.start();
+
+         // Active selection
 
 
-
-        Sheet_AE.setOnClickListener(
-                new View.OnClickListener() {
-                    public void onClick(View view) {
-
-                        sheet_select = 1;
-                        intent0.putExtra("sheet_select", sheet_select);
-                        startActivity(intent0);
-
-
-                    }});
-        Sheet_FJ.setOnClickListener(
-                new View.OnClickListener() {
-                    public void onClick(View view) {
-
-                        sheet_select = 2;
-                        intent0.putExtra("sheet_select", sheet_select);
-                        startActivity(intent0);
+     Sheet_AE.setOnClickListener(
+             new View.OnClickListener() {
+                 public void onClick(View view) {
+                     if (wait.stop) {
+                         sheet_select = 1;
+                         intent0.putExtra("sheet_select", sheet_select);
+                         startActivity(intent0);
+                     }
 
 
-                    }});
-        Sheet_KO.setOnClickListener(
-                new View.OnClickListener() {
-                    public void onClick(View view) {
-                        sheet_select = 3;
-                        intent0.putExtra("sheet_select", sheet_select);
-                        startActivity(intent0);
+                 }
+             });
+     Sheet_FJ.setOnClickListener(
+             new View.OnClickListener() {
+                 public void onClick(View view) {
+                     if (wait.stop) {
+                         sheet_select = 2;
+                         intent0.putExtra("sheet_select", sheet_select);
+                         startActivity(intent0);
+                     }
 
 
-                    }});
-
-        Sheet_PT.setOnClickListener(
-                new View.OnClickListener() {
-                    public void onClick(View view) {
-                        sheet_select = 4;
-                        intent0.putExtra("sheet_select", sheet_select);
-                        startActivity(intent0);
-
-
-                    }});
-
-        Sheet_UZ.setOnClickListener(
-                new View.OnClickListener() {
-                    public void onClick(View view) {
-                        sheet_select = 5;
-                        intent0.putExtra("sheet_select", sheet_select);
-                        startActivity(intent0);
+                 }
+             });
+     Sheet_KO.setOnClickListener(
+             new View.OnClickListener() {
+                 public void onClick(View view) {
+                     sheet_select = 3;
+                     intent0.putExtra("sheet_select", sheet_select);
+                     startActivity(intent0);
 
 
-                    }});
+                 }
+             });
 
-        Sheet_stressed_vowel.setOnClickListener(
-                new View.OnClickListener() {
-                    public void onClick(View view) {
-                        sheet_select = 6;
-                        intent0.putExtra("sheet_select", sheet_select);
-                        startActivity(intent0);
-                    }});
-
-        Sheet_punctuation_symbols.setOnClickListener(
-                new View.OnClickListener() {
-                    public void onClick(View view) {
-                        sheet_select = 7;
-                        intent0.putExtra("sheet_select", sheet_select);
-                        startActivity(intent0);
+     Sheet_PT.setOnClickListener(
+             new View.OnClickListener() {
+                 public void onClick(View view) {
+                     if (wait.stop) {
+                         sheet_select = 4;
+                         intent0.putExtra("sheet_select", sheet_select);
+                         startActivity(intent0);
+                     }
 
 
-                    }});
+                 }
+             });
+
+     Sheet_UZ.setOnClickListener(
+             new View.OnClickListener() {
+                 public void onClick(View view) {
+                     if (wait.stop) {
+                         sheet_select = 5;
+                         intent0.putExtra("sheet_select", sheet_select);
+                         startActivity(intent0);
+                     }
+
+
+                 }
+             });
+
+     Sheet_stressed_vowel.setOnClickListener(
+             new View.OnClickListener() {
+                 public void onClick(View view) {
+                     if (wait.stop) {
+                         sheet_select = 6;
+                         intent0.putExtra("sheet_select", sheet_select);
+                         startActivity(intent0);
+                     }
+                 }
+             });
+
+     Sheet_punctuation_symbols.setOnClickListener(
+             new View.OnClickListener() {
+                 public void onClick(View view) {
+                     if (wait.stop) {
+                         sheet_select = 7;
+                         intent0.putExtra("sheet_select", sheet_select);
+                         startActivity(intent0);
+                     }
+                 }
+             });
       /*  Sheet_04.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -190,10 +228,7 @@ public class MainActivity extends AppCompatActivity {
 
        */
 
-        // audio message
-        MediaPlayer mp;
-        mp = MediaPlayer.create(this, R.raw.seleccion);
-        mp.start();
+
 
     }
 
