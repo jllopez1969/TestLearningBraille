@@ -63,6 +63,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
     int  test_line = 0;
     int selected_test = 0;
     int selected_mode=0;
+    MediaPlayer mp;
 
 
     //*************************************************
@@ -201,179 +202,179 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
 
         switch (code) {
             case 1:
-                MediaPlayer mp1;
-                mp1 = MediaPlayer.create(this, R.raw.nn_sonido_morse);
-                mp1.start();
+
+                mp = MediaPlayer.create(this, R.raw.nn_sonido_morse);
+                mp.start();
                 break;
 
             case 2:
-                MediaPlayer mp2;
-                mp2 = MediaPlayer.create(this, R.raw.w_himno_usa);
-                mp2.start();
+
+                mp = MediaPlayer.create(this, R.raw.w_himno_usa);
+                mp.start();
                 break;
 
             case 3:
-                MediaPlayer mp3;
-                mp3 = MediaPlayer.create(this, R.raw.u_dieresis);
-                mp3.start();
+
+                mp = MediaPlayer.create(this, R.raw.u_dieresis);
+                mp.start();
                 break;
 
             case 4:
-                MediaPlayer mp4;
-                mp4 = MediaPlayer.create(this, R.raw.p_punto);
-                mp4.start();
+
+                mp = MediaPlayer.create(this, R.raw.p_punto);
+                mp.start();
                 break;
 
             case 5:
-                MediaPlayer mp5;
-                mp5 = MediaPlayer.create(this, R.raw.c_coma);
-                mp5.start();
+
+                mp = MediaPlayer.create(this, R.raw.c_coma);
+                mp.start();
                 break;
 
             case 11:
-                MediaPlayer mp6;
-                mp6 = MediaPlayer.create(this, R.raw.alphabet_nn);
-                mp6.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_nn);
+                mp.start();
                 break;
 
             case 12:
-                MediaPlayer mp7;
-                mp7 = MediaPlayer.create(this, R.raw.alphabet_w);
-                mp7.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_w);
+                mp.start();
                 break;
 
             case 13:
-                MediaPlayer mp8;
-                mp8 = MediaPlayer.create(this, R.raw.alphabet_u_dieresis);
-                mp8.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_u_dieresis);
+                mp.start();
                 break;
 
             case 14:
-                MediaPlayer mp9;
-                mp9 = MediaPlayer.create(this, R.raw.alphabet_punto);
-                mp9.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_punto);
+                mp.start();
                 break;
 
             case 15:
-                MediaPlayer mp10;
-                mp10 = MediaPlayer.create(this, R.raw.alphabet_coma);
-                mp10.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_coma);
+                mp.start();
                 break;
 
             case 20:
-                MediaPlayer mp11;
-                mp11 = MediaPlayer.create(this, R.raw.loc_acierto);
-                mp11.start();
+
+                mp = MediaPlayer.create(this, R.raw.loc_acierto);
+                mp.start();
                 break;
 
             case 21:
-                MediaPlayer mp12;
-                mp12 = MediaPlayer.create(this, R.raw.loc_error);
-                mp12.start();
+
+                mp = MediaPlayer.create(this, R.raw.loc_error);
+                mp.start();
                 break;
 
             case 22:
-                MediaPlayer mp13;
-                mp13 = MediaPlayer.create(this, R.raw.loc_final_test);
-                mp13.start();
+
+                mp = MediaPlayer.create(this, R.raw.loc_final_test);
+                mp.start();
                 break;
 
             case 23:
-                MediaPlayer mp14;
-                mp14 = MediaPlayer.create(this, R.raw.sheet_punctuation_symbols_);
-                mp14.start();
+
+                mp = MediaPlayer.create(this, R.raw.sheet_punctuation_symbols_);
+                mp.start();
                 break;
             case 24:
-                MediaPlayer mp15;
-                mp15 = MediaPlayer.create(this, R.raw.primer_entrenamiento);
-                mp15.start();
+
+                mp = MediaPlayer.create(this, R.raw.primer_entrenamiento);
+                mp.start();
                 break;
 
             case 25:
-                MediaPlayer mp16;
-                mp16 = MediaPlayer.create(this, R.raw.primera_linea_test);
-                mp16.start();
+
+                mp = MediaPlayer.create(this, R.raw.primera_linea_test);
+                mp.start();
                 break;
             case 26:
-                MediaPlayer mp17;
-                mp17 = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
-                mp17.start();
+
+                mp = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
+                mp.start();
                 break;
             case 27:
-                MediaPlayer mp18;
-                mp18 = MediaPlayer.create(this, R.raw.segunda_linea_test);
-                mp18.start();
+
+                mp = MediaPlayer.create(this, R.raw.segunda_linea_test);
+                mp.start();
                 break;
             case 28:
-                MediaPlayer mp19;
-                mp19 = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
-                mp19.start();
+
+                mp = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
+                mp.start();
                 break;
             case 29:
-                MediaPlayer mp20;
-                mp20 = MediaPlayer.create(this, R.raw.tercera_linea_test);
-                mp20.start();
+
+                mp = MediaPlayer.create(this, R.raw.tercera_linea_test);
+                mp.start();
                 break;
             case 30:
-                MediaPlayer mp21;
-                mp21 = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
-                mp21.start();
+
+                mp = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
+                mp.start();
                 break;
             case 31:
-                MediaPlayer mp22;
-                mp22 = MediaPlayer.create(this, R.raw.cuarta_linea_test);
-                mp22.start();
+
+                mp = MediaPlayer.create(this, R.raw.cuarta_linea_test);
+                mp.start();
                 break;
             case 32:
-                MediaPlayer mp23;
-                mp23 = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
-                mp23.start();
+
+                mp = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
+                mp.start();
                 break;
             case 33:
-                MediaPlayer mp24;
-                mp24 = MediaPlayer.create(this, R.raw.quinta_linea_test);
-                mp24.start();
+
+                mp = MediaPlayer.create(this, R.raw.quinta_linea_test);
+                mp.start();
                 break;
             case 34:
-                MediaPlayer mp25;
-                mp25 = MediaPlayer.create(this, R.raw.idprueba);
-                mp25.start();
+
+                mp = MediaPlayer.create(this, R.raw.idprueba);
+                mp.start();
                 break;
             case 35:
-                MediaPlayer mp26;
-                mp26 = MediaPlayer.create(this, R.raw.linea_er);
-                mp26.start();
+
+                mp = MediaPlayer.create(this, R.raw.linea_er);
+                mp.start();
                 break;
             case 36:
-                MediaPlayer mp27;
-                mp27 = MediaPlayer.create(this, R.raw.linea_sc);
-                mp27.start();
+
+                mp = MediaPlayer.create(this, R.raw.linea_sc);
+                mp.start();
                 break;
 
             case 40:
-                MediaPlayer mp28;
-                mp28 = MediaPlayer.create(this, R.raw.numbers_nn);
-                mp28.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_nn);
+                mp.start();
                 break;
             case 41:
-                MediaPlayer mp29;
-                mp29 = MediaPlayer.create(this, R.raw.numbers_w);
-                mp29.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_w);
+                mp.start();
                 break;
             case 42:
-                MediaPlayer mp30;
-                mp30 = MediaPlayer.create(this, R.raw.numbers_u_umlaut);
-                mp30.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_u_umlaut);
+                mp.start();
                 break;
             case 43:
-                MediaPlayer mp31;
-                mp31 = MediaPlayer.create(this, R.raw.numbers_dot);
-                mp31.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_dot);
+                mp.start();
                 break;
             case 44:
-                MediaPlayer mp32;
-                mp32 = MediaPlayer.create(this, R.raw.numbers_comma);
-                mp32.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_comma);
+                mp.start();
                 break;
 
         }
@@ -1653,27 +1654,32 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Symbol_NN = true;  // coordinación patrón retardo
-                                    Symbol_W = false;
-                                    Symbol_cc= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
+                                    if (mp != null && !mp.isPlaying()) {
 
-                                    if (Symbol_NN) {
-                                        Sound(11);
+                                        Symbol_NN = true;  // coordinación patrón retardo
+                                        Symbol_W = false;
+                                        Symbol_cc = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+
+                                        if (Symbol_NN) {
+                                            Sound(11);
+                                        }
                                     }
                                     break;
 
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
-                                    Symbol_NN = true;  // coordinación patrón retardo
-                                    Symbol_W = false;
-                                    Symbol_cc= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
-                                    count = 0;
-                                    if (Symbol_NN) {
-                                        Sound(1);
+                                    if (mp != null && !mp.isPlaying()) {
+                                        Symbol_NN = true;  // coordinación patrón retardo
+                                        Symbol_W = false;
+                                        Symbol_cc = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+                                        if (Symbol_NN) {
+                                            Sound(1);
+                                        }
                                     }
 
                                      break;
@@ -1685,7 +1691,8 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     // retardo
 
                                     // Numbers list
-                                    Symbol_NN = true;  // coordinación patrón retardo
+                                    if (mp != null && !mp.isPlaying()) {
+                                        Symbol_NN = true;  // coordinación patrón retardo
                                     Symbol_W = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
@@ -1694,8 +1701,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     if (Symbol_NN) {
                                         Sound(40);
                                     }
-
-
+                                    }
 
                                     break;
 
@@ -1718,28 +1724,35 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Symbol_W = true;
-                                    Symbol_NN = false;
-                                    Symbol_cc= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
-                                    count = 0;
-                                    if (Symbol_W) {
-                                        Sound(12);
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_W = true;
+                                        Symbol_NN = false;
+                                        Symbol_cc = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+                                        if (Symbol_W) {
+                                            Sound(12);
+                                        }
                                     }
+
                                     break;
 
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
-                                    Symbol_W = true;
-                                    Symbol_NN = false;
-                                    Symbol_cc= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
-                                    count = 0;
+                                    if (mp != null && !mp.isPlaying()) {
 
-                                    if (Symbol_W) {
-                                        Sound(2);
+                                        Symbol_W = true;
+                                        Symbol_NN = false;
+                                        Symbol_cc = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+
+                                        if (Symbol_W) {
+                                            Sound(2);
+                                        }
                                     }
 
                                     break;
@@ -1747,14 +1760,17 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                 case 2:
 
                                     // Numbers list
-                                    Symbol_W = false;
-                                    Symbol_NN = false;
-                                    Symbol_cc= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
-                                    count = 0;
-                                    if (Symbol_W) {
-                                        Sound(41);
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_W = false;
+                                        Symbol_NN = false;
+                                        Symbol_cc = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+                                        if (Symbol_W) {
+                                            Sound(41);
+                                        }
                                     }
                                     break;
 
@@ -1774,34 +1790,42 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Symbol_UU = true;
-                                    Symbol_NN = false;
-                                    Symbol_cc= false;
-                                    Symbol_pp= false;
-                                    Symbol_W = false;
-                                    count = 0;
-                                   if (Symbol_UU) {
-                                       Sound(13);
-                                   }
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_UU = true;
+                                        Symbol_NN = false;
+                                        Symbol_cc = false;
+                                        Symbol_pp = false;
+                                        Symbol_W = false;
+                                        count = 0;
+                                        if (Symbol_UU) {
+                                            Sound(13);
+                                        }
+                                    }
                                     break;
 
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
-                                    Symbol_UU = true;
-                                    Symbol_NN = false;
-                                    Symbol_cc= false;
-                                    Symbol_pp= false;
-                                    Symbol_W = false;
-                                    count = 0;
-                                    if (Symbol_UU) {
-                                        Sound(13);
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_UU = true;
+                                        Symbol_NN = false;
+                                        Symbol_cc = false;
+                                        Symbol_pp = false;
+                                        Symbol_W = false;
+                                        count = 0;
+                                        if (Symbol_UU) {
+                                            Sound(13);
+                                        }
                                     }
 
                                     break;
 
                                 case 2:
                                     // Numbers list
-                                    Symbol_UU = true;
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_UU = true;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_pp= false;
@@ -1809,6 +1833,7 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     count = 0;
                                     if (Symbol_UU) {
                                         Sound(42);
+                                    }
                                     }
 
                                     break;
@@ -1830,7 +1855,9 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol Locution
-                                    Symbol_pp = true;
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_pp = true;
                                     Symbol_NN = false;
                                     Symbol_cc= false;
                                     Symbol_W= false;
@@ -1839,31 +1866,38 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                                     if (Symbol_pp) {
                                         Sound(14);
                                     }
+                                    }
                                     break;
 
                                 case 1:
                                     //Symbol Locution + onomatopoeid sound
-                                    Symbol_pp = true;
-                                    Symbol_NN = false;
-                                    Symbol_cc= false;
-                                    Symbol_W= false;
-                                    Symbol_UU = false;
-                                    count = 0;
-                                    if (Symbol_pp) {
-                                        Sound(4);
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_pp = true;
+                                        Symbol_NN = false;
+                                        Symbol_cc = false;
+                                        Symbol_W = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+                                        if (Symbol_pp) {
+                                            Sound(4);
+                                        }
                                     }
                                       break;
 
                                 case 2:
                                     // Numbers list
-                                    Symbol_pp = true;
-                                    Symbol_NN = false;
-                                    Symbol_cc= false;
-                                    Symbol_W= false;
-                                    Symbol_UU = false;
+                                    if (mp != null && !mp.isPlaying()) {
 
-                                    if (Symbol_pp) {
-                                        Sound(43);
+                                        Symbol_pp = true;
+                                        Symbol_NN = false;
+                                        Symbol_cc = false;
+                                        Symbol_W = false;
+                                        Symbol_UU = false;
+
+                                        if (Symbol_pp) {
+                                            Sound(43);
+                                        }
                                     }
                                     break;
 
@@ -1882,41 +1916,49 @@ public class Sheet_punctuation_symbols extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     // Symbol Locution
-                                    Symbol_cc = true;
-                                    Symbol_NN = false;
-                                    Symbol_W= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
-                                    count = 0;
-                                    if (Symbol_cc) {
-                                        Sound(15);
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_cc = true;
+                                        Symbol_NN = false;
+                                        Symbol_W = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+                                        if (Symbol_cc) {
+                                            Sound(15);
+                                        }
                                     }
                                     break;
 
                                 case 1:
                                     //Symbol locution + onomatopoeid soun
+                                    if (mp != null && !mp.isPlaying()) {
 
-                                    Symbol_cc = true;
-                                    Symbol_NN = false;
-                                    Symbol_W= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
-                                    count = 0;
-                                    if (Symbol_cc) {
-                                        Sound(5);
+                                        Symbol_cc = true;
+                                        Symbol_NN = false;
+                                        Symbol_W = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+                                        if (Symbol_cc) {
+                                            Sound(5);
+                                        }
                                     }
                                      break;
 
                                 case 2:
                                     // Numbers list
-                                    Symbol_cc = false;
-                                    Symbol_NN = false;
-                                    Symbol_W= false;
-                                    Symbol_pp= false;
-                                    Symbol_UU = false;
-                                    count = 0;
-                                    if (Symbol_cc) {
-                                        Sound(44);
+                                    if (mp != null && !mp.isPlaying()) {
+
+                                        Symbol_cc = false;
+                                        Symbol_NN = false;
+                                        Symbol_W = false;
+                                        Symbol_pp = false;
+                                        Symbol_UU = false;
+                                        count = 0;
+                                        if (Symbol_cc) {
+                                            Sound(44);
+                                        }
                                     }
                                     break;
                             }

@@ -54,6 +54,8 @@ public class Sheet_AE extends AppCompatActivity {
     String file_out ="";
     String path_braille = "Braille";
 
+
+
     // Test control variables
     boolean flag_sel = false;
     boolean flag_ok= false;
@@ -65,6 +67,7 @@ public class Sheet_AE extends AppCompatActivity {
     int  test_line = 0;
     int selected_test = 0;
     int selected_mode =0;
+    MediaPlayer mp;
 
 
     //*************************************************
@@ -202,7 +205,7 @@ public class Sheet_AE extends AppCompatActivity {
 
     public void Sound( int code) {
 
-        MediaPlayer mp;
+       // MediaPlayer mp;
 
         switch (code) {
 
@@ -1726,7 +1729,7 @@ public class Sheet_AE extends AppCompatActivity {
         //**************************************************************************************
         //  Training Line
         //**************************************************************************************
-        //  Symbol ""A""
+        //  Symbol "A"
 
         button1.setOnLongClickListener(
                 new View.OnLongClickListener() {
@@ -1740,21 +1743,40 @@ public class Sheet_AE extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                         //Symbol locution
+                                    if (mp != null && !mp.isPlaying()) {
                                     Symbol_A = true;
                                     Symbol_B = false;
                                     Symbol_C = false;
                                     Symbol_D = false;
                                     Symbol_E = false;
-                                    count = 0;
-                                    if (Symbol_A) {
-                                        Sound(11);
+                                        count = 0;
+                                        if (Symbol_A) {
+                                            Sound(11);
+                                        }
                                     }
 
                                     break;
 
                                 case 1:
                                     //Symbol locution + onomatopoeic sound
+                                    if (mp != null && !mp.isPlaying()) {
+                                        Symbol_A = true;
+                                        Symbol_B = false;
+                                        Symbol_C = false;
+                                        Symbol_D = false;
+                                        Symbol_E = false;
+                                        count = 0;
 
+                                        if (Symbol_A) {
+                                            Sound(1);
+                                        }
+                                    }
+
+
+                                    break;
+
+                                case 2:
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_A = true;
                                         Symbol_B = false;
                                         Symbol_C = false;
@@ -1762,29 +1784,14 @@ public class Sheet_AE extends AppCompatActivity {
                                         Symbol_E = false;
                                         count = 0;
                                         if (Symbol_A) {
-                                            Sound(1);
+                                            Sound(11);
                                         }
-
-
-                                    break;
-
-                                case 2:
-                                        Symbol_A = true;
-                                        Symbol_B = false;
-                                        Symbol_C = false;
-                                        Symbol_D = false;
-                                        Symbol_E = false;
-                                        count = 0;
-                                    if (Symbol_A) {
-                                        Sound(11);
                                     }
 
-
-
                                     break;
 
-                                default:
-                                    throw new IllegalStateException("Unexpected value: " + selected_test);
+                                  // default:
+                                  //  throw new IllegalStateException("Unexpected value: " + selected_test);
                             }
                         }
                         return false;
@@ -1806,44 +1813,52 @@ public class Sheet_AE extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol locution
+                                    if (mp != null && !mp.isPlaying()) {
                                     Symbol_B = true;
                                     Symbol_A = false;
                                     Symbol_C = false;
                                     Symbol_D = false;
                                     Symbol_E = false;
+
                                     count = 0;
-                                    if (Symbol_B) {
-                                        Sound(12);
+                                        if (Symbol_B) {
+                                            Sound(12);
+                                        }
                                     }
                                     break;
 
                                 case 1:
                                     //Symbol locution + onomatopoeic sound
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_B = true;
                                         Symbol_A = false;
                                         Symbol_C = false;
                                         Symbol_D = false;
                                         Symbol_E = false;
+
                                         count = 0;
-                                        if (Symbol_B)
-                                        {
+                                        if (Symbol_B) {
                                             Sound(2);
                                         }
+                                    }
+
 
 
                                     break;
 
                                 case 2:
-
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_B = true;
                                         Symbol_A = false;
                                         Symbol_C = false;
                                         Symbol_D = false;
                                         Symbol_E = false;
+
                                         count = 0;
                                         if (Symbol_B) {
                                             Sound(12);
                                         }
+                                    }
 
                                     break;
 
@@ -1865,40 +1880,49 @@ public class Sheet_AE extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Locución Symbol
+                                    if (mp != null && !mp.isPlaying()) {
                                     Symbol_C = true;
                                     Symbol_A = false;
                                     Symbol_B = false;
                                     Symbol_D = false;
                                     Symbol_E = false;
-                                    count = 0;
-                                    if (Symbol_C){
-                                        Sound(13);
+
+                                        count = 0;
+                                        if (Symbol_C) {
+                                            Sound(13);
+                                        }
                                     }
                                     break;
 
                                 case 1:
                                     //Symbol locution + onomatopoeic sound
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_C = true;
                                         Symbol_A = false;
                                         Symbol_B = false;
                                         Symbol_D = false;
                                         Symbol_E = false;
+
                                         count = 0;
                                         if (Symbol_C) {
                                             Sound(3);
                                         }
+                                    }
                                     break;
 
                                 case 2:
-
-
-                                        Sound(13);
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_C = true;
                                         Symbol_A = false;
                                         Symbol_B = false;
                                         Symbol_D = false;
                                         Symbol_E = false;
+
                                         count = 0;
+                                        if (Symbol_C) {
+                                            Sound(13);
+                                        }
+                                    }
 
 
                                     break;
@@ -1920,47 +1944,50 @@ public class Sheet_AE extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //Symbol locution
-
+                                    if (mp != null && !mp.isPlaying()) {
                                     Symbol_D = true;
                                     Symbol_A = false;
                                     Symbol_B = false;
                                     Symbol_C = false;
                                     Symbol_E = false;
-                                    count = 0;
-                                    if (Symbol_D) {
-                                        Sound(14);
+
+                                        count = 0;
+                                        if (Symbol_D) {
+                                            Sound(14);
+                                        }
                                     }
                                     break;
 
                                 case 1:
                                     //Symbol locution + onomatopoeic sound
-
-
-
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_D = true;
                                         Symbol_A = false;
                                         Symbol_B = false;
                                         Symbol_C = false;
                                         Symbol_E = false;
+
                                         count = 0;
                                         if (Symbol_D) {
                                         Sound(4);
                                        }
+                                    }
 
                                     break;
 
                                 case 2:
-
-                                        Sound(14);
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_D = true;
                                         Symbol_A = false;
                                         Symbol_B = false;
                                         Symbol_C = false;
                                         Symbol_E = false;
+
                                         count = 0;
                                           if (Symbol_D) {
                                         Sound(14);
                                        }
+                                    }
 
                                     break;
 
@@ -1980,46 +2007,53 @@ public class Sheet_AE extends AppCompatActivity {
                             switch (selected_test) {
                                 case 0:
                                     //  //Symbol locution
+                                    if (mp != null && !mp.isPlaying()) {
                                     Symbol_E = true;
                                     Symbol_A = false;
                                     Symbol_B = false;
                                     Symbol_D = false;
                                     Symbol_C = false;
+
                                     count = 0;
                                     if (Symbol_E) {
                                         Sound(15);
+                                    }
                                     }
 
                                     break;
 
                                 case 1:
                                     //Symbol locution + onomatopoeic sound
+                                    if (mp != null && !mp.isPlaying()) {
                                     Symbol_E = true;
                                     Symbol_A = false;
                                     Symbol_B = false;
                                     Symbol_D = false;
                                     Symbol_C = false;
+
                                     count = 0;
                                     if (Symbol_E) {
                                         Sound(5);
+
+                                    }
                                     }
                                      break;
 
                                 case 2:
 
-
+                                    if (mp != null && !mp.isPlaying()) {
                                         Symbol_E = true;
                                         Symbol_A = false;
                                         Symbol_B = false;
                                         Symbol_D = false;
                                         Symbol_C = false;
+
                                         count = 0;
-                                    if (Symbol_E) {
-                                        Sound(15);
+                                        if (Symbol_E) {
+                                            Sound(15);
+
+                                        }
                                     }
-
-
-
                                     break;
                             }
                         }

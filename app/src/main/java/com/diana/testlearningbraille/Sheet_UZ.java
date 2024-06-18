@@ -65,6 +65,8 @@ public class Sheet_UZ extends AppCompatActivity {
     int  test_line = 0;
     int selected_test = 0;
     int selected_mode= 0;
+    MediaPlayer mp;
+
 
 
     //*************************************************
@@ -202,179 +204,179 @@ public class Sheet_UZ extends AppCompatActivity {
 
         switch (code) {
             case 1:
-                MediaPlayer mp1;
-                mp1 = MediaPlayer.create(this, R.raw.u_lular_buho);
-                mp1.start();
+
+                mp = MediaPlayer.create(this, R.raw.u_lular_buho);
+                mp.start();
                 break;
 
             case 2:
-                MediaPlayer mp2;
-                mp2 = MediaPlayer.create(this, R.raw.v_morse);
-                mp2.start();
+
+                mp = MediaPlayer.create(this, R.raw.v_morse);
+                mp.start();
                 break;
 
             case 3:
-                MediaPlayer mp3;
-                mp3 = MediaPlayer.create(this, R.raw.x_sos_auxilio_morse);
-                mp3.start();
+
+                mp = MediaPlayer.create(this, R.raw.x_sos_auxilio_morse);
+                mp.start();
                 break;
 
             case 4:
-                MediaPlayer mp4;
-                mp4 = MediaPlayer.create(this, R.raw.y_bfymalo);
-                mp4.start();
+
+                mp = MediaPlayer.create(this, R.raw.y_bfymalo);
+                mp.start();
                 break;
 
             case 5:
-                MediaPlayer mp5;
-                mp5 = MediaPlayer.create(this, R.raw.z_morse);
-                mp5.start();
+
+                mp = MediaPlayer.create(this, R.raw.z_morse);
+                mp.start();
                 break;
 
             case 11:
-                MediaPlayer mp6;
-                mp6 = MediaPlayer.create(this, R.raw.alphabet_u);
-                mp6.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_u);
+                mp.start();
                 break;
 
             case 12:
-                MediaPlayer mp7;
-                mp7 = MediaPlayer.create(this, R.raw.alphabet_v);
-                mp7.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_v);
+                mp.start();
                 break;
 
             case 13:
-                MediaPlayer mp8;
-                mp8 = MediaPlayer.create(this, R.raw.alphabet_x);
-                mp8.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_x);
+                mp.start();
                 break;
 
             case 14:
-                MediaPlayer mp9;
-                mp9 = MediaPlayer.create(this, R.raw.alphabet_y);
-                mp9.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_y);
+                mp.start();
                 break;
 
             case 15:
-                MediaPlayer mp10;
-                mp10 = MediaPlayer.create(this, R.raw.alphabet_z);
-                mp10.start();
+
+                mp = MediaPlayer.create(this, R.raw.alphabet_z);
+                mp.start();
                 break;
 
             case 20:
-                MediaPlayer mp11;
-                mp11 = MediaPlayer.create(this, R.raw.loc_acierto);
-                mp11.start();
+
+                mp = MediaPlayer.create(this, R.raw.loc_acierto);
+                mp.start();
                 break;
 
             case 21:
-                MediaPlayer mp21;
-                mp21 = MediaPlayer.create(this, R.raw.loc_error);
-                mp21.start();
+
+                mp = MediaPlayer.create(this, R.raw.loc_error);
+                mp.start();
                 break;
 
             case 22:
-                MediaPlayer mp22;
-                mp22 = MediaPlayer.create(this, R.raw.loc_final_test);
-                mp22.start();
+
+                mp = MediaPlayer.create(this, R.raw.loc_final_test);
+                mp.start();
                 break;
             case 23:
-                MediaPlayer mp23;
-                mp23 = MediaPlayer.create(this, R.raw.sheet_uz);
-                mp23.start();
+
+                mp = MediaPlayer.create(this, R.raw.sheet_uz);
+                mp.start();
                 break;
             case 24:
-                MediaPlayer mp24;
-                mp24 = MediaPlayer.create(this, R.raw.primer_entrenamiento);
-                mp24.start();
+
+                mp = MediaPlayer.create(this, R.raw.primer_entrenamiento);
+                mp.start();
                 break;
 
             case 25:
-                MediaPlayer mp25;
-                mp25 = MediaPlayer.create(this, R.raw.primera_linea_test);
-                mp25.start();
+
+                mp = MediaPlayer.create(this, R.raw.primera_linea_test);
+                mp.start();
                 break;
             case 26:
-                MediaPlayer mp26;
-                mp26 = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
-                mp26.start();
+
+                mp = MediaPlayer.create(this, R.raw.segundo_entrenamiento);
+                mp.start();
                 break;
             case 27:
-                MediaPlayer mp27;
-                mp27 = MediaPlayer.create(this, R.raw.segunda_linea_test);
-                mp27.start();
+
+                mp = MediaPlayer.create(this, R.raw.segunda_linea_test);
+                mp.start();
                 break;
             case 28:
-                MediaPlayer mp28;
-                mp28 = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
-                mp28.start();
+
+                mp = MediaPlayer.create(this, R.raw.tercer_entrenamiento);
+                mp.start();
                 break;
             case 29:
-                MediaPlayer mp29;
-                mp29 = MediaPlayer.create(this, R.raw.tercera_linea_test);
-                mp29.start();
+
+                mp = MediaPlayer.create(this, R.raw.tercera_linea_test);
+                mp.start();
                 break;
             case 30:
-                MediaPlayer mp30;
-                mp30 = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
-                mp30.start();
+
+                mp = MediaPlayer.create(this, R.raw.cuarto_entrenamiento);
+                mp.start();
                 break;
             case 31:
-                MediaPlayer mp31;
-                mp31 = MediaPlayer.create(this, R.raw.cuarta_linea_test);
-                mp31.start();
+
+                mp = MediaPlayer.create(this, R.raw.cuarta_linea_test);
+                mp.start();
                 break;
             case 32:
-                MediaPlayer mp32;
-                mp32 = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
-                mp32.start();
+
+                mp = MediaPlayer.create(this, R.raw.quinto_entrenamiento);
+                mp.start();
                 break;
             case 33:
-                MediaPlayer mp33;
-                mp33 = MediaPlayer.create(this, R.raw.quinta_linea_test);
-                mp33.start();
+
+                mp = MediaPlayer.create(this, R.raw.quinta_linea_test);
+                mp.start();
                 break;
 
             case 34:
-                MediaPlayer mp34;
-                mp34 = MediaPlayer.create(this, R.raw.idprueba);
-                mp34.start();
+
+                mp = MediaPlayer.create(this, R.raw.idprueba);
+                mp.start();
                 break;
             case 35:
-                MediaPlayer mp35;
-                mp35 = MediaPlayer.create(this, R.raw.linea_er);
-                mp35.start();
+
+                mp = MediaPlayer.create(this, R.raw.linea_er);
+                mp.start();
                 break;
             case 36:
-                MediaPlayer mp36;
-                mp36 = MediaPlayer.create(this, R.raw.linea_sc);
-                mp36.start();
+
+                mp = MediaPlayer.create(this, R.raw.linea_sc);
+                mp.start();
                 break;
 
             case 40:
-                MediaPlayer mp37;
-                mp37 = MediaPlayer.create(this, R.raw.numbers_u);
-                mp37.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_u);
+                mp.start();
                 break;
             case 41:
-                MediaPlayer mp38;
-                mp38 = MediaPlayer.create(this, R.raw.numbers_v);
-                mp38.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_v);
+                mp.start();
                 break;
             case 42:
-                MediaPlayer mp39;
-                mp39 = MediaPlayer.create(this, R.raw.numbers_x);
-                mp39.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_x);
+                mp.start();
                 break;
             case 43:
-                MediaPlayer mp40;
-                mp40 = MediaPlayer.create(this, R.raw.numbers_y);
-                mp40.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_y);
+                mp.start();
                 break;
             case 44:
-                MediaPlayer mp41;
-                mp41 = MediaPlayer.create(this, R.raw.numbers_z);
-                mp41.start();
+
+                mp = MediaPlayer.create(this, R.raw.numbers_z);
+                mp.start();
                 break;
 
         }
@@ -1631,43 +1633,50 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Symbol_U = true;
-                            Symbol_V = false;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_U) {
-                                Sound(11);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_U = true;
+                                Symbol_V = false;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_U) {
+                                    Sound(11);
+                                }
                             }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
+                            if (mp != null && !mp.isPlaying()) {
 
-                            Symbol_U = true;
-                            Symbol_V = false;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_U) {
-                                Sound(1);
+                                Symbol_U = true;
+                                Symbol_V = false;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_U) {
+                                    Sound(1);
+                                }
                             }
 
                              break;
 
                         case 2:
                             //Symbol Locution
-                            Sound(11);
-                            Symbol_U= true;
-                            Symbol_V = false;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_U) {
-                                Sound(11);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_U = true;
+                                Symbol_V = false;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_U) {
+                                    Sound(11);
+                                }
                             }
                             break;
 
@@ -1690,41 +1699,50 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Symbol_U= false;
-                            Symbol_V = true;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_V) {
-                                Sound(12);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_U = false;
+                                Symbol_V = true;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_V) {
+                                    Sound(12);
+                                }
                             }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Symbol_U= false;
-                            Symbol_V = true;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_V) {
-                                Sound(2);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_U = false;
+                                Symbol_V = true;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_V) {
+                                    Sound(2);
+                                }
                             }
 
                             break;
 
                         case 2:
                             //Symbol Locution
-                            Symbol_U= false;
-                            Symbol_V = true;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_V) {
-                                Sound(12);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_U = false;
+                                Symbol_V = true;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_V) {
+                                    Sound(12);
+                                }
                             }
 
                             break;
@@ -1745,41 +1763,50 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Symbol_X = true;
-                            Symbol_V = false;
-                            Symbol_U= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_X) {
-                                Sound(13);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_X = true;
+                                Symbol_V = false;
+                                Symbol_U = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_X) {
+                                    Sound(13);
+                                }
                             }
                             break;
 
                         case 1:
 
                             // Vibration Pattern
-                            Symbol_X = true;
-                            Symbol_V = false;
-                            Symbol_U= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_X) {
-                                Sound(3);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_X = true;
+                                Symbol_V = false;
+                                Symbol_U = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_X) {
+                                    Sound(3);
+                                }
                             }
                             break;
 
                         case 2:
                             //Symbol Locution
-                            Symbol_X = true;
-                            Symbol_V = false;
-                            Symbol_U= false;
-                            Symbol_Y= false;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_X) {
-                                Sound(13);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_X = true;
+                                Symbol_V = false;
+                                Symbol_U = false;
+                                Symbol_Y = false;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_X) {
+                                    Sound(13);
+                                }
                             }
 
                     }
@@ -1801,41 +1828,50 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Symbol_X = false;
-                            Symbol_V = false;
-                            Symbol_U= false;
-                            Symbol_Y= true;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_Y) {
-                                Sound(14);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_X = false;
+                                Symbol_V = false;
+                                Symbol_U = false;
+                                Symbol_Y = true;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_Y) {
+                                    Sound(14);
+                                }
                             }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Symbol_X = false;
-                            Symbol_V = false;
-                            Symbol_U= false;
-                            Symbol_Y= true;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_Y) {
-                                Sound(4);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_X = false;
+                                Symbol_V = false;
+                                Symbol_U = false;
+                                Symbol_Y = true;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_Y) {
+                                    Sound(4);
+                                }
                             }
 
                             break;
 
                         case 2:
                             //Symbol
-                            Symbol_X = false;
-                            Symbol_V = false;
-                            Symbol_U= false;
-                            Symbol_Y= true;
-                            Symbol_Z = false;
-                            count = 0;
-                            if (Symbol_Y) {
-                                Sound(14);
+                            if (mp != null && !mp.isPlaying()) {
+
+                                Symbol_X = false;
+                                Symbol_V = false;
+                                Symbol_U = false;
+                                Symbol_Y = true;
+                                Symbol_Z = false;
+                                count = 0;
+                                if (Symbol_Y) {
+                                    Sound(14);
+                                }
                             }
 
 
@@ -1858,19 +1894,31 @@ public class Sheet_UZ extends AppCompatActivity {
                     switch (selected_test) {
                         case 0:
                             //Symbol locution
-                            Sound(15);
+                            if (mp != null && !mp.isPlaying()) {
+                                Symbol_Z = true;
+                                Symbol_V = false;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_U = false;
+                                count = 0;
+                                if (Symbol_Z) {
+                                    Sound(15);
+                                }
+                            }
                             break;
 
                         case 1:
                             //Symbol locution and onomatopoeid sound
-                            Symbol_Z = true;
-                            Symbol_V = false;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_U = false;
-                            count = 0;
-                            if (Symbol_Z) {
-                                Sound(5);
+                            if (mp != null && !mp.isPlaying()) {
+                                Symbol_Z = true;
+                                Symbol_V = false;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_U = false;
+                                count = 0;
+                                if (Symbol_Z) {
+                                    Sound(5);
+                                }
                             }
                             // Vibration Pattern
 
@@ -1878,14 +1926,16 @@ public class Sheet_UZ extends AppCompatActivity {
 
                         case 2:
                             //Symbol Locution
-                            Symbol_Z = true;
-                            Symbol_V = false;
-                            Symbol_X= false;
-                            Symbol_Y= false;
-                            Symbol_U = false;
-                            count = 0;
-                            if (Symbol_Z) {
-                                Sound(15);
+                            if (mp != null && !mp.isPlaying()) {
+                                Symbol_Z = true;
+                                Symbol_V = false;
+                                Symbol_X = false;
+                                Symbol_Y = false;
+                                Symbol_U = false;
+                                count = 0;
+                                if (Symbol_Z) {
+                                    Sound(15);
+                                }
                             }
                             break;
 
